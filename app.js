@@ -14,7 +14,7 @@ const ES = {
   "nav.call": "A quién llamar",
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
-  "nav.story": "Historia completa y gráficas",
+  "nav.story": "Cifras e historia",
 
   "rights.kicker": "Si ICE está en su puerta ahora mismo",
   "rights.h": "No abra la puerta. No tiene que hacerlo.",

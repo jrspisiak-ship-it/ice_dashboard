@@ -220,6 +220,10 @@ a.tel { color: var(--blue); text-decoration: underline; }
 .help-link { margin-left: auto; background: var(--red); color: #fff; border-color: var(--red); white-space: nowrap; }
 .help-link:hover { background: var(--red-deep); border-color: var(--red-deep); color: #fff; }
 .page-data .lang { display: none; }
+.help-strip { display: grid; gap: 0.6rem; border: 2px solid var(--red); border-radius: 10px; padding: 0.9rem 1rem; margin: 1rem 0 0; }
+.help-strip strong { display: block; font-size: 1.15rem; }
+.help-strip span { color: var(--ink-soft); font-size: 1rem; }
+@media (min-width: 720px) { .help-strip { grid-template-columns: 1fr auto auto; align-items: center; } }
 .page-data .topbar-row { flex-wrap: nowrap; gap: 0.75rem; }
 .page-data .topnav { display: flex; flex: 1; min-width: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 .page-data .topnav::-webkit-scrollbar { display: none; }
@@ -364,3 +368,8 @@ details.fold summary h2 { margin: 0; }
 details.fold summary::after { content: "+"; position: absolute; right: 0; top: 0.5rem; font-size: 1.8rem; line-height: 1; color: var(--ink-soft); }
 details.fold[open] summary::after { content: "–"; }
 details.fold .section { border-top: 0; margin-top: 0; padding-top: 0.5rem; }
+
+.help-strip .btn:first-of-type { background: var(--red); border-color: var(--red); }
+.help-strip .btn:first-of-type:hover { background: var(--red-deep); border-color: var(--red-deep); }
+.help-strip .btn-secondary { color: var(--red-deep); border-color: var(--red); background: #fff; }
+.help-strip .btn-secondary:hover { background: #fdf2f1; color: var(--red-deep); }
