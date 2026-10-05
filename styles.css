@@ -401,3 +401,44 @@ details.fold .section { border-top: 0; margin-top: 0; padding-top: 0.5rem; }
   .page-data .help-link { order: 2; margin-left: auto; }
   .lang-links a { padding: 0.3rem 0.7rem; }
 }
+
+/* ===================== sticky masthead ===================== */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.topbar { box-shadow: 0 1px 0 var(--rule); }
+.masthead { display: flex; align-items: center; gap: 0.75rem; padding-top: 0.55rem; padding-bottom: 0.45rem; }
+.masthead .brand { display: grid; gap: 0.05rem; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand-name { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.05; }
+.brand-sub { font-size: 0.78rem; color: var(--ink-soft); font-weight: 500; line-height: 1.25; }
+.masthead-actions { margin-left: auto; display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.masthead-actions .lang, .masthead-actions .lang-links { margin-left: 0; display: flex; }
+.masthead-actions .help-link, .masthead-actions .back-link { margin-left: 0; }
+.navrow { border-top: 1px solid var(--rule); }
+.navrow .topnav { display: flex; gap: 1.1rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 0.45rem 0; }
+.navrow .topnav::-webkit-scrollbar { display: none; }
+.navrow .topnav a { white-space: nowrap; color: var(--ink-soft); text-decoration: none; font-size: 0.98rem; }
+.navrow .topnav a:hover { color: var(--ink); }
+.navrow .topnav a.active { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.35em; }
+.page-data .topbar-row, .topbar-row { display: none; }
+.topbar .wrap { max-width: 60rem; }
+.panel { scroll-margin-top: 7.5rem; }
+@media (max-width: 600px) {
+  .brand-name { font-size: 1.35rem; }
+  .brand-sub { display: none; }
+  .masthead-actions .lang button, .lang-links a { padding: 0.3rem 0.6rem; font-size: 0.88rem; }
+  .masthead-actions .btn-sm { padding: 0.3rem 0.6rem; font-size: 0.88rem; }
+  .masthead { gap: 0.5rem; }
+}
+@media (max-width: 719px) {
+  .page-data .brand { display: grid; }
+}
+.brand-name { white-space: nowrap; }
+@media (max-width: 600px) {
+  .brand-name { font-size: 1.25rem; }
+  .masthead-actions { gap: 0.35rem; }
+  .masthead-actions .lang button, .lang-links a { padding: 0.28rem 0.5rem; font-size: 0.82rem; }
+  .masthead-actions .btn-sm { padding: 0.28rem 0.55rem; font-size: 0.82rem; }
+}
+
+.masthead .brand { flex: 1 1 auto; min-width: 0; }
+.brand-name { font-size: clamp(1.05rem, 5.2vw, 1.55rem); }
+.masthead-actions { flex: 0 0 auto; }

@@ -16,7 +16,7 @@ const ES = {
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
   "nav.story": "Cifras e historia",
-  "nav.back": "Cifras e historia",
+  "nav.back": "Cifras",
   "site.title": "Civic Shield",
   "site.sub": "Un proyecto de política, asistencia y monitoreo migratorio en EE. UU.",
   "foot.back": "Volver a las cifras y la historia",
@@ -157,7 +157,7 @@ function applyLanguage(lang) {
   });
   document.documentElement.lang = lang;
   const home = lang === "es" ? "es.html" : "index.html";
-  document.querySelectorAll('a[data-i18n="brand"], a[data-i18n="nav.back"], a[data-i18n="nav.story"], a[data-i18n="data.full"], a[data-i18n="foot.back"]').forEach((el) => { el.href = home; });
+  document.querySelectorAll('a[data-i18n-href="home"], a[data-i18n="nav.back"], a[data-i18n="nav.story"], a[data-i18n="data.full"], a[data-i18n="foot.back"]').forEach((el) => { el.href = home; });
   document.querySelectorAll(".lang button").forEach((b) => {
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
   });
