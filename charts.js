@@ -17,7 +17,7 @@ const T = LANG === "es" ? {
   legApprox: " Rounded / split not published", approx: " (approx.)", fail: "Chart data could not be loaded.",
   months: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 };
-const loc = s => (LANG === "es" && typeof s === "object" && s) ? (s.es || s.en) : s;
+const loc = s => (s && typeof s === "object") ? (s[LANG] || s.en || "") : s;
 const NARROW = window.innerWidth < 600;
 const W = NARROW ? 400 : 640, H = NARROW ? 270 : 300;
 const PAD = NARROW ? { l: 46, r: 12, t: 22, b: 40 } : { l: 56, r: 16, t: 20, b: 44 };
