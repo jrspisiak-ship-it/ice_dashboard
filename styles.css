@@ -442,3 +442,8 @@ details.fold .section { border-top: 0; margin-top: 0; padding-top: 0.5rem; }
 .masthead .brand { flex: 1 1 auto; min-width: 0; }
 .brand-name { font-size: clamp(1.05rem, 5.2vw, 1.55rem); }
 .masthead-actions { flex: 0 0 auto; }
+
+p.brand-sub { display: block; margin: 0; padding: 0 0 0.4rem; font-size: 0.9rem; color: var(--ink-soft); font-weight: 500; line-height: 1.25; }
+.masthead { padding-bottom: 0.15rem; }
+.panel { scroll-margin-top: 8.5rem; }
+@media (max-width: 600px) { p.brand-sub { display: block; font-size: 0.8rem; } }
