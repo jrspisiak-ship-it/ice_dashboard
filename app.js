@@ -14,6 +14,7 @@ const ES = {
   "nav.call": "A quién llamar",
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
+  "nav.story": "Historia completa y gráficas",
 
   "rights.kicker": "Si ICE está en su puerta ahora mismo",
   "rights.h": "No abra la puerta. No tiene que hacerlo.",
@@ -54,6 +55,10 @@ const ES = {
   "call.glahr.d": "Alianza Latina de Georgia por los Derechos Humanos. Para cualquier persona maltratada, abusada o detenida. Lunes a viernes 9am–5pm; deje mensaje a cualquier hora.",
   "call.ffi": "Línea Nacional de Detención Migratoria",
   "call.ffi.d": "Marque 9233# desde cualquier teléfono dentro de un centro de ICE. ICE no la monitorea. Español, criollo haitiano, francés, inglés y más. Lunes a viernes 11am–11pm hora del Este. Familiares afuera: escriba a hotline@freedomforimmigrants.org.",
+  "call.ccila": "Caridades Católicas de Atlanta, Servicios Legales de Inmigración",
+  "call.ccila.d": "Abogados de bajo costo para defensa contra deportación, incluso para personas detenidas. Atlanta.",
+  "call.eoirline": "Línea de la corte de inmigración (24 horas)",
+  "call.eoirline.d": "Automática. Ingrese el número A para escuchar la fecha de la próxima audiencia y la corte. Sirve para cualquier corte del país.",
   "call.find": "Busque un abogado gratuito cerca de usted",
   "call.find.t": "Directorio Nacional de Servicios Legales Migratorios",
   "call.find.d": "Abogados sin fines de lucro por estado, condado o centro de detención. Solo aparecen proveedores gratuitos o de bajo costo.",
@@ -104,6 +109,7 @@ const ES = {
 
   "data.h": "Las cifras, con fuentes",
   "data.lede": "Cada cifra de abajo enlaza a la página de donde salió. Las cifras que el gobierno reporta pero nadie puede verificar están marcadas.",
+  "data.full": "Vea la historia completa: gráficas, cambios de política, noticias, ambos lados, Georgia (en inglés)",
   "data.pop": "Personas en detención de ICE",
   "chart.l1": "Ene 2025", "chart.l2": "Feb 2026", "chart.l3": "Abr 2026", "chart.l4": "Jul 2026",
   "chart.cap": "La detención alcanzó un récord en febrero de 2026, bajó en primavera y vuelve a estar cerca del récord. La barra de enero de 2025 es aproximada.",
