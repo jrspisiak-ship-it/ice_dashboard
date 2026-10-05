@@ -1,4 +1,6 @@
 "use strict";
+(function () {
+
 
 /* Renders the charts on data.html from data/series.json.
    Plain SVG built with the DOM API: no external library, no innerHTML.
@@ -253,3 +255,4 @@ async function main() {
 }
 
 document.addEventListener("DOMContentLoaded", main);
+})();

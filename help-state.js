@@ -1,4 +1,6 @@
 "use strict";
+(function () {
+
 /* On the help page: swap the first "who to call" entry for the chosen state's
    primary rapid-response line. Georgia (GLAHR) is the default and the fallback. */
 (async function () {
@@ -26,4 +28,5 @@
     span.textContent = [t(hot.what), t(hot.hours), hot.languages].filter(Boolean).join(" · ");
     li.replaceChildren(a, strong, span);
   } catch (_) { /* keep Georgia */ }
+})();
 })();

@@ -1,4 +1,6 @@
 "use strict";
+(function () {
+
 
 /* Section routing for data.html: one panel visible at a time, chosen by the
    URL hash (#policy), so every section is linkable and the back button works.
@@ -60,3 +62,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("hashchange", () => showPanel(currentHash(), true));
   initCharts();
 });
+})();

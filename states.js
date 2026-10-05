@@ -1,4 +1,6 @@
 "use strict";
+(function () {
+
 
 /* Renders the "Your state" panel from data/states/<code>.json.
    - The state code comes from ?state=xx, then localStorage, then the default (GA).
@@ -284,3 +286,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (_) { ALLOW = [{ code: DEFAULT_STATE, name: "Georgia", name_es: "Georgia" }]; }
   loadState(root, currentCode());
 });
+})();
