@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body class="page-data">
 
@@ -58,14 +58,29 @@
     </dl>
   </section>
 
+  <!-- ===== HUB ===== -->
+  <nav class="hub" aria-label="Choose a section">
+    <a href="#trajectory" data-panel="trajectory"><strong>Trajectory</strong><span>Detention, book-ins, arrests since Jan 2025</span></a>
+    <a href="#who" data-panel="who"><strong>Who is detained</strong><span>70.6% no conviction · nationalities · deaths</span></a>
+    <a href="#policy" data-panel="policy"><strong>Policy</strong><span>10 changes · 3 blocked by courts</span></a>
+    <a href="#news" data-panel="news"><strong>News</strong><span>5 supporters cite · 5 critics cite</span></a>
+    <a href="#sides" data-panel="sides"><strong>Both sides</strong><span>The strongest case each way</span></a>
+    <a href="#georgia" data-panel="georgia"><strong>Georgia</strong><span>4 facilities · courts · legal aid · 287(g)</span></a>
+  </nav>
+
   <!-- ===== TRAJECTORY ===== -->
-  <section id="trajectory" class="section" aria-labelledby="tr-h">
+  <section id="trajectory" class="section panel" aria-labelledby="tr-h">
     <h2 id="tr-h">Is it ramping up, flat, or falling?</h2>
     <p class="lede">Both. Detention roughly doubled over 2025, peaked at about 70,800 in January 2026, dropped to 60,300 by April as removals and the self-deportation program caught up with intake, and has climbed back toward the peak since. Arrests, by contrast, kept setting records through the summer of 2026: more people are being arrested, but a growing share are released, monitored, or stuck in a backlog rather than removed. <a href="https://www.hawaiitribune-herald.com/2026/09/15/nation-world-news/ice-arrests-keep-soaring-heres-why-they-are-not-leading-to-more-deportations/" target="_blank" rel="noopener noreferrer">Reuters</a> reported in September that removals have held near 1,200 a day while arrests passed 1,600 a day.</p>
 
+    <div class="chart-switch" role="tablist" aria-label="Choose a chart">
+      <button type="button" role="tab" aria-selected="true" data-show="detention">Detained</button>
+      <button type="button" role="tab" aria-selected="false" data-show="bookins">Booked in</button>
+      <button type="button" role="tab" aria-selected="false" data-show="arrests">Arrested</button>
+    </div>
     <figure class="chart" data-chart="detention"><figcaption>People held in ICE detention</figcaption></figure>
-    <figure class="chart" data-chart="bookins"><figcaption>People booked into ICE detention each month</figcaption></figure>
-    <figure class="chart" data-chart="arrests"><figcaption>ICE arrests in the interior each month</figcaption></figure>
+    <figure class="chart" data-chart="bookins" hidden><figcaption>People booked into ICE detention each month</figcaption></figure>
+    <figure class="chart" data-chart="arrests" hidden><figcaption>ICE arrests in the interior each month</figcaption></figure>
 
     <h3>The pivot from border to interior</h3>
     <p>In November 2024, two-thirds of people entering ICE detention had been arrested by Border Patrol at the border (13,572 of 21,130). By June 2026 it was under one in twelve (3,575 of 43,138): ICE's own interior arrests now drive detention. <a href="https://tracreports.org/whatsnew/email.250107.html" target="_blank" rel="noopener noreferrer">TRAC Jan 2025</a> · <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC Quick Facts</a></p>
@@ -73,7 +88,7 @@
   </section>
 
   <!-- ===== WHO ===== -->
-  <section id="who" class="section" aria-labelledby="who-h">
+  <section id="who" class="section panel" aria-labelledby="who-h">
     <h2 id="who-h">Who is being detained</h2>
     <figure class="chart" data-chart="noconviction"><figcaption>Share of detained people with no criminal conviction</figcaption></figure>
     <p>Read these two lines together. About seven in ten people in detention have never been convicted of a crime. About four or five in ten have neither a conviction nor a pending charge: their only violation is a civil immigration one. The rest have a charge pending, which is counted as "no conviction" by TRAC and as "criminal" in DHS statements. That definitional gap is why the two sides quote different numbers from the same data.</p>
@@ -89,97 +104,107 @@
   </section>
 
   <!-- ===== POLICY ===== -->
-  <section id="policy" class="section" aria-labelledby="pol-h">
+  <section id="policy" class="section panel" aria-labelledby="pol-h">
     <h2 id="pol-h">Policy changes and where they stand</h2>
     <p class="lede">Status as of early October 2026. "Enjoined" means a court has blocked it while the case continues. Click the source for the rule or ruling itself.</p>
 
     <div class="policy-grid">
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Jan 21, 2026</p>
-        <h3>Immigrant visa pause for 75 countries</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Jan 21, 2026</span><span class="pol-title">Immigrant visa pause for 75 countries</span></summary>
+        <div class="pol-body">
         <p>The State Department stopped issuing green-card visas at consulates to nationals of 75 countries, citing public-charge risk. People can still apply and interview, but no visa is issued. Work, student and tourist visas are not affected.</p>
         <p class="pol-affects">Affects: family- and employment-based immigrant visa applicants abroad from the listed countries, including Brazil, Egypt, Ghana, Iraq, Jamaica, Pakistan, Russia and Ukraine.</p>
         <a href="https://www.mintz.com/insights-center/viewpoints/2806/2026-01-29-state-department-suspends-immigrant-visa-processing-75" target="_blank" rel="noopener noreferrer">Mintz, Jan 29, 2026</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · Fee blocked by courts; lottery change in effect</p>
-        <h3>H-1B: $100,000 fee and wage-weighted lottery</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · Fee blocked by courts; lottery change in effect</span><span class="pol-title">H-1B: $100,000 fee and wage-weighted lottery</span></summary>
+        <div class="pol-body">
         <p>The $100,000 payment on new H-1B workers (proclaimed Sept 2025, renewed Sept 2026) was vacated by federal courts in Massachusetts (June 2026) and California (Sept 30, 2026). Separately, since Feb 27, 2026 the H-1B lottery favors higher-wage jobs, and DHS has proposed a $103,265 fee through formal rulemaking.</p>
         <p class="pol-affects">Affects: employers sponsoring new H-1B workers; entry-level foreign graduates most.</p>
         <a href="https://www.forbes.com/sites/stuartanderson/2026/10/01/judge-strikes-down-latest-version-of-100000-h-1b-immigration-fee/" target="_blank" rel="noopener noreferrer">Forbes, Oct 1, 2026</a> · <a href="https://www.bakerlaw.com/insights/uscis-implements-wagelevel-h1b-lottery/" target="_blank" rel="noopener noreferrer">BakerHostetler</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · Final rule, enjoined Sept 16, 2026</p>
-        <h3>End of "duration of status" for students</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · Final rule, enjoined Sept 16, 2026</span><span class="pol-title">End of "duration of status" for students</span></summary>
+        <div class="pol-body">
         <p>A DHS rule would cap F-1 and J-1 stays at four years, shorten the grace period from 60 to 30 days, and require paid extensions through USCIS. A federal court blocked it the day after it was to take effect.</p>
         <p class="pol-affects">Affects: roughly a million international students and exchange visitors, and their dependents.</p>
         <a href="https://wire.auburn.edu/content/announcements/2026/09/21093802-announcement.php" target="_blank" rel="noopener noreferrer">Auburn University, Sept 21, 2026</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · Mostly in effect; some blocked</p>
-        <h3>TPS terminations and end of CHNV parole</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · Mostly in effect; some blocked</span><span class="pol-title">TPS terminations and end of CHNV parole</span></summary>
+        <div class="pol-body">
         <p>DHS has ended Temporary Protected Status for 11 countries covering about 1.04 million people. Haiti and Syria ended July 27, 2026; Honduras, Nepal and Nicaragua earlier; Ethiopia and Somalia remain blocked. Venezuela's 2021 designation is before the Supreme Court; its work permits expired Oct 2, 2026. The CHNV parole program (Cuba, Haiti, Nicaragua, Venezuela) ended after a May 2025 Supreme Court stay.</p>
         <p class="pol-affects">Affects: ~615,000 Venezuelans, ~335,000 Haitians, ~51,000 Hondurans with TPS; ~500,000 CHNV parolees.</p>
         <a href="https://www.pewresearch.org/short-reads/2026/08/12/second-trump-administration-has-ended-temporary-protected-status-for-most-immigrants-who-had-it/" target="_blank" rel="noopener noreferrer">Pew, Aug 12, 2026</a> · <a href="https://www.aila.org/library/scotus-allows-dhs-to-terminate-chnv-parole-pending-further-litigation" target="_blank" rel="noopener noreferrer">AILA</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Jul 17, 2026 (expedited removal); bond rule split by circuit</p>
-        <h3>Expedited removal nationwide and no-bond detention</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Jul 17, 2026 (expedited removal); bond rule split by circuit</span><span class="pol-title">Expedited removal nationwide and no-bond detention</span></summary>
+        <div class="pol-body">
         <p>Anyone in the interior who cannot prove two years of continuous presence can be deported without seeing an immigration judge; the D.C. Circuit let this take effect in July 2026. Separately, the BIA's <em>Matter of Yajure Hurtado</em> denies bond hearings to people who entered without inspection. Courts in California and the Third Circuit have rejected it; the Fifth and Eighth uphold it, so bond eligibility now depends on where you are held.</p>
         <p class="pol-affects">Affects: long-term residents without proof of two years' presence; detained people who entered without inspection.</p>
         <a href="https://www.aila.org/library/d-c-circuit-allows-expansion-of-expedited-removal" target="_blank" rel="noopener noreferrer">AILA, Jul 2026</a> · <a href="https://www.lehighvalleyimmigrationlawyers.com/blog/nationwide-class-certified-federal-court-strikes-down-yajure-hurtado-and-restores-bond-eligibility-for-thousands-of-immigrants/" target="_blank" rel="noopener noreferrer">Yajure Hurtado status, Aug 29, 2026</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Sept 18, 2026</p>
-        <h3>Public charge rule rescinded; social-media vetting</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Sept 18, 2026</span><span class="pol-title">Public charge rule rescinded; social-media vetting</span></summary>
+        <div class="pol-body">
         <p>DHS withdrew the 2022 public-charge rule, so officers may weigh any cash or non-cash benefit when deciding green-card applications. Visa applicants in most categories must set social media to public, and USCIS now collects social-media identifiers on nine forms including the I-485 and N-400.</p>
         <p class="pol-affects">Affects: green-card applicants and mixed-status families; most nonimmigrant visa applicants; citizenship applicants.</p>
         <a href="https://www.federalregister.gov/documents/2026/07/20/2026-14539/public-charge-ground-of-inadmissibility" target="_blank" rel="noopener noreferrer">Federal Register, Jul 20, 2026</a> · <a href="https://www.visalawyerblog.com/u-s-expands-social-media-screening-for-more-visa-applicants/" target="_blank" rel="noopener noreferrer">Social media screening</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Mar 16, 2026</p>
-        <h3>Tougher I-9 and E-Verify enforcement</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect since Mar 16, 2026</span><span class="pol-title">Tougher I-9 and E-Verify enforcement</span></summary>
+        <div class="pol-body">
         <p>ICE reclassified more than ten paperwork errors on Form I-9 from "technical" to "substantive," removed the ten-day chance to fix them, and set fines of $288 to $2,861 per form. Employers using remote document checks must prove they were active E-Verify participants.</p>
         <p class="pol-affects">Affects: every U.S. employer; workers whose employers are audited.</p>
         <a href="https://www.morganlewis.com/pubs/2026/04/ice-rewrites-the-rules-on-form-i-9-violations" target="_blank" rel="noopener noreferrer">Morgan Lewis, Apr 14, 2026</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy restrictive">
-        <p class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect, growing</p>
-        <h3>287(g): local police as immigration officers</h3>
+      <details class="policy restrictive">
+        <summary><span class="pol-meta"><span class="pol-dir">Restrictive</span> · In effect, growing</span><span class="pol-title">287(g): local police as immigration officers</span></summary>
+        <div class="pol-body">
         <p>Agreements that let local police and sheriffs question, detain and transfer people for ICE grew from about 120 in January 2025 to 1,202 by December 2025, most under the "task force" model that allows street-level enforcement. Georgia had 45 participating jurisdictions as of February 2026.</p>
         <p class="pol-affects">Affects: anyone stopped or booked by a participating agency, including at traffic stops.</p>
         <a href="https://maxwellcommons.substack.com/p/everythings-ice" target="_blank" rel="noopener noreferrer">Kocher, Dec 9, 2025</a> · <a href="https://www.ice.gov/identify-and-arrest/287g" target="_blank" rel="noopener noreferrer">ICE 287(g) page</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy mixed">
-        <p class="pol-meta"><span class="pol-dir">Mixed</span> · In effect</p>
-        <h3>Paid "self-deportation" (CBP Home / Project Homecoming)</h3>
+      <details class="policy mixed">
+        <summary><span class="pol-meta"><span class="pol-dir">Mixed</span> · In effect</span><span class="pol-title">Paid "self-deportation" (CBP Home / Project Homecoming)</span></summary>
+        <div class="pol-body">
         <p>People who register their departure through the CBP Home app get travel paid and a stipend, raised from $1,000 to $2,600 in January 2026. About 72,000 had used it by March 2026 and roughly 132,000 by mid-July; around half came from inside ICE detention. DHS says it costs about $2,500 per case versus about $18,000 for a formal removal. Lawyers warn that leaving can trigger multi-year re-entry bars that the program does not waive in every case.</p>
         <p class="pol-affects">Affects: undocumented people weighing whether to leave voluntarily.</p>
         <a href="https://www.aila.org/library/dhs-announces-increased-stipend-for-self-deportation-via-the-cbp-home-app" target="_blank" rel="noopener noreferrer">AILA, Jan 2026</a> · <a href="https://www.axios.com/2026/07/28/trump-self-deportation-ice" target="_blank" rel="noopener noreferrer">Axios, Jul 28, 2026</a>
-      </article>
+      </div>
+      </details>
 
-      <article class="policy facilitative">
-        <p class="pol-meta"><span class="pol-dir">Facilitative</span> · In effect since Dec 2025</p>
-        <h3>"Gold Card" green card for a $1 million donation</h3>
+      <details class="policy facilitative">
+        <summary><span class="pol-meta"><span class="pol-dir">Facilitative</span> · In effect since Dec 2025</span><span class="pol-title">"Gold Card" green card for a $1 million donation</span></summary>
+        <div class="pol-body">
         <p>A nonrefundable $1 million payment to the Treasury counts as evidence of extraordinary ability for an EB-1 or EB-2 green card. Uptake is small: by May 2026, 165 people had paid, 59 had filed, one was approved. No separate STEM or researcher fast-track policy could be verified; claims of one appear to be unfounded.</p>
         <p class="pol-affects">Affects: wealthy applicants only; no change for ordinary EB-1/EB-2 cases.</p>
         <a href="https://documentedny.com/2026/05/15/trump-gold-card-program/" target="_blank" rel="noopener noreferrer">Documented, May 15, 2026</a>
-      </article>
+      </div>
+      </details>
 
     </div>
   </section>
 
   <!-- ===== NEWS ===== -->
-  <section id="news" class="section" aria-labelledby="news-h">
+  <section id="news" class="section panel" aria-labelledby="news-h">
     <h2 id="news-h">Recent reporting, five and five</h2>
     <p class="lede">Five stories the administration and its supporters point to, five that critics point to. July–September 2026, each linked to the article itself. Some outlets block direct links; those are linked through a member station or syndication partner carrying the same article.</p>
 
@@ -187,21 +212,21 @@
       <div>
         <h3>What supporters point to</h3>
         <ol class="newslist">
-          <li><a href="https://www.foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border" target="_blank" rel="noopener noreferrer">Trump DHS hits 16 straight months with 0 releases at the border</a><span class="news-meta">Fox News · Sept 16, 2026</span><p>Border Patrol apprehended 8,870 people in August and released none; DHS says apprehensions are down about 94% from the prior administration's monthly average.</p></li>
-          <li><a href="https://www.nbcwashington.com/news/national-international/ice-arrests-record-highs-summer/4153423/" target="_blank" rel="noopener noreferrer">ICE arrests reached record highs this summer as enforcement tactics shifted</a><span class="news-meta">NBC News · Sept 11, 2026</span><p>50,925 arrests in August, a third straight monthly record, driven by street arrests, airport checkpoints and local-jail cooperation rather than large city operations.</p></li>
-          <li><a href="https://abcnews.com/Politics/ice-350000-individuals-removed-fiscal-year-2026/story?id=134948878" target="_blank" rel="noopener noreferrer">ICE says over 350,000 individuals removed so far in fiscal year 2026</a><span class="news-meta">ABC News · Jul 21, 2026</span><p>356,389 removals through mid-July put the year on pace to challenge the 2013 record of 438,421.</p></li>
-          <li><a href="https://www.axios.com/2026/07/28/trump-self-deportation-ice" target="_blank" rel="noopener noreferrer">How Trump's "self-deportation" machine has ramped up</a><span class="news-meta">Axios · Jul 28, 2026</span><p>About 132,000 paid voluntary departures by mid-July; officials say it cut average detention stays for participants from about 50 days to 17.</p></li>
-          <li><a href="https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/" target="_blank" rel="noopener noreferrer">Georgia ICE arrests up 50% in July, hit new Trump record</a><span class="news-meta">Atlanta Journal-Constitution · Sept 4, 2026</span><p>About 2,250 ICE arrests in Georgia in July, more than eleven times July 2024.</p></li>
+          <li><details><summary><a href="https://www.foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border" target="_blank" rel="noopener noreferrer">Trump DHS hits 16 straight months with 0 releases at the border</a><span class="news-meta">Fox News · Sept 16, 2026</span></summary><p>Border Patrol apprehended 8,870 people in August and released none; DHS says apprehensions are down about 94% from the prior administration's monthly average.</p></details></li>
+          <li><details><summary><a href="https://www.nbcwashington.com/news/national-international/ice-arrests-record-highs-summer/4153423/" target="_blank" rel="noopener noreferrer">ICE arrests reached record highs this summer as enforcement tactics shifted</a><span class="news-meta">NBC News · Sept 11, 2026</span></summary><p>50,925 arrests in August, a third straight monthly record, driven by street arrests, airport checkpoints and local-jail cooperation rather than large city operations.</p></details></li>
+          <li><details><summary><a href="https://abcnews.com/Politics/ice-350000-individuals-removed-fiscal-year-2026/story?id=134948878" target="_blank" rel="noopener noreferrer">ICE says over 350,000 individuals removed so far in fiscal year 2026</a><span class="news-meta">ABC News · Jul 21, 2026</span></summary><p>356,389 removals through mid-July put the year on pace to challenge the 2013 record of 438,421.</p></details></li>
+          <li><details><summary><a href="https://www.axios.com/2026/07/28/trump-self-deportation-ice" target="_blank" rel="noopener noreferrer">How Trump's "self-deportation" machine has ramped up</a><span class="news-meta">Axios · Jul 28, 2026</span></summary><p>About 132,000 paid voluntary departures by mid-July; officials say it cut average detention stays for participants from about 50 days to 17.</p></details></li>
+          <li><details><summary><a href="https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/" target="_blank" rel="noopener noreferrer">Georgia ICE arrests up 50% in July, hit new Trump record</a><span class="news-meta">Atlanta Journal-Constitution · Sept 4, 2026</span></summary><p>About 2,250 ICE arrests in Georgia in July, more than eleven times July 2024.</p></details></li>
         </ol>
       </div>
       <div>
         <h3>What critics point to</h3>
         <ol class="newslist">
-          <li><a href="https://www.pbs.org/newshour/politics/ice-has-wasted-tens-of-millions-of-dollars-with-uninformed-detention-plans-gao-finds" target="_blank" rel="noopener noreferrer">ICE has wasted tens of millions of dollars with "uninformed" detention plans, GAO finds</a><span class="news-meta">AP via PBS · Sept 24, 2026</span><p>The Government Accountability Office found nearly $3 million in unused Guantanamo tents and about $20 million maintaining empty warehouses in the rush to add beds.</p></li>
-          <li><a href="https://www.axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions" target="_blank" rel="noopener noreferrer">ICE ordered to fix "squalid" conditions at NYC detention facility</a><span class="news-meta">Axios · Sept 25, 2026</span><p>A federal judge found conditions unconstitutional and set minimum standards for floor space, food, medical access and confidential legal calls.</p></li>
-          <li><a href="https://news.wttw.com/2026/09/24/what-we-know-after-officials-say-ice-detained-us-citizen-and-left-him-injured-evanston" target="_blank" rel="noopener noreferrer">Officials say ICE detained a U.S. citizen and left him injured in Evanston</a><span class="news-meta">CNN via WTTW · Sept 24, 2026</span><p>Agents mistook a citizen for their target; video shows force used before he was released once his citizenship was confirmed.</p></li>
-          <li><a href="https://knpr.org/npr/2026-09-28/trumps-immigration-push-has-largely-spared-farms-idaho-dairymen-worry-it-wont-last" target="_blank" rel="noopener noreferrer">Trump's immigration push has largely spared farms. Idaho dairymen worry it won't last.</a><span class="news-meta">NPR · Sept 28, 2026</span><p>Only four local residents applied for 7,500 advertised farm jobs; operators fear a crackdown with no legislative fix for farm labor in sight.</p></li>
-          <li><a href="https://stateline.org/2026/09/17/states-fight-to-inspect-federal-immigrant-detention-facilities/" target="_blank" rel="noopener noreferrer">States fight to inspect federal immigrant detention facilities</a><span class="news-meta">Stateline · Sept 17, 2026</span><p>Private operators have refused state health inspectors entry; the administration argues federal law bars state oversight, and the disputes are in court.</p></li>
+          <li><details><summary><a href="https://www.pbs.org/newshour/politics/ice-has-wasted-tens-of-millions-of-dollars-with-uninformed-detention-plans-gao-finds" target="_blank" rel="noopener noreferrer">ICE has wasted tens of millions of dollars with "uninformed" detention plans, GAO finds</a><span class="news-meta">AP via PBS · Sept 24, 2026</span></summary><p>The Government Accountability Office found nearly $3 million in unused Guantanamo tents and about $20 million maintaining empty warehouses in the rush to add beds.</p></details></li>
+          <li><details><summary><a href="https://www.axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions" target="_blank" rel="noopener noreferrer">ICE ordered to fix "squalid" conditions at NYC detention facility</a><span class="news-meta">Axios · Sept 25, 2026</span></summary><p>A federal judge found conditions unconstitutional and set minimum standards for floor space, food, medical access and confidential legal calls.</p></details></li>
+          <li><details><summary><a href="https://news.wttw.com/2026/09/24/what-we-know-after-officials-say-ice-detained-us-citizen-and-left-him-injured-evanston" target="_blank" rel="noopener noreferrer">Officials say ICE detained a U.S. citizen and left him injured in Evanston</a><span class="news-meta">CNN via WTTW · Sept 24, 2026</span></summary><p>Agents mistook a citizen for their target; video shows force used before he was released once his citizenship was confirmed.</p></details></li>
+          <li><details><summary><a href="https://knpr.org/npr/2026-09-28/trumps-immigration-push-has-largely-spared-farms-idaho-dairymen-worry-it-wont-last" target="_blank" rel="noopener noreferrer">Trump's immigration push has largely spared farms. Idaho dairymen worry it won't last.</a><span class="news-meta">NPR · Sept 28, 2026</span></summary><p>Only four local residents applied for 7,500 advertised farm jobs; operators fear a crackdown with no legislative fix for farm labor in sight.</p></details></li>
+          <li><details><summary><a href="https://stateline.org/2026/09/17/states-fight-to-inspect-federal-immigrant-detention-facilities/" target="_blank" rel="noopener noreferrer">States fight to inspect federal immigrant detention facilities</a><span class="news-meta">Stateline · Sept 17, 2026</span></summary><p>Private operators have refused state health inspectors entry; the administration argues federal law bars state oversight, and the disputes are in court.</p></details></li>
         </ol>
       </div>
     </div>
@@ -209,7 +234,7 @@
   </section>
 
   <!-- ===== BOTH SIDES ===== -->
-  <section id="sides" class="section" aria-labelledby="sides-h">
+  <section id="sides" class="section panel" aria-labelledby="sides-h">
     <h2 id="sides-h">Both sides of the argument</h2>
     <p class="lede">The strongest version of each case, with who is making it. Where the two sides use the same data, the dispute is usually about definitions.</p>
     <div class="twocol sides">
@@ -239,11 +264,11 @@
   </section>
 
   <!-- ===== GEORGIA ===== -->
-  <section id="georgia" class="section" aria-labelledby="ga-h">
+  <section id="georgia" class="section panel" aria-labelledby="ga-h">
     <h2 id="ga-h">Georgia</h2>
     <p class="lede">Georgia held 4,556 people for ICE in July 2026, fourth among states, up from 4,383 in April. ICE arrests in the state hit about 2,250 in July 2026. <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a> · <a href="https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/" target="_blank" rel="noopener noreferrer">AJC</a></p>
 
-    <h3>Detention facilities</h3>
+    <details class="sub"><summary>Detention facilities</summary><div class="sub-body">
     <p class="small">Phone numbers are from the operators' own pages; ICE's facility pages blocked automated checks, so confirm there before relying on a number: <a href="https://www.ice.gov/detention-facilities" target="_blank" rel="noopener noreferrer">ice.gov facility directory</a>.</p>
     <div class="table-wrap">
     <table class="plain">
@@ -266,16 +291,18 @@
       </tr>
     </table>
     </div>
+</div></details>
 
-    <h3>Immigration courts</h3>
+    <details class="sub"><summary>Immigration courts</summary><div class="sub-body">
     <ul class="courts">
       <li><strong>Atlanta, Ted Turner Drive</strong> — 180 Ted Turner Dr SW, Suite 241, Atlanta 30303 · 404-653-2140 · <a href="https://www.justice.gov/eoir/atlanta-ted-turner-drive" target="_blank" rel="noopener noreferrer">EOIR</a></li>
       <li><strong>Atlanta, W. Peachtree</strong> — 401 W Peachtree St, Suite 2600, Atlanta 30308 · 404-554-9400 · <a href="https://www.justice.gov/eoir/atlanta-w-peachtree-street" target="_blank" rel="noopener noreferrer">EOIR</a></li>
       <li><strong>Lumpkin (Stewart)</strong> — 146 CCA Road, Lumpkin 31815 · 229-838-1324 · <a href="https://www.justice.gov/eoir/lumpkin-immigration-court" target="_blank" rel="noopener noreferrer">EOIR</a></li>
       <li><strong>Case status line (any court), 24/7</strong> — <a href="tel:+18008987180">1-800-898-7180</a>, enter the A-number · <a href="https://www.justice.gov/eoir/customer-service-initiatives" target="_blank" rel="noopener noreferrer">EOIR</a></li>
     </ul>
+</div></details>
 
-    <h3>Free and low-cost legal help in Georgia</h3>
+    <details class="sub"><summary>Free and low-cost legal help in Georgia</summary><div class="sub-body">
     <ul class="orgs">
       <li><strong>Catholic Charities Atlanta, Immigration Legal Services</strong> · <a href="tel:+16782223920">678-222-3920</a> · removal defense, including detained cases · <a href="https://catholiccharitiesatlanta.org/who-we-are/contact/" target="_blank" rel="noopener noreferrer">site</a></li>
       <li><strong>Georgia Asylum &amp; Immigration Network (GAIN)</strong> · <a href="tel:+16783356040">678-335-6040</a> (voicemail intake) · asylum and survivors of crime · <a href="https://georgiaasylum.org/client-care/" target="_blank" rel="noopener noreferrer">site</a></li>
@@ -284,8 +311,9 @@
       <li><strong>Latin American Association</strong> · 2750 Buford Hwy, Atlanta · immigration legal services · <a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/organization.392823-Latin_American_Association_Atlanta_Office" target="_blank" rel="noopener noreferrer">directory listing</a></li>
       <li class="small">The Southern Poverty Law Center's detained-representation office in Lumpkin closed in 2024; free counsel near Stewart is now scarce (<a href="https://www.wabe.org/as-immigration-detention-in-georgia-grows-access-to-free-attorneys-shrinks/" target="_blank" rel="noopener noreferrer">WABE</a>). Search the <a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/" target="_blank" rel="noopener noreferrer">national directory</a> by facility.</li>
     </ul>
+</div></details>
 
-    <h3>Where local police act for ICE (287(g), as of Feb 22, 2026)</h3>
+    <details class="sub"><summary>Where local police act for ICE (287(g), as of Feb 22, 2026)</summary><div class="sub-body">
     <p>36 counties and 9 cities, plus the Georgia Department of Corrections and Department of Public Safety. Under the task-force model, officers can question and detain people during ordinary policing, including traffic stops. <a href="https://www.univision.com/local/atlanta-wuvg/lista-ciudades-condados-georgia-colaboracion-ice-287g" target="_blank" rel="noopener noreferrer">Univision Atlanta (full list)</a></p>
     <dl class="jur">
       <div><dt>Task force (street-level) — counties</dt><dd>Appling, Atkinson, Coweta, Dade, Dawson, Effingham, Elbert, Fannin, Forsyth, Franklin, Gilmer, Gordon, Habersham, Hall</dd></div>
@@ -294,6 +322,7 @@
       <div><dt>Jail enforcement — counties</dt><dd>Catoosa, Columbia, Floyd, Harris, Hart, Jackson, Jeff Davis, Jones, Lamar, Laurens, Liberty, Long, Madison</dd></div>
     </dl>
     <p class="small">Fulton, DeKalb, Gwinnett, Cobb and Clayton counties were not on the February 2026 list. Agreements change; check ICE's <a href="https://www.ice.gov/identify-and-arrest/287g" target="_blank" rel="noopener noreferrer">287(g) page</a> for the current roster.</p>
+</div></details>
   </section>
 
   <!-- ===== METHOD ===== -->
@@ -313,6 +342,7 @@
   <p>Figures last checked by a person on <time datetime="2026-10-05">October 5, 2026</time>. This page is general information, not legal advice. <a href="index.html">Back to the help page</a>.</p>
 </footer>
 
-<script src="charts.js?v=3"></script>
+<script src="charts.js?v=4"></script>
+<script src="tabs.js?v=4"></script>
 </body>
 </html>

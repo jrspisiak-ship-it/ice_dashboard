@@ -5,7 +5,10 @@
    Every chart gets a "show as table" fallback and a de-duplicated source list. */
 
 const NS = "http://www.w3.org/2000/svg";
-const W = 640, H = 300, PAD = { l: 56, r: 16, t: 20, b: 44 };
+const NARROW = window.innerWidth < 600;
+const W = NARROW ? 400 : 640, H = NARROW ? 270 : 300;
+const PAD = NARROW ? { l: 46, r: 12, t: 22, b: 40 } : { l: 56, r: 16, t: 20, b: 44 };
+const TICKS = 4;
 
 function el(name, attrs = {}, parent) {
   const node = document.createElementNS(NS, name);
@@ -45,7 +48,7 @@ function niceMax(v) {
   return m * p;
 }
 
-function yAxis(svg, max, unit, ticks = 4) {
+function yAxis(svg, max, unit, ticks = TICKS) {
   for (let i = 0; i <= ticks; i++) {
     const v = (max / ticks) * i;
     const y = PAD.t + (H - PAD.t - PAD.b) * (1 - v / max);
@@ -115,9 +118,11 @@ function lineChart(container, series, opts = {}) {
     const key = `${d.getUTCFullYear()}-${String(Math.floor(d.getUTCMonth() / 3) * 3 + 1).padStart(2, "0")}`;
     labels.add(key);
   }
+  let k = 0;
   for (const key of labels) {
     const t = toTime(key);
     if (t < t0 || t > t1) continue;
+    if (NARROW && k++ % 2) continue;
     el("text", { x: x(t), y: H - PAD.b + 22, class: "xlabel" }, svg).textContent = monthLabel(key);
   }
 
@@ -172,7 +177,7 @@ function barChart(container, series, opts = {}) {
       el("rect", { x: cx - w / 2, y: y(p.value), width: w, height: y(0) - y(p.value), class: `bar primary${p.approx ? " approx" : ""}` }, g);
     }
     el("title", {}, g).textContent = `${p.date}: ${fmt.format(p.value)}${p.approx ? " (approx.)" : ""}${p.ice != null ? ` — ICE ${fmt.format(p.ice)}, CBP ${fmt.format(p.cbp)}` : ""}`;
-    if (i % Math.ceil(n / 5) === 0 && i < n - 2 || i === n - 1) {
+    if (i % Math.ceil(n / (NARROW ? 4 : 5)) === 0 && i < n - 2 || i === n - 1) {
       el("text", { x: cx, y: H - PAD.b + 22, class: "xlabel" }, svg).textContent = monthLabel(p.date);
     }
   });

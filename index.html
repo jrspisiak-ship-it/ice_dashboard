@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -180,8 +180,9 @@
   </section>
 
   <!-- ===== PREPARE YOUR FAMILY ===== -->
-  <section id="prepare" class="section" aria-labelledby="prep-h">
-    <h2 id="prep-h" data-i18n="prep.h">Prepare your family now</h2>
+  <details class="fold" id="prepare"><summary><h2 id="prep-h" data-i18n="prep.h">Prepare your family now</h2></summary>
+  <section class="section" aria-labelledby="prep-h">
+    
     <p class="lede" data-i18n="prep.lede">An hour of preparation protects your children and your money if something happens.</p>
     <ul class="checklist">
       <li data-i18n="prep.1">Choose who will care for your children. In Georgia, a Power of Attorney for a minor child (O.C.G.A. § 19-9-120) lets a trusted adult make school and medical decisions without court. Ask a legal aid office to help you sign it.</li>
@@ -193,10 +194,12 @@
       <li data-i18n="prep.7">Practice the words out loud with your family: "I want to remain silent. I want a lawyer. I do not consent."</li>
     </ul>
   </section>
+  </details>
 
   <!-- ===== FOR NEIGHBORS AND CITIZENS ===== -->
-  <section id="neighbors" class="section" aria-labelledby="nb-h">
-    <h2 id="nb-h" data-i18n="nb.h">For neighbors, coworkers and citizens</h2>
+  <details class="fold" id="neighbors"><summary><h2 id="nb-h" data-i18n="nb.h">For neighbors, coworkers and citizens</h2></summary>
+  <section class="section" aria-labelledby="nb-h">
+    
     <div class="twocol">
       <div>
         <h3 data-i18n="nb.verify">Before you share a rumor</h3>
@@ -217,6 +220,7 @@
       </div>
     </div>
   </section>
+  </details>
 
   <!-- ===== THE NUMBERS ===== -->
   <section id="data" class="section data" aria-labelledby="data-h">
@@ -326,6 +330,6 @@
   <p><a href="https://github.com/jrspisiak-ship-it/ice_dashboard" target="_blank" rel="noopener noreferrer" data-i18n="foot.src">Source code and corrections</a></p>
 </footer>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
