@@ -1,0 +1,104 @@
+{
+  "checked": "2026-10-05",
+  "detention": {
+    "title": "People held in ICE detention",
+    "unit": "people",
+    "note": "Point-in-time counts from ICE data as compiled by TRAC (Syracuse University). Gap in late 2025 reflects the government shutdown reporting pause.",
+    "points": [
+      {"date": "2024-12-29", "value": 39152, "url": "https://tracreports.org/whatsnew/email.250107.html"},
+      {"date": "2025-02-09", "value": 41169, "url": "https://tracreports.org/whatsnew/email.250218.html"},
+      {"date": "2025-03-09", "value": 46269, "url": "https://tracreports.org/whatsnew/email.250317.html"},
+      {"date": "2025-04-20", "value": 49184, "url": "https://tracreports.org/whatsnew/email.250512.html"},
+      {"date": "2025-05-18", "value": 48870, "url": "https://tracreports.org/whatsnew/email.250527.html"},
+      {"date": "2025-06-29", "value": 57861, "url": "https://tracreports.org/whatsnew/email.250709.html"},
+      {"date": "2025-07-27", "value": 56945, "url": "https://tracreports.org/whatsnew/email.250801.html"},
+      {"date": "2025-08-24", "value": 61226, "url": "https://tracreports.org/whatsnew/email.250902.html"},
+      {"date": "2025-09-21", "value": 59762, "url": "https://tracreports.org/whatsnew/email.250926.html"},
+      {"date": "2025-11-16", "value": 65135, "url": "https://tracreports.org/whatsnew/email.251124.html"},
+      {"date": "2026-01-25", "value": 70766, "url": "https://tracreports.org/whatsnew/email.260202.html"},
+      {"date": "2026-02-07", "value": 68289, "url": "https://tracreports.org/whatsnew/email.260217.html"},
+      {"date": "2026-04-04", "value": 60311, "url": "https://tracreports.org/whatsnew/email.260410.html"},
+      {"date": "2026-07-11", "value": 65765, "url": "https://tracreports.org/immigration/quickfacts/"}
+    ]
+  },
+  "bookins": {
+    "title": "People booked into ICE detention each month",
+    "unit": "people",
+    "note": "Book-ins include people arrested by ICE and people transferred from Border Patrol (CBP). TRAC compiles from ICE data; July 2026 is Vera's figure ('more than 46,000').",
+    "points": [
+      {"date": "2024-11", "value": 21130, "ice": 7558, "cbp": 13572, "url": "https://tracreports.org/whatsnew/email.250107.html"},
+      {"date": "2025-01", "value": 21959, "ice": 11758, "cbp": 10201, "url": "https://tracreports.org/whatsnew/email.250218.html"},
+      {"date": "2025-02", "value": 21630, "ice": 17377, "cbp": 4253, "url": "https://tracreports.org/whatsnew/email.250328.html"},
+      {"date": "2025-03", "value": 22929, "ice": 19125, "cbp": 3804, "url": "https://tracreports.org/whatsnew/email.250512.html"},
+      {"date": "2025-04", "value": 22822, "ice": 18217, "cbp": 4605, "url": "https://tracreports.org/whatsnew/email.250527.html"},
+      {"date": "2025-05", "value": 28888, "ice": 23652, "cbp": 5236, "url": "https://tracreports.org/whatsnew/email.250709.html"},
+      {"date": "2025-06", "value": 36737, "ice": 31625, "cbp": 5112, "url": "https://tracreports.org/whatsnew/email.250718.html"},
+      {"date": "2025-07", "value": 31281, "ice": 27483, "cbp": 3798, "url": "https://tracreports.org/whatsnew/email.250815.html"},
+      {"date": "2025-08", "value": 32364, "ice": 28308, "cbp": 4056, "url": "https://tracreports.org/whatsnew/email.250926.html"},
+      {"date": "2025-12", "value": 42128, "ice": 37842, "cbp": 4286, "url": "https://tracreports.org/whatsnew/email.260202.html"},
+      {"date": "2026-01", "value": 39694, "ice": 36099, "cbp": 3595, "url": "https://tracreports.org/whatsnew/email.260217.html"},
+      {"date": "2026-03", "value": 32531, "ice": 29606, "cbp": 2925, "url": "https://tracreports.org/whatsnew/email.260410.html"},
+      {"date": "2026-04", "value": 33083, "url": "https://tracreports.org/whatsnew/email.260722.html"},
+      {"date": "2026-05", "value": 34079, "url": "https://tracreports.org/whatsnew/email.260722.html"},
+      {"date": "2026-06", "value": 43138, "ice": 39563, "cbp": 3575, "url": "https://tracreports.org/immigration/quickfacts/"},
+      {"date": "2026-07", "value": 46000, "approx": true, "url": "https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026"}
+    ]
+  },
+  "arrests": {
+    "title": "ICE arrests in the interior each month",
+    "unit": "people",
+    "note": "Arrests by ICE (not Border Patrol). Figures from the Deportation Data Project (UC Berkeley) as reported by AP/NPR/Stateline; August 2026 is DHS's own announced figure, not yet independently published. Rounded values are marked approximate.",
+    "points": [
+      {"date": "2024-12", "value": 8000, "approx": true, "url": "https://www.pbs.org/newshour/nation/ice-arrests-jump-to-nearly-50000-in-july-highest-monthly-total-of-trumps-crackdown"},
+      {"date": "2025-02", "value": 17000, "approx": true, "url": "https://stateline.org/2025/12/12/an-ever-larger-share-of-ices-arrested-immigrants-have-no-criminal-record/"},
+      {"date": "2025-05", "value": 22613, "url": "https://austinkocher.substack.com/p/ice-set-to-arrest-a-record-35000"},
+      {"date": "2025-06", "value": 31600, "approx": true, "url": "https://austinkocher.substack.com/p/live-breaking-down-the-latest-record"},
+      {"date": "2025-09", "value": 30000, "approx": true, "url": "https://stateline.org/2025/12/12/an-ever-larger-share-of-ices-arrested-immigrants-have-no-criminal-record/"},
+      {"date": "2025-12", "value": 40177, "url": "https://www.pbs.org/newshour/nation/ice-arrests-jump-to-nearly-50000-in-july-highest-monthly-total-of-trumps-crackdown"},
+      {"date": "2026-02", "value": 29241, "url": "https://www.pbs.org/newshour/nation/ice-arrests-jump-to-nearly-50000-in-july-highest-monthly-total-of-trumps-crackdown"},
+      {"date": "2026-06", "value": 43021, "url": "https://www.npr.org/2026/08/26/nx-s1-5945127/immigration-arrests-record"},
+      {"date": "2026-07", "value": 49571, "url": "https://www.npr.org/2026/08/26/nx-s1-5945127/immigration-arrests-record"},
+      {"date": "2026-08", "value": 50925, "approx": true, "url": "https://www.executivegov.com/articles/ice-arrests-august-2026-record"}
+    ]
+  },
+  "noconviction": {
+    "title": "Share of detained people with no criminal conviction",
+    "unit": "%",
+    "note": "TRAC changed its definition in June 2025 from 'no criminal record' to 'no criminal conviction', so only the later series is shown. The lower line counts only people with neither a conviction nor a pending charge (immigration violation only), from analyst Austin Kocher's reading of the same ICE data.",
+    "points": [
+      {"date": "2025-06-29", "value": 71.7, "url": "https://tracreports.org/whatsnew/email.250709.html"},
+      {"date": "2025-07-27", "value": 71.1, "url": "https://tracreports.org/whatsnew/email.250801.html"},
+      {"date": "2025-08-24", "value": 70.3, "url": "https://tracreports.org/whatsnew/email.250902.html"},
+      {"date": "2025-09-21", "value": 71.5, "url": "https://tracreports.org/whatsnew/email.250926.html"},
+      {"date": "2025-11-16", "value": 73.6, "url": "https://tracreports.org/whatsnew/email.251124.html"},
+      {"date": "2026-01-25", "value": 74.2, "url": "https://tracreports.org/whatsnew/email.260202.html"},
+      {"date": "2026-02-07", "value": 73.6, "url": "https://tracreports.org/whatsnew/email.260217.html"},
+      {"date": "2026-04-04", "value": 70.8, "url": "https://tracreports.org/whatsnew/email.260410.html"},
+      {"date": "2026-07-11", "value": 70.6, "url": "https://tracreports.org/immigration/quickfacts/"}
+    ],
+    "secondary": {
+      "label": "No conviction and no pending charge",
+      "points": [
+        {"date": "2025-09-15", "value": 46, "url": "https://austinkocher.substack.com/p/number-of-detained-immigrants-with"},
+        {"date": "2025-11-16", "value": 48, "url": "https://austinkocher.substack.com/p/breaking-ice-detention-crosses-record"},
+        {"date": "2026-01-24", "value": 48, "url": "https://austinkocher.substack.com/p/ices-delayed-detention-data-is-out"},
+        {"date": "2026-04-04", "value": 40, "approx": true, "url": "https://www.randalolson.com/2026/06/12/ice-detention-no-criminal-conviction/"}
+      ]
+    }
+  },
+  "nationalities": {
+    "title": "ICE arrests by nationality, Jan 2025 – Mar 2026",
+    "note": "Share of 400,186 ICE arrests in Deportation Data Project records, as reported by Conexión Migrante. This is arrests, not the detained population; no 2026 source publishes nationality shares of people currently detained.",
+    "url": "https://conexionmigrante.com/2026-/08-/11/nacionalidades-con-mas-detenidos-por-ice-mexico-ocupa-el-primer-lugar/",
+    "items": [
+      {"label": "Mexico", "value": 39.5},
+      {"label": "Guatemala", "value": 13.9},
+      {"label": "Honduras", "value": 10.6},
+      {"label": "Venezuela", "value": 6.4},
+      {"label": "Nicaragua", "value": 3.1},
+      {"label": "Colombia", "value": 3.0},
+      {"label": "Ecuador", "value": 2.9},
+      {"label": "Brazil", "value": 1.3}
+    ]
+  }
+}
