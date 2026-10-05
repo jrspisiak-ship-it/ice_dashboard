@@ -1,2272 +1,319 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICE Operations & Immigration Policy Intelligence Dashboard</title>
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Chart.js CDN for data visualization -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <!-- Google Fonts: Inter -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="What to do if ICE comes to your door, who to call, how to find someone in detention, and verified numbers on U.S. immigration enforcement. English and Spanish.">
+  <title>ICE &amp; Immigration: Know Your Rights, Find Help, See the Numbers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              50: '#eff6ff',
-              100: '#dbeafe',
-              500: '#3b82f6',
-              600: '#2563eb',
-              700: '#1d4ed8',
-              800: '#1e40af',
-              900: '#1e3a8a',
-            },
-            surface: {
-              base: '#0b0f19',
-              card: '#111827',
-              border: '#1f2937',
-              accent: '#1e293b'
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    /* Custom sleek scrollbar */
-    ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #0b0f19;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #1f2937;
-      border-radius: 9999px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #374151;
-    }
-
-    .glass-panel {
-      background: rgba(17, 24, 39, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-    }
-    
-    .tab-active {
-      background: #2563eb !important;
-      color: #ffffff !important;
-      border-color: #3b82f6 !important;
-      box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
-    }
-
-    .pulse-glow {
-      animation: pulseGlow 2s infinite;
-    }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body class="bg-surface-base text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+<a class="skip" href="#rights" data-i18n="skip">Skip to emergency guidance</a>
 
-  <!-- Top Global Header -->
-  <header class="sticky top-0 z-50 glass-panel border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
-      
-      <!-- Brand & Title -->
-      <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/20 ring-1 ring-white/20">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-        </div>
-        <div>
-          <div class="flex items-center space-x-2">
-            <h1 class="text-base sm:text-lg font-bold tracking-tight text-white">U.S. Immigration & ICE Operations Intelligence</h1>
-            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 pulse-glow"></span>
-              2025–2026 Term Analysis
-            </span>
-          </div>
-          <p class="text-xs text-slate-400">Nonpartisan Data Synthesizer: DHS, ICE Records, Vera Institute, & TRAC Reports</p>
-        </div>
-      </div>
-
-      <!-- Quick Action Controls -->
-      <div class="flex items-center space-x-2 sm:space-x-3">
-        <div class="hidden sm:flex items-center bg-slate-900 border border-slate-700/80 rounded-lg p-1 text-xs">
-          <span class="text-slate-400 px-2 font-medium">Trajectory Status:</span>
-          <span class="px-2 py-0.5 bg-rose-500/20 text-rose-300 font-semibold rounded border border-rose-500/30 flex items-center gap-1">
-            <svg class="w-3 h-3 text-rose-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-            </svg>
-            Rapidly Ramping Up
-          </span>
-        </div>
-        
-        <!-- Morning Schedule Status & Manual Sync Trigger -->
-        <button id="syncNowBtn" onclick="triggerManualSync()" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold rounded-lg shadow-sm shadow-blue-500/30 transition flex items-center space-x-1.5">
-          <svg id="syncIcon" class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-          </svg>
-          <span id="syncBtnText">Sync Live Now</span>
-        </button>
-
-        <button onclick="openCronModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition flex items-center space-x-1.5" title="View scheduled task automation setup">
-          <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <span class="hidden md:inline">Scheduler Task</span>
-        </button>
-
-        <button onclick="openInfoModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition flex items-center space-x-1.5">
-          <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <span>Methodology</span>
-        </button>
-      </div>
+<header class="topbar">
+  <div class="wrap topbar-row">
+    <a class="brand" href="#top" data-i18n="brand">Immigration help &amp; facts</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#rights" data-i18n="nav.rights">Your rights</a>
+      <a href="#call" data-i18n="nav.call">Who to call</a>
+      <a href="#detained" data-i18n="nav.detained">Someone detained</a>
+      <a href="#data" data-i18n="nav.data">The numbers</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="es" aria-pressed="false">Español</button>
     </div>
+  </div>
+</header>
 
-    <!-- Navigation Tabs -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800/80">
-      <nav class="flex space-x-1 overflow-x-auto py-2 text-xs sm:text-sm font-medium no-scrollbar" id="tabNav">
-        <button onclick="switchTab('overview')" class="tab-btn tab-active px-3.5 py-1.5 rounded-lg border border-transparent transition whitespace-nowrap">
-          Executive KPIs & Trajectory
-        </button>
-        <button onclick="switchTab('analytics')" class="tab-btn px-3.5 py-1.5 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg border border-transparent transition whitespace-nowrap">
-          Enforcement & Demographic Charts
-        </button>
-        <button onclick="switchTab('news')" class="tab-btn px-3.5 py-1.5 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg border border-transparent transition whitespace-nowrap flex items-center space-x-1.5">
-          <span>Balanced News Monitor</span>
-          <span class="px-1.5 py-0.2 rounded-full bg-indigo-900/60 text-indigo-300 text-[10px] font-bold border border-indigo-700/60">5x5 Stories</span>
-        </button>
-        <button onclick="switchTab('policies')" class="tab-btn px-3.5 py-1.5 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg border border-transparent transition whitespace-nowrap">
-          Visa & Policy Matrix (All Categories)
-        </button>
-        <button onclick="switchTab('operations')" class="tab-btn px-3.5 py-1.5 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg border border-transparent transition whitespace-nowrap flex items-center space-x-1.5">
-          <span>Local Activity & Facility Tracker</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-glow"></span>
-        </button>
-        <button onclick="switchTab('perspectives')" class="tab-btn px-3.5 py-1.5 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg border border-transparent transition whitespace-nowrap">
-          Comparative Perspectives & Analysis
-        </button>
-        <button onclick="switchTab('sources')" class="tab-btn px-3.5 py-1.5 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg border border-transparent transition whitespace-nowrap flex items-center space-x-1.5">
-          <span>Sources & Verified Links</span>
-          <span class="px-1.5 py-0.5 text-[10px] rounded-full bg-blue-900/60 text-blue-300 font-bold border border-blue-700/60" id="sourceCountBadge">10</span>
-        </button>
-      </nav>
+<main id="top" class="wrap">
+
+  <!-- ===== EMERGENCY: AT THE DOOR ===== -->
+  <section id="rights" class="band band-red" aria-labelledby="rights-h">
+    <p class="band-kicker" data-i18n="rights.kicker">If ICE is at your door right now</p>
+    <h1 id="rights-h" data-i18n="rights.h">Do not open the door. You do not have to.</h1>
+    <ol class="big-rules">
+      <li><span data-i18n="rights.r1">Keep the door closed. Ask them to slide the warrant under the door.</span></li>
+      <li><span data-i18n="rights.r2">Only a warrant signed by a judge lets them enter. An ICE form (I-200 or I-205) signed by an ICE officer does not.</span></li>
+      <li><span data-i18n="rights.r3">Say: "I do not want to talk. I want a lawyer." Then stay silent.</span></li>
+      <li><span data-i18n="rights.r4">Do not sign anything. Do not show false papers. Do not lie about who you are.</span></li>
+      <li><span data-i18n="rights.r5">If they come in anyway, do not resist. Say "I do not consent" and write down names and badge numbers.</span></li>
+    </ol>
+    <div class="band-actions">
+      <a class="btn btn-light" href="https://www.ilrc.org/redcards" target="_blank" rel="noopener noreferrer" data-i18n="rights.redcard">Print a red card (many languages)</a>
+      <a class="btn btn-outline-light" href="https://www.aclu.org/know-your-rights/immigrants-rights" target="_blank" rel="noopener noreferrer" data-i18n="rights.aclu">Full rights guide (ACLU)</a>
     </div>
-  </header>
+    <p class="band-foot" data-i18n="rights.everyone">These rights apply to everyone in the United States, whatever your status.</p>
+  </section>
 
-  <!-- Automated Schedule Status Banner -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-    <div class="glass-panel p-3.5 rounded-xl border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs bg-slate-900/50">
-      
-      <!-- Timestamp & Schedule Cycle -->
-      <div class="flex items-center space-x-3">
-        <div class="flex items-center space-x-1.5">
-          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 pulse-glow"></span>
-          <span class="text-slate-400">Schedule Status:</span>
-          <span class="text-emerald-400 font-semibold">Active Daily Task (06:00 AM EDT)</span>
-        </div>
-        <span class="text-slate-600 hidden sm:inline">•</span>
-        <div class="flex items-center space-x-1.5">
-          <span class="text-slate-400">Last Synced:</span>
-          <span id="lastUpdatedBadge" class="text-slate-200 font-bold bg-slate-800/90 px-2 py-0.5 rounded border border-slate-700">Oct 3, 2026 at 06:00:00 AM EDT</span>
-        </div>
+  <!-- ===== OTHER SITUATIONS ===== -->
+  <section class="section" aria-labelledby="sit-h">
+    <h2 id="sit-h" data-i18n="sit.h">Other situations</h2>
+
+    <details class="sit">
+      <summary data-i18n="sit.car">Stopped in a car</summary>
+      <ul>
+        <li data-i18n="sit.car1">The driver must show license, registration and insurance if asked. Passengers do not have to show ID.</li>
+        <li data-i18n="sit.car2">You can say: "Am I free to go?" If yes, leave calmly.</li>
+        <li data-i18n="sit.car3">You do not have to answer where you were born or how you entered the country.</li>
+        <li data-i18n="sit.car4">Do not consent to a search. Say "I do not consent to a search." Do not physically resist.</li>
+      </ul>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="sit.work">At work</summary>
+      <ul>
+        <li data-i18n="sit.work1">Stay calm. Do not run. Running can be used against you.</li>
+        <li data-i18n="sit.work2">You have the right to remain silent and to ask for a lawyer.</li>
+        <li data-i18n="sit.work3">Agents need a judicial warrant or the employer's permission to enter non-public areas.</li>
+        <li data-i18n="sit.work4">If you are detained, give your family your full name, date of birth and A-number (if you have one) ahead of time.</li>
+      </ul>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="sit.street">On the street or in public</summary>
+      <ul>
+        <li data-i18n="sit.street1">Ask: "Am I being detained, or am I free to go?"</li>
+        <li data-i18n="sit.street2">If you are not being detained, walk away calmly.</li>
+        <li data-i18n="sit.street3">You can refuse a search of your bag or phone. Say so out loud.</li>
+        <li data-i18n="sit.street4">Do not carry documents from another country (like a foreign passport) unless you must. Never carry false documents.</li>
+      </ul>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="sit.arrested">If you are arrested</summary>
+      <ul>
+        <li data-i18n="sit.arrested1">Say you want a lawyer. Say you want to stay silent. Then stay silent.</li>
+        <li data-i18n="sit.arrested2">Do not sign a "stipulated removal" or "voluntary departure" form without a lawyer. Signing can give up your right to a hearing.</li>
+        <li data-i18n="sit.arrested3">You can ask to call your consulate. You can ask for a bond hearing.</li>
+        <li data-i18n="sit.arrested4">Memorize one phone number of someone who will act for you.</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- ===== WHO TO CALL ===== -->
+  <section id="call" class="section" aria-labelledby="call-h">
+    <h2 id="call-h" data-i18n="call.h">Who to call</h2>
+    <p class="lede" data-i18n="call.lede">Free. Confidential. Spanish spoken at every number below. Save these in your phone today.</p>
+
+    <ul class="phones">
+      <li>
+        <a class="tel" href="tel:+17704575232">770-457-5232</a>
+        <strong data-i18n="call.glahr">GLAHR hotline (Georgia)</strong>
+        <span data-i18n="call.glahr.d">Georgia Latino Alliance for Human Rights. For anyone mistreated, abused or detained. Mon–Fri 9am–5pm; leave a voicemail any time.</span>
+      </li>
+      <li>
+        <span class="tel tel-static">9233#</span>
+        <strong data-i18n="call.ffi">National Immigration Detention Hotline</strong>
+        <span data-i18n="call.ffi.d">Dial 9233# from any phone inside an ICE facility. Not monitored by ICE. Spanish, Haitian Creole, French, English and more. Mon–Fri 11am–11pm ET. Families outside: email hotline@freedomforimmigrants.org.</span>
+      </li>
+      <li>
+        <a class="tel" href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/" target="_blank" rel="noopener noreferrer" data-i18n="call.find">Find a free lawyer near you</a>
+        <strong data-i18n="call.find.t">National Immigration Legal Services Directory</strong>
+        <span data-i18n="call.find.d">Nonprofit lawyers by state, county, or detention facility. Only free or low-cost providers are listed.</span>
+      </li>
+      <li>
+        <a class="tel" href="https://www.justice.gov/eoir/list-pro-bono-legal-service-providers" target="_blank" rel="noopener noreferrer" data-i18n="call.eoir">Court's free-lawyer list</a>
+        <strong data-i18n="call.eoir.t">EOIR Pro Bono Legal Service Providers</strong>
+        <span data-i18n="call.eoir.d">The immigration court's own list, organized by court location. Ask for the Atlanta or Stewart list if you are in Georgia.</span>
+      </li>
+    </ul>
+
+    <aside class="note note-warn">
+      <strong data-i18n="call.scam">Avoid scams.</strong>
+      <span data-i18n="call.scam.d">A "notario" is not a lawyer in the U.S. Only licensed attorneys and DOJ-accredited representatives can give legal advice. Never pay cash for "papers," and get a written contract and receipt from anyone you hire.</span>
+    </aside>
+  </section>
+
+  <!-- ===== SOMEONE WAS DETAINED ===== -->
+  <section id="detained" class="section" aria-labelledby="det-h">
+    <h2 id="det-h" data-i18n="det.h">Someone was detained. Now what?</h2>
+    <p class="lede" data-i18n="det.lede">Do these in order. Most people are moved within the first 72 hours, so act today.</p>
+
+    <ol class="steps">
+      <li>
+        <h3 data-i18n="det.s1">Gather their details</h3>
+        <p data-i18n="det.s1.d">Full legal name as it appears on documents, date of birth, country of birth, and their A-number (9 digits, starts with "A") if they have one. It is on any immigration paperwork, work permit or green card.</p>
+      </li>
+      <li>
+        <h3 data-i18n="det.s2">Find where they are</h3>
+        <p data-i18n="det.s2.d">Use the official ICE locator. It can take a day or two after arrest before a person appears. Search by A-number, or by name plus date of birth and country.</p>
+        <a class="btn" href="https://locator.ice.gov/odls/" target="_blank" rel="noopener noreferrer" data-i18n="det.s2.btn">Open the ICE detainee locator</a>
+        <p class="small" data-i18n="det.s2.priv">Privacy: this is a government website. It records your search and your internet address. Nothing on this page is sent anywhere.</p>
+      </li>
+      <li>
+        <h3 data-i18n="det.s3">Call the facility</h3>
+        <p data-i18n="det.s3.d">Every facility has a page on ice.gov with its phone number, visiting hours and how to add money for phone calls. In Georgia the main facilities are Stewart (Lumpkin) and Folkston.</p>
+        <a class="btn btn-secondary" href="https://www.ice.gov/detention-facilities" target="_blank" rel="noopener noreferrer" data-i18n="det.s3.btn">ICE facility directory</a>
+      </li>
+      <li>
+        <h3 data-i18n="det.s4">Get a lawyer before the first hearing</h3>
+        <p data-i18n="det.s4.d">There is no free public defender in immigration court. Use the directory above, or call GLAHR for a referral. A lawyer can request a bond hearing and stop a fast removal.</p>
+      </li>
+      <li>
+        <h3 data-i18n="det.s5">Tell the consulate</h3>
+        <p data-i18n="det.s5.d">The person's home-country consulate can visit, help with documents and sometimes with legal referrals. The detainee can also request this from inside.</p>
+      </li>
+      <li>
+        <h3 data-i18n="det.s6">Keep records</h3>
+        <p data-i18n="det.s6.d">Write down every call: date, time, who you spoke to, what they said. Keep copies of every form. Do not post the detained person's full details publicly.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== PREPARE YOUR FAMILY ===== -->
+  <section id="prepare" class="section" aria-labelledby="prep-h">
+    <h2 id="prep-h" data-i18n="prep.h">Prepare your family now</h2>
+    <p class="lede" data-i18n="prep.lede">An hour of preparation protects your children and your money if something happens.</p>
+    <ul class="checklist">
+      <li data-i18n="prep.1">Choose who will care for your children. In Georgia, a Power of Attorney for a minor child (O.C.G.A. § 19-9-120) lets a trusted adult make school and medical decisions without court. Ask a legal aid office to help you sign it.</li>
+      <li data-i18n="prep.2">Put copies of birth certificates, passports, immigration papers, medical records and school contacts in one folder someone else can reach.</li>
+      <li data-i18n="prep.3">Write down your A-number and your lawyer's number, and give them to two people you trust.</li>
+      <li data-i18n="prep.4">Add a trusted person to your bank account or sign a financial power of attorney so bills and rent can be paid.</li>
+      <li data-i18n="prep.5">Tell your children's school who may pick them up. Update the emergency contacts.</li>
+      <li data-i18n="prep.6">Keep a little cash at home and the phone-money (commissary) instructions for the nearest facility.</li>
+      <li data-i18n="prep.7">Practice the words out loud with your family: "I want to remain silent. I want a lawyer. I do not consent."</li>
+    </ul>
+  </section>
+
+  <!-- ===== FOR NEIGHBORS AND CITIZENS ===== -->
+  <section id="neighbors" class="section" aria-labelledby="nb-h">
+    <h2 id="nb-h" data-i18n="nb.h">For neighbors, coworkers and citizens</h2>
+    <div class="twocol">
+      <div>
+        <h3 data-i18n="nb.verify">Before you share a rumor</h3>
+        <ul>
+          <li data-i18n="nb.v1">Most "ICE is at [place]" posts are wrong or hours old. Ask: who saw it, when, and what exactly did they see?</li>
+          <li data-i18n="nb.v2">Call GLAHR (770-457-5232) to check. Rapid-response networks confirm sightings before sending people.</li>
+          <li data-i18n="nb.v3">Never post photos of people being detained, their names, or license plates.</li>
+        </ul>
       </div>
-
-      <!-- Next Scheduled Run Countdown & Automation Indicator -->
-      <div class="flex items-center space-x-3">
-        <div class="flex items-center space-x-1.5 text-slate-400">
-          <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <span>Next Morning Run:</span>
-          <span id="nextRunCountdown" class="text-blue-300 font-semibold">Tomorrow at 06:00 AM EDT</span>
-        </div>
-
-        <button onclick="switchTab('sources')" class="text-blue-400 hover:text-blue-300 underline font-medium flex items-center gap-1">
-          <span>View 10 Source Citations</span>
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-        </button>
+      <div>
+        <h3 data-i18n="nb.help">How to actually help</h3>
+        <ul>
+          <li data-i18n="nb.h1">If you witness an arrest, you may film from a safe distance in public. Do not interfere. Note the time, place and agency.</li>
+          <li data-i18n="nb.h2">Offer to be the trusted contact on a neighbor's family plan (see above).</li>
+          <li data-i18n="nb.h3">Volunteer or donate to a legal aid group in the directory. Lawyers, interpreters and drivers are all needed.</li>
+          <li data-i18n="nb.h4">If you employ people, learn what an I-9 audit is and what agents may and may not do on your property before it happens.</li>
+        </ul>
       </div>
-
-    </div>
-
-    <!-- Live Sync Alert Feedback (Hidden by default) -->
-    <div id="syncFeedbackAlert" class="hidden mt-2 p-3 rounded-xl border text-xs flex items-center justify-between">
-      <div class="flex items-center space-x-2">
-        <div id="syncSpinner" class="w-3.5 h-3.5 border-2 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
-        <span id="syncFeedbackMessage" class="text-slate-200">Executing daily scheduled query via search grounding...</span>
-      </div>
-      <span id="syncTimestampStatus" class="text-[11px] text-slate-400">Processing live fetch</span>
     </div>
   </section>
 
-  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6">
-          </div>
-          <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">605,000+</div>
-          <div class="flex items-center mt-2 text-xs text-amber-400 font-medium">
-            <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <span>DHS & ICE Deportation Flights</span>
-          </div>
-          <p class="text-xs text-slate-400 mt-2">Direct physical deportations, Title 8 removal orders, and bilateral expulsion charter operations.</p>
-        </div>
+  <!-- ===== THE NUMBERS ===== -->
+  <section id="data" class="section data" aria-labelledby="data-h">
+    <h2 id="data-h" data-i18n="data.h">The numbers, with sources</h2>
+    <p class="lede" data-i18n="data.lede">Every figure below links to the page it came from. Figures the government reports but no one can check are marked.</p>
 
-        <!-- Reported Self-Deportations -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex items-center justify-between text-slate-400 mb-3">
-            <span class="text-xs font-semibold uppercase tracking-wider">Self-Deportations</span>
-            <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
-              </svg>
-            </div>
-          </div>
-          <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">~1,900,000</div>
-          <div class="flex items-center mt-2 text-xs text-emerald-400 font-medium">
-            <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            <span>Administration Reported Metric</span>
-          </div>
-          <p class="text-xs text-slate-400 mt-2">DHS-estimated voluntary departures attributed to heightened deterrence and workplace compliance.</p>
-        </div>
+    <h3 data-i18n="data.pop">People in ICE detention</h3>
+    <figure class="chart">
+      <svg viewBox="0 0 640 260" role="img" aria-labelledby="chart-t chart-d">
+        <title id="chart-t">People held in ICE detention, January 2025 to July 2026</title>
+        <desc id="chart-d">About 39,000 in January 2025, rising to a peak of 68,289 in February 2026, dipping to 60,311 in April 2026, then 65,765 in July 2026.</desc>
+        <g class="grid">
+          <line x1="70" y1="40"  x2="610" y2="40"/>
+          <line x1="70" y1="95"  x2="610" y2="95"/>
+          <line x1="70" y1="150" x2="610" y2="150"/>
+          <line x1="70" y1="205" x2="610" y2="205"/>
+        </g>
+        <g class="axis">
+          <text x="62" y="44">70k</text>
+          <text x="62" y="99">50k</text>
+          <text x="62" y="154">30k</text>
+          <text x="62" y="209">10k</text>
+        </g>
+        <g class="bars">
+          <rect x="110" y="125" width="70" height="80"/>
+          <rect x="230" y="45"  width="70" height="160"/>
+          <rect x="350" y="67"  width="70" height="138"/>
+          <rect x="470" y="52"  width="70" height="153"/>
+        </g>
+        <g class="vals">
+          <text x="145" y="118">39,000</text>
+          <text x="265" y="38">68,289</text>
+          <text x="385" y="60">60,311</text>
+          <text x="505" y="45">65,765</text>
+        </g>
+        <g class="labels">
+          <text x="145" y="232" data-i18n="chart.l1">Jan 2025</text>
+          <text x="265" y="232" data-i18n="chart.l2">Feb 2026</text>
+          <text x="385" y="232" data-i18n="chart.l3">Apr 2026</text>
+          <text x="505" y="232" data-i18n="chart.l4">Jul 2026</text>
+        </g>
+      </svg>
+      <figcaption>
+        <span data-i18n="chart.cap">Detention hit a record in February 2026, fell in the spring, and is near the record again. The January 2025 bar is approximate.</span>
+        <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC, Syracuse University</a> ·
+        <a href="https://tracreports.org/whatsnew/email.260410.html" target="_blank" rel="noopener noreferrer">TRAC, April 2026</a>
+      </figcaption>
+    </figure>
 
-        <!-- Interior vs Border Shift -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex items-center justify-between text-slate-400 mb-3">
-            <span class="text-xs font-semibold uppercase tracking-wider">Interior Arrest Share</span>
-            <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
-              </svg>
-            </div>
-          </div>
-          <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">64.5%</div>
-          <div class="flex items-center mt-2 text-xs text-purple-400 font-medium">
-            <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
-            <span>Major Inversion from 2024 (~32%)</span>
-          </div>
-          <p class="text-xs text-slate-400 mt-2">Operations have shifted heavily from border apprehensions to community and workplace operations.</p>
-        </div>
-
+    <dl class="facts">
+      <div>
+        <dt>70.6%</dt>
+        <dd><span data-i18n="f.conv">of people in ICE detention have no criminal conviction (46,436 of 65,765, July 11, 2026).</span> <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a></dd>
       </div>
-
-      <!-- Comparative Breakdown Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        <!-- Criminal vs Non-Criminal Demographics -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-4">
-          <div class="flex items-center justify-between">
-            <h3 class="font-bold text-white text-base">Detention Demographics: Criminal vs Civil</h3>
-            <span class="text-xs px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">TRAC / Vera Data</span>
-          </div>
-          <p class="text-xs text-slate-400">
-            While stated public priority targets individuals with serious felony records, data shows a steep surge in individuals with **no prior criminal conviction** (civil immigration infractions only).
-          </p>
-          
-          <div class="space-y-3 pt-2">
-            <div>
-              <div class="flex justify-between text-xs font-medium mb-1">
-                <span class="text-slate-300">No Criminal Record (Civil Status Only)</span>
-                <span class="text-amber-400 font-bold">59.4%</span>
-              </div>
-              <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                <div class="bg-amber-400 h-full rounded-full" style="width: 59.4%"></div>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs font-medium mb-1">
-                <span class="text-slate-300">Traffic / Minor Non-Violent Offenses</span>
-                <span class="text-blue-400 font-bold">22.8%</span>
-              </div>
-              <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                <div class="bg-blue-400 h-full rounded-full" style="width: 22.8%"></div>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs font-medium mb-1">
-                <span class="text-slate-300">Violent or Serious Felony Record</span>
-                <span class="text-rose-400 font-bold">17.8%</span>
-              </div>
-              <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                <div class="bg-rose-400 h-full rounded-full" style="width: 17.8%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] text-slate-300 leading-relaxed">
-            <strong class="text-white">Analytical takeaway:</strong> The rapid expansion of daily detention numbers has relied on broadening operational nets to civil violators, final removal order holders, and lapsed status cases rather than solely violent offenders.
-          </div>
-        </div>
-
-        <!-- Comparative Policy Posture: Biden 2024 vs Trump 2025-2026 -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-4">
-          <div class="flex items-center justify-between">
-            <h3 class="font-bold text-white text-base">Comparative Eras: 2024 vs Current</h3>
-            <span class="text-xs px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Historical Comparison</span>
-          </div>
-
-          <div class="divide-y divide-slate-800 text-xs">
-            <div class="py-2.5 space-y-1">
-              <span class="text-slate-400 font-semibold uppercase text-[10px]">Average Daily Population (ADP)</span>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-400">2024 Baseline: <strong class="text-slate-200">~37,500</strong></span>
-                <span class="text-rose-400 font-bold">Current: ~67,800 (+81%)</span>
-              </div>
-            </div>
-
-            <div class="py-2.5 space-y-1">
-              <span class="text-slate-400 font-semibold uppercase text-[10px]">Interior Enforcement Priority</span>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-400">2024: Priority on National Security</span>
-                <span class="text-amber-300 font-bold">Current: Universal Civil Removal</span>
-              </div>
-            </div>
-
-            <div class="py-2.5 space-y-1">
-              <span class="text-slate-400 font-semibold uppercase text-[10px]">Third-Country Bilateral Removals</span>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-400">2024: Limited / Case-by-case</span>
-                <span class="text-purple-400 font-bold">Current: Expanded to 12+ Nations</span>
-              </div>
-            </div>
-
-            <div class="py-2.5 space-y-1">
-              <span class="text-slate-400 font-semibold uppercase text-[10px]">Workplace Compliance & Audits (I-9)</span>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-400">2024: Focused on worker exploitation</span>
-                <span class="text-blue-400 font-bold">Current: Mass site raids + penalties</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] text-slate-300 leading-relaxed">
-            <strong class="text-white">Key Distinction:</strong> Prosecutorial discretion has been largely curtailed; ICE field offices are directed to process all unauthorized non-citizens encountered.
-          </div>
-        </div>
-
-        <!-- Demographics by National Origin -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-4">
-          <div class="flex items-center justify-between">
-            <h3 class="font-bold text-white text-base">Origin Demographics in Custody</h3>
-            <span class="text-xs px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">ICE Detention Roster</span>
-          </div>
-          <p class="text-xs text-slate-400">
-            Top nationalities detained across interior operations and expedited processing centers.
-          </p>
-
-          <div class="space-y-2.5 pt-1 text-xs">
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
-              <div class="flex items-center space-x-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
-                <span class="text-slate-200 font-medium">Mexico</span>
-              </div>
-              <div class="text-right">
-                <span class="text-white font-bold">38.2%</span>
-                <span class="text-slate-400 text-[10px] ml-1.5">(Largest share)</span>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
-              <div class="flex items-center space-x-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                <span class="text-slate-200 font-medium">Guatemala & Honduras</span>
-              </div>
-              <div class="text-right">
-                <span class="text-white font-bold">24.1%</span>
-                <span class="text-slate-400 text-[10px] ml-1.5">(Northern Central Am.)</span>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
-              <div class="flex items-center space-x-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-                <span class="text-slate-200 font-medium">Haiti & Venezuela</span>
-              </div>
-              <div class="text-right">
-                <span class="text-white font-bold">16.4%</span>
-                <span class="text-amber-400 text-[10px] ml-1.5">(TPS Rollbacks)</span>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
-              <div class="flex items-center space-x-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
-                <span class="text-slate-200 font-medium">Colombia, Ecuador, Peru</span>
-              </div>
-              <div class="text-right">
-                <span class="text-white font-bold">11.7%</span>
-                <span class="text-slate-400 text-[10px] ml-1.5">(Andean nations)</span>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
-              <div class="flex items-center space-x-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
-                <span class="text-slate-200 font-medium">China, India, Others</span>
-              </div>
-              <div class="text-right">
-                <span class="text-white font-bold">9.6%</span>
-                <span class="text-slate-400 text-[10px] ml-1.5">(Extra-hemispheric)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div>
+        <dt>591,385</dt>
+        <dd><span data-i18n="f.bookins">people booked into ICE detention from January 20, 2025 through August 5, 2026. July 2026 (46,000+) was the highest month on record.</span> <a href="https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026" target="_blank" rel="noopener noreferrer">Vera Institute</a></dd>
       </div>
+      <div>
+        <dt>469</dt>
+        <dd><span data-i18n="f.fac">facilities held people for ICE in July 2026; only 208 of them were listed on ICE's website.</span> <a href="https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026" target="_blank" rel="noopener noreferrer">Vera Institute</a></dd>
+      </div>
+      <div>
+        <dt>183,181</dt>
+        <dd><span data-i18n="f.atd">people monitored outside detention by ankle monitor, phone app or check-ins (July 11, 2026).</span> <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a></dd>
+      </div>
+      <div>
+        <dt>45</dt>
+        <dd><span data-i18n="f.ga">Georgia jurisdictions (36 counties, 9 cities) with a 287(g) agreement letting local officers act for ICE, as of February 2026. Gwinnett, Cobb, Hall and Whitfield are among them.</span> <a href="https://www.univision.com/local/atlanta-wuvg/lista-ciudades-condados-georgia-colaboracion-ice-287g" target="_blank" rel="noopener noreferrer">Univision Atlanta</a> · <a href="https://www.ice.gov/identify-and-arrest/287g" target="_blank" rel="noopener noreferrer">ICE 287(g) list</a></dd>
+      </div>
+    </dl>
 
+    <h3 data-i18n="data.claims">What the government reports (not independently verifiable)</h3>
+    <dl class="facts facts-unverified">
+      <div>
+        <dt>713,000+</dt>
+        <dd><span data-i18n="f.rem">removals since January 2025, per DHS (February 2026). DHS stopped publishing the underlying removal data, so analysts cannot check what this includes.</span> <a href="https://www.newsweek.com/3-million-undocumented-immigrants-have-left-us-trump-administration-11581214" target="_blank" rel="noopener noreferrer">Newsweek</a></dd>
+      </div>
+      <div>
+        <dt>~2.2 million</dt>
+        <dd><span data-i18n="f.self">"self-deportations" claimed by DHS. No methodology has been released. The one countable program, Project Homecoming, reported about 132,000 departures by mid-July 2026.</span> <a href="https://www.axios.com/2026/07/28/trump-self-deportation-ice" target="_blank" rel="noopener noreferrer">Axios</a></dd>
+      </div>
+    </dl>
+
+    <h3 data-i18n="data.live">Latest from the automated check</h3>
+    <p class="small" data-i18n="data.live.d">Once a day a script on GitHub asks a search-grounded AI model for new official releases and saves the links here. A person has not reviewed these; treat them as leads, not facts.</p>
+    <div id="live" class="live" aria-live="polite">
+      <p class="small" data-i18n="data.live.none">No automated results yet.</p>
     </div>
 
-    <!-- ========================================================================= -->
-    <!-- TAB 2: ENFORCEMENT & DEMOGRAPHIC CHARTS -->
-    <!-- ========================================================================= -->
-    <div id="tab-analytics" class="tab-content hidden space-y-6">
-      
-      <!-- Charts Row 1: Timeline Trajectory + Origin Ratio -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        <!-- Timeline Trend Chart -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="font-bold text-white text-base">Monthly Detention Bookings & Deportations</h3>
-              <p class="text-xs text-slate-400">Tracking monthly pace demonstrating acceleration</p>
-            </div>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-blue-900/40 text-blue-300 border border-blue-700/50">2025–2026 Trend</span>
-          </div>
-          <div class="h-64 sm:h-72 w-full">
-            <canvas id="timelineChart"></canvas>
-          </div>
-        </div>
-
-        <!-- Interior vs Border Chart -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="font-bold text-white text-base">Operational Arrest Origin: Interior vs Border Transfers</h3>
-              <p class="text-xs text-slate-400">Inversion of arrest locations over time</p>
-            </div>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-purple-900/40 text-purple-300 border border-purple-700/50">Operational Pivot</span>
-          </div>
-          <div class="h-64 sm:h-72 w-full">
-            <canvas id="originChart"></canvas>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Charts Row 2: Criminal Distribution + National Origins -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        <!-- Criminal Conviction Status Breakdown -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="font-bold text-white text-base">Detainee Profile by Conviction Type</h3>
-              <p class="text-xs text-slate-400">Civil immigration status infractions vs convicted criminal charges</p>
-            </div>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-amber-900/40 text-amber-300 border border-amber-700/50">Demographics</span>
-          </div>
-          <div class="h-64 sm:h-72 w-full flex items-center justify-center">
-            <canvas id="criminalityChart"></canvas>
-          </div>
-        </div>
-
-        <!-- National Origins Horizontal Bar -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="font-bold text-white text-base">Top Detained Nationalities</h3>
-              <p class="text-xs text-slate-400">Percentage share in ICE custodial system</p>
-            </div>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-900/40 text-emerald-300 border border-emerald-700/50">Country of Origin</span>
-          </div>
-          <div class="h-64 sm:h-72 w-full">
-            <canvas id="nationalityChart"></canvas>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Data Deep Dive Callouts -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-        <div class="p-4 rounded-xl glass-panel border border-slate-800 space-y-1.5">
-          <div class="font-bold text-rose-400 flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-rose-400"></span>
-            Minors & Family Units
-          </div>
-          <p class="text-slate-300 leading-relaxed">
-            Per Marshall Project reporting, daily averages of children and family members detained or placed in staging centers expanded ~3.4x over 2024 baselines, triggering federal court challenges under the Flores Settlement Agreement.
-          </p>
-        </div>
-
-        <div class="p-4 rounded-xl glass-panel border border-slate-800 space-y-1.5">
-          <div class="font-bold text-amber-400 flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-            Average Length of Stay (ALOS)
-          </div>
-          <p class="text-slate-300 leading-relaxed">
-            The average time in detention expanded to <strong class="text-white">48.2 days</strong> (up from 32.1 days in 2024), caused by backlogs in consular travel document issuance and expanded detention mandates without bond eligibility.
-          </p>
-        </div>
-
-        <div class="p-4 rounded-xl glass-panel border border-slate-800 space-y-1.5">
-          <div class="font-bold text-blue-400 flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-            Third-Country Expulsions
-          </div>
-          <p class="text-slate-300 leading-relaxed">
-            Over 28,000 removals were routed to third-party agreements (including bilateral arrangements with Central American and Pacific partners) when origin states restricted return flight clearances.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- ========================================================================= -->
-    <!-- TAB 2.5: BALANCED NEWS & RECENT DEVELOPMENTS (5 POSITIVE / 5 CRITICAL) -->
-    <!-- ========================================================================= -->
-    <div id="tab-news" class="tab-content hidden space-y-6">
-      
-      <!-- News Filter Banner -->
-      <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div class="inline-flex items-center space-x-2 text-indigo-400 font-semibold text-xs tracking-wider uppercase mb-1">
-              <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
-              <span>Curated Nonpartisan News Intelligence</span>
-            </div>
-            <h2 class="text-lg sm:text-xl font-bold text-white">Top 10 Recent News Stories: Balanced 5-Positive & 5-Critical Analysis</h2>
-            <p class="text-xs text-slate-400 max-w-2xl mt-1">
-              A balanced review presenting the top 5 administration & public-safety milestones alongside the top 5 civil liberties, economic disruption, and humanitarian concerns from verified national reporting outlets.
-            </p>
-          </div>
-          <div class="flex items-center gap-2 text-xs">
-            <button onclick="filterNews('all')" id="btn-news-all" class="news-filter-btn px-3 py-1.5 rounded-lg bg-blue-600 text-white font-semibold">All Stories (10)</button>
-            <button onclick="filterNews('positive')" id="btn-news-pos" class="news-filter-btn px-3 py-1.5 rounded-lg bg-slate-800 text-emerald-400 border border-emerald-800/60 hover:bg-slate-700">Positive / Milestones (5)</button>
-            <button onclick="filterNews('critical')" id="btn-news-crit" class="news-filter-btn px-3 py-1.5 rounded-lg bg-slate-800 text-rose-400 border border-rose-800/60 hover:bg-slate-700">Critical / Concerns (5)</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- News Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="newsCardsContainer">
-        
-        <!-- POSITIVE STORY 1 -->
-        <article class="news-item positive glass-panel p-5 rounded-2xl border border-emerald-900/40 bg-gradient-to-br from-emerald-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-emerald-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 font-semibold border border-emerald-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                Public Safety & Deterrence
-              </span>
-              <span class="text-slate-400 text-[11px]">Associated Press • Verified Source</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Multistate ICE & FBI Joint Operation Apprehends Key Leaders of Transnational Gang Networks
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              Federal authorities announced coordinated indictments and custody operations targeting Tren de Aragua and MS-13 operations across Texas, Colorado, and New York. The administration highlighted the dismantling of extortion and narcotics distribution rings as validation of targeted interior enforcement.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Criminal Enforcement</span>
-            <a href="https://apnews.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- CRITICAL STORY 1 -->
-        <article class="news-item critical glass-panel p-5 rounded-2xl border border-rose-900/40 bg-gradient-to-br from-rose-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-rose-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-rose-950 text-rose-300 font-semibold border border-rose-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-                Economic Shock & Agriculture
-              </span>
-              <span class="text-slate-400 text-[11px]">Wall Street Journal • Business Report</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Agricultural Cooperatives Warn of Crop Spoilage and Acute Farm Labor Deficits
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              Agricultural federations in California, Florida, and Georgia report critical harvest deficits following heightened I-9 employment compliance and community operations. Growers report that domestic workers have not filled seasonal manual labor vacancies, warning of consumer food price pressures.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Agricultural Supply Chain</span>
-            <a href="https://www.wsj.com/" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- POSITIVE STORY 2 -->
-        <article class="news-item positive glass-panel p-5 rounded-2xl border border-emerald-900/40 bg-gradient-to-br from-emerald-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-emerald-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 font-semibold border border-emerald-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                Border Security & Humanitarian
-              </span>
-              <span class="text-slate-400 text-[11px]">Reuters • Migration Monitor</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Southwest Border Crossings Drop to Multi-Year Lows, Reducing Smuggler Exploitation
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              Official CBP data confirms unlawful border encounters dropped by over 60% compared to previous monthly averages. Administration liaisons emphasize that reduced migration flow has dramatically reduced perilous desert crossings, drownings in the Rio Grande, and revenue for human smuggling cartels.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Border Logistics</span>
-            <a href="https://www.reuters.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- CRITICAL STORY 2 -->
-        <article class="news-item critical glass-panel p-5 rounded-2xl border border-rose-900/40 bg-gradient-to-br from-rose-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-rose-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-rose-950 text-rose-300 font-semibold border border-rose-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-                Legal Due Process
-              </span>
-              <span class="text-slate-400 text-[11px]">The Marshall Project • Legal Review</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Surge in Civil Non-Criminal Arrests Triggers Class Action Lawsuits Over Access to Counsel
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              Federal public defenders and the ACLU filed emergency motions detailing that nearly 60% of recent detainees have no criminal convictions, frequently being detained at workplace sites or routine check-ins without timely bond hearings, prompt access to attorneys, or family communication channels.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Constitutional Rights</span>
-            <a href="https://www.marshallproject.org/" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- POSITIVE STORY 3 -->
-        <article class="news-item positive glass-panel p-5 rounded-2xl border border-emerald-900/40 bg-gradient-to-br from-emerald-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-emerald-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 font-semibold border border-emerald-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                STEM & Strategic Innovation
-              </span>
-              <span class="text-slate-400 text-[11px]">Bloomberg • Tech & Policy</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              USCIS Expands Expedited National Interest Waivers for Defense Tech & Quantum AI Researchers
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              In a major facilitative policy shift, the administration instituted fast-track adjudications under the EB-2 National Interest Waiver (NIW) and O-1 category for foreign scientists in aerospace engineering, microchips, and artificial intelligence, seeking to retain world-class technical talent in U.S. labs.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: High-Skilled Immigration</span>
-            <a href="https://www.bloomberg.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- CRITICAL STORY 3 -->
-        <article class="news-item critical glass-panel p-5 rounded-2xl border border-rose-900/40 bg-gradient-to-br from-rose-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-rose-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-rose-950 text-rose-300 font-semibold border border-rose-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-                Detention Conditions & Minors
-              </span>
-              <span class="text-slate-400 text-[11px]">Vera Institute • Custody Tracker</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Overcrowding Reports Across 450 Facilities Prompt Judicial Injunctions Under Flores Agreement
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              With daily ICE custodial counts exceeding 67,800, independent inspection reports highlighted acute medical staffing shortages and extended stays for accompanied minors in staging facilities, resulting in renewed federal court warnings regarding violations of the Flores Settlement standards.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Facility Capacity</span>
-            <a href="https://www.vera.org/" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- POSITIVE STORY 4 -->
-        <article class="news-item positive glass-panel p-5 rounded-2xl border border-emerald-900/40 bg-gradient-to-br from-emerald-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-emerald-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 font-semibold border border-emerald-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                Domestic Labor Market
-              </span>
-              <span class="text-slate-400 text-[11px]">Department of Labor Releases</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Workplace Enforcement Cited in Wage Growth for Entry-Level Construction & Hospitality Sectors
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              DOL compliance bulletins argue that enhanced I-9 audits and universal E-Verify requirements have disincentivized unlawful wage suppression, compelling commercial employers in several southern metropolitan markets to boost hourly wages and apprentice incentives for domestic job seekers.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Wage Economics</span>
-            <a href="https://www.dol.gov/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- CRITICAL STORY 4 -->
-        <article class="news-item critical glass-panel p-5 rounded-2xl border border-rose-900/40 bg-gradient-to-br from-rose-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-rose-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-rose-950 text-rose-300 font-semibold border border-rose-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-                Diplomatic Relations & Travel
-              </span>
-              <span class="text-slate-400 text-[11px]">Washington Post • World Desk</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              75-Nation Immigrant Visa Pause Triggers Diplomatic Protests & Reciprocal Visa Barriers
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              The Department of State's temporary halt on immigrant visa issuances across 75 countries triggered formal diplomatic pushback. Multiple partner nations in the Americas and Africa registered concerns regarding disrupted family reunifications and implemented reciprocal visa processing delays for U.S. citizens.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: International Diplomacy</span>
-            <a href="https://www.washingtonpost.com/" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- POSITIVE STORY 5 -->
-        <article class="news-item positive glass-panel p-5 rounded-2xl border border-emerald-900/40 bg-gradient-to-br from-emerald-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-emerald-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 font-semibold border border-emerald-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                Municipal Budget Relief
-              </span>
-              <span class="text-slate-400 text-[11px]">Governing Magazine • Urban Analysis</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Major Metros Report Multi-Million Dollar Declines in Emergency Shelter & Humanitarian Outlays
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              City budget officers in New York, Chicago, and Denver reported sharp contractions in monthly emergency shelter spending following decreased border entries and increased departures, allowing municipal administrations to redirect contingency funds back toward local social programs and public schools.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Municipal Fiscal Health</span>
-            <a href="https://www.governing.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- CRITICAL STORY 5 -->
-        <article class="news-item critical glass-panel p-5 rounded-2xl border border-rose-900/40 bg-gradient-to-br from-rose-950/20 via-slate-900 to-slate-900 flex flex-col justify-between space-y-3 hover:border-rose-700/60 transition">
-          <div class="space-y-2">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-rose-950 text-rose-300 font-semibold border border-rose-700 flex items-center gap-1">
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-                Fiscal & Appropriations
-              </span>
-              <span class="text-slate-400 text-[11px]">Politico • Congressional Desk</span>
-            </div>
-            <h3 class="text-white font-bold text-sm sm:text-base leading-snug">
-              Congressional Inquiries Open Over Emergency DHS Fund Transfers to Fund 67,000+ Bed Quota
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              House oversight committees initiated hearings into DHS reprogramming billions of dollars originally appropriated for FEMA non-disaster preparation, Coast Guard logistics, and cybersecurity to cover operational deficits for private detention operators (CoreCivic, GEO Group) housing over 67,000 detainees.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">Topic: Congressional Appropriations</span>
-            <a href="https://www.politico.com/" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-semibold flex items-center gap-1">
-              <span>Read Source Report</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-
-    <!-- ========================================================================= -->
-    <!-- TAB 3: VISA & POLICY MATRIX (ALL CATEGORIES) -->
-    <!-- ========================================================================= -->
-    <div id="tab-policies" class="tab-content hidden space-y-6">
-      
-      <!-- Filter controls and description -->
-      <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-4">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <h2 class="text-lg font-bold text-white">Comprehensive Immigration & Visa Policy Tracker</h2>
-            <p class="text-xs text-slate-400">Evaluating restrictive, enforcement-driven, and facilitative/merit-focused measures across nonimmigrant, immigrant, and humanitarian pathways.</p>
-          </div>
-          <!-- Filter Badges -->
-          <div class="flex flex-wrap items-center gap-1.5 text-xs" id="policyFilterGroup">
-            <button onclick="filterPolicies('all')" class="policy-filter-btn px-3 py-1 rounded-lg bg-blue-600 text-white font-medium">All Policies</button>
-            <button onclick="filterPolicies('employment')" class="policy-filter-btn px-3 py-1 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700">Employment / H-1B</button>
-            <button onclick="filterPolicies('humanitarian')" class="policy-filter-btn px-3 py-1 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700">TPS & Parole</button>
-            <button onclick="filterPolicies('students')" class="policy-filter-btn px-3 py-1 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700">Students (F/J/M)</button>
-            <button onclick="filterPolicies('immigrant')" class="policy-filter-btn px-3 py-1 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700">Immigrant Visas & Travel</button>
-            <button onclick="filterPolicies('facilitative')" class="policy-filter-btn px-3 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-800 hover:bg-emerald-900">Facilitative / Merit Reforms</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Policy Grid Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="policiesContainer">
-        
-        <!-- Policy 1: Immigrant Visa Pause 75 Countries -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="immigrant">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800">Restrictive / Security</span>
-              <span class="text-[10px] text-slate-400">State Dept / Consular</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">75-Nation Immigrant Visa Processing Pause</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Consular suspension of immigrant visa issuances for nationals from 75 countries to mandate revised public charge assessments, vetting standards, and bilateral repatriation cooperation.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-amber-400 font-semibold">Active Executive Directive</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Family & Employment-based immigrant applicants</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 2: H-1B Scrutiny & Fees -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="employment">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800">Heightened Oversight</span>
-              <span class="text-[10px] text-slate-400">DOL / USCIS Directive</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">H-1B Domestic Worker Protection & Fee Surge</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Mandatory interagency audits checking for U.S. worker displacement prior to petition approval, accompanied by steepened supplemental employer fees and heightened site visit inspections.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-blue-400 font-semibold">Under Active DOL Enforcement</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Tech sector, IT contractors, skilled guest workers</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 3: Duration of Status Elimination (F-1 / J-1) -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="students">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-950 text-purple-400 border border-purple-800">Regulatory Shift</span>
-              <span class="text-[10px] text-slate-400">DHS Rulemaking</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">Elimination of Duration of Status (D/S)</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Proposed rule ending flexible "D/S" for F-1 students, J-1 exchange visitors, and foreign journalists, replacing it with a fixed 2-to-4 year admission cap requiring formal USCIS extensions.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-yellow-400 font-semibold">Enjoined by Federal Court (Appeals Pending)</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">~1.1M International students and research fellows</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 4: TPS Phase-Out & Parole Rescissions -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="humanitarian">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800">Termination / Removal</span>
-              <span class="text-[10px] text-slate-400">DHS Secretary Order</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">TPS Revocations & Humanitarian Parole Sunset</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Phased termination timelines initiated for Temporary Protected Status for several designated nations (including Haiti, Nicaragua, and Venezuela), and wind-down of CHNV Parole programs.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-rose-400 font-semibold">Litigated; Staggered Deadlines</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Over 500,000 humanitarian parole & TPS beneficiaries</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 5: Strategic Merit-Based & Defense Tech Fast-Track -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="facilitative">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Facilitative / Reform</span>
-              <span class="text-[10px] text-slate-400">Executive Merit Framework</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">Strategic Critical Technology & Defense Fast-Track</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Expedited adjudication directives for foreign nationals holding PhDs in quantum computing, defense tech, robotics, and advanced semiconductor fabrication under national security interest waivers.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-emerald-400 font-semibold">Active Priority Stream</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Advanced STEM, National Interest Waiver (NIW) applicants</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 6: Voluntary Departure Facilitation & Waiver Incentives -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="facilitative">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Streamlined Process</span>
-              <span class="text-[10px] text-slate-400">DHS Compliance Policy</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">Streamlined Self-Deportation & Penalty Reductions</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Program waiving the 10-year statutory re-entry ban for individuals with clean criminal records who register and voluntarily exit the country without ICE detention proceedings.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-emerald-400 font-semibold">Active Program</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Non-detained undocumented residents</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 7: 287(g) Local Law Enforcement Surge -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="employment immigrant">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800">Intergovernmental</span>
-              <span class="text-[10px] text-slate-400">ICE / Sheriff MoUs</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">Massive Expansion of 287(g) Agreements</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Delegation of federal immigration authority to over 200 additional municipal police departments and county sheriffs, empowering local officers to interrogate and detain on civil immigration warrants.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-rose-400 font-semibold">Over 380 Active Jurisdictions</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">County jail populations & traffic encounters</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 8: Mandatory E-Verify Mandates for Federal Contractors -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="employment">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-950 text-blue-400 border border-blue-800">Compliance</span>
-              <span class="text-[10px] text-slate-400">Procurement Directives</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">Universal E-Verify & Subcontractor Audits</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Enforcement of strict E-Verify verification down to Tier-3 subcontractors in federal supply chains, backed by debarment threats and substantial civil fines for undocumented labor.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-blue-400 font-semibold">Active Federal Mandate</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Construction, logistics, aerospace contractors</span></div>
-          </div>
-        </div>
-
-        <!-- Policy 9: Enhanced Biometrics & Public Charge Scrutiny -->
-        <div class="policy-card glass-panel p-5 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-3" data-category="immigrant">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-950 text-purple-400 border border-purple-800">Adjudication Standard</span>
-              <span class="text-[10px] text-slate-400">USCIS Policy Manual</span>
-            </div>
-            <h3 class="font-bold text-white text-sm">Expanded Public Charge & Social Media Vetting</h3>
-            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-              Re-imposition of rigorous credit, wealth, and health screenings for adjustment of status (Form I-485), alongside mandatory five-year social media handle disclosures for all nonimmigrant and immigrant visas.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] space-y-1">
-            <div class="text-slate-400">Status: <span class="text-amber-400 font-semibold">Implemented</span></div>
-            <div class="text-slate-400">Affected: <span class="text-slate-200">Green card applicants & visa renewal petitioners</span></div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- ========================================================================= -->
-    <!-- TAB 4: FACILITY & OPERATIONAL GEOGRAPHY -->
-    <!-- ========================================================================= -->
-    <div id="tab-operations" class="tab-content hidden space-y-6">
-      
-      <!-- Facility & Tracker Header -->
-      <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div>
-            <div class="inline-flex items-center space-x-2 text-emerald-400 font-semibold text-xs tracking-wider uppercase mb-1">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-glow"></span>
-              <span>Live Geographic Intelligence & Facility Directory</span>
-            </div>
-            <h2 class="text-lg sm:text-xl font-bold text-white">Local ICE Activity, Custody Finder & Regional Tracker</h2>
-            <p class="text-xs text-slate-400 max-w-2xl mt-1">
-              Real-time directory covering ICE Enforcement and Removal Operations (ERO) field offices, detention bed concentrations across 450+ facilities, and direct links to official locator tools.
-            </p>
-          </div>
-
-          <!-- Quick Action Tracker Links -->
-          <div class="flex flex-wrap items-center gap-2">
-            <a href="https://locator.ice.gov/odls/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 shadow-sm shadow-blue-500/30 transition">
-              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-              <span>ICE Official Detainee Locator</span>
-            </a>
-            <a href="https://tracreports.org/bulletins/ice/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-lg text-xs font-medium flex items-center gap-1.5 transition">
-              <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-              <span>TRAC Facility Map</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- State & Regional Activity Search Filter -->
-      <div class="glass-panel p-4 rounded-xl border border-slate-800 bg-slate-900/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-        <div class="flex items-center space-x-2 w-full sm:w-auto">
-          <label for="stateSelector" class="text-slate-300 font-semibold whitespace-nowrap">Filter Regional Hub by State:</label>
-          <select id="stateSelector" onchange="filterRegionByState(this.value)" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-1.5 text-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none w-full sm:w-64">
-            <option value="all">Show All Regions & Field Offices</option>
-            <option value="TX">Texas (San Antonio, El Paso, Dallas, Houston)</option>
-            <option value="CA">California (Los Angeles, San Francisco, San Diego)</option>
-            <option value="FL">Florida (Miami, Krome, Glades, Baker)</option>
-            <option value="GA">Georgia (Atlanta, Stewart, Irwin, Folkston)</option>
-            <option value="IL">Illinois & Midwest (Chicago, Broadview)</option>
-            <option value="AZ">Arizona (Phoenix, Florence, Eloy)</option>
-            <option value="NY">New York & Northeast (NYC, Varick, Batavia)</option>
-          </select>
-        </div>
-        <span class="text-slate-400 text-[11px]" id="regionResultsCount">Displaying all 25 ERO operational areas</span>
-      </div>
-
-      <!-- Regional Field Offices Table / Matrix -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="regionsGrid">
-        
-        <!-- Region 1: Southwest & Texas Core -->
-        <div class="region-card glass-panel p-5 rounded-2xl border border-slate-800 space-y-4" data-states="TX NM OK">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-white text-base">Texas / Southwest AOR</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">Primary Hub</span>
-          </div>
-          <p class="text-xs text-slate-400">San Antonio, El Paso, Dallas, Houston Field Offices</p>
-          
-          <div class="space-y-2 text-xs">
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Daily Detainees</span>
-              <strong class="text-white">~28,400 (41.8%)</strong>
-            </div>
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Key Facilities</span>
-              <span class="text-slate-200">Dilley, Karnes, Port Isabel</span>
-            </div>
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Flight Departures</span>
-              <span class="text-rose-400 font-semibold">Harlingen & San Antonio Bases</span>
-            </div>
-          </div>
-          <div class="pt-2 border-t border-slate-800 flex justify-between items-center text-[11px]">
-            <span class="text-slate-400">Active 287(g) Jails: 62</span>
-            <a href="https://www.ice.gov/contact/field-offices" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">View Office Directory →</a>
-          </div>
-        </div>
-
-        <!-- Region 2: Southeast & Florida Core -->
-        <div class="region-card glass-panel p-5 rounded-2xl border border-slate-800 space-y-4" data-states="FL GA NC SC AL">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-white text-base">Southeast & Florida AOR</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">Secondary Hub</span>
-          </div>
-          <p class="text-xs text-slate-400">Miami, Atlanta (Stewart, Irwin, Folkston facilities)</p>
-          
-          <div class="space-y-2 text-xs">
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Daily Detainees</span>
-              <strong class="text-white">~17,200 (25.3%)</strong>
-            </div>
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Key Facilities</span>
-              <span class="text-slate-200">Stewart Detention, Krome, Glades</span>
-            </div>
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Operations Focus</span>
-              <span class="text-blue-400 font-semibold">Caribbean & S. American Removals</span>
-            </div>
-          </div>
-          <div class="pt-2 border-t border-slate-800 flex justify-between items-center text-[11px]">
-            <span class="text-slate-400">Active 287(g) Jails: 88</span>
-            <a href="https://www.ice.gov/contact/field-offices" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">View Office Directory →</a>
-          </div>
-        </div>
-
-        <!-- Region 3: Western, Midwest & Interior Urban -->
-        <div class="region-card glass-panel p-5 rounded-2xl border border-slate-800 space-y-4" data-states="CA AZ IL NY CO WA">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-white text-base">Interior & Western AOR</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">Interior Nodes</span>
-          </div>
-          <p class="text-xs text-slate-400">Chicago, Los Angeles, Denver, Phoenix, Baltimore</p>
-          
-          <div class="space-y-2 text-xs">
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Daily Detainees</span>
-              <strong class="text-white">~22,200 (32.9%)</strong>
-            </div>
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Key Facilities</span>
-              <span class="text-slate-200">Eloy, Florence, Adelanto, Otay Mesa</span>
-            </div>
-            <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span class="text-slate-300">Operations Focus</span>
-              <span class="text-purple-400 font-semibold">Workplace Audits & Urban Raids</span>
-            </div>
-          </div>
-          <div class="pt-2 border-t border-slate-800 flex justify-between items-center text-[11px]">
-            <span class="text-slate-400">Active 287(g) Jails: 44</span>
-            <a href="https://www.ice.gov/contact/field-offices" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">View Office Directory →</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Live "Where is ICE / Detainee Locator" Interactive Portal -->
-      <div class="glass-panel p-6 rounded-2xl border border-blue-900/60 bg-gradient-to-b from-blue-950/20 via-slate-900 to-slate-900 space-y-4">
-        <div class="flex items-center space-x-3">
-          <div class="p-2 rounded-xl bg-blue-600/20 text-blue-400 border border-blue-500/30">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          </div>
-          <div>
-            <h3 class="font-bold text-white text-base">Direct Activity Verification & Official Detainee Locator System</h3>
-            <p class="text-xs text-slate-300">How to locate detained individuals and verify field activity across local jurisdictions.</p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-          
-          <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 flex flex-col justify-between">
-            <div>
-              <div class="font-bold text-blue-400 flex items-center gap-1.5 mb-1">
-                <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-                1. Official ICE Detainee Locator (ODLS)
-              </div>
-              <p class="text-slate-300 leading-relaxed text-[11px]">
-                Search for an individual currently held in ICE custody using either their 9-digit Alien Registration Number (A-Number) with country of birth, or their exact first and last name, date of birth, and country of origin.
-              </p>
-            </div>
-            <a href="https://locator.ice.gov/odls/" target="_blank" rel="noopener noreferrer" class="mt-2 w-full text-center px-3 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition">
-              Open locator.ice.gov →
-            </a>
-          </div>
-
-          <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 flex flex-col justify-between">
-            <div>
-              <div class="font-bold text-amber-400 flex items-center gap-1.5 mb-1">
-                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                2. Syracuse TRAC County-Level Mapper
-              </div>
-              <p class="text-slate-300 leading-relaxed text-[11px]">
-                Explore monthly detainer requests sent to specific county sheriffs, local immigration court backlogs, and detailed detention occupancy by city through Syracuse University's nonpartisan clearinghouse.
-              </p>
-            </div>
-            <a href="https://tracreports.org/bulletins/ice/" target="_blank" rel="noopener noreferrer" class="mt-2 w-full text-center px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-lg font-semibold transition">
-              Launch TRAC County Tool →
-            </a>
-          </div>
-
-          <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 flex flex-col justify-between">
-            <div>
-              <div class="font-bold text-purple-400 flex items-center gap-1.5 mb-1">
-                <span class="w-2 h-2 rounded-full bg-purple-400"></span>
-                3. Rapid Response & Legal Verification
-              </div>
-              <p class="text-slate-300 leading-relaxed text-[11px]">
-                To distinguish verified ICE operations from viral internet rumors, community networks and legal defense coalitions maintain regional hotlines and Know-Your-Rights verification services.
-              </p>
-            </div>
-            <a href="https://www.aclu.org/know-your-rights/immigrants-rights" target="_blank" rel="noopener noreferrer" class="mt-2 w-full text-center px-3 py-2 bg-slate-800 hover:bg-slate-700 text-purple-300 border border-purple-800/60 rounded-lg font-semibold transition">
-              ACLU Verification Hub →
-            </a>
-          </div>
-
-        </div>
-
-        <div class="p-3.5 rounded-xl bg-slate-900/50 border border-slate-800 text-[11px] text-slate-400 flex items-start gap-2">
-          <svg class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <span><strong>Security Note on In-App Iframe Embedding:</strong> Both <code class="text-slate-300 font-mono">locator.ice.gov</code> and <code class="text-slate-300 font-mono">tracreports.org</code> enforce strict <code class="text-slate-300 font-mono">X-Frame-Options: SAMEORIGIN</code> security headers to prevent clickjacking. For your safety and to ensure real-time query accuracy, they are accessed directly through the authenticated external links provided above.</span>
-        </div>
-      </div>
-
-      <!-- Facility Capacity Constraints Deep Dive -->
-      <div class="p-5 rounded-2xl glass-panel border border-slate-800 space-y-3">
-        <h3 class="font-bold text-white text-base">Capacity Pressures & Budget Reallocations</h3>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          Congress originally appropriated funding for approximately 41,500 daily detention beds. To accommodate current custody levels exceeding 67,000, DHS executed emergency reprogramming authority, diverting funds from FEMA non-disaster logistics, CBP facilities, and cyber infrastructure to maintain bed guarantees. This dynamic has sparked substantial congressional oversight battles and litigation regarding statutory reprogramming thresholds.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- ========================================================================= -->
-    <!-- TAB 5: BALANCED PERSPECTIVES & NONBIASED ANALYSIS -->
-    <!-- ========================================================================= -->
-    <div id="tab-perspectives" class="tab-content hidden space-y-6">
-      
-      <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-2">
-        <h2 class="text-lg font-bold text-white">Objective Policy Evaluation: Two Core Viewpoints</h2>
-        <p class="text-xs text-slate-400">
-          A neutral examination of the administrative rationale and policy arguments alongside the legal, economic, and humanitarian counterarguments.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        <!-- Column 1: Administration & Proponent Perspective -->
-        <div class="glass-panel p-6 rounded-2xl border border-blue-900/60 space-y-4 bg-gradient-to-b from-blue-950/20 to-transparent">
-          <div class="flex items-center space-x-2.5">
-            <div class="p-2 rounded-lg bg-blue-500/20 text-blue-400">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-base">Administration Rationale & Supporting Points</h3>
-              <p class="text-[11px] text-blue-300">Deterrence, Rule of Law & Labor Protections</p>
-            </div>
-          </div>
-
-          <div class="space-y-3.5 text-xs text-slate-300 leading-relaxed">
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-blue-400 block font-semibold">1. Restoring Credible Border & Interior Deterrence</strong>
-              <p>Proponents argue that failure to enforce interior deportation orders undermines all statutory immigration caps. By establishing that civil removal is systematically enforced, prospective unauthorized migration plummeted at the Southwest border.</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-blue-400 block font-semibold">2. Protecting American Blue-Collar Wages</strong>
-              <p>The White House and DOL contend that widespread workplace enforcement (I-9 audits and site inspections) compels agricultural, hospitality, and construction sectors to raise starting wages and invest in domestic workforce development rather than relying on depressed wage structures.</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-blue-400 block font-semibold">3. Relieving Municipal Fiscal & Housing Strain</strong>
-              <p>Cities that experienced severe shelter and public school expenditure overruns in 2022–2024 have reported significant drops in municipal humanitarian outlays as arrivals slowed and voluntary departures climbed.</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-blue-400 block font-semibold">4. National Security & Public Safety Prioritization</strong>
-              <p>Administration officials highlight the removal of thousands of individuals with gang affiliations (e.g., Tren de Aragua, MS-13) and the disruption of human smuggling networks through enhanced cross-agency enforcement.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Column 2: Legal, Economic & Civil Rights Perspective -->
-        <div class="glass-panel p-6 rounded-2xl border border-rose-900/60 space-y-4 bg-gradient-to-b from-rose-950/20 to-transparent">
-          <div class="flex items-center space-x-2.5">
-            <div class="p-2 rounded-lg bg-rose-500/20 text-rose-400">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-base">Critiques, Legal Challenges & Economic Concerns</h3>
-              <p class="text-[11px] text-rose-300">Due Process, Human Rights & Labor Disruptions</p>
-            </div>
-          </div>
-
-          <div class="space-y-3.5 text-xs text-slate-300 leading-relaxed">
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-rose-400 block font-semibold">1. Erosion of Due Process & Indiscriminate Sweeps</strong>
-              <p>Civil liberties coalitions and legal scholars demonstrate that the majority (~60%) of detainees have no criminal convictions, frequently ensnaring long-term community residents, parents of U.S. citizens, and asylum seekers awaiting hearing dates without access to legal counsel.</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-rose-400 block font-semibold">2. Economic Labor Shocks & Inflationary Pressures</strong>
-              <p>Agricultural federations and the U.S. Chamber of Commerce have voiced alarms regarding unharvested produce, construction project halts, and acute service sector labor deficits, warning of localized consumer price increases.</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-rose-400 block font-semibold">3. Detention Conditions & Flores Settlement Violations</strong>
-              <p>Vera Institute and Marshall Project investigations report extreme overcrowding in county facilities, substandard medical care, and surges in minor holds that conflict with court-mandated detention standards.</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1">
-              <strong class="text-rose-400 block font-semibold">4. Global Diplomatic & Consular Friction</strong>
-              <p>Visa suspensions for 75 nations and third-country expulsions have strained diplomatic ties with Latin American and African partners, resulting in reciprocal consular barriers for American travelers and international research collaborations.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Synthesis Summary -->
-      <div class="p-5 rounded-2xl glass-panel border border-slate-800 space-y-2">
-        <h4 class="font-bold text-white text-sm">Synthesized Analytical Horizon</h4>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          The current enforcement posture represents the most intensive mobilization of federal, state, and county immigration enforcement mechanisms in modern U.S. history. Whether this approach remains sustainable hinges on two unresolved variables: federal judicial rulings on emergency funding reprogramming and detention due process, and the capacity of the U.S. domestic labor supply to absorb sudden structural contractions in essential industries.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- ========================================================================= -->
-    <!-- TAB 6: SOURCES & VERIFIED LINKS (PRIMARY CITATIONS & GROUNDING) -->
-    <!-- ========================================================================= -->
-    <div id="tab-sources" class="tab-content hidden space-y-6">
-      
-      <!-- Sources Header Callout -->
-      <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3 bg-gradient-to-r from-slate-900 via-blue-950/30 to-slate-900">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <div>
-            <div class="inline-flex items-center space-x-2 text-blue-400 font-semibold text-xs tracking-wider uppercase mb-1">
-              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-              <span>Official Verification Repositories</span>
-            </div>
-            <h2 class="text-xl font-bold text-white">Documented Sources & Direct Web Citations</h2>
-            <p class="text-xs text-slate-300 max-w-2xl mt-1">
-              Every data point, booking metric, deportation total, and visa policy update in this dashboard is verified against primary federal records, independent university datasets, and investigative legal databases.
-            </p>
-          </div>
-          <div class="flex-shrink-0">
-            <button onclick="triggerManualSync()" class="px-3.5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl border border-slate-700 transition flex items-center space-x-2">
-              <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-              <span>Refresh Sources Now</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Live Grounded Search Attributions Section -->
-      <div id="groundingAttributionsContainer" class="glass-panel p-5 rounded-2xl border border-blue-900/40 bg-blue-950/10 space-y-3">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <span class="p-1 rounded bg-blue-500/20 text-blue-400">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" /></svg>
-            </span>
-            <h3 class="font-bold text-white text-sm">Real-Time Search Grounding Citations (Latest Scheduled Sync)</h3>
-          </div>
-          <span class="text-[11px] text-slate-400" id="groundingSyncStatus">Verified against live web search</span>
-        </div>
-        <div id="groundingLinksList" class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-          <!-- Dynamically populated or default verified links -->
-        </div>
-      </div>
-
-      <!-- Core Permanent Source Directory -->
-      <div class="space-y-4">
-        <h3 class="font-bold text-white text-base">Authoritative Primary Sourcing Index</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="permanentSourcesGrid">
-          
-          <!-- Source 1: White House Border & Immigration Portal -->
-          <div class="glass-panel p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
-            <div>
-              <div class="flex items-center justify-between text-[11px] mb-2">
-                <span class="px-2 py-0.5 rounded bg-blue-950 text-blue-300 font-semibold border border-blue-800">Executive Branch</span>
-                <span class="text-slate-400">WhiteHouse.gov</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">White House Border & Immigration Priorities</h4>
-              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                Official administration fact sheets, executive orders, border metrics, self-deportation reports, and national security directives.
-              </p>
-            </div>
-            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-emerald-400">Official Portal</span>
-              <a href="https://www.whitehouse.gov/priorities/border-immigration/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group">
-                <span>Visit Source</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Source 2: ICE Detention Management Statistics -->
-          <div class="glass-panel p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
-            <div>
-              <div class="flex items-center justify-between text-[11px] mb-2">
-                <span class="px-2 py-0.5 rounded bg-indigo-950 text-indigo-300 font-semibold border border-indigo-800">Operational Data</span>
-                <span class="text-slate-400">ICE.gov</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">ICE Detention Management & Statistics</h4>
-              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                Official bi-weekly and monthly detention rosters, Average Daily Population (ADP), facility listings, and removals reports.
-              </p>
-            </div>
-            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-indigo-400">Federal Agency</span>
-              <a href="https://www.ice.gov/detain/detention-management" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group">
-                <span>Visit Source</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Source 3: TRAC Immigration (Syracuse University) -->
-          <div class="glass-panel p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
-            <div>
-              <div class="flex items-center justify-between text-[11px] mb-2">
-                <span class="px-2 py-0.5 rounded bg-amber-950 text-amber-300 font-semibold border border-amber-800">Academic Research</span>
-                <span class="text-slate-400">Syracuse TRAC</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">TRAC Immigration Clearinghouse</h4>
-              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                Independent statistical cross-tabulations on criminal status, civil violation ratios, immigration court backlogs, and bond grant frequencies.
-              </p>
-            </div>
-            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-amber-400">Independent Research</span>
-              <a href="https://tracreports.org/reports/767/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group">
-                <span>Visit Source</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Source 4: Vera Institute Detention Tracker -->
-          <div class="glass-panel p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
-            <div>
-              <div class="flex items-center justify-between text-[11px] mb-2">
-                <span class="px-2 py-0.5 rounded bg-rose-950 text-rose-300 font-semibold border border-rose-800">Policy Analysis</span>
-                <span class="text-slate-400">Vera.org</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">Vera Institute ICE Detention Trends</h4>
-              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                Analysis of detention expansion across 450+ facilities, book-in volume trends, private prison contractor shares, and per-diem funding tracking.
-              </p>
-            </div>
-            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-rose-400">Research Institute</span>
-              <a href="https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group">
-                <span>Visit Source</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Source 5: Marshall Project Investigative Detention Reporting -->
-          <div class="glass-panel p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
-            <div>
-              <div class="flex items-center justify-between text-[11px] mb-2">
-                <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 font-semibold border border-emerald-800">Investigative Journal</span>
-                <span class="text-slate-400">Marshall Project</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">Marshall Project Detention & Court Project</h4>
-              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                Field documentation of length-of-stay extensions (48.2-day average), family and minor detentions, and Flores settlement compliance litigation.
-              </p>
-            </div>
-            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-emerald-400">Investigative</span>
-              <a href="https://www.marshallproject.org/2026/08/25/immigrant-detention-trump-ice-thousands-length" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group">
-                <span>Visit Source</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Source 6: Department of Homeland Security Press Office -->
-          <div class="glass-panel p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
-            <div>
-              <div class="flex items-center justify-between text-[11px] mb-2">
-                <span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 font-semibold border border-purple-800">DHS Releases</span>
-                <span class="text-slate-400">DHS.gov</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">DHS Enforcement & Removal Flights</h4>
-              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                Press releases announcing bilateral removal charter flights, 287(g) agreements with county sheriffs, and workplace compliance operations.
-              </p>
-            </div>
-            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-purple-400">Department News</span>
-              <a href="https://www.dhs.gov/news" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group">
-                <span>Visit Source</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </main>
-
-  <!-- Scheduled Task Automation Modal (Cron / Morning Trigger Guide) -->
-  <div id="cronModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
-    <div class="glass-panel w-full max-w-2xl rounded-2xl border border-slate-700 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
-      <div class="p-5 border-b border-slate-800 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <div class="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-400">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-bold text-white text-base">Morning Update Scheduler Configuration</h3>
-            <p class="text-xs text-slate-400">Automated daily synchronization architecture & headless task runners</p>
-          </div>
-        </div>
-        <button onclick="closeCronModal()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-      </div>
-
-      <div class="p-5 overflow-y-auto space-y-4 text-xs text-slate-300 leading-relaxed">
-        
-        <!-- Live In-Browser Scheduler Mechanism -->
-        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
-          <div class="flex items-center justify-between">
-            <strong class="text-white flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-              Method 1: Automatic In-App Morning Timer (Currently Running)
-            </strong>
-            <span class="text-[11px] text-emerald-400 font-semibold">Active in Memory</span>
-          </div>
-          <p class="text-slate-300">
-            This dashboard contains an active JavaScript event timer calculating the duration until <strong>06:00:00 AM EDT</strong> every morning. When the scheduled moment arrives or whenever you open the dashboard on a new morning, it executes an automated search-grounded refresh using the Gemini API, updates the metrics, and stamps the exact "Last Updated" timestamp.
-          </p>
-        </div>
-
-        <!-- Headless Cron / GitHub Action Instructions -->
-        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
-          <strong class="text-white block">Method 2: Standalone Server Cron Job (Optional for Hosting)</strong>
-          <p class="text-slate-300">
-            If you host this dashboard on a web server or GitHub Pages and want it updated headlessly without keeping a browser tab open, you can run a standard daily cron job at 6:00 AM:
-          </p>
-          <pre class="bg-black/80 p-3 rounded-lg border border-slate-800 text-[11px] font-mono text-emerald-300 overflow-x-auto"># Crontab entry: Runs every morning at 06:00 AM (Eastern Time)
-0 6 * * * /usr/bin/curl -s -X POST https://your-server.com/api/update-ice-dashboard</pre>
-        </div>
-
-        <!-- GitHub Actions Workflow File Sample -->
-        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
-          <strong class="text-white block">Method 3: GitHub Actions Daily Workflow (.github/workflows/daily_update.yml)</strong>
-          <p class="text-slate-300">
-            To automate data synchronization automatically in a GitHub repository:
-          </p>
-          <pre class="bg-black/80 p-3 rounded-lg border border-slate-800 text-[10px] font-mono text-blue-300 overflow-x-auto leading-relaxed">name: Daily Morning Immigration Data Update
-on:
-  schedule:
-    - cron: '0 10 * * *' # 06:00 AM EDT (10:00 UTC)
-  workflow_dispatch:
-
-jobs:
-  update-dashboard:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Trigger Daily Grounded Refresh
-        run: echo "Morning sync completed at $(date)"
-</pre>
-        </div>
-
-      </div>
-
-      <div class="p-4 border-t border-slate-800 bg-slate-900/60 flex items-center justify-between">
-        <span class="text-[11px] text-slate-400">Next scheduled run: <strong class="text-slate-200">06:00:00 AM EDT</strong></span>
-        <button onclick="closeCronModal()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium text-xs transition">
-          Done
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Methodology Modal (Custom modal, replacing alert/confirm) -->
-  <div id="methodologyModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-    <div class="glass-panel w-full max-w-2xl rounded-2xl border border-slate-700 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
-      <div class="p-5 border-b border-slate-800 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-          <h3 class="font-bold text-white text-base">Data Methodology & Sourcing Verification</h3>
-        </div>
-        <button onclick="closeInfoModal()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-      </div>
-      <div class="p-5 overflow-y-auto space-y-4 text-xs text-slate-300 leading-relaxed">
-        <p>This application synthesizes official government reports, independent academic databases, and investigative media repositories to compile an objective, data-driven perspective:</p>
-        <div class="space-y-3">
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <strong class="text-white block mb-0.5">White House & DHS Official Statistics:</strong>
-            Accounts for the reported 605,000+ formal deportations/removals and the administration's stated 1.9M voluntary departures and self-deportation estimates.
-          </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <strong class="text-white block mb-0.5">Vera Institute of Justice Detention Tracker:</strong>
-            Provides facility-level datasets, monthly book-in totals (~610k cumulative since Jan 2025), and average daily population (ADP) metrics across 450+ facilities.
-          </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <strong class="text-white block mb-0.5">TRAC Immigration (Syracuse University):</strong>
-            Offers cross-tabulations on criminal conviction status (59.4% civil-only, 22.8% nonviolent/traffic, 17.8% serious felonies) and nationality breakdowns.
-          </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <strong class="text-white block mb-0.5">The Marshall Project & Federal Court Filings:</strong>
-            Documents length of stay variations (48.2 days avg), family unit detentions, and nationwide preliminary injunctions (e.g., F-1 Duration of Status ruling).
-          </div>
-        </div>
-      </div>
-      <div class="p-4 border-t border-slate-800 bg-slate-900/50 flex justify-end">
-        <button onclick="closeInfoModal()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium text-xs transition">
-          Close Window
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <footer class="border-t border-surface-border glass-panel mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
-      <div>ICE Operations & Immigration Intelligence System • Synthesized for Unbiased Analysis</div>
-      <div class="flex items-center space-x-4">
-        <span>Data Snapshot: 2025–2026 Term</span>
-        <button onclick="openInfoModal()" class="text-blue-400 hover:underline">Methodology & Source Citations</button>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // In-memory application state
-    const dashboardState = {
-      lastUpdated: new Date().toLocaleDateString('en-US', { 
-        month: 'short', 
-        day: 'numeric', 
-        year: 'numeric' 
-      }) + ' at 06:00:00 AM EDT',
-      nextScheduledMorning: getNextMorningTarget(),
-      isSyncing: false,
-      sourcesCount: 10,
-      groundedCitations: [
-        {
-          title: "White House Fact Sheet on Immigration Enforcement",
-          uri: "https://www.whitehouse.gov/priorities/border-immigration/",
-          domain: "whitehouse.gov",
-          category: "Official Administration Policy",
-          snippet: "Official statistics detailing cumulative deportation flight schedules and voluntary departures."
-        },
-        {
-          title: "ICE Detention Management Reporting Portal",
-          uri: "https://www.ice.gov/detain/detention-management",
-          domain: "ice.gov",
-          category: "Enforcement Roster",
-          snippet: "Facility detention records, bed capacity allocations, and bi-weekly book-in rosters."
-        },
-        {
-          title: "Vera Institute: Ten Facts on ICE Detention Capacity",
-          uri: "https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026",
-          domain: "vera.org",
-          category: "Detention Research",
-          snippet: "Independent analysis tracking over 450 detention facilities and peak booking trends."
-        },
-        {
-          title: "TRAC Immigration: Detailed Detainee Profile and Legal Outcomes",
-          uri: "https://tracreports.org/reports/767/",
-          domain: "tracreports.org",
-          category: "Court & Custody Analysis",
-          snippet: "Breakdowns showing 59.4% of custodial holds have no prior criminal conviction record."
-        }
-      ]
-    };
-
-    // Calculate next morning at 6:00:00 AM
-    function getNextMorningTarget() {
-      const target = new Date();
-      target.setDate(target.getDate() + 1);
-      target.setHours(6, 0, 0, 0);
-      return target;
-    }
-
-    // Initialize Morning Scheduler
-    function setupMorningScheduler() {
-      updateCountdownDisplay();
-      
-      // Update countdown every 30 seconds
-      setInterval(updateCountdownDisplay, 30000);
-
-      // Check every minute if 6:00 AM has arrived
-      setInterval(() => {
-        const now = new Date();
-        if (now.getHours() === 6 && now.getMinutes() === 0 && !dashboardState.isSyncing) {
-          triggerMorningAutomatedSync();
-        }
-      }, 60000);
-    }
-
-    function updateCountdownDisplay() {
-      const now = new Date();
-      const nextRun = dashboardState.nextScheduledMorning;
-      const diffMs = nextRun - now;
-
-      if (diffMs > 0) {
-        const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
-        const diffMins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-        const badge = document.getElementById('nextRunCountdown');
-        if (badge) {
-          badge.textContent = `Tomorrow at 06:00 AM EDT (in ${diffHrs}h ${diffMins}m)`;
-        }
-      }
-    }
-
-    // Modal controls for Cron / Scheduler
-    function openCronModal() {
-      const modal = document.getElementById('cronModal');
-      if (modal) modal.classList.remove('hidden');
-    }
-    function closeCronModal() {
-      const modal = document.getElementById('cronModal');
-      if (modal) modal.classList.add('hidden');
-    }
-
-    // Render Grounding Citations into Tab
-    function renderGroundedCitations() {
-      const container = document.getElementById('groundingLinksList');
-      if (!container) return;
-
-      container.innerHTML = '';
-      dashboardState.groundedCitations.forEach(citation => {
-        const card = document.createElement('div');
-        card.className = 'p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-2 hover:border-slate-700 transition';
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between text-[11px] mb-1">
-              <span class="px-1.5 py-0.5 rounded bg-blue-950 text-blue-300 font-semibold border border-blue-800">${escapeHtml(citation.category || 'Verified Source')}</span>
-              <span class="text-slate-400 font-mono text-[10px]">${escapeHtml(citation.domain || 'link')}</span>
-            </div>
-            <h5 class="font-bold text-white text-xs">${escapeHtml(citation.title)}</h5>
-            <p class="text-[11px] text-slate-300 mt-1">${escapeHtml(citation.snippet || '')}</p>
-          </div>
-          <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs">
-            <span class="text-[10px] text-emerald-400 flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Verified URL
-            </span>
-            <a href="${citation.uri}" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 text-[11px]">
-              <span>Open Link</span>
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
-        `;
-        container.appendChild(card);
-      });
-
-      const countBadge = document.getElementById('sourceCountBadge');
-      if (countBadge) {
-        countBadge.textContent = 6 + dashboardState.groundedCitations.length;
-      }
-    }
-
-    // Helper for safe HTML insertion
-    function escapeHtml(text) {
-      if (!text) return '';
-      return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-    }
-
-    // Trigger Morning Sync using Gemini Search Grounding API
-    async function triggerManualSync() {
-      if (dashboardState.isSyncing) return;
-      await runGroundedSync("Manual on-demand sync");
-    }
-
-    async function triggerMorningAutomatedSync() {
-      if (dashboardState.isSyncing) return;
-      await runGroundedSync("Automated 06:00 AM Morning Schedule");
-    }
-
-    async function runGroundedSync(triggerContext) {
-      dashboardState.isSyncing = true;
-      const syncBtn = document.getElementById('syncNowBtn');
-      const syncIcon = document.getElementById('syncIcon');
-      const syncBtnText = document.getElementById('syncBtnText');
-      const feedbackAlert = document.getElementById('syncFeedbackAlert');
-      const feedbackMsg = document.getElementById('syncFeedbackMessage');
-      const statusText = document.getElementById('syncTimestampStatus');
-
-      // Update UI for loading state
-      if (syncIcon) syncIcon.classList.add('animate-spin');
-      if (syncBtnText) syncBtnText.textContent = 'Syncing...';
-      if (feedbackAlert) {
-        feedbackAlert.className = 'mt-2 p-3 rounded-xl border border-blue-500/30 bg-blue-950/30 text-xs flex items-center justify-between text-blue-200';
-        feedbackAlert.classList.remove('hidden');
-      }
-      if (feedbackMsg) feedbackMsg.textContent = `${triggerContext}: Querying Google Search Grounding for official ICE & DHS updates...`;
-      if (statusText) statusText.textContent = 'Contacting Search Grounding';
-
-      try {
-        const systemPrompt = "You are a top-tier immigration data researcher. You provide the latest verified official metrics from DHS, ICE, and TRAC on immigration detention, removals, and policy directives. Always include citation URLs and entity names.";
-        const userQuery = "Find the latest official ICE deportation counts, monthly detention booking figures, TRAC conviction breakdown, and recent visa policy updates for the Trump administration. Provide specific numbers and citation sources.";
-        
-        const apiKey = "";
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
-
-        const payload = {
-          contents: [{ parts: [{ text: userQuery }] }],
-          tools: [{ "google_search": {} }],
-          systemInstruction: {
-            parts: [{ text: systemPrompt }]
-          }
-        };
-
-        // Call Gemini API with exponential backoff handling
-        let response;
-        let delay = 1000;
-        for (let attempt = 0; attempt < 3; attempt++) {
-          try {
-            response = await fetch(apiUrl, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(payload)
-            });
-            if (response.ok) break;
-          } catch (e) {
-            if (attempt === 2) throw e;
-          }
-          await new Promise(r => setTimeout(r, delay));
-          delay *= 2;
-        }
-
-        if (response && response.ok) {
-          const result = await response.json();
-          const candidate = result.candidates?.[0];
-
-          // Extract grounding citations if available
-          const groundingMetadata = candidate?.groundingMetadata;
-          if (groundingMetadata && groundingMetadata.groundingAttributions) {
-            const extractedSources = groundingMetadata.groundingAttributions
-              .map(attr => ({
-                uri: attr.web?.uri,
-                title: attr.web?.title || 'Federal Policy & Operations Update',
-                domain: attr.web?.uri ? new URL(attr.web.uri).hostname.replace('www.', '') : 'web',
-                category: 'Live Search Grounding',
-                snippet: 'Grounded citation verified via Google Search real-time intelligence.'
-              }))
-              .filter(s => s.uri && s.title);
-
-            if (extractedSources.length > 0) {
-              // Prepend newly discovered citations
-              dashboardState.groundedCitations = [...extractedSources, ...dashboardState.groundedCitations].slice(0, 10);
-              renderGroundedCitations();
-            }
-          }
-        }
-
-        // Update the timestamp badge to now
-        const now = new Date();
-        const formattedTimestamp = now.toLocaleDateString('en-US', {
-          month: 'short',
-          day: 'numeric',
-          year: 'numeric'
-        }) + ' at ' + now.toLocaleTimeString('en-US', {
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-          timeZoneName: 'short'
-        });
-
-        dashboardState.lastUpdated = formattedTimestamp;
-        const lastUpdatedEl = document.getElementById('lastUpdatedBadge');
-        if (lastUpdatedEl) {
-          lastUpdatedEl.textContent = formattedTimestamp;
-        }
-
-        if (feedbackAlert) {
-          feedbackAlert.className = 'mt-2 p-3 rounded-xl border border-emerald-500/30 bg-emerald-950/30 text-xs flex items-center justify-between text-emerald-200';
-        }
-        if (feedbackMsg) feedbackMsg.textContent = `Sync Complete: Dashboard refreshed with verified data & citations.`;
-        if (statusText) statusText.textContent = formattedTimestamp;
-
-      } catch (err) {
-        // Fallback gracefully without breaking UI
-        const now = new Date();
-        const formattedTimestamp = now.toLocaleDateString('en-US', {
-          month: 'short',
-          day: 'numeric',
-          year: 'numeric'
-        }) + ' at ' + now.toLocaleTimeString('en-US', {
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-          timeZoneName: 'short'
-        });
-
-        dashboardState.lastUpdated = formattedTimestamp;
-        const lastUpdatedEl = document.getElementById('lastUpdatedBadge');
-        if (lastUpdatedEl) {
-          lastUpdatedEl.textContent = formattedTimestamp;
-        }
-
-        if (feedbackAlert) {
-          feedbackAlert.className = 'mt-2 p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs flex items-center justify-between text-slate-300';
-        }
-        if (feedbackMsg) feedbackMsg.textContent = `Sync Complete: Verified against existing official repositories and live datasets.`;
-        if (statusText) statusText.textContent = formattedTimestamp;
-      } finally {
-        dashboardState.isSyncing = false;
-        if (syncIcon) syncIcon.classList.remove('animate-spin');
-        if (syncBtnText) syncBtnText.textContent = 'Sync Live Now';
-
-        setTimeout(() => {
-          if (feedbackAlert) feedbackAlert.classList.add('hidden');
-        }, 5000);
-      }
-    }
-
-    // Tab Switching Functionality
-    function switchTab(tabId) {
-      // Hide all tabs
-      document.querySelectorAll('.tab-content').forEach(el => {
-        el.classList.add('hidden');
-      });
-      // Show selected tab
-      const target = document.getElementById('tab-' + tabId);
-      if (target) {
-        target.classList.remove('hidden');
-      }
-
-      // Update Tab Navigation Active Styles
-      const navButtons = document.querySelectorAll('#tabNav .tab-btn');
-      navButtons.forEach(btn => {
-        btn.classList.remove('tab-active');
-        btn.classList.add('text-slate-400');
-      });
-
-      // Find clicked button
-      const clickedBtn = Array.from(navButtons).find(btn => 
-        btn.getAttribute('onclick')?.includes(tabId)
-      );
-      if (clickedBtn) {
-        clickedBtn.classList.add('tab-active');
-        clickedBtn.classList.remove('text-slate-400');
-      }
-
-      // Trigger Chart resize if switching to Analytics tab
-      if (tabId === 'analytics') {
-        setTimeout(initOrUpdateCharts, 50);
-      }
-    }
-
-    // Filter News stories (All, Positive, Critical)
-    function filterNews(type) {
-      const cards = document.querySelectorAll('.news-item');
-      const allBtn = document.getElementById('btn-news-all');
-      const posBtn = document.getElementById('btn-news-pos');
-      const critBtn = document.getElementById('btn-news-crit');
-
-      // Reset styles
-      [allBtn, posBtn, critBtn].forEach(b => {
-        if (!b) return;
-        b.className = 'news-filter-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 text-xs';
-      });
-
-      if (type === 'all') {
-        if (allBtn) allBtn.className = 'news-filter-btn px-3 py-1.5 rounded-lg bg-blue-600 text-white font-semibold text-xs';
-        cards.forEach(c => c.classList.remove('hidden'));
-      } else if (type === 'positive') {
-        if (posBtn) posBtn.className = 'news-filter-btn px-3 py-1.5 rounded-lg bg-emerald-700 text-white font-semibold text-xs border border-emerald-600';
-        cards.forEach(c => {
-          if (c.classList.contains('positive')) c.classList.remove('hidden');
-          else c.classList.add('hidden');
-        });
-      } else if (type === 'critical') {
-        if (critBtn) critBtn.className = 'news-filter-btn px-3 py-1.5 rounded-lg bg-rose-700 text-white font-semibold text-xs border border-rose-600';
-        cards.forEach(c => {
-          if (c.classList.contains('critical')) c.classList.remove('hidden');
-          else c.classList.add('hidden');
-        });
-      }
-    }
-
-    // Filter Region in Operational geography
-    function filterRegionByState(selectedState) {
-      const regionCards = document.querySelectorAll('.region-card');
-      const countLabel = document.getElementById('regionResultsCount');
-      let visible = 0;
-
-      regionCards.forEach(card => {
-        const states = card.getAttribute('data-states') || '';
-        if (selectedState === 'all' || states.includes(selectedState)) {
-          card.classList.remove('hidden');
-          visible++;
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-
-      if (countLabel) {
-        if (selectedState === 'all') {
-          countLabel.textContent = 'Displaying all 25 ERO operational areas';
-        } else {
-          countLabel.textContent = `Showing operational hubs active in ${selectedState}`;
-        }
-      }
-    }
-
-    // Policy Filtering Functionality
-    function filterPolicies(category) {
-      const cards = document.querySelectorAll('.policy-card');
-      const filterBtns = document.querySelectorAll('.policy-filter-btn');
-
-      // Update button styling
-      filterBtns.forEach(btn => {
-        btn.classList.remove('bg-blue-600', 'text-white');
-        btn.classList.add('bg-slate-800', 'text-slate-300');
-      });
-
-      const activeBtn = Array.from(filterBtns).find(btn => 
-        btn.getAttribute('onclick')?.includes(category)
-      );
-      if (activeBtn) {
-        activeBtn.classList.remove('bg-slate-800', 'text-slate-300');
-        activeBtn.classList.add('bg-blue-600', 'text-white');
-      }
-
-      // Filter cards
-      cards.forEach(card => {
-        const cardCat = card.getAttribute('data-category') || '';
-        if (category === 'all') {
-          card.classList.remove('hidden');
-        } else if (cardCat.includes(category)) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    }
-
-    // Modal Controls
-    function openInfoModal() {
-      document.getElementById('methodologyModal').classList.remove('hidden');
-    }
-    function closeInfoModal() {
-      document.getElementById('methodologyModal').classList.add('hidden');
-    }
-
-    // Chart References
-    let charts = {};
-
-    function initOrUpdateCharts() {
-      const ctxTimeline = document.getElementById('timelineChart')?.getContext('2d');
-      const ctxOrigin = document.getElementById('originChart')?.getContext('2d');
-      const ctxCriminality = document.getElementById('criminalityChart')?.getContext('2d');
-      const ctxNationality = document.getElementById('nationalityChart')?.getContext('2d');
-
-      // Common chart options
-      const commonGrid = { color: 'rgba(255, 255, 255, 0.06)' };
-      const commonTicks = { color: '#94a3b8', font: { family: 'Inter', size: 11 } };
-
-      // 1. Timeline Chart (Acceleration curve)
-      if (ctxTimeline && !charts.timeline) {
-        charts.timeline = new Chart(ctxTimeline, {
-          type: 'line',
-          data: {
-            labels: ['Jan 25', 'Mar 25', 'Jun 25', 'Sep 25', 'Dec 25', 'Feb 26', 'May 26', 'Jul 26', 'Sep 26'],
-            datasets: [
-              {
-                label: 'Monthly Detention Bookings',
-                data: [26500, 31200, 36800, 39500, 42100, 44300, 47100, 49200, 48600],
-                borderColor: '#3b82f6',
-                backgroundColor: 'rgba(59, 130, 246, 0.12)',
-                fill: true,
-                tension: 0.35,
-                borderWidth: 2.5,
-                pointBackgroundColor: '#3b82f6',
-                pointRadius: 4
-              },
-              {
-                label: 'Formal Removals & Flights',
-                data: [19400, 23500, 27900, 32100, 35400, 38200, 41000, 43500, 42800],
-                borderColor: '#f43f5e',
-                backgroundColor: 'transparent',
-                borderDash: [5, 5],
-                tension: 0.35,
-                borderWidth: 2,
-                pointBackgroundColor: '#f43f5e',
-                pointRadius: 3.5
-              }
-            ]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-              legend: { labels: { color: '#e2e8f0', font: { family: 'Inter', size: 11 } } },
-              tooltip: {
-                backgroundColor: '#1e293b',
-                titleColor: '#fff',
-                bodyColor: '#cbd5e1',
-                borderColor: '#334155',
-                borderWidth: 1
-              }
-            },
-            scales: {
-              x: { grid: commonGrid, ticks: commonTicks },
-              y: { grid: commonGrid, ticks: commonTicks }
-            }
-          }
-        });
-      }
-
-      // 2. Operational Origin (Interior vs Border Transfers)
-      if (ctxOrigin && !charts.origin) {
-        charts.origin = new Chart(ctxOrigin, {
-          type: 'bar',
-          data: {
-            labels: ['2023 Avg', '2024 Baseline', '2025 Mid-Year', '2026 Current'],
-            datasets: [
-              {
-                label: 'Interior ICE Apprehensions',
-                data: [28, 32, 54, 64.5],
-                backgroundColor: '#8b5cf6',
-                borderRadius: 6
-              },
-              {
-                label: 'Border / CBP Facility Transfers',
-                data: [72, 68, 46, 35.5],
-                backgroundColor: '#3b82f6',
-                borderRadius: 6
-              }
-            ]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              x: { stacked: true, grid: commonGrid, ticks: commonTicks },
-              y: { 
-                stacked: true, 
-                max: 100,
-                grid: commonGrid, 
-                ticks: { ...commonTicks, callback: value => value + '%' }
-              }
-            },
-            plugins: {
-              legend: { labels: { color: '#e2e8f0', font: { family: 'Inter', size: 11 } } },
-              tooltip: {
-                callbacks: {
-                  label: item => `${item.dataset.label}: ${item.raw}%`
-                }
-              }
-            }
-          }
-        });
-      }
-
-      // 3. Criminality Doughnut
-      if (ctxCriminality && !charts.criminality) {
-        charts.criminality = new Chart(ctxCriminality, {
-          type: 'doughnut',
-          data: {
-            labels: ['Civil Immigration Infraction Only', 'Traffic / Minor Nonviolent', 'Convicted Felonies & Violent Crimes'],
-            datasets: [{
-              data: [59.4, 22.8, 17.8],
-              backgroundColor: ['#f59e0b', '#3b82f6', '#ef4444'],
-              borderWidth: 2,
-              borderColor: '#111827'
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            cutout: '68%',
-            plugins: {
-              legend: {
-                position: 'bottom',
-                labels: { color: '#e2e8f0', font: { family: 'Inter', size: 11 }, padding: 12 }
-              },
-              tooltip: {
-                callbacks: {
-                  label: item => ` ${item.label}: ${item.raw}%`
-                }
-              }
-            }
-          }
-        });
-      }
-
-      // 4. Nationality Breakdown Horizontal Bar
-      if (ctxNationality && !charts.nationality) {
-        charts.nationality = new Chart(ctxNationality, {
-          type: 'bar',
-          indexAxis: 'y',
-          data: {
-            labels: ['Mexico', 'Guatemala', 'Honduras', 'Haiti', 'Venezuela', 'Colombia', 'Ecuador', 'China & Others'],
-            datasets: [{
-              label: '% Share of Detainees',
-              data: [38.2, 13.5, 10.6, 9.1, 7.3, 6.2, 5.5, 9.6],
-              backgroundColor: '#10b981',
-              borderRadius: 6
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              x: { 
-                grid: commonGrid, 
-                ticks: { ...commonTicks, callback: value => value + '%' }
-              },
-              y: { grid: commonGrid, ticks: commonTicks }
-            },
-            plugins: {
-              legend: { display: false },
-              tooltip: {
-                callbacks: {
-                  label: item => `Custody Share: ${item.raw}%`
-                }
-              }
-            }
-          }
-        });
-      }
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
-      // Initialize charts
-      initOrUpdateCharts();
-
-      // Initialize morning scheduler and render verified citations
-      setupMorningScheduler();
-      renderGroundedCitations();
-
-      // Close modals on escape key
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          closeInfoModal();
-          closeCronModal();
-        }
-      });
-    });
-  </script>
+    <h3 data-i18n="data.sources">Primary sources</h3>
+    <ul class="sources">
+      <li><a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC Immigration Quick Facts</a> — <span data-i18n="src.trac">Syracuse University; updated roughly every two weeks from ICE data.</span></li>
+      <li><a href="https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026" target="_blank" rel="noopener noreferrer">Vera Institute: Ten things we know from the latest ICE detention data</a> — <span data-i18n="src.vera">Facility-level analysis, September 2026.</span></li>
+      <li><a href="https://www.ice.gov/detain/detention-management" target="_blank" rel="noopener noreferrer">ICE Detention Statistics</a> — <span data-i18n="src.ice">The agency's own spreadsheets.</span></li>
+      <li><a href="https://www.dhs.gov/news" target="_blank" rel="noopener noreferrer">DHS Newsroom</a> — <span data-i18n="src.dhs">Press releases, including the claimed totals above.</span></li>
+      <li><a href="https://www.ilrc.org/community-resources/know-your-rights" target="_blank" rel="noopener noreferrer">Immigrant Legal Resource Center</a> — <span data-i18n="src.ilrc">Rights guidance and red cards.</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p><span data-i18n="foot.verified">Figures last checked by a person on</span> <time datetime="2026-10-04">October 4, 2026</time>.
+     <span data-i18n="foot.notlegal">This page is general information, not legal advice. Laws and policies change; confirm with a lawyer.</span></p>
+  <p><a href="https://github.com/jrspisiak-ship-it/ice_dashboard" target="_blank" rel="noopener noreferrer" data-i18n="foot.src">Source code and corrections</a></p>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
