@@ -1,0 +1,216 @@
+{
+  "code": "GA",
+  "name": "Georgia",
+  "name_es": "Georgia",
+  "checked": "2026-10-05",
+  "summary": {
+    "en": "Georgia held 4,556 people for ICE in July 2026, fourth among states, up from 4,383 in April. ICE arrests in the state hit about 2,250 in July 2026, more than eleven times July 2024. Forty-five local jurisdictions have 287(g) agreements, and two people died in Georgia facilities in 2026.",
+    "es": "Georgia retuvo a 4,556 personas para ICE en julio de 2026, cuarto lugar entre los estados, frente a 4,383 en abril. Los arrestos de ICE en el estado llegaron a unos 2,250 en julio de 2026, más de once veces los de julio de 2024. Cuarenta y cinco jurisdicciones locales tienen acuerdos 287(g), y dos personas murieron en centros de Georgia en 2026."
+  },
+  "summary_sources": [
+    "https://tracreports.org/immigration/quickfacts/",
+    "https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People detained for ICE in Georgia",
+        "es": "Personas detenidas para ICE en Georgia"
+      },
+      "value": "4,556",
+      "as_of": "2026-07-11",
+      "url": "https://tracreports.org/immigration/quickfacts/"
+    },
+    {
+      "label": {
+        "en": "ICE arrests in Georgia, July 2026",
+        "es": "Arrestos de ICE en Georgia, julio de 2026"
+      },
+      "value": "~2,250",
+      "as_of": "2026-07-31",
+      "url": "https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/"
+    },
+    {
+      "label": {
+        "en": "Local jurisdictions with 287(g) agreements",
+        "es": "Jurisdicciones locales con acuerdos 287(g)"
+      },
+      "value": "45",
+      "as_of": "2026-02-22",
+      "url": "https://www.univision.com/local/atlanta-wuvg/lista-ciudades-condados-georgia-colaboracion-ice-287g"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "GLAHR hotline (Georgia Latino Alliance for Human Rights)",
+      "phone": "770-457-5232",
+      "hours": {
+        "en": "Mon–Fri 9am–5pm; voicemail any time",
+        "es": "Lun–Vie 9am–5pm; buzón de voz a cualquier hora"
+      },
+      "languages": "Español / English",
+      "what": {
+        "en": "Rapid response and referrals for anyone mistreated, abused or detained",
+        "es": "Respuesta rápida y referencias para cualquier persona maltratada, abusada o detenida"
+      },
+      "url": "https://glahr.org/our-work/",
+      "primary": true
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "Catholic Charities Atlanta, Immigration Legal Services",
+      "phone": "678-222-3920",
+      "serves_detained": true,
+      "city": "Atlanta",
+      "url": "https://catholiccharitiesatlanta.org/who-we-are/contact/"
+    },
+    {
+      "name": "Georgia Asylum & Immigration Network (GAIN)",
+      "phone": "678-335-6040",
+      "serves_detained": null,
+      "city": "Atlanta",
+      "url": "https://georgiaasylum.org/client-care/",
+      "note": {
+        "en": "voicemail intake; asylum and survivors of crime",
+        "es": "admisión por buzón de voz; asilo y sobrevivientes de delitos"
+      }
+    },
+    {
+      "name": "Asian Americans Advancing Justice – Atlanta",
+      "phone": null,
+      "serves_detained": true,
+      "city": "Atlanta",
+      "url": "https://www.advancingjustice-atlanta.org/legal-services"
+    },
+    {
+      "name": "New American Pathways",
+      "phone": "404-299-6099",
+      "serves_detained": true,
+      "city": "Atlanta",
+      "url": "https://newamericanpathways.org/expanding-and-evolving-new-american-pathways-immigration-services/"
+    },
+    {
+      "name": "Latin American Association",
+      "phone": null,
+      "serves_detained": null,
+      "city": "Atlanta",
+      "url": "https://www.immigrationadvocates.org/nonprofit/legaldirectory/organization.392823-Latin_American_Association_Atlanta_Office"
+    }
+  ],
+  "legal_note": {
+    "en": "The Southern Poverty Law Center's detained-representation office in Lumpkin closed in 2024; free counsel near Stewart is scarce.",
+    "es": "La oficina del Southern Poverty Law Center para personas detenidas en Lumpkin cerró en 2024; la representación gratuita cerca de Stewart es escasa.",
+    "url": "https://www.wabe.org/as-immigration-detention-in-georgia-grows-access-to-free-attorneys-shrinks/"
+  },
+  "facilities": [
+    {
+      "name": "Stewart Detention Center",
+      "city": "Lumpkin",
+      "operator": "CoreCivic",
+      "size": "~1,979 avg daily (Jul 2026)",
+      "phone": "229-838-5000",
+      "note_2026": {
+        "en": "Two deaths (Apr 28, Jul 31); lawmakers called for closure",
+        "es": "Dos muertes (28 abr., 31 jul.); legisladores pidieron su cierre"
+      },
+      "note_url": "https://georgiarecorder.com/2026/08/21/democratic-lawmakers-call-for-closure-of-ice-detention-center-in-southwest-georgia/",
+      "url": "https://www.corecivic.com/facilities/stewart-detention-center"
+    },
+    {
+      "name": "Folkston ICE Processing Center",
+      "city": "Folkston",
+      "operator": "GEO Group",
+      "size": "1,118 beds",
+      "phone": "912-496-6905",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/folkston-ice-processing-center/"
+    },
+    {
+      "name": "D. Ray James Processing Center",
+      "city": "Folkston",
+      "operator": "GEO Group",
+      "size": "1,868 beds (opened for ICE Jun 2025)",
+      "phone": "912-496-6242",
+      "note_2026": {
+        "en": "Death in transit from Irwin, Jul 13",
+        "es": "Muerte en traslado desde Irwin, 13 jul."
+      },
+      "note_url": "https://en.wikipedia.org/wiki/List_of_deaths_in_ICE_detention",
+      "url": "https://www.geogroup.com/facilities/d-ray-james-processing-center/"
+    },
+    {
+      "name": "Irwin County Detention Center",
+      "city": "Ocilla",
+      "operator": "Reopened for ICE Oct 2025",
+      "size": "~1,000+",
+      "phone": null,
+      "note_2026": {
+        "en": "Closed to ICE in 2021 after medical-abuse findings; reopened",
+        "es": "Cerrado para ICE en 2021 tras hallazgos de abuso médico; reabierto"
+      },
+      "note_url": "https://www.wabe.org/georgia-facility-with-history-of-alleged-medical-abuse-resumes-immigration-detention/",
+      "url": "https://www.wabe.org/georgia-facility-with-history-of-alleged-medical-abuse-resumes-immigration-detention/"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Atlanta – Ted Turner Drive",
+      "address": "180 Ted Turner Dr SW, Suite 241, Atlanta 30303",
+      "phone": "404-653-2140",
+      "url": "https://www.justice.gov/eoir/atlanta-ted-turner-drive"
+    },
+    {
+      "name": "Atlanta – W. Peachtree",
+      "address": "401 W Peachtree St, Suite 2600, Atlanta 30308",
+      "phone": "404-554-9400",
+      "url": "https://www.justice.gov/eoir/atlanta-w-peachtree-street"
+    },
+    {
+      "name": "Lumpkin (Stewart)",
+      "address": "146 CCA Road, Lumpkin 31815",
+      "phone": "229-838-1324",
+      "url": "https://www.justice.gov/eoir/lumpkin-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-02-22",
+    "count": "45 jurisdictions (36 counties, 9 cities)",
+    "summary": {
+      "en": "Plus the Georgia Department of Corrections and Department of Public Safety. Task-force agreements let officers question and detain people during ordinary policing, including traffic stops. Fulton, DeKalb, Gwinnett, Cobb and Clayton were not on the February list.",
+      "es": "Más el Departamento de Correcciones y el Departamento de Seguridad Pública de Georgia. Los acuerdos de fuerza de tarea permiten a los oficiales interrogar y detener personas durante el trabajo policial ordinario, incluidas paradas de tráfico. Fulton, DeKalb, Gwinnett, Cobb y Clayton no estaban en la lista de febrero."
+    },
+    "url": "https://www.univision.com/local/atlanta-wuvg/lista-ciudades-condados-georgia-colaboracion-ice-287g",
+    "lists": [
+      {
+        "label": {
+          "en": "Task force (street-level) — counties",
+          "es": "Fuerza de tarea (en la calle) — condados"
+        },
+        "items": "Appling, Atkinson, Coweta, Dade, Dawson, Effingham, Elbert, Fannin, Forsyth, Franklin, Gilmer, Gordon, Habersham, Hall"
+      },
+      {
+        "label": {
+          "en": "Task force — city police",
+          "es": "Fuerza de tarea — policías municipales"
+        },
+        "items": "Marietta, Morrow, Alto, Euharlee, Monroe, Morven, Odum, Pearson, Social Circle"
+      },
+      {
+        "label": {
+          "en": "Warrant service (in jails) — counties",
+          "es": "Ejecución de órdenes (en cárceles) — condados"
+        },
+        "items": "Bibb, Burke, Monroe, Morgan, Oconee, Paulding, Polk, Pulaski, Rabun, Rockdale, Spalding, Tattnall, Toombs, Turner, Ware, Whitfield"
+      },
+      {
+        "label": {
+          "en": "Jail enforcement — counties",
+          "es": "Aplicación en cárceles — condados"
+        },
+        "items": "Catoosa, Columbia, Floyd, Harris, Hart, Jackson, Jeff Davis, Jones, Lamar, Laurens, Liberty, Long, Madison"
+      }
+    ]
+  },
+  "unverified": []
+}

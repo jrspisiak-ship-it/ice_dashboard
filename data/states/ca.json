@@ -1,0 +1,236 @@
+{
+  "code": "CA",
+  "name": "California",
+  "name_es": "California",
+  "summary": {
+    "en": "California held 6,412 ICE detainees as of July 9, 2026, third among states, and recorded about 4,300 ICE arrests in July 2026. State law has barred local 287(g) participation since 2018, and the Attorney General inspects detention facilities under AB 103; a 2025 inspection of Adelanto found staffing, medical and water problems, and three men died there between September 2025 and February 2026. In July 2026 CoreCivic sold the Otay Mesa and California City facilities to DHS for $1.5 billion.",
+    "es": "California retenía a 6,412 personas para ICE al 9 de julio de 2026, tercer lugar entre los estados, y registró unos 4,300 arrestos de ICE en julio de 2026. La ley estatal prohíbe la participación local en 287(g) desde 2018, y el Fiscal General inspecciona los centros de detención bajo la ley AB 103; una inspección de Adelanto en 2025 encontró problemas de personal, atención médica y agua, y tres hombres murieron allí entre septiembre de 2025 y febrero de 2026. En julio de 2026 CoreCivic vendió los centros de Otay Mesa y California City al DHS por $1,500 millones."
+  },
+  "summary_sources": [
+    "https://tracreports.org/immigration/quickfacts/",
+    "https://www.kqed.org/news/12097313/northern-california-ice-arrests-surged-this-summer",
+    "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sounds-alarm-inhumane-conditions-adelanto-detention",
+    "https://calmatters.org/justice/2026/07/corecivic-sells-ice-detention-centers/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People detained for ICE in California",
+        "es": "Personas detenidas para ICE en California"
+      },
+      "value": "6,412",
+      "as_of": "2026-07-09",
+      "url": "https://tracreports.org/immigration/quickfacts/"
+    },
+    {
+      "label": {
+        "en": "ICE arrests in California, July 2026",
+        "es": "Arrestos de ICE en California, julio de 2026"
+      },
+      "value": "~4,300",
+      "as_of": "2026-07-31",
+      "url": "https://www.kqed.org/news/12097313/northern-california-ice-arrests-surged-this-summer"
+    },
+    {
+      "label": {
+        "en": "ICE detention centers in the state",
+        "es": "Centros de detención de ICE en el estado"
+      },
+      "value": "8",
+      "as_of": "2026-07",
+      "url": "https://calmatters.org/justice/2026/07/corecivic-sells-ice-detention-centers/"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "CHIRLA / Los Angeles Raids Rapid Response Network",
+      "phone": "888-624-4752",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Rapid response and referrals (Los Angeles)",
+        "es": "Respuesta rápida y referencias (Los Ángeles)"
+      },
+      "url": "https://www.chirla.org/rapid-response/",
+      "primary": true
+    },
+    {
+      "name": "ImmDef Rapid Response Legal Hotline (Southern California)",
+      "phone": "213-833-8283",
+      "hours": {
+        "en": "Mon–Fri 9am–4pm",
+        "es": "Lun–Vie 9am–4pm"
+      },
+      "languages": "Español / English",
+      "what": {
+        "en": "Emergency legal consultations and bond representation",
+        "es": "Consultas legales de emergencia y representación para fianza"
+      },
+      "url": "https://www.immdef.org/contact"
+    },
+    {
+      "name": "Immigration Legal Services Coalition of San Diego",
+      "phone": "858-751-7553",
+      "hours": {
+        "en": "Mon–Fri 9am–6pm",
+        "es": "Lun–Vie 9am–6pm"
+      },
+      "languages": "Español / English / interpretation",
+      "what": {
+        "en": "San Diego Rapid Response Network legal partner",
+        "es": "Socio legal de la Red de Respuesta Rápida de San Diego"
+      },
+      "url": "https://www.jfssd.org/our-services/refugees-immigration/immigration-legal-services-coalition-sd/"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "Immigrant Defenders Law Center (ImmDef)",
+      "phone": "213-634-0999",
+      "serves_detained": true,
+      "city": "Los Angeles, Santa Ana, Riverside, San Diego",
+      "url": "https://www.immdef.org/rapidresponse"
+    },
+    {
+      "name": "Public Counsel",
+      "phone": "213-385-2977 x600",
+      "serves_detained": true,
+      "city": "Los Angeles",
+      "url": "https://publiccounsel.org/contact/"
+    },
+    {
+      "name": "Centro Legal de la Raza",
+      "phone": "510-437-1554",
+      "serves_detained": true,
+      "city": "Oakland",
+      "url": "https://centrolegal.org/immigrants-rights/"
+    },
+    {
+      "name": "Al Otro Lado",
+      "phone": "323-238-9935",
+      "serves_detained": true,
+      "city": "San Diego",
+      "url": "https://www.alotrolado.org/our-programs"
+    },
+    {
+      "name": "Legal Aid Society of San Diego",
+      "phone": "1-877-534-2524",
+      "serves_detained": true,
+      "city": "San Diego",
+      "url": "https://www.lassd.org/immigration/"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Adelanto ICE Processing Center",
+      "city": "Adelanto",
+      "operator": "GEO Group",
+      "size": "1,940 beds; avg daily 1,686 (Jul 2026)",
+      "phone": "760-561-6100",
+      "note_2026": {
+        "en": "Class action filed Jan 2026 over medical neglect and overcrowding; two deaths in late 2025; state AG inspection found inadequate staffing, medical access and water",
+        "es": "Demanda colectiva presentada en enero de 2026 por negligencia médica y hacinamiento; dos muertes a fines de 2025; inspección del Fiscal General halló personal, atención médica y agua inadecuados"
+      },
+      "note_url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sounds-alarm-inhumane-conditions-adelanto-detention",
+      "url": "https://www.geogroup.com/facilities/adelanto-ice-processing-center/"
+    },
+    {
+      "name": "California City Immigration Processing Center",
+      "city": "California City",
+      "operator": "CoreCivic (owned by DHS since Jul 2026)",
+      "size": "2,560 beds",
+      "phone": null,
+      "note_2026": {
+        "en": "Class action Nov 2025 alleging sewage leaks, infestations, inadequate food and medical care",
+        "es": "Demanda colectiva en noviembre de 2025 por fugas de aguas residuales, plagas y comida y atención médica inadecuadas"
+      },
+      "note_url": "https://calmatters.org/justice/2025/11/ice-california-city-detainee-lawsuit/",
+      "url": "https://www.corecivic.com/facilities/california-city-immigration-processing-center"
+    },
+    {
+      "name": "Otay Mesa Detention Center",
+      "city": "San Diego",
+      "operator": "CoreCivic (owned by DHS since Jul 2026)",
+      "size": "1,994 beds",
+      "phone": "619-671-8750",
+      "note_2026": null,
+      "url": "https://www.corecivic.com/facilities/otay-mesa-detention-center"
+    },
+    {
+      "name": "Golden State Annex",
+      "city": "McFarland",
+      "operator": "GEO Group",
+      "size": "700 beds",
+      "phone": "661-792-2731",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/golden-state-annex/"
+    },
+    {
+      "name": "Mesa Verde ICE Processing Center",
+      "city": "Bakersfield",
+      "operator": "GEO Group",
+      "size": "400 beds",
+      "phone": "661-859-1028",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/mesa-verde-ice-processing-center/"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles – N. Los Angeles St",
+      "address": "300 N. Los Angeles St, Room 4330, Los Angeles 90012",
+      "phone": "213-576-4701",
+      "url": "https://www.justice.gov/eoir/los-angeles-n-los-angeles-street-immigration-court"
+    },
+    {
+      "name": "Adelanto",
+      "address": "10250 Rancho Rd, Suite 201A, Adelanto 92301",
+      "phone": "760-561-6500",
+      "url": "https://www.justice.gov/eoir/adelanto-immigration-court"
+    },
+    {
+      "name": "San Diego",
+      "address": "880 Front St, Suite 4240, San Diego 92101",
+      "phone": "619-510-4500",
+      "url": "https://www.justice.gov/eoir/san-diego-immigration-court"
+    },
+    {
+      "name": "Otay Mesa",
+      "address": "7488 Calzada de la Fuente, San Diego 92154",
+      "phone": "619-661-5600",
+      "url": "https://www.justice.gov/eoir/otay-mesa-immigration-court"
+    },
+    {
+      "name": "Santa Ana",
+      "address": "1241 E. Dyer Rd, Suite 200, Santa Ana 92705",
+      "phone": "714-481-4900",
+      "url": "https://www.justice.gov/eoir/santa-ana-immigration-court"
+    },
+    {
+      "name": "Concord",
+      "address": "1855 Gateway Blvd, Suite 850, Concord 94520",
+      "phone": "925-680-9015",
+      "url": "https://www.justice.gov/eoir/concord-immigration-court"
+    },
+    {
+      "name": "Sacramento",
+      "address": "650 Capitol Mall, Suite 4-200, Sacramento 95814",
+      "phone": "916-447-9301",
+      "url": "https://www.justice.gov/eoir/sacramento-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-08-31",
+    "count": "0 (state law prohibits)",
+    "summary": {
+      "en": "California barred local participation in 2018; KQED reports arrests fell about 25% after the ban and SB 54 limits on local cooperation keep arrests lower than in 287(g) states.",
+      "es": "California prohibió la participación local en 2018; KQED informa que los arrestos bajaron cerca de 25% tras la prohibición y que los límites de la ley SB 54 a la cooperación local mantienen los arrestos por debajo de los estados con 287(g)."
+    },
+    "url": "https://www.kqed.org/news/12097313/northern-california-ice-arrests-surged-this-summer"
+  },
+  "unverified": [
+    "Phones for Imperial, West LA and Van Nuys courts",
+    "California City facility phone"
+  ],
+  "checked": "2026-10-05"
+}

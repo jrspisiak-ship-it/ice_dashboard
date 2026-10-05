@@ -1,0 +1,124 @@
+{
+  "code": "IL",
+  "name": "Illinois",
+  "name_es": "Illinois",
+  "summary": {
+    "en": "Illinois has no long-term ICE detention: the Illinois Way Forward Act ended county-jail ICE contracts by 2022, and a 2019 law bans counties from 287(g) agreements. 'Operation Midway Blitz' began September 8, 2025 and turned ICE's Broadview processing center (rated for 236 people for up to 12 hours) into a de facto detention site; federal records show 2,074 apprehensions in October 2025, 58% with no criminal history. A federal judge ordered ICE to clean cells and provide bedding, meals and attorney access at Broadview in November 2025, and arrests rose again in Chicago in summer 2026 with quieter tactics.",
+    "es": "Illinois no tiene detención de ICE de largo plazo: la ley Illinois Way Forward terminó los contratos de ICE con cárceles de condado para 2022, y una ley de 2019 prohíbe a los condados los acuerdos 287(g). La 'Operación Midway Blitz' comenzó el 8 de septiembre de 2025 y convirtió el centro de procesamiento de ICE en Broadview (con capacidad para 236 personas hasta 12 horas) en un sitio de detención de facto; registros federales muestran 2,074 aprehensiones en octubre de 2025, 58% sin antecedentes penales. Un juez federal ordenó a ICE limpiar las celdas y proporcionar ropa de cama, comidas y acceso a abogados en Broadview en noviembre de 2025, y los arrestos volvieron a subir en Chicago en el verano de 2026 con tácticas más discretas."
+  },
+  "summary_sources": [
+    "https://southsideweekly.com/illinois-way-forward-act/",
+    "https://theappeal.org/politicalreport/illinois-bans-ice-program-287g/",
+    "https://abc7chicago.com/post/immigration-enforcement-thousands-arrested-deported-ice-agents-border-patrol-operation-midway-blitz-new-records-reveal/18824584/",
+    "https://capitolnewsillinois.com/news/judge-orders-ice-to-clean-up-conditions-in-broadview-facility-thats-become-a-prison/",
+    "https://chicago.suntimes.com/immigration/2026/07/09/ice-arrests-increase-chicago-tactics-less-publicized-midway-blitz-back-yards-gage-brighton-park"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "Long-term ICE detention facilities in Illinois",
+        "es": "Centros de detención de ICE de largo plazo en Illinois"
+      },
+      "value": "0",
+      "as_of": "2022-01-01",
+      "url": "https://southsideweekly.com/illinois-way-forward-act/"
+    },
+    {
+      "label": {
+        "en": "Chicago-area apprehensions, October 2025 (58% no criminal history)",
+        "es": "Aprehensiones en el área de Chicago, octubre de 2025 (58% sin antecedentes)"
+      },
+      "value": "2,074",
+      "as_of": "2025-10-31",
+      "url": "https://abc7chicago.com/post/immigration-enforcement-thousands-arrested-deported-ice-agents-border-patrol-operation-midway-blitz-new-records-reveal/18824584/"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "ICIRR Family Support Network hotline",
+      "phone": "1-855-435-7693",
+      "hours": null,
+      "languages": "Español / English / Arabic, Korean, Polish, Russian, Ukrainian, Dari, Urdu, Pashto, Cantonese, Mandarin",
+      "what": {
+        "en": "Report ICE activity; deportation defense referral",
+        "es": "Reportar actividad de ICE; referencias para defensa contra deportación"
+      },
+      "url": "https://www.icirr.org/fsn",
+      "primary": true
+    },
+    {
+      "name": "NIJC Detention Project hotline",
+      "phone": "773-672-6599",
+      "hours": {
+        "en": "Every other Tuesday, 12–3pm ET",
+        "es": "Martes alternos, 12–3pm hora del Este"
+      },
+      "languages": null,
+      "what": {
+        "en": "For families of detained people",
+        "es": "Para familias de personas detenidas"
+      },
+      "url": "https://immigrantjustice.org/contact-us/"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "National Immigrant Justice Center (NIJC)",
+      "phone": "312-660-1370",
+      "serves_detained": true,
+      "city": "Chicago",
+      "url": "https://immigrantjustice.org/contact-us/"
+    },
+    {
+      "name": "The Resurrection Project – Immigration Legal Services",
+      "phone": "312-666-3062",
+      "serves_detained": true,
+      "city": "Chicago",
+      "url": "https://resurrectionproject.org/immigration-legal-services/"
+    },
+    {
+      "name": "Illinois Coalition for Immigrant and Refugee Rights (ICIRR)",
+      "phone": "312-332-7360",
+      "serves_detained": null,
+      "city": "Chicago",
+      "url": "https://www.icirr.org/contact"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Broadview Processing Center",
+      "city": "Broadview",
+      "operator": "ICE",
+      "size": "rated 236 people for up to 12 hours",
+      "phone": null,
+      "note_2026": {
+        "en": "Class action Moreno Gonzalez v. Noem; court order Nov 2025 on cells, bedding, meals, attorney access",
+        "es": "Demanda colectiva Moreno Gonzalez v. Noem; orden judicial de noviembre de 2025 sobre celdas, ropa de cama, comidas y acceso a abogados"
+      },
+      "note_url": "https://www.aclu-il.org/cases/moreno-gonzalez-v-noem/",
+      "url": "https://www.wbez.org/immigration/2025/10/01/broadview-immigration-processing-center-detention-ice-dhs"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Chicago",
+      "address": "55 E. Monroe St, Suite 1500, Chicago 60603",
+      "phone": "312-220-0965",
+      "url": "https://www.justice.gov/eoir/chicago-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2019-09-05",
+    "count": "0 (banned by state law)",
+    "summary": {
+      "en": "HB 1637, signed in 2019, bans Illinois counties from 287(g) agreements.",
+      "es": "La ley HB 1637, firmada en 2019, prohíbe a los condados de Illinois los acuerdos 287(g)."
+    },
+    "url": "https://theappeal.org/politicalreport/illinois-bans-ice-program-287g/"
+  },
+  "unverified": [
+    "Any 2026 Illinois monthly arrest total",
+    "Where Illinois arrestees are held long-term (out of state)"
+  ],
+  "checked": "2026-10-05"
+}

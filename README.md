@@ -23,6 +23,10 @@ Live at https://civicshield-project.netlify.app/
 
 If the secret is missing the workflow fails cleanly and the page simply shows "No automated results yet."
 
+## States
+
+Each state is one file in `data/states/<code>.json` (bilingual fields are `{"en": ..., "es": ...}`), listed in `data/states/index.json`. `states.js` renders the "Your state" panel and validates `?state=` against that index. To add a state: write the file with a source URL on every item, add it to the index, add it to the `<select>` in `correct.html`. Corrections arrive through the Netlify form (Forms tab in the Netlify dashboard).
+
 ## Updating the verified figures
 
 The numbers in the "The numbers, with sources" section are typed by hand on purpose.

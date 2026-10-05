@@ -1,0 +1,54 @@
+{
+  "states": [
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "name_es": "Georgia"
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "name_es": "Texas"
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "name_es": "California"
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "name_es": "Florida"
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "name_es": "Nueva York"
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "name_es": "Illinois"
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "name_es": "Arizona"
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "name_es": "Nueva Jersey"
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "name_es": "Luisiana"
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "name_es": "Pensilvania"
+    }
+  ]
+}

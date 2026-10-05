@@ -1,0 +1,248 @@
+{
+  "code": "TX",
+  "name": "Texas",
+  "name_es": "Texas",
+  "summary": {
+    "en": "Texas holds more ICE detainees than any other state: 16,450 people as of July 9, 2026, about one quarter of the national total, and roughly one in four ICE arrests nationwide. Senate Bill 8, effective January 1, 2026, requires every sheriff who runs a jail to request a 287(g) agreement by December 1, 2026; Texas already had 299 agreements in February. A federal court blocked most of the SB 4 state-deportation law on May 14, 2026 while leaving its 'illegal entry' offense in effect.",
+    "es": "Texas retiene a más personas para ICE que cualquier otro estado: 16,450 al 9 de julio de 2026, cerca de una cuarta parte del total nacional, y aproximadamente uno de cada cuatro arrestos de ICE en el país. La ley SB 8, vigente desde el 1 de enero de 2026, obliga a cada alguacil que opera una cárcel a solicitar un acuerdo 287(g) antes del 1 de diciembre de 2026; Texas ya tenía 299 acuerdos en febrero. Un tribunal federal bloqueó la mayor parte de la ley estatal de deportación SB 4 el 14 de mayo de 2026, dejando en vigor su delito de 'entrada ilegal'."
+  },
+  "summary_sources": [
+    "https://tracreports.org/immigration/quickfacts/",
+    "https://www.texastribune.org/2026/09/22/texas-ice-detained-immigrants/",
+    "https://www.texaspolicyresearch.com/senate-bill-8-and-287g-agreements-where-texas-stands-today/",
+    "https://raicestexas.org/live-analysis/sb4-blocked-partial"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People detained for ICE in Texas",
+        "es": "Personas detenidas para ICE en Texas"
+      },
+      "value": "16,450",
+      "as_of": "2026-07-09",
+      "url": "https://tracreports.org/immigration/quickfacts/"
+    },
+    {
+      "label": {
+        "en": "Share of national ICE arrests",
+        "es": "Proporción de los arrestos de ICE a nivel nacional"
+      },
+      "value": "~25%",
+      "as_of": "2026-08-06",
+      "url": "https://www.texastribune.org/2026/09/22/texas-ice-detained-immigrants/"
+    },
+    {
+      "label": {
+        "en": "Largest facility: Camp East Montana, El Paso (avg daily)",
+        "es": "Centro más grande: Camp East Montana, El Paso (promedio diario)"
+      },
+      "value": "2,026",
+      "as_of": "2026-07",
+      "url": "https://tracreports.org/immigration/quickfacts/"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "Houston Immigrants' Rights Hotline (ACLU of Texas / HILSC)",
+      "phone": "1-833-468-4664",
+      "hours": {
+        "en": "Mon–Fri 9am–5pm",
+        "es": "Lun–Vie 9am–5pm"
+      },
+      "languages": "Español / English / Vietnamese, Mandarin, Arabic",
+      "what": {
+        "en": "Legal referral and information on enforcement and detention",
+        "es": "Referencias legales e información sobre operativos y detención"
+      },
+      "url": "https://www.aclutx.org/campaigns-initiatives/hotline/",
+      "primary": true
+    },
+    {
+      "name": "RAICES legal line",
+      "phone": "1-833-372-4237",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Legal intake; detained family defense",
+        "es": "Admisión legal; defensa de familias detenidas"
+      },
+      "url": "https://raicestexas.org/legal"
+    },
+    {
+      "name": "ABA ProBAR (Rio Grande Valley)",
+      "phone": "956-365-3775",
+      "hours": {
+        "en": "Mon–Fri 9am–5pm Central",
+        "es": "Lun–Vie 9am–5pm Centro"
+      },
+      "languages": "Español / English",
+      "what": {
+        "en": "Detention hotline for detained adults and children",
+        "es": "Línea de detención para adultos y niños detenidos"
+      },
+      "url": "https://www.abaprobar.org/contact"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "RAICES",
+      "phone": "1-833-372-4237",
+      "serves_detained": true,
+      "city": "San Antonio, Austin, Dallas-Fort Worth, Houston",
+      "url": "https://raicestexas.org/legal"
+    },
+    {
+      "name": "Estrella del Paso",
+      "phone": "915-532-3975",
+      "serves_detained": true,
+      "city": "El Paso",
+      "url": "https://estrelladelpaso.org/services/non-representation-services"
+    },
+    {
+      "name": "ABA ProBAR",
+      "phone": "956-365-3775",
+      "serves_detained": true,
+      "city": "Harlingen",
+      "url": "https://www.abaprobar.org/contact"
+    },
+    {
+      "name": "American Gateways",
+      "phone": "512-478-0546",
+      "serves_detained": null,
+      "city": "Austin / San Antonio / Waco",
+      "url": "https://www.americangateways.org/get-help"
+    },
+    {
+      "name": "Galveston-Houston Immigrant Representation Project",
+      "phone": "713-561-3059",
+      "serves_detained": null,
+      "city": "Houston",
+      "url": "http://ghirp.org/contact/"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Camp East Montana (Fort Bliss)",
+      "city": "El Paso",
+      "operator": "ICE / contractor",
+      "size": "avg daily 2,026 (Jul 2026); up to 5,000",
+      "phone": null,
+      "note_2026": {
+        "en": "Three deaths in six weeks ending Jan 2026, one ruled a homicide; HRW/ACLU report called for closure",
+        "es": "Tres muertes en seis semanas hasta enero de 2026, una declarada homicidio; informe de HRW/ACLU pidió su cierre"
+      },
+      "note_url": "https://www.hrw.org/news/2026/07/15/us-deaths-neglect-in-fort-bliss-immigration-detention",
+      "url": "https://www.ktep.org/2026-01-23/immigrant-deaths-intensify-scrutiny-of-detention-camp-as-el-paso-becomes-deportation-hub"
+    },
+    {
+      "name": "South Texas ICE Processing Center",
+      "city": "Pearsall",
+      "operator": "GEO Group",
+      "size": "1,904 beds; avg daily 1,703 (Jul 2026)",
+      "phone": "830-334-2939",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/south-texas-ice-processing-center/"
+    },
+    {
+      "name": "Dilley Immigration Processing Center (families)",
+      "city": "Dilley",
+      "operator": "CoreCivic",
+      "size": "up to 2,400",
+      "phone": "830-378-6500",
+      "note_2026": {
+        "en": "~3,000 children held in first year after Mar 2025 reopening; average stay 25 days vs. 20-day Flores limit",
+        "es": "~3,000 niños retenidos en el primer año tras la reapertura en marzo de 2025; estancia promedio de 25 días frente al límite Flores de 20"
+      },
+      "note_url": "https://www.texastribune.org/2026/08/12/texas-immigration-ice-detention-children-dilley/",
+      "url": "https://ir.corecivic.com/news-releases/news-release-details/corecivic-announces-resumption-operations-south-texas-family"
+    },
+    {
+      "name": "Houston Processing Center",
+      "city": "Houston",
+      "operator": "CoreCivic",
+      "size": null,
+      "phone": "281-449-1481",
+      "note_2026": null,
+      "url": "https://www.corecivic.com/facilities/houston-processing-center"
+    },
+    {
+      "name": "T. Don Hutto Detention Center",
+      "city": "Taylor",
+      "operator": "CoreCivic",
+      "size": null,
+      "phone": "512-218-2400",
+      "note_2026": null,
+      "url": "https://www.corecivic.com/facilities/t-don-hutto-detention-center"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Dallas",
+      "address": "1100 Commerce St, Suite 1060, Dallas 75242",
+      "phone": "214-767-1814",
+      "url": "https://www.justice.gov/eoir/dallas-immigration-court"
+    },
+    {
+      "name": "El Paso",
+      "address": "700 E. San Antonio Ave, Suite 750, El Paso 79901",
+      "phone": "915-534-6020",
+      "url": "https://www.justice.gov/eoir/el-paso-immigration-courts"
+    },
+    {
+      "name": "Harlingen",
+      "address": "2009 W. Jefferson Ave, Suite 300, Harlingen 78550",
+      "phone": "956-427-8580",
+      "url": "https://www.justice.gov/eoir/harlingen-immigration-court"
+    },
+    {
+      "name": "Houston",
+      "address": "1801 Smith St, 9th Floor, Houston 77002",
+      "phone": "713-718-3870",
+      "url": "https://www.justice.gov/eoir/houston-immigration-court"
+    },
+    {
+      "name": "Conroe",
+      "address": "806 Hilbig Rd, Suite 2-300, Conroe 77301",
+      "phone": "936-520-5400",
+      "url": "https://www.justice.gov/eoir/conroe-immigration-court"
+    },
+    {
+      "name": "Laredo",
+      "address": "1406 Jacaman Rd, Suite B, Laredo 78041",
+      "phone": "956-523-6200",
+      "url": "https://www.justice.gov/eoir/laredo-immigration-court"
+    },
+    {
+      "name": "Pearsall",
+      "address": "566 Veterans Dr, Pearsall 78061",
+      "phone": "210-368-5700",
+      "url": "https://www.justice.gov/eoir/pearsall-immigration-court"
+    },
+    {
+      "name": "Port Isabel",
+      "address": "27991 Buena Vista Blvd, Los Fresnos 78566",
+      "phone": "956-254-5700",
+      "url": "https://www.justice.gov/eoir/los-fresnos-immigration-court"
+    },
+    {
+      "name": "San Antonio",
+      "address": "800 Dolorosa, Suite 300, San Antonio 78207",
+      "phone": "210-472-6637",
+      "url": "https://www.justice.gov/eoir/san-antonio-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-02-20",
+    "count": "299 agreements across 241 agencies in 186 counties",
+    "summary": {
+      "en": "135 warrant-service, 117 task-force, 47 jail-enforcement. SB 8 requires sheriffs with jails to request an agreement by Dec 1, 2026, enforceable by the Attorney General, with state grants of $80,000–$140,000.",
+      "es": "135 de ejecución de órdenes, 117 de fuerza de tarea, 47 de aplicación en cárceles. La ley SB 8 obliga a los alguaciles con cárceles a solicitar un acuerdo antes del 1 de diciembre de 2026, con subvenciones estatales de $80,000–$140,000."
+    },
+    "url": "https://www.texaspolicyresearch.com/senate-bill-8-and-287g-agreements-where-texas-stands-today/"
+  },
+  "unverified": [
+    "Texas-only ICE arrest count for July 2026",
+    "Camp East Montana phone and operator (ice.gov blocked)"
+  ],
+  "checked": "2026-10-05"
+}

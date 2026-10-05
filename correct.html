@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Civic Shield — Send a correction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=14">
+</head>
+<body class="page-data">
+<header class="topbar">
+  <div class="wrap masthead">
+    <a class="brand" href="index.html"><span class="brand-name">Civic Shield</span></a>
+    <div class="masthead-actions"><a class="btn btn-sm help-link" href="help.html">Get help</a></div>
+  </div>
+  <div class="wrap"><p class="brand-sub">A U.S. Immigration Policy, Assistance and Monitoring Project</p></div>
+</header>
+<main class="wrap">
+  <section class="section">
+    <h2>Send a correction or add a hotline</h2>
+    <p class="lede">Found a wrong number, a closed office, or a verified rapid-response line for a state we don't cover yet? Tell us. We publish only what we can confirm on the organization's own site. <span lang="es">Puede escribir en español.</span></p>
+    <form name="correction" method="POST" data-netlify="true" netlify-honeypot="company" class="form">
+      <input type="hidden" name="form-name" value="correction">
+      <p class="hidden"><label>Leave empty <input name="company"></label></p>
+      <label>State <select name="state" required>
+        <option value="">Choose</option>
+        <option>GA</option><option>TX</option><option>CA</option><option>FL</option><option>NY</option><option>IL</option><option>AZ</option><option>NJ</option><option>LA</option><option>PA</option><option>Other / national</option>
+      </select></label>
+      <label>What needs to change <textarea name="message" rows="6" required maxlength="3000" placeholder="Example: The GLAHR hours changed to 8am–6pm. Source: https://glahr.org/our-work/"></textarea></label>
+      <label>Link where we can verify it <input type="url" name="source" placeholder="https://" maxlength="500"></label>
+      <label>Email (optional, only if you want a reply) <input type="email" name="email" maxlength="200"></label>
+      <p class="small">Don't include anyone's immigration status, A-number, or personal details. We keep submissions only as long as needed to check them.</p>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+</main>
+<footer class="wrap foot"><p><a href="index.html">Back to Civic Shield</a></p></footer>
+</body>
+</html>

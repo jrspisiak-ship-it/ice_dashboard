@@ -1,0 +1,179 @@
+{
+  "code": "LA",
+  "name": "Louisiana",
+  "name_es": "Luisiana",
+  "summary": {
+    "en": "Louisiana holds the second-largest ICE detention population of any state, 7,680 people as of July 2026, spread across roughly ten mostly rural centers run by GEO Group and LaSalle Corrections. In September 2025 the state opened 'Camp 57,' an ICE unit inside the Angola penitentiary; a federal judge ordered four men released from it in February 2026 for due-process violations. Detention is long and isolated: people held over a year rose from 412 (March 2024) to 2,220 (March 2026), and over 1,000 habeas petitions were open by June 2026.",
+    "es": "Luisiana tiene la segunda población detenida por ICE más grande de cualquier estado, 7,680 personas en julio de 2026, repartidas en unos diez centros mayormente rurales operados por GEO Group y LaSalle Corrections. En septiembre de 2025 el estado abrió 'Camp 57', una unidad de ICE dentro de la penitenciaría de Angola; un juez federal ordenó liberar a cuatro hombres de allí en febrero de 2026 por violaciones al debido proceso. La detención es larga y aislada: las personas retenidas más de un año subieron de 412 (marzo de 2024) a 2,220 (marzo de 2026), y más de 1,000 peticiones de habeas corpus estaban abiertas en junio de 2026."
+  },
+  "summary_sources": [
+    "https://tracreports.org/immigration/quickfacts/",
+    "https://lailluminator.com/2026/06/25/ice-louisiana-3/",
+    "https://www.wwno.org/immigration/2025-09-04/a-notorious-wing-of-angola-prison-is-now-a-detention-center-for-ice",
+    "https://lailluminator.com/2026/02/15/camp-57-releawse/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People detained for ICE in Louisiana (2nd in nation)",
+        "es": "Personas detenidas para ICE en Luisiana (2.º del país)"
+      },
+      "value": "7,680",
+      "as_of": "2026-07-09",
+      "url": "https://tracreports.org/immigration/quickfacts/"
+    },
+    {
+      "label": {
+        "en": "People detained more than one year (vs. 412 in Mar 2024)",
+        "es": "Personas detenidas más de un año (frente a 412 en marzo de 2024)"
+      },
+      "value": "2,220",
+      "as_of": "2026-03",
+      "url": "https://lailluminator.com/2026/06/25/ice-louisiana-3/"
+    },
+    {
+      "label": {
+        "en": "Open habeas petitions by detained immigrants",
+        "es": "Peticiones de habeas corpus abiertas por inmigrantes detenidos"
+      },
+      "value": "1,000+",
+      "as_of": "2026-06-01",
+      "url": "https://lailluminator.com/2026/06/25/ice-louisiana-3/"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "ISLA – Immigration Services and Legal Advocacy",
+      "phone": "504-265-0416",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Legal referral; detained representation across the region's centers",
+        "es": "Referencias legales; representación de detenidos en los centros de la región"
+      },
+      "url": "https://www.islaimmigration.org/what-we-do",
+      "primary": true
+    },
+    {
+      "name": "Louisiana Advocates for Immigrants in Detention (LaAID)",
+      "phone": "318-455-4166",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "WhatsApp messages only (no voice). Visitation, family contact, release transport; not attorneys",
+        "es": "Solo mensajes de WhatsApp (sin voz). Visitas, contacto familiar, transporte tras la liberación; no son abogados"
+      },
+      "url": "https://laaid.org/"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "ISLA – Immigration Services and Legal Advocacy",
+      "phone": "504-265-0416",
+      "serves_detained": true,
+      "city": "New Orleans",
+      "url": "https://www.islaimmigration.org/what-we-do"
+    },
+    {
+      "name": "Catholic Charities Archdiocese of New Orleans – Immigration & Refugee Services",
+      "phone": "504-310-6860",
+      "serves_detained": null,
+      "city": "New Orleans",
+      "url": "https://www.ccano.org/immigration-refugee-services/"
+    }
+  ],
+  "legal_note": {
+    "en": "Most Louisiana detention centers are hours from New Orleans; free counsel is extremely scarce. Use the national directory and search by facility name.",
+    "es": "La mayoría de los centros de detención de Luisiana están a horas de Nueva Orleans; la representación gratuita es extremadamente escasa. Use el directorio nacional y busque por nombre del centro."
+  },
+  "facilities": [
+    {
+      "name": "Winn Correctional Center",
+      "city": "Winnfield",
+      "operator": "LaSalle Corrections",
+      "size": "1,576 beds",
+      "phone": null,
+      "note_2026": {
+        "en": "DHS OIG report (June 2026) found a chokehold, a stabbing with a pen, unsanitary conditions",
+        "es": "Informe OIG del DHS (junio de 2026) halló una llave de estrangulamiento, un apuñalamiento con un bolígrafo y condiciones insalubres"
+      },
+      "note_url": "https://www.wafb.com/2026/06/04/inspection-finds-use-of-force-issues-safety-sanitation-concerns-la-ice-detention-center/",
+      "url": "https://www.wafb.com/2026/06/04/inspection-finds-use-of-force-issues-safety-sanitation-concerns-la-ice-detention-center/"
+    },
+    {
+      "name": "Central Louisiana ICE Processing Center",
+      "city": "Jena",
+      "operator": "GEO Group",
+      "size": "1,160 beds",
+      "phone": "318-992-7800",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/central-louisiana-ice-processing-center/"
+    },
+    {
+      "name": "Pine Prairie ICE Processing Center",
+      "city": "Pine Prairie",
+      "operator": "GEO Group",
+      "size": "1,094 beds",
+      "phone": "337-599-2198",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/pine-prairie-ice-processing-center/"
+    },
+    {
+      "name": "South Louisiana ICE Processing Center",
+      "city": "Basile",
+      "operator": "GEO Group",
+      "size": "1,000 beds",
+      "phone": "318-668-5900",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/south-louisiana-ice-processing-center/"
+    },
+    {
+      "name": "Camp 57 (Louisiana State Penitentiary, Angola)",
+      "city": "Angola",
+      "operator": "ICE on state prison grounds",
+      "size": "400+ men",
+      "phone": null,
+      "note_2026": {
+        "en": "Federal judge ordered four men released Feb 6, 2026 for due-process violations",
+        "es": "Un juez federal ordenó liberar a cuatro hombres el 6 de febrero de 2026 por violaciones al debido proceso"
+      },
+      "note_url": "https://lailluminator.com/2026/02/15/camp-57-releawse/",
+      "url": "https://www.wwno.org/immigration/2025-09-04/a-notorious-wing-of-angola-prison-is-now-a-detention-center-for-ice"
+    }
+  ],
+  "courts": [
+    {
+      "name": "New Orleans",
+      "address": "365 Canal St, Suite 500, New Orleans 70130",
+      "phone": "504-589-3992",
+      "url": "https://www.justice.gov/eoir/new-orleans-immigration-court"
+    },
+    {
+      "name": "LaSalle (Jena)",
+      "address": "830 Pine Hill Rd, Jena 71342",
+      "phone": "318-335-6880",
+      "url": "https://www.justice.gov/eoir/lasalle-immigration-court"
+    },
+    {
+      "name": "Oakdale",
+      "address": "1900 E. Whatley Rd, Oakdale 71463",
+      "phone": "318-335-0365",
+      "url": "https://www.justice.gov/eoir/oakdale-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-07",
+    "count": null,
+    "summary": {
+      "en": "Gov. Landry's May 2025 'Operation Geaux' order directed state agencies to join 287(g); over 180 people were arrested via 287(g) in Louisiana in July 2026. No current statewide count could be verified.",
+      "es": "La orden 'Operation Geaux' del gobernador Landry en mayo de 2025 instruyó a las agencias estatales a unirse a 287(g); más de 180 personas fueron arrestadas vía 287(g) en Luisiana en julio de 2026. No se pudo verificar un conteo estatal actual."
+    },
+    "url": "https://lailluminator.com/2025/05/17/landry-ice/"
+  },
+  "unverified": [
+    "Current 287(g) count",
+    "Total Louisiana ICE arrests for the latest month",
+    "Richwood and Winn phones"
+  ],
+  "checked": "2026-10-05"
+}

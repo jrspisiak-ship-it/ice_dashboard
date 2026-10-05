@@ -447,3 +447,17 @@ p.brand-sub { display: block; margin: 0; padding: 0 0 0.4rem; font-size: 0.9rem;
 .masthead { padding-bottom: 0.15rem; }
 .panel { scroll-margin-top: 8.5rem; }
 @media (max-width: 600px) { p.brand-sub { display: block; font-size: 0.8rem; } }
+
+/* ---------- state picker & form ---------- */
+.state-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin: 0.25rem 0 1rem; }
+.state-pick label { font-weight: 700; }
+.state-pick select { font: inherit; font-size: 1.05rem; font-weight: 700; padding: 0.45rem 0.7rem; border: 2px solid var(--ink); border-radius: 8px; background: #fff; color: var(--ink); }
+.state-pick .small { flex-basis: 100%; margin: 0; }
+.facts-state dt { font-size: 1.35rem; }
+a.src { font-size: 0.85em; color: var(--ink-soft); }
+.form { display: grid; gap: 0.9rem; max-width: 36rem; }
+.form label { display: grid; gap: 0.3rem; font-weight: 700; }
+.form input, .form select, .form textarea { font: inherit; font-weight: 400; padding: 0.55rem 0.7rem; border: 2px solid var(--rule); border-radius: 8px; }
+.form input:focus, .form select:focus, .form textarea:focus { border-color: var(--ink); outline: none; }
+.form .hidden { display: none; }
+.form .btn { justify-self: start; border: 0; cursor: pointer; font: inherit; font-weight: 700; }

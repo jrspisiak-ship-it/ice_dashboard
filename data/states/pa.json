@@ -1,0 +1,185 @@
+{
+  "code": "PA",
+  "name": "Pennsylvania",
+  "name_es": "Pensilvania",
+  "summary": {
+    "en": "Pennsylvania hosts Moshannon Valley Processing Center in Clearfield County, the largest immigration detention facility in the Northeast (1,876 beds, 1,417 held in May 2026), and ICE has announced a 7,500-bed center in Tremont plus a processing warehouse in Hamburg. The state has one of the fastest-growing 287(g) footprints in the country (over 130 agencies by September 2026, mostly task-force model), while Philadelphia codified its sanctuary status with an 'ICE Out' package in April 2026. ICE arrests in the state more than quadrupled to 8,796 between January 20, 2025 and March 11, 2026.",
+    "es": "Pensilvania alberga el Moshannon Valley Processing Center en el condado de Clearfield, el centro de detención migratoria más grande del noreste (1,876 camas, 1,417 retenidos en mayo de 2026), e ICE ha anunciado un centro de 7,500 camas en Tremont más una bodega de procesamiento en Hamburg. El estado tiene una de las expansiones de 287(g) más rápidas del país (más de 130 agencias en septiembre de 2026, en su mayoría modelo de fuerza de tarea), mientras que Filadelfia codificó su estatus de santuario con el paquete 'ICE Out' en abril de 2026. Los arrestos de ICE en el estado se cuadruplicaron con creces a 8,796 entre el 20 de enero de 2025 y el 11 de marzo de 2026."
+  },
+  "summary_sources": [
+    "https://www.inquirer.com/news/nation-world/moshannon-valley-detention-center-ice-trump-deportation-contract-20260923.html",
+    "https://www.spotlightpa.org/berks/2026/03/pennsylvania-ice-detention-centers-berks-county-immigration-federal-government/",
+    "https://www.inquirer.com/opinion/pennsylvania-immigration-arrests-287g-local-police-collaboration-20260910.html",
+    "https://whyy.org/articles/new-jersey-pennsylvania-delaware-immigration-arrests-trump-administration-ice/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People held at Moshannon Valley (1,876 beds)",
+        "es": "Personas retenidas en Moshannon Valley (1,876 camas)"
+      },
+      "value": "1,417",
+      "as_of": "2026-05",
+      "url": "https://www.inquirer.com/news/nation-world/moshannon-valley-detention-center-ice-trump-deportation-contract-20260923.html"
+    },
+    {
+      "label": {
+        "en": "ICE arrests, January 2026 (vs. 253 in Jan 2025)",
+        "es": "Arrestos de ICE, enero de 2026 (frente a 253 en enero de 2025)"
+      },
+      "value": "802",
+      "as_of": "2026-01-31",
+      "url": "https://www.inquirer.com/news/ice-immigrants-criminal-arrests-pa-nj-20260504.html"
+    },
+    {
+      "label": {
+        "en": "Arrests under 287(g), first 7 months of 2026 (4th nationally)",
+        "es": "Arrestos vía 287(g), primeros 7 meses de 2026 (4.º del país)"
+      },
+      "value": "1,216",
+      "as_of": "2026-07-31",
+      "url": "https://www.inquirer.com/opinion/pennsylvania-immigration-arrests-287g-local-police-collaboration-20260910.html"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "Juntos Raid Response Hotline (Philadelphia)",
+      "phone": "814-205-3293",
+      "hours": {
+        "en": "Mon–Fri 10am–6pm; text or voicemail after hours",
+        "es": "Lun–Vie 10am–6pm; texto o buzón de voz fuera de horario"
+      },
+      "languages": "Español / English",
+      "what": {
+        "en": "Report ICE sightings, arrests, raids (call or text)",
+        "es": "Reportar avistamientos de ICE, arrestos, redadas (llamada o texto)"
+      },
+      "url": "https://www.vamosjuntos.org/resources",
+      "primary": true
+    },
+    {
+      "name": "HIAS Pennsylvania intake line",
+      "phone": "215-832-0900",
+      "hours": {
+        "en": "Wed 9:30am–12pm; Thu 2–4:30pm",
+        "es": "Mié 9:30am–12pm; Jue 2–4:30pm"
+      },
+      "languages": null,
+      "what": {
+        "en": "Legal intake; detention legal services (Moshannon, Clinton County)",
+        "es": "Admisión legal; servicios legales de detención (Moshannon, condado de Clinton)"
+      },
+      "url": "https://hiaspa.org/about-us/contact-us/"
+    },
+    {
+      "name": "PA Immigration and Citizenship Coalition – rapid response directory by county",
+      "phone": null,
+      "hours": null,
+      "languages": null,
+      "what": {
+        "en": "Find the rapid-response line for your county",
+        "es": "Encuentre la línea de respuesta rápida de su condado"
+      },
+      "url": "https://www.paimmigrant.org/rapid-response-information"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "HIAS Pennsylvania",
+      "phone": "215-832-0900",
+      "serves_detained": true,
+      "city": "Philadelphia",
+      "url": "https://hiaspa.org/moshannon-valley-processing-center/"
+    },
+    {
+      "name": "Pennsylvania Immigration Resource Center (PIRC)",
+      "phone": "717-600-8099",
+      "serves_detained": true,
+      "city": "York",
+      "url": "https://www.pirclaw.org/programs/removaldefense/"
+    },
+    {
+      "name": "Nationalities Service Center",
+      "phone": "215-893-8400",
+      "serves_detained": null,
+      "city": "Philadelphia",
+      "url": "https://nscphila.org/about-us/contact-us"
+    },
+    {
+      "name": "Casa San José",
+      "phone": "412-343-3111",
+      "serves_detained": null,
+      "city": "Pittsburgh",
+      "url": "https://casasanjose.org/en/contact-us/"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Moshannon Valley Processing Center",
+      "city": "Philipsburg (Clearfield County)",
+      "operator": "GEO Group (county pass-through contract)",
+      "size": "1,876 beds; 1,417 held May 2026",
+      "phone": "814-768-1200",
+      "note_2026": {
+        "en": "County commissioners extended the contract to March 2027; ICE seeking a 1,800+ bed 'turn-key' facility in the region",
+        "es": "Los comisionados del condado extendieron el contrato hasta marzo de 2027; ICE busca un centro 'llave en mano' de más de 1,800 camas en la región"
+      },
+      "note_url": "https://www.inquirer.com/news/nation-world/moshannon-valley-detention-center-ice-trump-deportation-contract-20260923.html",
+      "url": "https://www.geogroup.com/facilities/moshannon-valley-processing-center/"
+    },
+    {
+      "name": "Pike County Correctional Facility",
+      "city": "Lords Valley",
+      "operator": "Pike County",
+      "size": "~250 ICE detainees of 375 beds (May 2026)",
+      "phone": null,
+      "note_2026": {
+        "en": "New two-year ICE contract at $178/day; projected 2026 ICE revenue $13.6M",
+        "es": "Nuevo contrato de dos años con ICE a $178/día; ingresos de ICE proyectados para 2026: $13.6 millones"
+      },
+      "note_url": "https://www.wvia.org/news/local/2026-05-11/immigration-housing-ice-detainees-means-millions-of-dollars-for-pike-county",
+      "url": "https://www.wvia.org/news/local/2026-05-11/immigration-housing-ice-detainees-means-millions-of-dollars-for-pike-county"
+    },
+    {
+      "name": "Clinton County Correctional Facility",
+      "city": "McElhattan",
+      "operator": "Clinton County",
+      "size": "175 federal beds; 84 ICE detainees (Mar 2026)",
+      "phone": "570-547-6903",
+      "note_2026": null,
+      "url": "https://hiaspa.org/clinton-county-correctional-facility/"
+    },
+    {
+      "name": "Planned: Tremont (7,500 beds) and Hamburg processing warehouse",
+      "city": "Schuylkill / Berks counties",
+      "operator": "DHS (planned)",
+      "size": "~9,000 combined (announced 2026)",
+      "phone": null,
+      "note_2026": null,
+      "url": "https://www.spotlightpa.org/berks/2026/03/pennsylvania-ice-detention-centers-berks-county-immigration-federal-government/"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Philadelphia",
+      "address": "900 Market St, Suite 504, Philadelphia 19107",
+      "phone": "215-656-7000",
+      "url": "https://www.justice.gov/eoir/philadelphia-pa"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-09",
+    "count": "130+ agreements",
+    "summary": {
+      "en": "Grew from a handful in early 2025 to 106 by June 2026 and 130+ by September, mostly task-force model; Schuylkill County alone has about 14. Philadelphia's April 2026 'ICE Out' package bars city police from 287(g); Bucks County's sheriff ended its agreement in January 2026. No state law mandates or bans participation.",
+      "es": "Pasó de un puñado a principios de 2025 a 106 en junio de 2026 y más de 130 en septiembre, en su mayoría modelo de fuerza de tarea; solo el condado de Schuylkill tiene unos 14. El paquete 'ICE Out' de Filadelfia de abril de 2026 prohíbe a la policía municipal participar en 287(g); el alguacil del condado de Bucks terminó su acuerdo en enero de 2026. Ninguna ley estatal obliga ni prohíbe la participación."
+    },
+    "url": "https://www.inquirer.com/opinion/pennsylvania-immigration-arrests-287g-local-police-collaboration-20260910.html"
+  },
+  "unverified": [
+    "Statewide total detained for ICE",
+    "Pennsylvania ICE arrests for a month after January 2026",
+    "Pike County facility phone"
+  ],
+  "checked": "2026-10-05"
+}

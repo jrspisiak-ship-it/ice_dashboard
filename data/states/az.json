@@ -1,0 +1,182 @@
+{
+  "code": "AZ",
+  "name": "Arizona",
+  "name_es": "Arizona",
+  "summary": {
+    "en": "Arizona is a detention hub: nearly 2,800 people were held across five ICE centers as of July 2026, with CoreCivic's Eloy facility (~1,550 capacity) the largest. ICE custodial arrests more than tripled to 3,821 in fiscal 2025, with nearly 7 in 10 street arrestees having no convictions. Eight agencies hold 287(g) agreements; a court voided the Pinal County Attorney's in May 2026, the state Senate passed a bill to force every sheriff into ICE agreements by 2027, and on September 29, 2026 MTC signed a $355 million contract to reopen a 775-bed facility in Marana.",
+    "es": "Arizona es un centro de detención: casi 2,800 personas estaban retenidas en cinco centros de ICE en julio de 2026, y el centro de CoreCivic en Eloy (~1,550 de capacidad) es el más grande. Los arrestos de ICE bajo custodia se triplicaron a 3,821 en el año fiscal 2025, y casi 7 de cada 10 personas arrestadas en la calle no tenían condenas. Ocho agencias tienen acuerdos 287(g); un tribunal anuló el del Fiscal del Condado de Pinal en mayo de 2026, el Senado estatal aprobó un proyecto para obligar a todos los alguaciles a firmar acuerdos con ICE para 2027, y el 29 de septiembre de 2026 MTC firmó un contrato de $355 millones para reabrir un centro de 775 camas en Marana."
+  },
+  "summary_sources": [
+    "https://www.calonews.com/arizona/more-money-more-arrests-the-human-cost-of-ices-expansion-in-arizona/article_d71cf7b5-78af-475a-b7d5-fca6837b44cb.html",
+    "https://azluminaria.org/2026/03/03/ice-arrests-tripled-in-arizona-last-fiscal-year-as-street-operations-surged/",
+    "https://news.azpm.org/p/newsheadlines/2026/5/28/229921-determined-to-be-void-judge-rules-against-pinal-county-attorney-contract-with-ice/",
+    "https://news.azpm.org/p/newsheadlines/2026/9/30/231392-prison-firm-signs-contract-with-ice-for-marana-facility/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People detained for ICE in Arizona (five centers)",
+        "es": "Personas detenidas para ICE en Arizona (cinco centros)"
+      },
+      "value": "~2,800",
+      "as_of": "2026-07-08",
+      "url": "https://www.calonews.com/arizona/more-money-more-arrests-the-human-cost-of-ices-expansion-in-arizona/article_d71cf7b5-78af-475a-b7d5-fca6837b44cb.html"
+    },
+    {
+      "label": {
+        "en": "ICE custodial arrests, fiscal 2025 (up from 1,249)",
+        "es": "Arrestos de ICE bajo custodia, año fiscal 2025 (desde 1,249)"
+      },
+      "value": "3,821",
+      "as_of": "2025-09-30",
+      "url": "https://azluminaria.org/2026/03/03/ice-arrests-tripled-in-arizona-last-fiscal-year-as-street-operations-surged/"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "Protect Our Pueblos – Rural Arizona hotline (RAZE)",
+      "phone": "520-607-0507",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Report and confirm ICE activity in rural Arizona (call or text)",
+        "es": "Reportar y confirmar actividad de ICE en zonas rurales de Arizona (llamada o texto)"
+      },
+      "url": "https://www.raze.org/protectourpueblos",
+      "primary": true
+    },
+    {
+      "name": "Florence Immigrant & Refugee Rights Project",
+      "phone": "520-777-5600",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Free legal services for detained adults and children (Tucson; Phoenix 602-307-1008)",
+        "es": "Servicios legales gratuitos para adultos y niños detenidos (Tucson; Phoenix 602-307-1008)"
+      },
+      "url": "https://firrp.org/"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "Florence Immigrant & Refugee Rights Project",
+      "phone": "520-777-5600",
+      "serves_detained": true,
+      "city": "Tucson / Phoenix / Florence",
+      "url": "https://firrp.org/"
+    },
+    {
+      "name": "Keep Tucson Together",
+      "phone": "520-623-4084",
+      "serves_detained": null,
+      "city": "Tucson",
+      "url": "https://www.keeptucsontogether.org/contact"
+    },
+    {
+      "name": "Chicanos Por La Causa – Immigration Services",
+      "phone": "602-837-2129",
+      "serves_detained": null,
+      "city": "Phoenix / Tucson / Somerton",
+      "url": "https://cplc.org/programs/immigration"
+    },
+    {
+      "name": "Catholic Charities Community Services – Immigration Legal Services",
+      "phone": "1-855-316-2229",
+      "serves_detained": null,
+      "city": "Phoenix",
+      "url": "https://www.catholiccharitiesaz.org/get-help-pages/directory-of-services"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Eloy Detention Center",
+      "city": "Eloy",
+      "operator": "CoreCivic",
+      "size": "~1,550 capacity",
+      "phone": "520-466-4141",
+      "note_2026": {
+        "en": "Florence Project report documented a death, suicide attempts and medical neglect; 120 detainees signed an open letter alleging abuse, July 2026",
+        "es": "Informe del Florence Project documentó una muerte, intentos de suicidio y negligencia médica; 120 detenidos firmaron una carta abierta denunciando abusos, julio de 2026"
+      },
+      "note_url": "https://tucson.com/news/local/border/article_5474e4bd-223c-4dde-817d-912a6cad554c.html",
+      "url": "https://www.corecivic.com/facilities/eloy-detention-center"
+    },
+    {
+      "name": "Central Arizona Florence Correctional Complex",
+      "city": "Florence",
+      "operator": "CoreCivic",
+      "size": "avg daily 529 (2026)",
+      "phone": "520-868-3668",
+      "note_2026": null,
+      "url": "https://www.corecivic.com/facilities/central-arizona-florence-correctional-complex"
+    },
+    {
+      "name": "Florence Service Processing Center",
+      "city": "Florence",
+      "operator": "ICE",
+      "size": "capacity 392; avg daily 335",
+      "phone": null,
+      "note_2026": null,
+      "url": "https://www.globaldetentionproject.org/countries/americas/united-states/detention-centres/577/florence-service-processing-center"
+    },
+    {
+      "name": "San Luis Regional Detention Center",
+      "city": "San Luis",
+      "operator": "LaSalle Southwest Corrections",
+      "size": "avg daily 328 (2026)",
+      "phone": null,
+      "note_2026": null,
+      "url": "https://www.globaldetentionproject.org/countries/americas/united-states/detention-centres/1332/san-luis-regional-detention-center"
+    },
+    {
+      "name": "Marana (reopening)",
+      "city": "Marana",
+      "operator": "MTC",
+      "size": "775 beds; contract signed Sept 29, 2026",
+      "phone": null,
+      "note_2026": null,
+      "url": "https://news.azpm.org/p/newsheadlines/2026/9/30/231392-prison-firm-signs-contract-with-ice-for-marana-facility/"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Phoenix",
+      "address": "250 N. 7th Ave, Suite 300, Phoenix 85007",
+      "phone": "602-640-2747",
+      "url": "https://www.justice.gov/eoir/phoenix-immigration-court"
+    },
+    {
+      "name": "Tucson",
+      "address": "300 W. Congress St, Suite 300, Tucson 85701",
+      "phone": "520-670-5212",
+      "url": "https://www.justice.gov/eoir/tucson-immigration-court"
+    },
+    {
+      "name": "Eloy",
+      "address": "1705 E. Hanna Rd, Suite 366, Eloy 85131",
+      "phone": "520-466-3671",
+      "url": "https://www.justice.gov/eoir/eloy-immigration-court"
+    },
+    {
+      "name": "Florence",
+      "address": "3260 N. Pinal Parkway Ave, Florence 85132",
+      "phone": "520-868-3341",
+      "url": "https://www.justice.gov/eoir/florence-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-05-28",
+    "count": "8 state or local agencies",
+    "summary": {
+      "en": "Six of 15 counties plus the City of Mesa and the state corrections department. A judge voided the Pinal County Attorney's contract in May 2026; a Senate bill passed March 2026 would force every sheriff to sign by Jan 1, 2027 (final status unverified).",
+      "es": "Seis de 15 condados más la ciudad de Mesa y el departamento estatal de correcciones. Un juez anuló el contrato del Fiscal del Condado de Pinal en mayo de 2026; un proyecto del Senado aprobado en marzo de 2026 obligaría a todos los alguaciles a firmar antes del 1 de enero de 2027 (estado final sin verificar)."
+    },
+    "url": "https://news.azpm.org/p/newsheadlines/2026/5/28/229921-determined-to-be-void-judge-rules-against-pinal-county-attorney-contract-with-ice/"
+  },
+  "unverified": [
+    "Any 2026 monthly Arizona arrest count",
+    "Fate of the Senate 287(g) mandate bill",
+    "Puente Arizona hotline number"
+  ],
+  "checked": "2026-10-05"
+}

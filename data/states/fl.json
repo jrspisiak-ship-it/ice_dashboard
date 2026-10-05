@@ -1,0 +1,190 @@
+{
+  "code": "FL",
+  "name": "Florida",
+  "name_es": "Florida",
+  "summary": {
+    "en": "Florida leans harder on local police than any state: Statute 908.11 requires every sheriff running a jail to sign a 287(g) agreement, all 67 had by February 2025, and nearly 350 Florida agencies held agreements by February 2026, the most in the nation. Florida ranked second to Texas in ICE arrests, and the state built and ran its own detention sites: 'Alligator Alcatraz' in the Everglades (opened July 2025, emptied June 2026) and the 'Deportation Depot' at the former Baker Correctional Institution. A September 2026 DHS Inspector General report found about 25% overcrowding and medical shortages at ICE's Krome center in Miami.",
+    "es": "Florida depende de la policía local más que cualquier otro estado: el Estatuto 908.11 obliga a cada alguacil que opera una cárcel a firmar un acuerdo 287(g); los 67 lo habían hecho en febrero de 2025, y casi 350 agencias de Florida tenían acuerdos en febrero de 2026, la cifra más alta del país. Florida ocupó el segundo lugar, tras Texas, en arrestos de ICE, y el estado construyó y operó sus propios sitios de detención: 'Alligator Alcatraz' en los Everglades (abierto en julio de 2025, vaciado en junio de 2026) y el 'Deportation Depot' en la antigua prisión de Baker. Un informe del Inspector General del DHS de septiembre de 2026 encontró cerca de 25% de hacinamiento y escasez médica en el centro Krome de ICE en Miami."
+  },
+  "summary_sources": [
+    "https://www.washingtonsun.com/immigration/florida-287g-ice-trump-administration?redirected=notus_org",
+    "https://www.wusf.org/politics-issues/2026-03-10/who-did-ice-arrest-in-florida-last-year",
+    "https://www.cbsnews.com/miami/news/florida-alligator-alcatraz-closure-june-2026/",
+    "https://www.nbcmiami.com/news/local/dhs-report-finds-overcrowding-food-safety-issues-and-medical-shortages-at-krome-detention-center/3860249/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People detained for ICE in Florida",
+        "es": "Personas detenidas para ICE en Florida"
+      },
+      "value": "3,934",
+      "as_of": "2026-07-09",
+      "url": "https://tracreports.org/immigration/quickfacts/"
+    },
+    {
+      "label": {
+        "en": "ICE arrests in Florida, Jan 20–Oct 15, 2025",
+        "es": "Arrestos de ICE en Florida, 20 ene.–15 oct. 2025"
+      },
+      "value": "20,629 (~10% of U.S.)",
+      "as_of": "2025-10-15",
+      "url": "https://www.wusf.org/politics-issues/2026-03-10/who-did-ice-arrest-in-florida-last-year"
+    },
+    {
+      "label": {
+        "en": "Agencies with 287(g) agreements",
+        "es": "Agencias con acuerdos 287(g)"
+      },
+      "value": "~350",
+      "as_of": "2026-02-13",
+      "url": "https://www.washingtonsun.com/immigration/florida-287g-ice-trump-administration?redirected=notus_org"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "Florida Immigrant Coalition (FLIC) hotline",
+      "phone": "1-888-600-5762",
+      "hours": null,
+      "languages": "Español / English / Kreyòl / Português",
+      "what": {
+        "en": "Rapid response, legal referral, detention referrals",
+        "es": "Respuesta rápida, referencias legales y de detención"
+      },
+      "url": "https://floridaimmigrant.org/legal-services/",
+      "primary": true
+    },
+    {
+      "name": "Americans for Immigrant Justice – Detention Program",
+      "phone": "786-454-8554",
+      "hours": {
+        "en": "Mon–Fri 9am–5pm",
+        "es": "Lun–Vie 9am–5pm"
+      },
+      "languages": null,
+      "what": {
+        "en": "Free consultations and representation for people detained in Florida",
+        "es": "Consultas y representación gratuitas para personas detenidas en Florida"
+      },
+      "url": "https://aijustice.org/programs/detention-program/how-to-get-help/"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "Americans for Immigrant Justice",
+      "phone": "305-573-1106",
+      "serves_detained": true,
+      "city": "Miami",
+      "url": "https://aijustice.org/programs/detention-program/how-to-get-help/"
+    },
+    {
+      "name": "Catholic Legal Services, Archdiocese of Miami",
+      "phone": "305-373-1073",
+      "serves_detained": null,
+      "city": "Miami / Hollywood",
+      "url": "https://www.cclsmiami.org/officevisits.aspx"
+    },
+    {
+      "name": "Legal Aid Service of Broward County",
+      "phone": "954-951-5343",
+      "serves_detained": false,
+      "city": "Plantation",
+      "url": "https://www.browardlegalaid.org/what-we-do/areas-of-legal-service/immigration/"
+    },
+    {
+      "name": "Hope CommUnity Center",
+      "phone": "407-880-4673",
+      "serves_detained": null,
+      "city": "Apopka",
+      "url": "https://hcc-offm.org/immigration-legal-services/"
+    },
+    {
+      "name": "Jacksonville Area Legal Aid – Immigration",
+      "phone": "904-356-8371",
+      "serves_detained": null,
+      "city": "Jacksonville",
+      "url": "https://www.jaxlegalaid.org/immigration"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Krome North Service Processing Center",
+      "city": "Miami",
+      "operator": "ICE",
+      "size": "capacity 882; 1,102 held at May 2025 inspection",
+      "phone": null,
+      "note_2026": {
+        "en": "DHS OIG report (Sept 2026): ~25% overcrowding, food-safety violations, 15 medical vacancies, improper use of force; at least three deaths in 2025",
+        "es": "Informe OIG del DHS (sept. 2026): ~25% de hacinamiento, violaciones de seguridad alimentaria, 15 vacantes médicas, uso indebido de la fuerza; al menos tres muertes en 2025"
+      },
+      "note_url": "https://www.nbcmiami.com/news/local/dhs-report-finds-overcrowding-food-safety-issues-and-medical-shortages-at-krome-detention-center/3860249/",
+      "url": "https://www.wlrn.org/immigration/2025-08-29/increased-medical-emergencies-at-krome-as-immigrant-detention-swells"
+    },
+    {
+      "name": "Broward Transitional Center",
+      "city": "Deerfield Beach",
+      "operator": "GEO Group",
+      "size": "700 beds",
+      "phone": "954-973-4485",
+      "note_2026": null,
+      "url": "https://www.geogroup.com/facilities/broward-transitional-center/"
+    },
+    {
+      "name": "Baker Correctional Institution ('Deportation Depot')",
+      "city": "Sanderson (Baker County)",
+      "operator": "State of Florida",
+      "size": "up to 1,500; opened Sept 2, 2025",
+      "phone": null,
+      "note_2026": null,
+      "url": "https://www.wusf.org/courts-law/2025-09-10/immigration-detention-center-opens-at-former-prison-in-baker-county"
+    },
+    {
+      "name": "'Alligator Alcatraz' (closed)",
+      "city": "Ochopee",
+      "operator": "State of Florida",
+      "size": "~1,400 at closure announcement",
+      "phone": null,
+      "note_2026": {
+        "en": "Closure announced May 12, 2026; all detainees transferred by June 2026; state cost near $1 billion",
+        "es": "Cierre anunciado el 12 de mayo de 2026; todos los detenidos trasladados en junio de 2026; costo estatal cercano a $1,000 millones"
+      },
+      "note_url": "https://www.cbsnews.com/miami/news/florida-alligator-alcatraz-closure-june-2026/",
+      "url": "https://www.npr.org/2026/06/18/nx-s1-5862592/detainees-alligator-alcatraz-transferred"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Miami",
+      "address": "333 S. Miami Ave, Suite 700, Miami 33130",
+      "phone": "305-789-4221",
+      "url": "https://www.justice.gov/eoir/miami-immigration-court"
+    },
+    {
+      "name": "Miami – Krome (detained)",
+      "address": "18201 SW 12th St, Miami 33194",
+      "phone": "786-422-8700",
+      "url": "https://www.justice.gov/eoir/miami-krome-immigration-court"
+    },
+    {
+      "name": "Orlando",
+      "address": "500 N. Orange Ave, Suite 1100, Orlando 32801",
+      "phone": "407-244-8900",
+      "url": "https://www.justice.gov/eoir/orlando-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-02-13",
+    "count": "~350 state and local agencies (most in the nation)",
+    "summary": {
+      "en": "State law requires every sheriff running a jail to sign; all 67 had by Feb 2025. Gov. DeSantis says more than 63% of Florida immigration detentions came through 287(g). Municipal police are not required to sign.",
+      "es": "La ley estatal obliga a todo alguacil que opera una cárcel a firmar; los 67 lo hicieron en febrero de 2025. El gobernador DeSantis dice que más del 63% de las detenciones migratorias en Florida se produjeron vía 287(g). Las policías municipales no están obligadas."
+    },
+    "url": "https://www.washingtonsun.com/immigration/florida-287g-ice-trump-administration?redirected=notus_org"
+  },
+  "unverified": [
+    "Florida-only ICE arrests for July 2026",
+    "Krome phone",
+    "Baker 'Deportation Depot' 2026 population"
+  ],
+  "checked": "2026-10-05"
+}

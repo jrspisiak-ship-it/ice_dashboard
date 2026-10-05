@@ -1,0 +1,211 @@
+{
+  "code": "NY",
+  "name": "New York",
+  "name_es": "Nueva York",
+  "summary": {
+    "en": "New York's only dedicated ICE detention center, in Batavia, held 653 people against a 650-bed capacity as of October 2, 2026, and ICE is adding 100 beds; upstate arrests rose from 788 in the last Biden year to 6,216 in Trump's first 19 months, 72% of them people with no criminal record. The state's Local Cops, Local Crimes Act took effect August 25, 2026, banning 287(g) agreements. On September 24, 2026 a federal judge issued a permanent injunction over 'squalid' holding conditions at 26 Federal Plaza; NYC street arrests climbed from about 19 a month in 2024 to 476 in July 2026, with many New Yorkers held at Delaney Hall in Newark.",
+    "es": "El único centro de detención de ICE dedicado en Nueva York, en Batavia, retenía a 653 personas con capacidad para 650 al 2 de octubre de 2026, e ICE está añadiendo 100 camas; los arrestos en el norte del estado subieron de 788 en el último año de Biden a 6,216 en los primeros 19 meses de Trump, 72% de ellos personas sin antecedentes penales. La ley estatal Local Cops, Local Crimes entró en vigor el 25 de agosto de 2026 y prohíbe los acuerdos 287(g). El 24 de septiembre de 2026 un juez federal emitió una orden permanente por las condiciones 'miserables' en las celdas de 26 Federal Plaza; los arrestos en las calles de la ciudad de Nueva York subieron de unos 19 al mes en 2024 a 476 en julio de 2026, y muchos neoyorquinos son retenidos en Delaney Hall, en Newark."
+  },
+  "summary_sources": [
+    "https://spectrumlocalnews.com/nys/buffalo/immigration/2026/10/02/trump-admin--moving-forward-with--17-million-expansion-of-ice-detention-facility-in-batavia",
+    "https://investigativepost.org/2026/08/28/ice-adding-to-detention-center-in-batavia/",
+    "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-first-enforcement-action-new",
+    "https://documentedny.com/2026/09/24/judge-orders-ice-detention-improvements/",
+    "https://documentedny.com/2026/10/05/baseline-austin-kocher-nyc-immigration-enforcement-data/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "People held at Batavia (capacity 650)",
+        "es": "Personas retenidas en Batavia (capacidad 650)"
+      },
+      "value": "653",
+      "as_of": "2026-10-02",
+      "url": "https://spectrumlocalnews.com/nys/buffalo/immigration/2026/10/02/trump-admin--moving-forward-with--17-million-expansion-of-ice-detention-facility-in-batavia"
+    },
+    {
+      "label": {
+        "en": "ICE street arrests in New York City, July 2026",
+        "es": "Arrestos de ICE en las calles de la ciudad de Nueva York, julio de 2026"
+      },
+      "value": "476",
+      "as_of": "2026-07-31",
+      "url": "https://documentedny.com/2026/10/05/baseline-austin-kocher-nyc-immigration-enforcement-data/"
+    },
+    {
+      "label": {
+        "en": "ICE NYC-division arrests since Jan 2025 (63% no conviction or charge)",
+        "es": "Arrestos de la división de ICE en NYC desde enero de 2025 (63% sin condena ni cargo)"
+      },
+      "value": "9,619",
+      "as_of": "2026-04-07",
+      "url": "https://ny1.com/nyc/all-boroughs/news/2026/04/07/data-nyc-ice-mainly-arrests-people-without-convictions"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "New York State New Americans Hotline",
+      "phone": "1-800-566-7636",
+      "hours": {
+        "en": "Mon–Fri 8am–8pm; Sat–Sun 9am–5pm",
+        "es": "Lun–Vie 8am–8pm; Sáb–Dom 9am–5pm"
+      },
+      "languages": "200+ languages; anonymous",
+      "what": {
+        "en": "Legal referrals, immigration questions, fraud reporting",
+        "es": "Referencias legales, preguntas migratorias, denuncia de fraudes"
+      },
+      "url": "https://dos.ny.gov/office-new-americans",
+      "primary": true
+    },
+    {
+      "name": "NYC Immigration Legal Support Hotline (Rapid Response Legal Collaborative)",
+      "phone": "800-354-0365",
+      "hours": {
+        "en": "Mon–Fri 9am–6pm (Mon/Wed to 8pm)",
+        "es": "Lun–Vie 9am–6pm (Lun/Mié hasta 8pm)"
+      },
+      "languages": "Español / English / 7 more",
+      "what": {
+        "en": "Rapid response for people detained or at imminent risk",
+        "es": "Respuesta rápida para personas detenidas o en riesgo inminente"
+      },
+      "url": "https://www.nyc.gov/site/immigrants/legal-resources/rapid-response-legal-collaborative.page"
+    },
+    {
+      "name": "NY Attorney General – Office of Immigrant Trust",
+      "phone": "1-800-771-7755",
+      "hours": null,
+      "languages": null,
+      "what": {
+        "en": "Report violations of state immigration-enforcement laws",
+        "es": "Denunciar violaciones de las leyes estatales sobre aplicación migratoria"
+      },
+      "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-first-enforcement-action-new"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "The Legal Aid Society – Immigration Law Unit (NYIFUP)",
+      "phone": "212-577-3300",
+      "serves_detained": true,
+      "city": "New York",
+      "url": "https://legalaidnyc.org/get-help/immigration-deportation/what-you-need-to-know-about-the-new-york-immigrant-family-unity-project-nyifup/"
+    },
+    {
+      "name": "Catholic Charities Community Services – Immigration Legal Services",
+      "phone": "212-419-3737",
+      "serves_detained": null,
+      "city": "New York",
+      "url": "https://catholiccharitiesny.org/what-we-do/immigrants-and-refugees/"
+    },
+    {
+      "name": "Make the Road New York",
+      "phone": "718-418-7690",
+      "serves_detained": null,
+      "city": "Brooklyn, Queens, Staten Island, Brentwood, White Plains",
+      "url": "https://maketheroadny.org/contact/"
+    },
+    {
+      "name": "Prisoners' Legal Services of NY – Buffalo Immigration Office",
+      "phone": "716-844-8266",
+      "serves_detained": null,
+      "city": "Buffalo",
+      "url": "https://plsny.org/offices/buffalo-immigration-office/"
+    },
+    {
+      "name": "Immigrant Defense Project – Criminal-Immigration Hotline",
+      "phone": "646-760-0599",
+      "serves_detained": null,
+      "city": "New York",
+      "url": "https://www.immigrantdefenseproject.org/hotline/"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Buffalo Federal Detention Facility",
+      "city": "Batavia",
+      "operator": "ICE-owned; managed by Akima",
+      "size": "653 held (Oct 2, 2026); capacity 650",
+      "phone": null,
+      "note_2026": {
+        "en": "$17M no-bid 100-bed expansion confirmed Oct 2, 2026",
+        "es": "Expansión de 100 camas por $17 millones sin licitación, confirmada el 2 de octubre de 2026"
+      },
+      "note_url": "https://investigativepost.org/2026/08/28/ice-adding-to-detention-center-in-batavia/",
+      "url": "https://spectrumlocalnews.com/nys/buffalo/immigration/2026/10/02/trump-admin--moving-forward-with--17-million-expansion-of-ice-detention-facility-in-batavia"
+    },
+    {
+      "name": "Orange County Jail",
+      "city": "Goshen",
+      "operator": "Orange County Sheriff (IGSA)",
+      "size": "176 ICE detainees of 450 (Dec 2025)",
+      "phone": null,
+      "note_2026": {
+        "en": "County legislators sought answers on treatment complaints, Apr 2026",
+        "es": "Legisladores del condado pidieron respuestas sobre quejas de trato, abril de 2026"
+      },
+      "note_url": "https://midhudsonnews.com/2026/04/23/legislators-seek-answers-about-ice-detainee-conditions-at-orange-county-jail/",
+      "url": "https://www.chroniclenewspaper.com/evergreen/nearly-40-of-orange-county-jail-s-inmates-are-ice-detainees-LH5485269"
+    },
+    {
+      "name": "26 Federal Plaza holding cells",
+      "city": "New York",
+      "operator": "ICE",
+      "size": null,
+      "phone": null,
+      "note_2026": {
+        "en": "Permanent injunction Sept 24, 2026 ordering bedding, hygiene, meals, medical screening and confidential attorney calls",
+        "es": "Orden permanente del 24 de septiembre de 2026 que exige ropa de cama, higiene, comidas, revisión médica y llamadas confidenciales con abogados"
+      },
+      "note_url": "https://documentedny.com/2026/09/24/judge-orders-ice-detention-improvements/",
+      "url": "https://documentedny.com/2026/09/24/judge-orders-ice-detention-improvements/"
+    }
+  ],
+  "courts": [
+    {
+      "name": "New York – 26 Federal Plaza",
+      "address": "26 Federal Plaza, 12th Floor, Room 1237, New York 10278",
+      "phone": "212-602-6500",
+      "url": "https://www.justice.gov/eoir/new-york-federal-plaza-immigration-court"
+    },
+    {
+      "name": "New York – 290 Broadway",
+      "address": "290 Broadway, 15th Floor, New York 10007",
+      "phone": "212-240-4900",
+      "url": "https://www.justice.gov/eoir/new-york-broadway-immigration-court"
+    },
+    {
+      "name": "New York – Varick Street",
+      "address": "201 Varick St, 5th Floor, Room 507, New York 10014",
+      "phone": "646-638-5766",
+      "url": "https://www.justice.gov/eoir/new-york-varick-immigration-court"
+    },
+    {
+      "name": "Buffalo",
+      "address": "130 Delaware Ave, Suite 300, Buffalo 14202",
+      "phone": "716-551-3442",
+      "url": "https://www.justice.gov/eoir/buffalo-immigration-court"
+    },
+    {
+      "name": "Batavia",
+      "address": "4250 Federal Dr, Room F108, Batavia 14020",
+      "phone": "585-345-4300",
+      "url": "https://www.justice.gov/eoir/batavia-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-08-25",
+    "count": "0 permitted",
+    "summary": {
+      "en": "The Local Cops, Local Crimes Act bans state and local agencies from 287(g) agreements; 12 agencies that had them were ordered to end them by Aug 25, 2026. The AG's Office of Immigrant Trust enforces it.",
+      "es": "La ley Local Cops, Local Crimes prohíbe a las agencias estatales y locales los acuerdos 287(g); a las 12 agencias que los tenían se les ordenó terminarlos antes del 25 de agosto de 2026. La Oficina de Confianza del Inmigrante del Fiscal General la hace cumplir."
+    },
+    "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-first-enforcement-action-new"
+  },
+  "unverified": [
+    "Statewide total detained for ICE",
+    "Batavia facility phone"
+  ],
+  "checked": "2026-10-05"
+}

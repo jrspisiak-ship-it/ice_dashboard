@@ -1,0 +1,153 @@
+{
+  "code": "NJ",
+  "name": "New Jersey",
+  "name_es": "Nueva Jersey",
+  "summary": {
+    "en": "New Jersey's enforcement story centers on Delaney Hall in Newark, a GEO Group facility of about 1,100 beds that opened in May 2025 and has seen two detainee deaths (December 2025 and August 1, 2026), a May 2026 hunger strike by roughly 300 detainees, and a June 2026 state lawsuit after health inspectors were denied access. Gov. Sherrill signed bills on March 25, 2026 codifying the Immigrant Trust Directive and barring local 287(g) participation. ICE arrests in New Jersey still hit 2,080 in July 2026, the highest monthly total in four years.",
+    "es": "La historia de la aplicación en Nueva Jersey se centra en Delaney Hall, en Newark, un centro de GEO Group de unas 1,100 camas que abrió en mayo de 2025 y ha registrado dos muertes de detenidos (diciembre de 2025 y 1 de agosto de 2026), una huelga de hambre de unos 300 detenidos en mayo de 2026 y una demanda estatal en junio de 2026 tras negarse el acceso a inspectores de salud. La gobernadora Sherrill firmó el 25 de marzo de 2026 leyes que codifican la Directiva de Confianza del Inmigrante y prohíben la participación local en 287(g). Aun así, los arrestos de ICE en Nueva Jersey llegaron a 2,080 en julio de 2026, el total mensual más alto en cuatro años."
+  },
+  "summary_sources": [
+    "https://newjerseymonitor.com/2026/09/08/womans-path-through-ice-detention/",
+    "https://documentedny.com/2026/08/04/delaney-hall-detainee-death-lopez-cornejo-nj/",
+    "https://abcnews.com/US/newark-sue-feds-close-delaney-hall-ice-facility/story?id=133513879",
+    "https://newjerseymonitor.com/2026/03/25/gov-sherrill-signs-bills-immigration-enforcement/"
+  ],
+  "stats": [
+    {
+      "label": {
+        "en": "ICE arrests in New Jersey, July 2026 (4-year high)",
+        "es": "Arrestos de ICE en Nueva Jersey, julio de 2026 (máximo en 4 años)"
+      },
+      "value": "2,080",
+      "as_of": "2026-07-31",
+      "url": "https://newjerseymonitor.com/2026/09/08/womans-path-through-ice-detention/"
+    },
+    {
+      "label": {
+        "en": "ICE arrests, January 2026 (vs. 426 in Jan 2025)",
+        "es": "Arrestos de ICE, enero de 2026 (frente a 426 en enero de 2025)"
+      },
+      "value": "1,453",
+      "as_of": "2026-01-31",
+      "url": "https://www.inquirer.com/news/ice-immigrants-criminal-arrests-pa-nj-20260504.html"
+    }
+  ],
+  "hotlines": [
+    {
+      "name": "American Friends Service Committee – Immigrant Rights Program (Newark)",
+      "phone": "973-643-1924",
+      "hours": null,
+      "languages": "Español / English / Français",
+      "what": {
+        "en": "Legal referral and detention legal services",
+        "es": "Referencias legales y servicios legales de detención"
+      },
+      "url": "https://afsc.org/sites/default/files/documents/Newark%20IRP%20brochure.pdf",
+      "primary": true
+    },
+    {
+      "name": "Legal Services of New Jersey hotline",
+      "phone": "1-888-576-5529",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Statewide legal referral",
+        "es": "Referencias legales en todo el estado"
+      },
+      "url": "https://www.lsnjlaw.org/legal-topics/immigration"
+    },
+    {
+      "name": "Make the Road New Jersey",
+      "phone": "908-368-1196",
+      "hours": null,
+      "languages": "Español / English",
+      "what": {
+        "en": "Community support during immigration encounters",
+        "es": "Apoyo comunitario durante encuentros migratorios"
+      },
+      "url": "https://maketheroadnj.org/wp-content/uploads/2025/01/MRNJ-KYR-CARD-ENGLISH-2-1.pdf"
+    }
+  ],
+  "legal_aid": [
+    {
+      "name": "American Friends Service Committee – Immigrant Rights Program",
+      "phone": "973-643-1924",
+      "serves_detained": true,
+      "city": "Newark",
+      "url": "https://afsc.org/sites/default/files/documents/Newark%20IRP%20brochure.pdf"
+    },
+    {
+      "name": "Legal Services of New Jersey",
+      "phone": "1-888-576-5529",
+      "serves_detained": null,
+      "city": "Edison (statewide)",
+      "url": "https://www.lsnjlaw.org/legal-topics/immigration"
+    },
+    {
+      "name": "Make the Road New Jersey",
+      "phone": "908-368-1196",
+      "serves_detained": null,
+      "city": "Elizabeth",
+      "url": "https://maketheroadnj.org/wp-content/uploads/2025/01/MRNJ-KYR-CARD-ENGLISH-2-1.pdf"
+    },
+    {
+      "name": "NJ Alliance for Immigrant Justice – legal services directory",
+      "phone": null,
+      "serves_detained": null,
+      "city": "Newark",
+      "url": "https://www.njaij.org/legal_services"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Delaney Hall",
+      "city": "Newark",
+      "operator": "GEO Group",
+      "size": "~1,100 beds",
+      "phone": null,
+      "note_2026": {
+        "en": "Two deaths (Dec 2025, Aug 1, 2026); state AG sued June 2026 after inspectors were denied access; ~300-person hunger strike May 2026",
+        "es": "Dos muertes (dic. 2025, 1 ago. 2026); el Fiscal General demandó en junio de 2026 tras negarse el acceso a inspectores; huelga de hambre de ~300 personas en mayo de 2026"
+      },
+      "note_url": "https://abcnews.com/US/newark-sue-feds-close-delaney-hall-ice-facility/story?id=133513879",
+      "url": "https://newjerseymonitor.com/2026/09/08/womans-path-through-ice-detention/"
+    },
+    {
+      "name": "Elizabeth Detention Center",
+      "city": "Elizabeth",
+      "operator": "CoreCivic",
+      "size": "300 beds",
+      "phone": "908-352-3776",
+      "note_2026": null,
+      "url": "https://www.corecivic.com/facilities/elizabeth-detention-center"
+    }
+  ],
+  "courts": [
+    {
+      "name": "Newark",
+      "address": "970 Broad St, Room 1200, Newark 07102",
+      "phone": "973-645-3524",
+      "url": "https://www.justice.gov/eoir/newark-immigration-court"
+    },
+    {
+      "name": "Elizabeth",
+      "address": "625 Evans St, Room 148A, Elizabeth 07201",
+      "phone": "908-787-1355",
+      "url": "https://www.justice.gov/eoir/elizabeth-immigration-court"
+    }
+  ],
+  "two87g": {
+    "as_of": "2026-07",
+    "count": "0 (banned by state law)",
+    "summary": {
+      "en": "Bills signed March 2026 codified the 2018 Immigrant Trust Directive and bar local 287(g) participation; New Jersey became the 10th state with such a ban.",
+      "es": "Leyes firmadas en marzo de 2026 codificaron la Directiva de Confianza del Inmigrante de 2018 y prohíben la participación local en 287(g); Nueva Jersey fue el décimo estado con esa prohibición."
+    },
+    "url": "https://whyy.org/articles/philadelphia-ice-agreements-287-suburbs-new-jersey-delaware/"
+  },
+  "unverified": [
+    "Statewide total detained for ICE",
+    "Delaney Hall phone"
+  ],
+  "checked": "2026-10-05"
+}
