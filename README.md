@@ -1,10 +1,12 @@
-# Immigration help & facts
+# Civic Shield
+
+A U.S. Immigration Policy, Assistance and Monitoring Project
 
 A single static page, in English and Spanish, for immigrants and their neighbors:
 what to do if ICE comes to the door, who to call, how to find someone in detention,
 how to prepare a family, and verified enforcement numbers with links to the source.
 
-Live at https://immigration-help-facts.netlify.app/
+Live at https://civicshield-project.netlify.app/
 
 ## Files
 

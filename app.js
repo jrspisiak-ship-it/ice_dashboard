@@ -9,15 +9,15 @@
 
 const ES = {
   "skip": "Ir a la guía de emergencia",
-  "brand": "Ayuda e información migratoria",
+  "brand": "Civic Shield",
   "nav.rights": "Sus derechos",
   "nav.call": "A quién llamar",
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
   "nav.story": "Cifras e historia",
   "nav.back": "Cifras e historia",
-  "site.title": "Ayuda e Información Migratoria",
-  "site.sub": "Georgia y Estados Unidos · English / Español",
+  "site.title": "Civic Shield",
+  "site.sub": "Un proyecto de política, asistencia y monitoreo migratorio en EE. UU.",
   "foot.back": "Volver a las cifras y la historia",
 
   "rights.kicker": "Si ICE está en su puerta ahora mismo",
