@@ -461,3 +461,5 @@ a.src { font-size: 0.85em; color: var(--ink-soft); }
 .form input:focus, .form select:focus, .form textarea:focus { border-color: var(--ink); outline: none; }
 .form .hidden { display: none; }
 .form .btn { justify-self: start; border: 0; cursor: pointer; font: inherit; font-weight: 700; }
+
+.lineage li { margin: 0.5rem 0; font-size: 1rem; }

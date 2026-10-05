@@ -1,0 +1,19 @@
+# Clean URLs (200 = serve the file, URL stays as typed)
+/help          /help.html      200
+/es            /es.html        200
+/correct       /correct.html   200
+/georgia       /index.html?state=GA#georgia   302
+/tx            /index.html?state=TX#georgia   302
+/ca            /index.html?state=CA#georgia   302
+/fl            /index.html?state=FL#georgia   302
+/ny            /index.html?state=NY#georgia   302
+/il            /index.html?state=IL#georgia   302
+/az            /index.html?state=AZ#georgia   302
+/nj            /index.html?state=NJ#georgia   302
+/la            /index.html?state=LA#georgia   302
+/pa            /index.html?state=PA#georgia   302
+/ga            /index.html?state=GA#georgia   302
+
+# Old location of the dashboard
+/data.html     /               301
+/data          /               301

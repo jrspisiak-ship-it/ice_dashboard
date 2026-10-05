@@ -14,8 +14,3 @@
   for = "/data/*"
   [headers.values]
     Cache-Control = "public, max-age=300"
-
-[[redirects]]
-  from = "/data.html"
-  to = "/"
-  status = 301
