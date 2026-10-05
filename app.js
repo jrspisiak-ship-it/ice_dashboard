@@ -16,7 +16,8 @@ const ES = {
   "nav.data": "Las cifras",
   "nav.story": "Cifras e historia",
   "nav.back": "Cifras e historia",
-  "site.kicker": "Ayuda e información migratoria",
+  "site.title": "Ayuda e Información Migratoria",
+  "site.sub": "Georgia y Estados Unidos · English / Español",
   "foot.back": "Volver a las cifras y la historia",
 
   "rights.kicker": "Si ICE está en su puerta ahora mismo",
