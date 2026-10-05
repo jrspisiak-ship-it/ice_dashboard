@@ -18,7 +18,10 @@ const TS = LANG_S === "es" ? {
   serves: "atiende a personas detenidas", noserve: "no atiende casos de detenidos",
   facHead: ["Centro", "Dónde", "Operador", "Tamaño", "Teléfono", "2026"],
   phoneNote: "Los teléfonos de los centros provienen de las páginas de los operadores; confirme en ice.gov antes de confiar en un número.",
-  nearText: "No existe un mapa en vivo confiable. Las aplicaciones que lo hacían fueron retiradas en 2025. De más a menos confiable: (1) la línea de respuesta rápida de su estado, abajo, cuyos voluntarios verifican antes de avisar; (2) el mapa colaborativo iceout.org, útil como señal, no como hecho; (3) redes sociales: aplique la regla de dos fuentes y revise la hora antes de compartir.",
+  nearIntro: "Respuesta honesta: no existe un mapa en vivo confiable. Las aplicaciones de teléfono que lo hacían fueron retiradas de la App Store en septiembre de 2025. Lo que queda, de más a menos confiable:",
+  near1: "Línea de respuesta rápida de su estado.", near1d: "Voluntarios capacitados verifican antes de avisar a nadie. Es la única fuente en la que actuaríamos:",
+  near2d: "— el mapa colaborativo sucesor de People Over Papers. Sin verificación formal, así que los reportes pueden ser erróneos, viejos o duplicados. Útil como señal, no como hecho. No pide su ubicación ni una cuenta; no publique el nombre, la cara ni la placa de nadie.",
+  near3: "Redes sociales.", near3d: "Lo más rápido y lo menos preciso. Aplique la regla de dos fuentes y revise la hora antes de compartir.",
   more: "Más estados próximamente. ¿Conoce una línea verificada para su estado?", suggest: "Envíe una corrección",
   caseLine: "Línea de estado del caso (cualquier corte), 24 h", caseLineD: "ingrese el número A",
   fail: "No se pudo cargar la información de este estado.", unv: "No verificado todavía", nat: "Directorio nacional de abogados gratuitos",
@@ -31,7 +34,10 @@ const TS = LANG_S === "es" ? {
   serves: "serves detained people", noserve: "does not take detained cases",
   facHead: ["Facility", "Where", "Operator", "Size", "Phone", "2026"],
   phoneNote: "Facility phone numbers are from the operators' pages; confirm on ice.gov before relying on one.",
-  nearText: "There is no reliable live map. The apps that did this were removed in 2025. From most to least reliable: (1) your state's rapid-response line below, whose volunteers verify before they tell anyone; (2) the crowdsourced iceout.org map, useful as a signal, not a fact; (3) social media: apply a two-source rule and check the timestamp before you share.",
+  nearIntro: "Honest answer: there is no reliable live map. The phone apps that did this were removed from the App Store in September 2025. What's left, from most to least reliable:",
+  near1: "Your state's rapid-response line.", near1d: "Trained volunteers verify before they tell anyone. This is the only source we'd act on:",
+  near2d: "— the volunteer-run crowdsourced map that succeeded People Over Papers. No formal verification, so reports can be wrong, old or duplicated. Useful as a signal, not a fact. It does not need your location or an account; don't post anyone's name, face or plate.",
+  near3: "Social media.", near3d: "Fastest and least accurate. Apply a two-source rule and check the timestamp before you share.",
   more: "More states coming. Know a verified hotline for your state?", suggest: "Send a correction",
   caseLine: "Case status line (any court), 24/7", caseLineD: "enter the A-number",
   fail: "This state's information could not be loaded.", unv: "Not yet verified", nat: "National directory of free lawyers",
@@ -126,7 +132,22 @@ function renderState(root, d) {
   const near = el("details", { class: "sub", open: "" });
   near.appendChild(el("summary", {}, TS.near));
   const nb = el("div", { class: "sub-body" });
-  nb.appendChild(el("p", {}, TS.nearText));
+  const prim = (d.hotlines || []).find(x => x.primary && x.phone) || (d.hotlines || []).find(x => x.phone);
+  const nearOl = el("ol");
+  const li1 = el("li");
+  li1.appendChild(el("strong", {}, TS.near1));
+  li1.appendChild(document.createTextNode(" " + TS.near1d + " "));
+  if (prim) { li1.appendChild(link(telHref(prim.phone), `${prim.name}, ${prim.phone}`)); li1.appendChild(document.createTextNode(".")); }
+  const li2 = el("li");
+  li2.appendChild(el("strong", {}, "ICEOut "));
+  li2.appendChild(link(LANG_S === "es" ? "https://iceout.org/es/" : "https://iceout.org/en/", "iceout.org"));
+  li2.appendChild(document.createTextNode(" " + TS.near2d));
+  const li3 = el("li");
+  li3.appendChild(el("strong", {}, TS.near3));
+  li3.appendChild(document.createTextNode(" " + TS.near3d));
+  nearOl.appendChild(li1); nearOl.appendChild(li2); nearOl.appendChild(li3);
+  nb.appendChild(el("p", {}, TS.nearIntro));
+  nb.appendChild(nearOl);
   near.appendChild(nb); root.appendChild(near);
 
   // hotlines
