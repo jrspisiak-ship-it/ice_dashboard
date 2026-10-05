@@ -4,7 +4,7 @@ A single static page, in English and Spanish, for immigrants and their neighbors
 what to do if ICE comes to the door, who to call, how to find someone in detention,
 how to prepare a family, and verified enforcement numbers with links to the source.
 
-Live at https://jrspisiak-ship-it.github.io/ice_dashboard/
+Live at https://immigration-help-facts.netlify.app/
 
 ## Files
 
