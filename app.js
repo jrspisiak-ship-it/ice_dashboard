@@ -15,6 +15,9 @@ const ES = {
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
   "nav.story": "Cifras e historia",
+  "nav.back": "Cifras e historia",
+  "site.kicker": "Ayuda e información migratoria",
+  "foot.back": "Volver a las cifras y la historia",
 
   "rights.kicker": "Si ICE está en su puerta ahora mismo",
   "rights.h": "No abra la puerta. No tiene que hacerlo.",

@@ -373,3 +373,10 @@ details.fold .section { border-top: 0; margin-top: 0; padding-top: 0.5rem; }
 .help-strip .btn:first-of-type:hover { background: var(--red-deep); border-color: var(--red-deep); }
 .help-strip .btn-secondary { color: var(--red-deep); border-color: var(--red); background: #fff; }
 .help-strip .btn-secondary:hover { background: #fdf2f1; color: var(--red-deep); }
+
+.site-kicker { margin: 0 0 0.2rem; font-weight: 700; color: var(--ink-soft); font-size: 0.95rem; letter-spacing: 0.01em; }
+.band-red .site-kicker { color: #fff; opacity: 0.85; margin-bottom: 0.6rem; }
+.back-link { margin-left: auto; background: #fff; color: var(--ink); border-color: var(--ink); white-space: nowrap; }
+.back-link:hover { background: var(--ink); color: #fff; }
+.topbar-row .lang { margin-left: 0; }
+.page-data .site-kicker { margin-top: 0.25rem; }
