@@ -10,6 +10,7 @@
 const ES = {
   "skip": "Ir a la guía de emergencia",
   "brand": "Civic Shield",
+  "site.mission": "Civic Shield existe para reunir en un solo lugar los hechos sobre la aplicación de las leyes migratorias en EE. UU., con cada cifra vinculada a su fuente y sin tomar partido político. Está hecho para inmigrantes que necesitan conocer sus derechos y a dónde acudir, y para ciudadanos que quieren entender lo que ocurre en sus comunidades. Donde el registro es incierto o está en disputa, este sitio lo dice.",
   "nav.rights": "Sus derechos",
   "nav.call": "A quién llamar",
   "nav.detained": "Alguien detenido",
