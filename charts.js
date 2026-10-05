@@ -203,10 +203,10 @@ function hbarChart(container, series) {
   const svg = el("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": series.title });
   items.forEach((it, i) => {
     const yy = PAD.t + i * rowH;
-    el("text", { x: L - 10, y: yy + 19, class: "axis" }, svg).textContent = it.label;
+    el("text", { x: L - 10, y: yy + 19, class: "axis", "text-anchor": "end", "font-size": "16" }, svg).textContent = it.label;
     const bwid = (w - L - 70) * (it.value / max);
-    el("rect", { x: L, y: yy + 5, width: bwid, height: 20, class: "bar primary" }, svg);
-    el("text", { x: L + bwid + 8, y: yy + 19, class: "val left" }, svg).textContent = `${it.value}%`;
+    el("rect", { x: L, y: yy + 5, width: bwid, height: 20, class: "bar primary", fill: "#b42318" }, svg);
+    el("text", { x: L + bwid + 8, y: yy + 19, class: "val left", "text-anchor": "start", "font-size": "17", "font-weight": "700" }, svg).textContent = `${it.value}%`;
   });
   container.appendChild(svg);
   container.appendChild(h("p", { class: "chart-note" }, series.note));
