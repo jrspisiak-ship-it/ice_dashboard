@@ -156,6 +156,8 @@ function applyLanguage(lang) {
     if (typeof text === "string") el.textContent = text;
   });
   document.documentElement.lang = lang;
+  const home = lang === "es" ? "es.html" : "index.html";
+  document.querySelectorAll('a[data-i18n="brand"], a[data-i18n="nav.back"], a[data-i18n="nav.story"], a[data-i18n="data.full"], a[data-i18n="foot.back"]').forEach((el) => { el.href = home; });
   document.querySelectorAll(".lang button").forEach((b) => {
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
   });

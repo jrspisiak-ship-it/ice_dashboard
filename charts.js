@@ -5,6 +5,19 @@
    Every chart gets a "show as table" fallback and a de-duplicated source list. */
 
 const NS = "http://www.w3.org/2000/svg";
+const LANG = document.documentElement.lang === "es" ? "es" : "en";
+const T = LANG === "es" ? {
+  sources: "Fuentes", table: "Ver como tabla", date: "Fecha", count: "Cantidad", percent: "Porcentaje",
+  legA: " Sin condena penal (TRAC)   ", legIce: " Arrestados por ICE   ", legCbp: " Transferidos de la Patrulla Fronteriza   ",
+  legApprox: " Redondeado / sin desglose publicado", approx: " (aprox.)", fail: "No se pudieron cargar los datos de la gráfica.",
+  months: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"]
+} : {
+  sources: "Sources", table: "Show as table", date: "Date", count: "Count", percent: "Percent",
+  legA: " No criminal conviction (TRAC)   ", legIce: " Arrested by ICE   ", legCbp: " Transferred from Border Patrol   ",
+  legApprox: " Rounded / split not published", approx: " (approx.)", fail: "Chart data could not be loaded.",
+  months: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+};
+const loc = s => (LANG === "es" && typeof s === "object" && s) ? (s.es || s.en) : s;
 const NARROW = window.innerWidth < 600;
 const W = NARROW ? 400 : 640, H = NARROW ? 270 : 300;
 const PAD = NARROW ? { l: 46, r: 12, t: 22, b: 40 } : { l: 56, r: 16, t: 20, b: 44 };
@@ -32,8 +45,7 @@ const fmt = new Intl.NumberFormat("en-US");
 
 function monthLabel(iso) {
   const [y, m] = iso.split("-");
-  const names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  return `${names[Number(m) - 1]} ${y.slice(2)}`;
+  return `${T.months[Number(m) - 1]} ${y.slice(2)}`;
 }
 
 function toTime(iso) {
@@ -66,7 +78,7 @@ function sourcesBlock(points) {
     }
   }
   const d = h("details", { class: "chart-sources" });
-  d.appendChild(h("summary", {}, `Sources (${seen.size})`));
+  d.appendChild(h("summary", {}, `${T.sources} (${seen.size})`));
   const ul = h("ul");
   for (const [url, host] of seen) {
     const li = h("li");
@@ -81,11 +93,11 @@ function sourcesBlock(points) {
 
 function tableBlock(points, unit, extra) {
   const d = h("details", { class: "chart-table" });
-  d.appendChild(h("summary", {}, "Show as table"));
+  d.appendChild(h("summary", {}, T.table));
   const t = h("table");
   const head = h("tr");
-  head.appendChild(h("th", {}, "Date"));
-  head.appendChild(h("th", {}, unit === "%" ? "Percent" : "Count"));
+  head.appendChild(h("th", {}, T.date));
+  head.appendChild(h("th", {}, unit === "%" ? T.percent : T.count));
   if (extra) head.appendChild(h("th", {}, extra));
   t.appendChild(head);
   for (const p of points) {
@@ -108,7 +120,7 @@ function lineChart(container, series, opts = {}) {
   const x = t => PAD.l + (W - PAD.l - PAD.r) * ((t - t0) / (t1 - t0 || 1));
   const y = v => PAD.t + (H - PAD.t - PAD.b) * (1 - v / max);
 
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": series.title });
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": loc(series.title) });
   yAxis(svg, max, series.unit);
 
   // x labels: one per quarter boundary
@@ -131,7 +143,7 @@ function lineChart(container, series, opts = {}) {
     el("path", { d, class: `line ${cls}` }, svg);
     for (const p of points) {
       const c = el("circle", { cx: x(toTime(p.date)), cy: y(p.value), r: 4, class: `dot ${cls}${p.approx ? " approx" : ""}` }, svg);
-      el("title", {}, c).textContent = `${p.date}: ${series.unit === "%" ? p.value + "%" : fmt.format(p.value)}${p.approx ? " (approx.)" : ""}`;
+      el("title", {}, c).textContent = `${p.date}: ${series.unit === "%" ? p.value + "%" : fmt.format(p.value)}${p.approx ? T.approx : ""}`;
     }
   };
   drawLine(pts, "primary");
@@ -146,12 +158,12 @@ function lineChart(container, series, opts = {}) {
   if (opts.secondary) {
     const leg = h("p", { class: "legend" });
     leg.appendChild(h("span", { class: "swatch primary" }));
-    leg.appendChild(document.createTextNode(" No criminal conviction (TRAC)   "));
+    leg.appendChild(document.createTextNode(T.legA));
     leg.appendChild(h("span", { class: "swatch secondary" }));
-    leg.appendChild(document.createTextNode(` ${opts.secondary.label}`));
+    leg.appendChild(document.createTextNode(` ${loc(opts.secondary.label)}`));
     container.appendChild(leg);
   }
-  container.appendChild(h("p", { class: "chart-note" }, series.note));
+  container.appendChild(h("p", { class: "chart-note" }, loc(series.note)));
   container.appendChild(tableBlock(pts, series.unit));
   container.appendChild(sourcesBlock(all));
 }
@@ -163,7 +175,7 @@ function barChart(container, series, opts = {}) {
   const bw = (W - PAD.l - PAD.r) / n;
   const y = v => PAD.t + (H - PAD.t - PAD.b) * (1 - v / max);
 
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": series.title });
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": loc(series.title) });
   yAxis(svg, max, series.unit);
 
   pts.forEach((p, i) => {
@@ -176,7 +188,7 @@ function barChart(container, series, opts = {}) {
     } else {
       el("rect", { x: cx - w / 2, y: y(p.value), width: w, height: y(0) - y(p.value), class: `bar primary${p.approx ? " approx" : ""}` }, g);
     }
-    el("title", {}, g).textContent = `${p.date}: ${fmt.format(p.value)}${p.approx ? " (approx.)" : ""}${p.ice != null ? ` — ICE ${fmt.format(p.ice)}, CBP ${fmt.format(p.cbp)}` : ""}`;
+    el("title", {}, g).textContent = `${p.date}: ${fmt.format(p.value)}${p.approx ? T.approx : ""}${p.ice != null ? ` — ICE ${fmt.format(p.ice)}, CBP ${fmt.format(p.cbp)}` : ""}`;
     if (i % Math.ceil(n / (NARROW ? 4 : 5)) === 0 && i < n - 2 || i === n - 1) {
       el("text", { x: cx, y: H - PAD.b + 22, class: "xlabel" }, svg).textContent = monthLabel(p.date);
     }
@@ -188,14 +200,14 @@ function barChart(container, series, opts = {}) {
   if (opts.split) {
     const leg = h("p", { class: "legend" });
     leg.appendChild(h("span", { class: "swatch primary" }));
-    leg.appendChild(document.createTextNode(" Arrested by ICE   "));
+    leg.appendChild(document.createTextNode(T.legIce));
     leg.appendChild(h("span", { class: "swatch cbp" }));
-    leg.appendChild(document.createTextNode(" Transferred from Border Patrol   "));
+    leg.appendChild(document.createTextNode(T.legCbp));
     leg.appendChild(h("span", { class: "swatch approx" }));
-    leg.appendChild(document.createTextNode(" Rounded / split not published"));
+    leg.appendChild(document.createTextNode(T.legApprox));
     container.appendChild(leg);
   }
-  container.appendChild(h("p", { class: "chart-note" }, series.note));
+  container.appendChild(h("p", { class: "chart-note" }, loc(series.note)));
   container.appendChild(tableBlock(pts, series.unit, opts.split ? "ICE / CBP" : undefined));
   container.appendChild(sourcesBlock(pts));
 }
@@ -205,16 +217,16 @@ function hbarChart(container, series) {
   const rowH = 30, w = W, hh = PAD.t + items.length * rowH + 10;
   const max = niceMax(Math.max(...items.map(i => i.value)) * 1.15);
   const L = 110;
-  const svg = el("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": series.title });
+  const svg = el("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": loc(series.title) });
   items.forEach((it, i) => {
     const yy = PAD.t + i * rowH;
-    el("text", { x: L - 10, y: yy + 19, class: "axis", "text-anchor": "end", "font-size": "16" }, svg).textContent = it.label;
+    el("text", { x: L - 10, y: yy + 19, class: "axis", "text-anchor": "end", "font-size": "16" }, svg).textContent = loc(it.label);
     const bwid = (w - L - 70) * (it.value / max);
     el("rect", { x: L, y: yy + 5, width: bwid, height: 20, class: "bar primary", fill: "#b42318" }, svg);
     el("text", { x: L + bwid + 8, y: yy + 19, class: "val left", "text-anchor": "start", "font-size": "17", "font-weight": "700" }, svg).textContent = `${it.value}%`;
   });
   container.appendChild(svg);
-  container.appendChild(h("p", { class: "chart-note" }, series.note));
+  container.appendChild(h("p", { class: "chart-note" }, loc(series.note)));
   container.appendChild(sourcesBlock([{ url: series.url }]));
 }
 
@@ -226,7 +238,7 @@ async function main() {
     data = await res.json();
   } catch (_) {
     document.querySelectorAll("[data-chart]").forEach(c => {
-      c.appendChild(h("p", { class: "small" }, "Chart data could not be loaded."));
+      c.appendChild(h("p", { class: "small" }, T.fail));
     });
     return;
   }

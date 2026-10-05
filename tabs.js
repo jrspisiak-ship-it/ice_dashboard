@@ -43,6 +43,16 @@ function initCharts() {
   });
 }
 
+(function autoLanguage() {
+  // First visit to the English home page from a Spanish-language browser: offer Spanish.
+  if (document.documentElement.lang !== "en" || location.pathname.endsWith("es.html")) return;
+  if (new URLSearchParams(location.search).has("lang")) return;
+  try { if (localStorage.getItem("lang")) return; } catch (_) { /* ignore */ }
+  if ((navigator.language || "").toLowerCase().startsWith("es")) {
+    location.replace("es.html" + location.hash);
+  }
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   const h = currentHash();
   // A hash that points inside a panel (e.g. #method) is not a panel; keep default.

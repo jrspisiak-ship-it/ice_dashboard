@@ -10,7 +10,7 @@ Live at https://civicshield-project.netlify.app/
 
 ## Files
 
-- `index.html` (numbers, policy, news, Georgia) and `help.html` (rights, hotlines; EN/ES) with `styles.css`, `app.js`, `charts.js`, `tabs.js`. No build step, no CDN scripts, no API keys in the browser.
+- `index.html` / `es.html` (numbers, policy, news, Georgia — English and Spanish twins; edit both) and `help.html` (rights, hotlines; EN/ES in one file) with `styles.css`, `app.js`, `charts.js`, `tabs.js`. No build step, no CDN scripts, no API keys in the browser.
 - `data/live.json` — links found by the daily automated check. Written by the workflow, read by the page.
 - `scripts/update_live.py` — asks Gemini (search-grounded) for recent official releases and saves only the citations.
 - `.github/workflows/daily_update.yml` — runs the script every morning and commits the result.
