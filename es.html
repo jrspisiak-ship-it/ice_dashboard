@@ -38,10 +38,10 @@
     <nav class="topnav" aria-label="Secciones">
       <a href="#trajectory">Tendencia</a>
       <a href="#news">Noticias</a>
+      <a href="#georgia">Su estado</a>
       <a href="#who">Quién está detenido</a>
       <a href="#policy">Políticas</a>
       <a href="#sides">Ambos lados</a>
-      <a href="#georgia">Su estado</a>
     </nav>
   </div>
 </header>
@@ -84,11 +84,11 @@
   <!-- ===== HUB ===== -->
   <nav class="hub" aria-label="Elija una sección">
     <a href="#trajectory" data-panel="trajectory"><strong>Tendencia</strong><span>Detención, ingresos y arrestos desde ene. 2025</span></a>
-    <a href="#news" data-panel="news"><strong>Noticias</strong><span>5 que citan los partidarios · 5 que citan los críticos</span></a>
+    <a href="#news" data-panel="news"><strong>Noticias</strong><span>5 que citan los partidarios · 5 que citan los críticos · semanal</span></a>
+    <a href="#georgia" data-panel="georgia"><strong>Su estado</strong><span>Líneas · centros · cortes · ayuda legal · 287(g) — 10 estados</span></a>
     <a href="#who" data-panel="who"><strong>Quién está detenido</strong><span>70.6% sin condena · nacionalidades · muertes</span></a>
     <a href="#policy" data-panel="policy"><strong>Políticas</strong><span>10 cambios · 3 bloqueados por tribunales</span></a>
     <a href="#sides" data-panel="sides"><strong>Ambos lados</strong><span>El argumento más fuerte de cada lado</span></a>
-    <a href="#georgia" data-panel="georgia"><strong>Su estado</strong><span>Líneas · centros · cortes · ayuda legal · 287(g) — 10 estados</span></a>
   </nav>
 
   <!-- ===== TENDENCIA ===== -->
@@ -113,31 +113,14 @@
   <!-- ===== NOTICIAS ===== -->
   <section id="news" class="section panel" aria-labelledby="news-h">
     <h2 id="news-h">Cobertura reciente, cinco y cinco</h2>
-    <p class="lede">Cinco historias que señalan la administración y sus partidarios, cinco que señalan los críticos. Julio–septiembre de 2026, cada una enlazada al artículo original (en inglés). Algunos medios bloquean los enlaces directos; esos se enlazan a través de una estación afiliada o socio de sindicación que publica el mismo artículo.</p>
+    <p class="lede">Cinco historias que señalan la administración y sus partidarios, cinco que señalan los críticos, cada una enlazada al artículo original (en inglés). Se revisan y actualizan cada semana. Algunos medios bloquean los enlaces directos; esos se enlazan a través de una estación afiliada o socio de sindicación que publica el mismo artículo.</p>
+    <div id="news-root"><p class="small">Cargando noticias…</p></div>
+  </section>
 
-    <div class="twocol news">
-      <div>
-        <h3>Lo que señalan los partidarios</h3>
-        <ol class="newslist">
-          <li><details><summary><a href="https://www.foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border" target="_blank" rel="noopener noreferrer">El DHS de Trump suma 16 meses seguidos con 0 liberaciones en la frontera</a><span class="news-meta">Fox News · 16 sept. 2026</span></summary><p>La Patrulla Fronteriza aprehendió a 8,870 personas en agosto y no liberó a ninguna; DHS dice que las aprehensiones bajaron cerca de 94% respecto al promedio mensual de la administración anterior.</p></details></li>
-          <li><details><summary><a href="https://www.nbcwashington.com/news/national-international/ice-arrests-record-highs-summer/4153423/" target="_blank" rel="noopener noreferrer">Los arrestos de ICE alcanzaron récords este verano con un cambio de tácticas</a><span class="news-meta">NBC News · 11 sept. 2026</span></summary><p>50,925 arrestos en agosto, tercer récord mensual consecutivo, impulsados por arrestos en la calle, puntos de control en aeropuertos y cooperación con cárceles locales, más que por grandes operativos urbanos.</p></details></li>
-          <li><details><summary><a href="https://abcnews.com/Politics/ice-350000-individuals-removed-fiscal-year-2026/story?id=134948878" target="_blank" rel="noopener noreferrer">ICE dice que ha deportado a más de 350,000 personas en el año fiscal 2026</a><span class="news-meta">ABC News · 21 jul. 2026</span></summary><p>356,389 deportaciones hasta mediados de julio ponen al año en camino de desafiar el récord de 2013, de 438,421.</p></details></li>
-          <li><details><summary><a href="https://www.axios.com/2026/07/28/trump-self-deportation-ice" target="_blank" rel="noopener noreferrer">Cómo se ha acelerado la máquina de "autodeportación" de Trump</a><span class="news-meta">Axios · 28 jul. 2026</span></summary><p>Unas 132,000 salidas voluntarias pagadas a mediados de julio; funcionarios dicen que redujo la estancia promedio en detención de los participantes de unos 50 días a 17.</p></details></li>
-          <li><details><summary><a href="https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/" target="_blank" rel="noopener noreferrer">Los arrestos de ICE en Georgia suben 50% en julio y marcan nuevo récord</a><span class="news-meta">Atlanta Journal-Constitution · 4 sept. 2026</span></summary><p>Unos 2,250 arrestos de ICE en Georgia en julio, más de once veces los de julio de 2024.</p></details></li>
-        </ol>
-      </div>
-      <div>
-        <h3>Lo que señalan los críticos</h3>
-        <ol class="newslist">
-          <li><details><summary><a href="https://www.pbs.org/newshour/politics/ice-has-wasted-tens-of-millions-of-dollars-with-uninformed-detention-plans-gao-finds" target="_blank" rel="noopener noreferrer">ICE desperdició decenas de millones con planes de detención "mal informados", concluye la GAO</a><span class="news-meta">AP vía PBS · 24 sept. 2026</span></summary><p>La Oficina de Rendición de Cuentas del Gobierno encontró casi $3 millones en carpas sin usar en Guantánamo y unos $20 millones en mantener bodegas vacías en la prisa por añadir camas.</p></details></li>
-          <li><details><summary><a href="https://www.axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions" target="_blank" rel="noopener noreferrer">Ordenan a ICE corregir condiciones "miserables" en un centro de detención de Nueva York</a><span class="news-meta">Axios · 25 sept. 2026</span></summary><p>Un juez federal declaró inconstitucionales las condiciones y fijó estándares mínimos de espacio, comida, acceso médico y llamadas legales confidenciales.</p></details></li>
-          <li><details><summary><a href="https://news.wttw.com/2026/09/24/what-we-know-after-officials-say-ice-detained-us-citizen-and-left-him-injured-evanston" target="_blank" rel="noopener noreferrer">Autoridades dicen que ICE detuvo a un ciudadano estadounidense y lo dejó herido en Evanston</a><span class="news-meta">CNN vía WTTW · 24 sept. 2026</span></summary><p>Los agentes confundieron a un ciudadano con su objetivo; el video muestra uso de fuerza antes de liberarlo cuando se confirmó su ciudadanía.</p></details></li>
-          <li><details><summary><a href="https://knpr.org/npr/2026-09-28/trumps-immigration-push-has-largely-spared-farms-idaho-dairymen-worry-it-wont-last" target="_blank" rel="noopener noreferrer">La ofensiva migratoria de Trump ha respetado en gran medida a las granjas. Los lecheros de Idaho temen que no dure.</a><span class="news-meta">NPR · 28 sept. 2026</span></summary><p>Solo cuatro residentes locales solicitaron 7,500 empleos agrícolas anunciados; los productores temen una redada sin una solución legislativa a la vista para la mano de obra agrícola.</p></details></li>
-          <li><details><summary><a href="https://stateline.org/2026/09/17/states-fight-to-inspect-federal-immigrant-detention-facilities/" target="_blank" rel="noopener noreferrer">Los estados pelean por inspeccionar los centros federales de detención de inmigrantes</a><span class="news-meta">Stateline · 17 sept. 2026</span></summary><p>Operadores privados han negado la entrada a inspectores de salud estatales; la administración sostiene que la ley federal impide la supervisión estatal, y las disputas están en los tribunales.</p></details></li>
-        </ol>
-      </div>
-    </div>
-    <p class="small">También notable este trimestre: la Corte Suprema permitió que continúen las deportaciones a terceros países mientras considera la política (<a href="https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy" target="_blank" rel="noopener noreferrer">AP vía PBS, 29 sept.</a>); Reuters sobre por qué los arrestos récord no producen más deportaciones (<a href="https://www.hawaiitribune-herald.com/2026/09/15/nation-world-news/ice-arrests-keep-soaring-heres-why-they-are-not-leading-to-more-deportations/" target="_blank" rel="noopener noreferrer">15 sept.</a>); CBS sobre la proporción récord de arrestados sin antecedentes penales (<a href="https://www.cbsnews.com/news/ice-arrests-record-high-july-new-data/" target="_blank" rel="noopener noreferrer">27 ago.</a>).</p>
+  <!-- ===== GEORGIA ===== -->
+  <section id="georgia" class="section panel" aria-labelledby="ga-h">
+    <h2 id="ga-h">Georgia</h2>
+    <div id="state-root"><p class="small">Cargando información del estado…</p></div>
   </section>
 
   <!-- ===== QUIÉN ===== -->
@@ -256,7 +239,6 @@
     </div>
   </section>
 
-
   <!-- ===== AMBOS LADOS ===== -->
   <section id="sides" class="section panel" aria-labelledby="sides-h">
     <h2 id="sides-h">Ambos lados del debate</h2>
@@ -297,12 +279,6 @@
     <p><strong>Hacia dónde va:</strong> las variables sin resolver son los fallos de la Corte Suprema sobre deportaciones a terceros países y el TPS venezolano, la división entre circuitos sobre audiencias de fianza, si el Congreso financia el nivel de detención que DHS mantiene, y si las deportaciones pueden alcanzar el ritmo de los arrestos. Las páginas de datos enlazadas arriba se actualizan cada dos semanas.</p>
   </section>
 
-  <!-- ===== GEORGIA ===== -->
-  <section id="georgia" class="section panel" aria-labelledby="ga-h">
-    <h2 id="ga-h">Georgia</h2>
-    <div id="state-root"><p class="small">Cargando información del estado…</p></div>
-  </section>
-
   <!-- ===== MÉTODO ===== -->
   <section id="method" class="section" aria-labelledby="m-h">
     <h2 id="m-h">Cómo se verifica esta página</h2>
@@ -322,9 +298,10 @@
   <p>Cifras revisadas por una persona por última vez el <time datetime="2026-10-05">5 de octubre de 2026</time>. Esta página es información general, no asesoría legal. <a href="help.html?lang=es">Obtener ayuda</a>.</p>
 </footer>
 
-<script src="charts.js?v=17"></script>
-<script src="tabs.js?v=18"></script>
-<script src="states.js?v=17"></script>
-<script src="langpick.js?v=17"></script>
+<script src="charts.js?v=19"></script>
+<script src="tabs.js?v=19"></script>
+<script src="states.js?v=19"></script>
+<script src="news.js?v=19"></script>
+<script src="langpick.js?v=19"></script>
 </body>
 </html>

@@ -1,0 +1,236 @@
+{
+  "reviewed": "2026-10-05",
+  "window": {
+    "en": "July–September 2026",
+    "es": "julio–septiembre de 2026"
+  },
+  "supporters": [
+    {
+      "url": "https://www.foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border",
+      "outlet": {
+        "en": "Fox News",
+        "es": "Fox News"
+      },
+      "date_label": {
+        "en": "Sept 16, 2026",
+        "es": "16 sept. 2026"
+      },
+      "headline": {
+        "en": "Trump DHS hits 16 straight months with 0 releases at the border",
+        "es": "El DHS de Trump suma 16 meses seguidos con 0 liberaciones en la frontera"
+      },
+      "summary": {
+        "en": "Border Patrol apprehended 8,870 people in August and released none; DHS says apprehensions are down about 94% from the prior administration's monthly average.",
+        "es": "La Patrulla Fronteriza aprehendió a 8,870 personas en agosto y no liberó a ninguna; DHS dice que las aprehensiones bajaron cerca de 94% respecto al promedio mensual de la administración anterior."
+      }
+    },
+    {
+      "url": "https://www.nbcwashington.com/news/national-international/ice-arrests-record-highs-summer/4153423/",
+      "outlet": {
+        "en": "NBC News",
+        "es": "NBC News"
+      },
+      "date_label": {
+        "en": "Sept 11, 2026",
+        "es": "11 sept. 2026"
+      },
+      "headline": {
+        "en": "ICE arrests reached record highs this summer as enforcement tactics shifted",
+        "es": "Los arrestos de ICE alcanzaron récords este verano con un cambio de tácticas"
+      },
+      "summary": {
+        "en": "50,925 arrests in August, a third straight monthly record, driven by street arrests, airport checkpoints and local-jail cooperation rather than large city operations.",
+        "es": "50,925 arrestos en agosto, tercer récord mensual consecutivo, impulsados por arrestos en la calle, puntos de control en aeropuertos y cooperación con cárceles locales, más que por grandes operativos urbanos."
+      }
+    },
+    {
+      "url": "https://abcnews.com/Politics/ice-350000-individuals-removed-fiscal-year-2026/story?id=134948878",
+      "outlet": {
+        "en": "ABC News",
+        "es": "ABC News"
+      },
+      "date_label": {
+        "en": "Jul 21, 2026",
+        "es": "21 jul. 2026"
+      },
+      "headline": {
+        "en": "ICE says over 350,000 individuals removed so far in fiscal year 2026",
+        "es": "ICE dice que ha deportado a más de 350,000 personas en el año fiscal 2026"
+      },
+      "summary": {
+        "en": "356,389 removals through mid-July put the year on pace to challenge the 2013 record of 438,421.",
+        "es": "356,389 deportaciones hasta mediados de julio ponen al año en camino de desafiar el récord de 2013, de 438,421."
+      }
+    },
+    {
+      "url": "https://www.axios.com/2026/07/28/trump-self-deportation-ice",
+      "outlet": {
+        "en": "Axios",
+        "es": "Axios"
+      },
+      "date_label": {
+        "en": "Jul 28, 2026",
+        "es": "28 jul. 2026"
+      },
+      "headline": {
+        "en": "How Trump's \"self-deportation\" machine has ramped up",
+        "es": "Cómo se ha acelerado la máquina de \"autodeportación\" de Trump"
+      },
+      "summary": {
+        "en": "About 132,000 paid voluntary departures by mid-July; officials say it cut average detention stays for participants from about 50 days to 17.",
+        "es": "Unas 132,000 salidas voluntarias pagadas a mediados de julio; funcionarios dicen que redujo la estancia promedio en detención de los participantes de unos 50 días a 17."
+      }
+    },
+    {
+      "url": "https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/",
+      "outlet": {
+        "en": "Atlanta Journal-Constitution",
+        "es": "Atlanta Journal-Constitution"
+      },
+      "date_label": {
+        "en": "Sept 4, 2026",
+        "es": "4 sept. 2026"
+      },
+      "headline": {
+        "en": "Georgia ICE arrests up 50% in July, hit new Trump record",
+        "es": "Los arrestos de ICE en Georgia suben 50% en julio y marcan nuevo récord"
+      },
+      "summary": {
+        "en": "About 2,250 ICE arrests in Georgia in July, more than eleven times July 2024.",
+        "es": "Unos 2,250 arrestos de ICE en Georgia en julio, más de once veces los de julio de 2024."
+      }
+    }
+  ],
+  "critics": [
+    {
+      "url": "https://www.pbs.org/newshour/politics/ice-has-wasted-tens-of-millions-of-dollars-with-uninformed-detention-plans-gao-finds",
+      "outlet": {
+        "en": "AP via PBS",
+        "es": "AP vía PBS"
+      },
+      "date_label": {
+        "en": "Sept 24, 2026",
+        "es": "24 sept. 2026"
+      },
+      "headline": {
+        "en": "ICE has wasted tens of millions of dollars with \"uninformed\" detention plans, GAO finds",
+        "es": "ICE desperdició decenas de millones con planes de detención \"mal informados\", concluye la GAO"
+      },
+      "summary": {
+        "en": "The Government Accountability Office found nearly $3 million in unused Guantanamo tents and about $20 million maintaining empty warehouses in the rush to add beds.",
+        "es": "La Oficina de Rendición de Cuentas del Gobierno encontró casi $3 millones en carpas sin usar en Guantánamo y unos $20 millones en mantener bodegas vacías en la prisa por añadir camas."
+      }
+    },
+    {
+      "url": "https://www.axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions",
+      "outlet": {
+        "en": "Axios",
+        "es": "Axios"
+      },
+      "date_label": {
+        "en": "Sept 25, 2026",
+        "es": "25 sept. 2026"
+      },
+      "headline": {
+        "en": "ICE ordered to fix \"squalid\" conditions at NYC detention facility",
+        "es": "Ordenan a ICE corregir condiciones \"miserables\" en un centro de detención de Nueva York"
+      },
+      "summary": {
+        "en": "A federal judge found conditions unconstitutional and set minimum standards for floor space, food, medical access and confidential legal calls.",
+        "es": "Un juez federal declaró inconstitucionales las condiciones y fijó estándares mínimos de espacio, comida, acceso médico y llamadas legales confidenciales."
+      }
+    },
+    {
+      "url": "https://news.wttw.com/2026/09/24/what-we-know-after-officials-say-ice-detained-us-citizen-and-left-him-injured-evanston",
+      "outlet": {
+        "en": "CNN via WTTW",
+        "es": "CNN vía WTTW"
+      },
+      "date_label": {
+        "en": "Sept 24, 2026",
+        "es": "24 sept. 2026"
+      },
+      "headline": {
+        "en": "Officials say ICE detained a U.S. citizen and left him injured in Evanston",
+        "es": "Autoridades dicen que ICE detuvo a un ciudadano estadounidense y lo dejó herido en Evanston"
+      },
+      "summary": {
+        "en": "Agents mistook a citizen for their target; video shows force used before he was released once his citizenship was confirmed.",
+        "es": "Los agentes confundieron a un ciudadano con su objetivo; el video muestra uso de fuerza antes de liberarlo cuando se confirmó su ciudadanía."
+      }
+    },
+    {
+      "url": "https://knpr.org/npr/2026-09-28/trumps-immigration-push-has-largely-spared-farms-idaho-dairymen-worry-it-wont-last",
+      "outlet": {
+        "en": "NPR",
+        "es": "NPR"
+      },
+      "date_label": {
+        "en": "Sept 28, 2026",
+        "es": "28 sept. 2026"
+      },
+      "headline": {
+        "en": "Trump's immigration push has largely spared farms. Idaho dairymen worry it won't last.",
+        "es": "La ofensiva migratoria de Trump ha respetado en gran medida a las granjas. Los lecheros de Idaho temen que no dure."
+      },
+      "summary": {
+        "en": "Only four local residents applied for 7,500 advertised farm jobs; operators fear a crackdown with no legislative fix for farm labor in sight.",
+        "es": "Solo cuatro residentes locales solicitaron 7,500 empleos agrícolas anunciados; los productores temen una redada sin una solución legislativa a la vista para la mano de obra agrícola."
+      }
+    },
+    {
+      "url": "https://stateline.org/2026/09/17/states-fight-to-inspect-federal-immigrant-detention-facilities/",
+      "outlet": {
+        "en": "Stateline",
+        "es": "Stateline"
+      },
+      "date_label": {
+        "en": "Sept 17, 2026",
+        "es": "17 sept. 2026"
+      },
+      "headline": {
+        "en": "States fight to inspect federal immigrant detention facilities",
+        "es": "Los estados pelean por inspeccionar los centros federales de detención de inmigrantes"
+      },
+      "summary": {
+        "en": "Private operators have refused state health inspectors entry; the administration argues federal law bars state oversight, and the disputes are in court.",
+        "es": "Operadores privados han negado la entrada a inspectores de salud estatales; la administración sostiene que la ley federal impide la supervisión estatal, y las disputas están en los tribunales."
+      }
+    }
+  ],
+  "also": [
+    {
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy",
+      "text": {
+        "en": "the Supreme Court let third-country deportations continue while it considers the policy",
+        "es": "la Corte Suprema permitió que continúen las deportaciones a terceros países mientras considera la política"
+      },
+      "link": {
+        "en": "AP via PBS, Sept 29",
+        "es": "AP vía PBS, 29 sept."
+      }
+    },
+    {
+      "url": "https://www.hawaiitribune-herald.com/2026/09/15/nation-world-news/ice-arrests-keep-soaring-heres-why-they-are-not-leading-to-more-deportations/",
+      "text": {
+        "en": "Reuters on why record arrests aren't producing more removals",
+        "es": "Reuters sobre por qué los arrestos récord no producen más deportaciones"
+      },
+      "link": {
+        "en": "Sept 15",
+        "es": "15 sept."
+      }
+    },
+    {
+      "url": "https://www.cbsnews.com/news/ice-arrests-record-high-july-new-data/",
+      "text": {
+        "en": "CBS on the record share of arrestees with no criminal record",
+        "es": "CBS sobre la proporción récord de arrestados sin antecedentes penales"
+      },
+      "link": {
+        "en": "Aug 27",
+        "es": "27 ago."
+      }
+    }
+  ]
+}

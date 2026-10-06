@@ -11,17 +11,11 @@ Live at https://civicshieldproject.org/
 ## Files
 
 - `index.html` / `es.html` (numbers, policy, news, Georgia — English and Spanish twins; edit both) and `help.html` (rights, hotlines; EN/ES in one file) with `styles.css`, `app.js`, `charts.js`, `tabs.js`. No build step, no CDN scripts, no API keys in the browser.
-- `data/live.json` — links found by the daily automated check. Written by the workflow, read by the page.
-- `scripts/update_live.py` — asks Gemini (search-grounded) for recent official releases and saves only the citations.
-- `.github/workflows/daily_update.yml` — runs the script every morning and commits the result.
 
-## One-time setup for the daily check
 
-1. Repository → Settings → Secrets and variables → Actions → New repository secret
-   `GEMINI_API_KEY` = your key. (Never put it in the HTML or commit it.)
-2. Actions → "Daily live-citations refresh" → Run workflow, to test.
+## News
 
-If the secret is missing the workflow fails cleanly and the page simply shows "No automated results yet."
+`data/news.json` holds the 5 + 5 stories (bilingual) and is rendered by `news.js`. A weekly scheduled review proposes replacements as a pull request; nothing changes on the site until a person merges it.
 
 ## States
 

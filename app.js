@@ -203,71 +203,6 @@ function initialLanguage() {
   return (navigator.language || "").toLowerCase().startsWith("es") ? "es" : "en";
 }
 
-/* ------------------------------------------------------------------
-   Live citations: data/live.json is written by a GitHub Action
-   (scripts/update_live.py). The browser never calls any AI API and
-   holds no key. The JSON is treated as untrusted: shape is validated,
-   only https links are shown, and everything is inserted as text.
-------------------------------------------------------------------- */
-
-const MAX_ITEMS = 10;
-const MAX_TITLE = 160;
-
-function isSafeHttpsUrl(value) {
-  try {
-    const u = new URL(value);
-    return u.protocol === "https:";
-  } catch (_) {
-    return false;
-  }
-}
-
-function renderLive(payload) {
-  const box = document.getElementById("live");
-  if (!box || !payload || !Array.isArray(payload.items)) return;
-
-  const items = payload.items
-    .filter((it) => it && typeof it.title === "string" && isSafeHttpsUrl(it.url))
-    .slice(0, MAX_ITEMS);
-  if (items.length === 0) return;
-
-  const list = document.createElement("ul");
-  for (const it of items) {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = it.url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.textContent = it.title.slice(0, MAX_TITLE);
-    li.appendChild(a);
-    const host = document.createElement("span");
-    host.className = "when";
-    host.textContent = new URL(it.url).hostname.replace(/^www\./, "");
-    li.appendChild(host);
-    list.appendChild(li);
-  }
-
-  box.replaceChildren(list);
-
-  if (typeof payload.updated === "string") {
-    const when = document.createElement("p");
-    when.className = "small";
-    const d = new Date(payload.updated);
-    when.textContent = (document.documentElement.lang === "es" ? "Actualizado: " : "Updated: ")
-      + (Number.isNaN(d.getTime()) ? payload.updated.slice(0, 40) : d.toLocaleString());
-    box.appendChild(when);
-  }
-}
-
-async function loadLive() {
-  try {
-    const res = await fetch("data/live.json", { cache: "no-store" });
-    if (!res.ok) return;
-    renderLive(await res.json());
-  } catch (_) {
-    /* offline or missing file: the static page is complete without it */
-  }
-}
 
 /* ------------------------------------------------------------------ */
 
@@ -277,5 +212,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".lang button").forEach((b) => {
     b.addEventListener("click", () => applyLanguage(b.dataset.lang));
   });
-  loadLive();
 });
