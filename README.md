@@ -6,7 +6,7 @@ A single static page, in English and Spanish, for immigrants and their neighbors
 what to do if ICE comes to the door, who to call, how to find someone in detention,
 how to prepare a family, and verified enforcement numbers with links to the source.
 
-Live at https://civicshield-project.netlify.app/
+Live at https://civicshieldproject.org/
 
 ## Files
 

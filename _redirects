@@ -1,3 +1,6 @@
+# Send the netlify.app address to the custom domain so there is one canonical URL
+https://civicshield-project.netlify.app/*  https://civicshieldproject.org/:splat  301!
+
 # Clean URLs (200 = serve the file, URL stays as typed)
 /help          /help.html      200
 /es            /es.html        200
