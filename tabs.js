@@ -6,7 +6,7 @@
    URL hash (#policy), so every section is linkable and the back button works.
    Also the chart switcher inside Trajectory. No external code. */
 
-const PANELS = ["trajectory", "who", "policy", "news", "sides", "georgia"];
+const PANELS = ["trajectory", "news", "who", "policy", "sides", "georgia"];
 
 function showPanel(id, scroll) {
   const target = PANELS.includes(id) ? id : PANELS[0];
