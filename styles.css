@@ -463,3 +463,5 @@ a.src { font-size: 0.85em; color: var(--ink-soft); }
 .form .btn { justify-self: start; border: 0; cursor: pointer; font: inherit; font-weight: 700; }
 
 .lineage li { margin: 0.5rem 0; font-size: 1rem; }
+
+.sit-h { font-size: 1.02rem; margin: 0.6rem 0 0.2rem; color: var(--ink-soft); }
