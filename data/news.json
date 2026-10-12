@@ -1,12 +1,88 @@
 {
-  "reviewed": "2026-10-05",
+  "reviewed": "2026-10-12",
   "window": {
-    "en": "July–September 2026",
-    "es": "julio–septiembre de 2026"
+    "en": "Sept 12 – Oct 12, 2026",
+    "es": "12 sept. – 12 oct. de 2026"
   },
   "supporters": [
     {
-      "url": "https://www.foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border",
+      "url": "https://keyt.com/politics/cnn-us-politics/2026/10/07/exclusive-ice-agents-told-to-ramp-up-daily-immigration-arrests-despite-gop-unease-as-midterms-near/",
+      "outlet": {
+        "en": "CNN via KEYT",
+        "es": "CNN vía KEYT"
+      },
+      "date_label": {
+        "en": "Oct 7, 2026",
+        "es": "7 oct. 2026"
+      },
+      "headline": {
+        "en": "Exclusive: ICE agents told to ramp up daily immigration arrests despite GOP unease as midterms near",
+        "es": "Exclusiva: ordenan a agentes de ICE aumentar los arrestos diarios pese a la inquietud republicana ante las elecciones de medio término"
+      },
+      "summary": {
+        "en": "ICE leaders told agents to raise daily arrests by about 1,000, back toward a goal of 3,000 a day, after an August high of roughly 51,000 arrests, according to two sources. DHS says there are no arrest quotas.",
+        "es": "Los líderes de ICE ordenaron a los agentes aumentar los arrestos diarios en unos 1,000, de vuelta hacia una meta de 3,000 al día, tras un máximo de unos 51,000 arrestos en agosto, según dos fuentes. El DHS dice que no hay cuotas de arrestos."
+      }
+    },
+    {
+      "url": "https://wjla.com/news/nation-world/doj-justice-department-seeks-to-revoke-citizenship-of-40-in-largest-trump-era-denaturalization-filing-attorney-general-todd-blanche-voluntary-manslaughter-money-laundering-espionage-sexual-crimes",
+      "outlet": {
+        "en": "The National News Desk (via WJLA)",
+        "es": "The National News Desk (vía WJLA)"
+      },
+      "date_label": {
+        "en": "Oct 6, 2026",
+        "es": "6 oct. 2026"
+      },
+      "headline": {
+        "en": "DOJ seeks to revoke citizenship of 40 in largest Trump-era denaturalization filing",
+        "es": "El Departamento de Justicia busca revocar la ciudadanía de 40 personas en la mayor ofensiva de desnaturalización de la era Trump"
+      },
+      "summary": {
+        "en": "The Justice Department filed civil cases to revoke the citizenship of 40 naturalized citizens it says concealed crimes or committed fraud when they naturalized. None has lost citizenship yet; a court must decide each case.",
+        "es": "El Departamento de Justicia presentó demandas civiles para revocar la ciudadanía de 40 ciudadanos naturalizados que, según dice, ocultaron delitos o cometieron fraude al naturalizarse. Ninguno ha perdido la ciudadanía todavía; un tribunal debe decidir cada caso."
+      }
+    },
+    {
+      "url": "https://news.bloomberglaw.com/daily-labor-report/justices-return-case-on-nixed-venezuelan-immigrant-protections",
+      "outlet": {
+        "en": "Bloomberg Law",
+        "es": "Bloomberg Law"
+      },
+      "date_label": {
+        "en": "Oct 5, 2026",
+        "es": "5 oct. 2026"
+      },
+      "headline": {
+        "en": "Justices Return Case on Nixed Venezuelan Immigrant Protections",
+        "es": "Los jueces devuelven el caso sobre las protecciones anuladas para inmigrantes venezolanos"
+      },
+      "summary": {
+        "en": "The Supreme Court vacated a Ninth Circuit ruling that the government unlawfully ended TPS for Venezuelans and Haitians, sending it back in light of a June decision that gave the administration broad leeway on TPS.",
+        "es": "La Corte Suprema anuló un fallo del Noveno Circuito que declaró ilegal el fin del Estatus de Protección Temporal (TPS) para venezolanos y haitianos, y devolvió el caso a la luz de una decisión de junio que dio al gobierno amplio margen sobre el TPS."
+      }
+    },
+    {
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy",
+      "outlet": {
+        "en": "AP via PBS",
+        "es": "AP vía PBS"
+      },
+      "date_label": {
+        "en": "Sept 29, 2026",
+        "es": "29 sept. 2026"
+      },
+      "headline": {
+        "en": "Supreme Court lets Trump continue deporting people to 3rd countries while justices consider policy",
+        "es": "La Corte Suprema permite a Trump seguir deportando a personas a terceros países mientras los jueces analizan la política"
+      },
+      "summary": {
+        "en": "The justices paused a lower-court ruling and let deportations to countries other than migrants' own continue while they decide whether people must first get a real chance to object.",
+        "es": "Los jueces suspendieron un fallo de un tribunal inferior y permitieron que continúen las deportaciones a países distintos del de origen mientras deciden si las personas deben tener antes una oportunidad real de objetar."
+      }
+    },
+    {
+      "url": "https://foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border",
       "outlet": {
         "en": "Fox News",
         "es": "Fox News"
@@ -20,216 +96,140 @@
         "es": "El DHS de Trump suma 16 meses seguidos con 0 liberaciones en la frontera"
       },
       "summary": {
-        "en": "Border Patrol apprehended 8,870 people in August and released none; DHS says apprehensions are down about 94% from the prior administration's monthly average.",
-        "es": "La Patrulla Fronteriza aprehendió a 8,870 personas en agosto y no liberó a ninguna; DHS dice que las aprehensiones bajaron cerca de 94% respecto al promedio mensual de la administración anterior."
-      }
-    },
-    {
-      "url": "https://www.nbcwashington.com/news/national-international/ice-arrests-record-highs-summer/4153423/",
-      "outlet": {
-        "en": "NBC News",
-        "es": "NBC News"
-      },
-      "date_label": {
-        "en": "Sept 11, 2026",
-        "es": "11 sept. 2026"
-      },
-      "headline": {
-        "en": "ICE arrests reached record highs this summer as enforcement tactics shifted",
-        "es": "Los arrestos de ICE alcanzaron récords este verano con un cambio de tácticas"
-      },
-      "summary": {
-        "en": "50,925 arrests in August, a third straight monthly record, driven by street arrests, airport checkpoints and local-jail cooperation rather than large city operations.",
-        "es": "50,925 arrestos en agosto, tercer récord mensual consecutivo, impulsados por arrestos en la calle, puntos de control en aeropuertos y cooperación con cárceles locales, más que por grandes operativos urbanos."
-      }
-    },
-    {
-      "url": "https://abcnews.com/Politics/ice-350000-individuals-removed-fiscal-year-2026/story?id=134948878",
-      "outlet": {
-        "en": "ABC News",
-        "es": "ABC News"
-      },
-      "date_label": {
-        "en": "Jul 21, 2026",
-        "es": "21 jul. 2026"
-      },
-      "headline": {
-        "en": "ICE says over 350,000 individuals removed so far in fiscal year 2026",
-        "es": "ICE dice que ha deportado a más de 350,000 personas en el año fiscal 2026"
-      },
-      "summary": {
-        "en": "356,389 removals through mid-July put the year on pace to challenge the 2013 record of 438,421.",
-        "es": "356,389 deportaciones hasta mediados de julio ponen al año en camino de desafiar el récord de 2013, de 438,421."
-      }
-    },
-    {
-      "url": "https://www.axios.com/2026/07/28/trump-self-deportation-ice",
-      "outlet": {
-        "en": "Axios",
-        "es": "Axios"
-      },
-      "date_label": {
-        "en": "Jul 28, 2026",
-        "es": "28 jul. 2026"
-      },
-      "headline": {
-        "en": "How Trump's \"self-deportation\" machine has ramped up",
-        "es": "Cómo se ha acelerado la máquina de \"autodeportación\" de Trump"
-      },
-      "summary": {
-        "en": "About 132,000 paid voluntary departures by mid-July; officials say it cut average detention stays for participants from about 50 days to 17.",
-        "es": "Unas 132,000 salidas voluntarias pagadas a mediados de julio; funcionarios dicen que redujo la estancia promedio en detención de los participantes de unos 50 días a 17."
-      }
-    },
-    {
-      "url": "https://www.ajc.com/news/2026/09/georgia-ice-arrests-up-50-in-july/",
-      "outlet": {
-        "en": "Atlanta Journal-Constitution",
-        "es": "Atlanta Journal-Constitution"
-      },
-      "date_label": {
-        "en": "Sept 4, 2026",
-        "es": "4 sept. 2026"
-      },
-      "headline": {
-        "en": "Georgia ICE arrests up 50% in July, hit new Trump record",
-        "es": "Los arrestos de ICE en Georgia suben 50% en julio y marcan nuevo récord"
-      },
-      "summary": {
-        "en": "About 2,250 ICE arrests in Georgia in July, more than eleven times July 2024.",
-        "es": "Unos 2,250 arrestos de ICE en Georgia en julio, más de once veces los de julio de 2024."
+        "en": "Border Patrol apprehended 8,870 people at the southwest border in August and released none; DHS says apprehensions are about 94% below the prior administration's monthly average.",
+        "es": "La Patrulla Fronteriza aprehendió a 8,870 personas en la frontera suroeste en agosto y no liberó a ninguna; el DHS dice que las aprehensiones están cerca de 94% por debajo del promedio mensual de la administración anterior."
       }
     }
   ],
   "critics": [
     {
-      "url": "https://www.pbs.org/newshour/politics/ice-has-wasted-tens-of-millions-of-dollars-with-uninformed-detention-plans-gao-finds",
+      "url": "https://www.cbsnews.com/news/daca-renewal-applications-face-record-delays-costing-some-their-jobs/",
       "outlet": {
-        "en": "AP via PBS",
-        "es": "AP vía PBS"
+        "en": "CBS News",
+        "es": "CBS News"
       },
       "date_label": {
-        "en": "Sept 24, 2026",
-        "es": "24 sept. 2026"
+        "en": "Oct 8, 2026",
+        "es": "8 oct. 2026"
       },
       "headline": {
-        "en": "ICE has wasted tens of millions of dollars with \"uninformed\" detention plans, GAO finds",
-        "es": "ICE desperdició decenas de millones con planes de detención \"mal informados\", concluye la GAO"
+        "en": "DACA renewal applications face record delays, costing some their jobs",
+        "es": "Las solicitudes de renovación de DACA enfrentan demoras récord y a algunos les cuestan el empleo"
       },
       "summary": {
-        "en": "The Government Accountability Office found nearly $3 million in unused Guantanamo tents and about $20 million maintaining empty warehouses in the rush to add beds.",
-        "es": "La Oficina de Rendición de Cuentas del Gobierno encontró casi $3 millones en carpas sin usar en Guantánamo y unos $20 millones en mantener bodegas vacías en la prisa por añadir camas."
+        "en": "The pending DACA renewal backlog has passed 125,000 after processing slowed sharply last November, leaving some recipients without work permits. USCIS advises filing four to five months before expiration, but waits have often run longer.",
+        "es": "La acumulación de renovaciones de DACA pendientes supera las 125,000 tras una fuerte desaceleración desde noviembre pasado, y algunos beneficiarios han quedado sin permiso de trabajo. USCIS recomienda presentar la renovación de cuatro a cinco meses antes del vencimiento, pero las esperas a menudo han sido más largas."
       }
     },
     {
-      "url": "https://www.axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions",
+      "url": "https://investigativepost.org/2026/10/08/more-than-500-u-s-citizens-detained-by-ice/",
+      "outlet": {
+        "en": "ProPublica (via Investigative Post)",
+        "es": "ProPublica (vía Investigative Post)"
+      },
+      "date_label": {
+        "en": "Oct 8, 2026",
+        "es": "8 oct. 2026"
+      },
+      "headline": {
+        "en": "More than 500 U.S. citizens detained by ICE",
+        "es": "Más de 500 ciudadanos estadounidenses detenidos por ICE"
+      },
+      "summary": {
+        "en": "ProPublica documented 506 cases of U.S. citizens held by immigration agents, including at least 70 children and teens and more than 100 people held after agents questioned their citizenship. The government does not track these cases, and the authors say the count is likely low.",
+        "es": "ProPublica documentó 506 casos de ciudadanos estadounidenses retenidos por agentes de inmigración, incluidos al menos 70 niños y adolescentes y más de 100 personas retenidas tras cuestionarse su ciudadanía. El gobierno no registra estos casos y los autores dicen que la cifra probablemente es menor a la real."
+      }
+    },
+    {
+      "url": "https://www.kunc.org/npr-news/2026-10-08/ice-has-quietly-used-this-warehouse-as-a-detention-facility-all-summer-neighbors-say",
+      "outlet": {
+        "en": "NPR (via KUNC)",
+        "es": "NPR (vía KUNC)"
+      },
+      "date_label": {
+        "en": "Oct 8, 2026",
+        "es": "8 oct. 2026"
+      },
+      "headline": {
+        "en": "ICE has quietly used this warehouse as a detention facility all summer, neighbors say",
+        "es": "ICE ha usado discretamente este almacén como centro de detención todo el verano, dicen los vecinos"
+      },
+      "summary": {
+        "en": "NPR found signs that a warehouse in Roxbury, New Jersey, has been used to hold detainees despite a court order barring its conversion pending environmental review. DHS did not say whether it holds people there; the state attorney general is investigating similar reports.",
+        "es": "NPR encontró indicios de que un almacén en Roxbury, Nueva Jersey, se ha usado para retener a detenidos pese a una orden judicial que prohíbe su conversión hasta una revisión ambiental. El DHS no dijo si retiene a personas allí; la fiscalía general del estado investiga reportes similares."
+      }
+    },
+    {
+      "url": "https://www.wrdw.com/2026/10/09/ice-officer-shoots-man-while-making-an-arrest-new-york-officials-say/",
+      "outlet": {
+        "en": "AP via WRDW",
+        "es": "AP vía WRDW"
+      },
+      "date_label": {
+        "en": "Oct 8, 2026",
+        "es": "8 oct. 2026"
+      },
+      "headline": {
+        "en": "ICE officer shoots a man while making an arrest in New York, officials say",
+        "es": "Un agente de ICE dispara contra un hombre durante un arresto en Nueva York, dicen las autoridades"
+      },
+      "summary": {
+        "en": "A plainclothes ICE officer wounded a 28-year-old man during an arrest in Manhattan's Marble Hill; police said at least one officer fired seven rounds after he began moving his car. DHS cited a prior grand larceny conviction, and the mayor condemned the shooting.",
+        "es": "Un agente de ICE vestido de civil hirió a un hombre de 28 años durante un arresto en Marble Hill, Manhattan; la policía dijo que al menos un agente disparó siete veces cuando él empezó a mover su auto. El DHS citó una condena previa por hurto mayor y el alcalde condenó el tiroteo."
+      }
+    },
+    {
+      "url": "https://axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions",
       "outlet": {
         "en": "Axios",
         "es": "Axios"
       },
       "date_label": {
-        "en": "Sept 25, 2026",
-        "es": "25 sept. 2026"
+        "en": "Sept 24, 2026",
+        "es": "24 sept. 2026"
       },
       "headline": {
         "en": "ICE ordered to fix \"squalid\" conditions at NYC detention facility",
         "es": "Ordenan a ICE corregir condiciones \"miserables\" en un centro de detención de Nueva York"
       },
       "summary": {
-        "en": "A federal judge found conditions unconstitutional and set minimum standards for floor space, food, medical access and confidential legal calls.",
-        "es": "Un juez federal declaró inconstitucionales las condiciones y fijó estándares mínimos de espacio, comida, acceso médico y llamadas legales confidenciales."
-      }
-    },
-    {
-      "url": "https://news.wttw.com/2026/09/24/what-we-know-after-officials-say-ice-detained-us-citizen-and-left-him-injured-evanston",
-      "outlet": {
-        "en": "CNN via WTTW",
-        "es": "CNN vía WTTW"
-      },
-      "date_label": {
-        "en": "Sept 24, 2026",
-        "es": "24 sept. 2026"
-      },
-      "headline": {
-        "en": "Officials say ICE detained a U.S. citizen and left him injured in Evanston",
-        "es": "Autoridades dicen que ICE detuvo a un ciudadano estadounidense y lo dejó herido en Evanston"
-      },
-      "summary": {
-        "en": "Agents mistook a citizen for their target; video shows force used before he was released once his citizenship was confirmed.",
-        "es": "Los agentes confundieron a un ciudadano con su objetivo; el video muestra uso de fuerza antes de liberarlo cuando se confirmó su ciudadanía."
-      }
-    },
-    {
-      "url": "https://knpr.org/npr/2026-09-28/trumps-immigration-push-has-largely-spared-farms-idaho-dairymen-worry-it-wont-last",
-      "outlet": {
-        "en": "NPR",
-        "es": "NPR"
-      },
-      "date_label": {
-        "en": "Sept 28, 2026",
-        "es": "28 sept. 2026"
-      },
-      "headline": {
-        "en": "Trump's immigration push has largely spared farms. Idaho dairymen worry it won't last.",
-        "es": "La ofensiva migratoria de Trump ha respetado en gran medida a las granjas. Los lecheros de Idaho temen que no dure."
-      },
-      "summary": {
-        "en": "Only four local residents applied for 7,500 advertised farm jobs; operators fear a crackdown with no legislative fix for farm labor in sight.",
-        "es": "Solo cuatro residentes locales solicitaron 7,500 empleos agrícolas anunciados; los productores temen una redada sin una solución legislativa a la vista para la mano de obra agrícola."
-      }
-    },
-    {
-      "url": "https://stateline.org/2026/09/17/states-fight-to-inspect-federal-immigrant-detention-facilities/",
-      "outlet": {
-        "en": "Stateline",
-        "es": "Stateline"
-      },
-      "date_label": {
-        "en": "Sept 17, 2026",
-        "es": "17 sept. 2026"
-      },
-      "headline": {
-        "en": "States fight to inspect federal immigrant detention facilities",
-        "es": "Los estados pelean por inspeccionar los centros federales de detención de inmigrantes"
-      },
-      "summary": {
-        "en": "Private operators have refused state health inspectors entry; the administration argues federal law bars state oversight, and the disputes are in court.",
-        "es": "Operadores privados han negado la entrada a inspectores de salud estatales; la administración sostiene que la ley federal impide la supervisión estatal, y las disputas están en los tribunales."
+        "en": "A federal judge found conditions in the 26 Federal Plaza holding rooms unconstitutional and set binding standards for floor space, meals, hygiene, medical staff and confidential attorney calls.",
+        "es": "Un juez federal declaró inconstitucionales las condiciones en las salas de retención de 26 Federal Plaza y fijó estándares obligatorios de espacio, comidas, higiene, personal médico y llamadas confidenciales con abogados."
       }
     }
   ],
   "also": [
     {
-      "url": "https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy",
+      "url": "https://www.wlrn.org/immigration/2026-10-01/supreme-court-grants-review-of-trump-administrations-mandatory-detention-policy-for-immigrants",
       "text": {
-        "en": "the Supreme Court let third-country deportations continue while it considers the policy",
-        "es": "la Corte Suprema permitió que continúen las deportaciones a terceros países mientras considera la política"
+        "en": "the Supreme Court agreed to decide whether immigrants arrested inside the U.S. are entitled to bond hearings",
+        "es": "la Corte Suprema aceptó decidir si los inmigrantes arrestados dentro del país tienen derecho a una audiencia de fianza"
       },
       "link": {
-        "en": "AP via PBS, Sept 29",
-        "es": "AP vía PBS, 29 sept."
+        "en": "AP via WLRN, Oct 1",
+        "es": "AP vía WLRN, 1 oct."
       }
     },
     {
-      "url": "https://www.hawaiitribune-herald.com/2026/09/15/nation-world-news/ice-arrests-keep-soaring-heres-why-they-are-not-leading-to-more-deportations/",
+      "url": "https://news.wttw.com/2026/10/01/new-ice-guidance-bans-high-speed-car-chases-and-sets-tighter-rules-traffic-stops-memo",
       "text": {
-        "en": "Reuters on why record arrests aren't producing more removals",
-        "es": "Reuters sobre por qué los arrestos récord no producen más deportaciones"
+        "en": "a new ICE memo bars vehicle chases and requires lights, sirens and body cameras at traffic stops",
+        "es": "un nuevo memorando de ICE prohíbe persecuciones de vehículos y exige luces, sirenas y cámaras corporales en las paradas de tráfico"
       },
       "link": {
-        "en": "Sept 15",
-        "es": "15 sept."
+        "en": "AP via WTTW, Oct 1",
+        "es": "AP vía WTTW, 1 oct."
       }
     },
     {
-      "url": "https://www.cbsnews.com/news/ice-arrests-record-high-july-new-data/",
+      "url": "https://pbs.org/newshour/nation/shock-gloves-purchased-by-ice-cause-pain-compliance-and-fear-army-study-found",
       "text": {
-        "en": "CBS on the record share of arrestees with no criminal record",
-        "es": "CBS sobre la proporción récord de arrestados sin antecedentes penales"
+        "en": "an Army study of the shock gloves ICE bought under a $16.7 million contract",
+        "es": "un estudio del Ejército sobre los guantes eléctricos que ICE compró con un contrato de $16.7 millones"
       },
       "link": {
-        "en": "Aug 27",
-        "es": "27 ago."
+        "en": "AP via PBS, Oct 7",
+        "es": "AP vía PBS, 7 oct."
       }
     }
   ]
