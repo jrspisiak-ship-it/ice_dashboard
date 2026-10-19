@@ -1,27 +1,65 @@
 {
-  "reviewed": "2026-10-12",
+  "reviewed": "2026-10-19",
   "window": {
-    "en": "Sept 12 – Oct 12, 2026",
-    "es": "12 sept. – 12 oct. de 2026"
+    "en": "Sept 19 – Oct 19, 2026",
+    "es": "19 sept. – 19 oct. de 2026"
   },
   "supporters": [
     {
-      "url": "https://keyt.com/politics/cnn-us-politics/2026/10/07/exclusive-ice-agents-told-to-ramp-up-daily-immigration-arrests-despite-gop-unease-as-midterms-near/",
+      "url": "https://kvia.com/news/border/2026/10/16/cbp-records-lowest-migrant-border-crossings-in-us-history",
       "outlet": {
-        "en": "CNN via KEYT",
-        "es": "CNN vía KEYT"
+        "en": "KVIA (ABC-7 El Paso)",
+        "es": "KVIA (ABC-7 El Paso)"
       },
       "date_label": {
-        "en": "Oct 7, 2026",
-        "es": "7 oct. 2026"
+        "en": "Oct 16, 2026",
+        "es": "16 oct. 2026"
       },
       "headline": {
-        "en": "Exclusive: ICE agents told to ramp up daily immigration arrests despite GOP unease as midterms near",
-        "es": "Exclusiva: ordenan a agentes de ICE aumentar los arrestos diarios pese a la inquietud republicana ante las elecciones de medio término"
+        "en": "CBP records lowest migrant border crossings in US history",
+        "es": "CBP registra el menor número de cruces fronterizos de migrantes en la historia de EE. UU."
       },
       "summary": {
-        "en": "ICE leaders told agents to raise daily arrests by about 1,000, back toward a goal of 3,000 a day, after an August high of roughly 51,000 arrests, according to two sources. DHS says there are no arrest quotas.",
-        "es": "Los líderes de ICE ordenaron a los agentes aumentar los arrestos diarios en unos 1,000, de vuelta hacia una meta de 3,000 al día, tras un máximo de unos 51,000 arrestos en agosto, según dos fuentes. El DHS dice que no hay cuotas de arrestos."
+        "en": "Preliminary DHS data show 98,708 Border Patrol apprehensions at the southwest border in fiscal 2026, down 95%, and 379,243 encounters nationwide, the lowest on record. DHS says no one apprehended by Border Patrol was released all year.",
+        "es": "Datos preliminares del DHS muestran 98,708 aprehensiones de la Patrulla Fronteriza en la frontera suroeste en el año fiscal 2026, una baja de 95%, y 379,243 encuentros en todo el país, la cifra más baja registrada. El DHS dice que la Patrulla Fronteriza no liberó a ninguna persona aprehendida en todo el año."
+      }
+    },
+    {
+      "url": "https://www.courthousenews.com/ninth-circuit-strikes-down-california-no-vigilantes-act-as-unconstitutional/",
+      "outlet": {
+        "en": "Courthouse News Service",
+        "es": "Courthouse News Service"
+      },
+      "date_label": {
+        "en": "Oct 14, 2026",
+        "es": "14 oct. 2026"
+      },
+      "headline": {
+        "en": "Ninth Circuit strikes down California 'No Vigilantes Act' as unconstitutional",
+        "es": "El Noveno Circuito anula por inconstitucional la ley 'No Vigilantes Act' de California"
+      },
+      "summary": {
+        "en": "A unanimous appeals panel ruled California cannot require federal agents, including ICE officers, to wear visible names or badge numbers, and ordered the law blocked. A separate state ban on agents wearing masks remains on hold in court.",
+        "es": "Un panel de apelaciones decidió por unanimidad que California no puede exigir que los agentes federales, incluidos los de ICE, muestren su nombre o número de placa, y ordenó bloquear la ley. Una prohibición estatal separada sobre el uso de máscaras por agentes sigue suspendida en los tribunales."
+      }
+    },
+    {
+      "url": "https://www.foxnews.com/politics/ice-arrests-more-than-100-alleged-gang-members-single-week-including-violent-ms-13-tda-suspects-dhs",
+      "outlet": {
+        "en": "Fox News",
+        "es": "Fox News"
+      },
+      "date_label": {
+        "en": "Oct 17, 2026",
+        "es": "17 oct. 2026"
+      },
+      "headline": {
+        "en": "ICE arrests more than 100 alleged gang members in single week, including violent MS-13, TdA suspects: DHS",
+        "es": "ICE arresta a más de 100 presuntos pandilleros en una sola semana, incluidos sospechosos violentos de MS-13 y el Tren de Aragua: DHS"
+      },
+      "summary": {
+        "en": "DHS says ICE arrested 131 people with alleged gang ties from Oct. 4 to 10, including 22 linked to MS-13 and 13 to Tren de Aragua, and 12,018 gang-related arrests since January 2025. The figures come from DHS and were not independently verified.",
+        "es": "El DHS dice que ICE arrestó a 131 personas con presuntos vínculos con pandillas entre el 4 y el 10 de octubre, incluidas 22 relacionadas con la MS-13 y 13 con el Tren de Aragua, y 12,018 arrestos relacionados con pandillas desde enero de 2025. Las cifras provienen del DHS y no fueron verificadas de forma independiente."
       }
     },
     {
@@ -44,25 +82,6 @@
       }
     },
     {
-      "url": "https://news.bloomberglaw.com/daily-labor-report/justices-return-case-on-nixed-venezuelan-immigrant-protections",
-      "outlet": {
-        "en": "Bloomberg Law",
-        "es": "Bloomberg Law"
-      },
-      "date_label": {
-        "en": "Oct 5, 2026",
-        "es": "5 oct. 2026"
-      },
-      "headline": {
-        "en": "Justices Return Case on Nixed Venezuelan Immigrant Protections",
-        "es": "Los jueces devuelven el caso sobre las protecciones anuladas para inmigrantes venezolanos"
-      },
-      "summary": {
-        "en": "The Supreme Court vacated a Ninth Circuit ruling that the government unlawfully ended TPS for Venezuelans and Haitians, sending it back in light of a June decision that gave the administration broad leeway on TPS.",
-        "es": "La Corte Suprema anuló un fallo del Noveno Circuito que declaró ilegal el fin del Estatus de Protección Temporal (TPS) para venezolanos y haitianos, y devolvió el caso a la luz de una decisión de junio que dio al gobierno amplio margen sobre el TPS."
-      }
-    },
-    {
       "url": "https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy",
       "outlet": {
         "en": "AP via PBS",
@@ -80,28 +99,28 @@
         "en": "The justices paused a lower-court ruling and let deportations to countries other than migrants' own continue while they decide whether people must first get a real chance to object.",
         "es": "Los jueces suspendieron un fallo de un tribunal inferior y permitieron que continúen las deportaciones a países distintos del de origen mientras deciden si las personas deben tener antes una oportunidad real de objetar."
       }
-    },
-    {
-      "url": "https://foxnews.com/politics/trump-dhs-hits-16-straight-months-0-releases-border",
-      "outlet": {
-        "en": "Fox News",
-        "es": "Fox News"
-      },
-      "date_label": {
-        "en": "Sept 16, 2026",
-        "es": "16 sept. 2026"
-      },
-      "headline": {
-        "en": "Trump DHS hits 16 straight months with 0 releases at the border",
-        "es": "El DHS de Trump suma 16 meses seguidos con 0 liberaciones en la frontera"
-      },
-      "summary": {
-        "en": "Border Patrol apprehended 8,870 people at the southwest border in August and released none; DHS says apprehensions are about 94% below the prior administration's monthly average.",
-        "es": "La Patrulla Fronteriza aprehendió a 8,870 personas en la frontera suroeste en agosto y no liberó a ninguna; el DHS dice que las aprehensiones están cerca de 94% por debajo del promedio mensual de la administración anterior."
-      }
     }
   ],
   "critics": [
+    {
+      "url": "https://www.texastribune.org/2026/10/18/migrant-found-dead-ice-laredo/",
+      "outlet": {
+        "en": "The Texas Tribune",
+        "es": "The Texas Tribune"
+      },
+      "date_label": {
+        "en": "Oct 18, 2026",
+        "es": "18 oct. 2026"
+      },
+      "headline": {
+        "en": "Migrant found dead at Laredo ICE facility",
+        "es": "Hallan muerto a un migrante en un centro de ICE en Laredo"
+      },
+      "summary": {
+        "en": "A 56-year-old Mexican man who had lived in Dallas for decades was found dead in his cell at the Rio Grande Processing Center, the seventh ICE detention death in Texas this year. His family says he was denied medication for heart disease and diabetes; ICE and the GEO Group had not commented.",
+        "es": "Un hombre mexicano de 56 años que vivió décadas en Dallas fue hallado muerto en su celda del Centro de Procesamiento Río Grande, la séptima muerte bajo detención de ICE en Texas este año. Su familia dice que le negaron medicamentos para el corazón y la diabetes; ICE y GEO Group no habían comentado."
+      }
+    },
     {
       "url": "https://www.cbsnews.com/news/daca-renewal-applications-face-record-delays-costing-some-their-jobs/",
       "outlet": {
@@ -122,83 +141,86 @@
       }
     },
     {
-      "url": "https://investigativepost.org/2026/10/08/more-than-500-u-s-citizens-detained-by-ice/",
+      "url": "https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/",
       "outlet": {
-        "en": "ProPublica (via Investigative Post)",
-        "es": "ProPublica (vía Investigative Post)"
+        "en": "ProPublica",
+        "es": "ProPublica"
       },
       "date_label": {
-        "en": "Oct 8, 2026",
-        "es": "8 oct. 2026"
+        "en": "Oct 6, 2026",
+        "es": "6 oct. 2026"
       },
       "headline": {
-        "en": "More than 500 U.S. citizens detained by ICE",
-        "es": "Más de 500 ciudadanos estadounidenses detenidos por ICE"
+        "en": "More Than 500 U.S. Citizens Have Been Detained, Including Handcuffed or Held at Gunpoint, in Trump’s Immigration Crackdown",
+        "es": "Más de 500 ciudadanos estadounidenses han sido detenidos, incluso esposados o encañonados, en la ofensiva migratoria de Trump"
       },
       "summary": {
-        "en": "ProPublica documented 506 cases of U.S. citizens held by immigration agents, including at least 70 children and teens and more than 100 people held after agents questioned their citizenship. The government does not track these cases, and the authors say the count is likely low.",
-        "es": "ProPublica documentó 506 casos de ciudadanos estadounidenses retenidos por agentes de inmigración, incluidos al menos 70 niños y adolescentes y más de 100 personas retenidas tras cuestionarse su ciudadanía. El gobierno no registra estos casos y los autores dicen que la cifra probablemente es menor a la real."
+        "en": "ProPublica identified 506 U.S. citizens detained by immigration agents from January 2025 through September 2026, including at least 70 children and teens and more than 100 people held after agents questioned their citizenship. The government does not track these cases, and the count is likely low.",
+        "es": "ProPublica identificó a 506 ciudadanos estadounidenses detenidos por agentes de inmigración entre enero de 2025 y septiembre de 2026, incluidos al menos 70 niños y adolescentes y más de 100 personas retenidas tras cuestionarse su ciudadanía. El gobierno no registra estos casos y la cifra probablemente es menor a la real."
       }
     },
     {
-      "url": "https://www.kunc.org/npr-news/2026-10-08/ice-has-quietly-used-this-warehouse-as-a-detention-facility-all-summer-neighbors-say",
+      "url": "https://news.bloomberglaw.com/daily-labor-report/judge-blocks-ice-rule-streamlining-civil-immigration-penalties",
       "outlet": {
-        "en": "NPR (via KUNC)",
-        "es": "NPR (vía KUNC)"
+        "en": "Bloomberg Law",
+        "es": "Bloomberg Law"
       },
       "date_label": {
-        "en": "Oct 8, 2026",
-        "es": "8 oct. 2026"
+        "en": "Oct 6, 2026",
+        "es": "6 oct. 2026"
       },
       "headline": {
-        "en": "ICE has quietly used this warehouse as a detention facility all summer, neighbors say",
-        "es": "ICE ha usado discretamente este almacén como centro de detención todo el verano, dicen los vecinos"
+        "en": "Judge Blocks ICE Rule Imposing Civil Immigration Penalties",
+        "es": "Un juez bloquea la norma de ICE que impone multas civiles migratorias"
       },
       "summary": {
-        "en": "NPR found signs that a warehouse in Roxbury, New Jersey, has been used to hold detainees despite a court order barring its conversion pending environmental review. DHS did not say whether it holds people there; the state attorney general is investigating similar reports.",
-        "es": "NPR encontró indicios de que un almacén en Roxbury, Nueva Jersey, se ha usado para retener a detenidos pese a una orden judicial que prohíbe su conversión hasta una revisión ambiental. El DHS no dijo si retiene a personas allí; la fiscalía general del estado investiga reportes similares."
+        "en": "A federal judge in Boston paused a 2025 ICE rule that sped up civil fines, such as for not leaving after a deportation order, and blocked collection of fines imposed under it while the class action continues. DHS said in July it had issued over 103,000 fines totaling $84 billion.",
+        "es": "Un juez federal en Boston suspendió una norma de ICE de 2025 que agilizaba las multas civiles, por ejemplo por no salir del país tras una orden de deportación, y bloqueó el cobro de las multas impuestas bajo ella mientras sigue la demanda colectiva. El DHS dijo en julio que había emitido más de 103,000 multas por un total de $84 mil millones."
       }
     },
     {
-      "url": "https://www.wrdw.com/2026/10/09/ice-officer-shoots-man-while-making-an-arrest-new-york-officials-say/",
+      "url": "https://www.kaxe.org/2026-10-01/as-of-oct-1-refugees-lose-access-to-medicaid-across-the-country",
       "outlet": {
-        "en": "AP via WRDW",
-        "es": "AP vía WRDW"
+        "en": "NPR (via KAXE)",
+        "es": "NPR (vía KAXE)"
       },
       "date_label": {
-        "en": "Oct 8, 2026",
-        "es": "8 oct. 2026"
+        "en": "Oct 1, 2026",
+        "es": "1 oct. 2026"
       },
       "headline": {
-        "en": "ICE officer shoots a man while making an arrest in New York, officials say",
-        "es": "Un agente de ICE dispara contra un hombre durante un arresto en Nueva York, dicen las autoridades"
+        "en": "As of Oct. 1, refugees lose access to Medicaid across the country",
+        "es": "Desde el 1 de octubre, los refugiados pierden el acceso a Medicaid en todo el país"
       },
       "summary": {
-        "en": "A plainclothes ICE officer wounded a 28-year-old man during an arrest in Manhattan's Marble Hill; police said at least one officer fired seven rounds after he began moving his car. DHS cited a prior grand larceny conviction, and the mayor condemned the shooting.",
-        "es": "Un agente de ICE vestido de civil hirió a un hombre de 28 años durante un arresto en Marble Hill, Manhattan; la policía dijo que al menos un agente disparó siete veces cuando él empezó a mover su auto. El DHS citó una condena previa por hurto mayor y el alcalde condenó el tiroteo."
-      }
-    },
-    {
-      "url": "https://axios.com/2026/09/24/ice-nyc-detention-center-unconstitutional-conditions",
-      "outlet": {
-        "en": "Axios",
-        "es": "Axios"
-      },
-      "date_label": {
-        "en": "Sept 24, 2026",
-        "es": "24 sept. 2026"
-      },
-      "headline": {
-        "en": "ICE ordered to fix \"squalid\" conditions at NYC detention facility",
-        "es": "Ordenan a ICE corregir condiciones \"miserables\" en un centro de detención de Nueva York"
-      },
-      "summary": {
-        "en": "A federal judge found conditions in the 26 Federal Plaza holding rooms unconstitutional and set binding standards for floor space, meals, hygiene, medical staff and confidential attorney calls.",
-        "es": "Un juez federal declaró inconstitucionales las condiciones en las salas de retención de 26 Federal Plaza y fijó estándares obligatorios de espacio, comidas, higiene, personal médico y llamadas confidenciales con abogados."
+        "en": "Under the 2025 budget law, refugees and asylees lost Medicaid eligibility nationwide on Oct. 1. Most will have to buy full-price marketplace plans or rely on employer coverage, though a few states are creating their own options.",
+        "es": "Bajo la ley de presupuesto de 2025, los refugiados y asilados perdieron la elegibilidad para Medicaid en todo el país el 1 de octubre. La mayoría tendrá que comprar planes del mercado a precio completo o depender de la cobertura del empleador, aunque algunos estados están creando sus propias opciones."
       }
     }
   ],
   "also": [
+    {
+      "url": "https://www.texastribune.org/2026/10/13/dhs-ice-warehouse-san-antonio-lawsuit-environmental-impact/",
+      "text": {
+        "en": "San Antonio sued to stop DHS from converting a warehouse into a 1,500-bed ICE detention center",
+        "es": "San Antonio demandó para impedir que el DHS convierta un almacén en un centro de detención de ICE de 1,500 camas"
+      },
+      "link": {
+        "en": "The Texas Tribune, Oct 13",
+        "es": "The Texas Tribune, 13 oct."
+      }
+    },
+    {
+      "url": "https://www.courthousenews.com/trump-admin-ordered-to-reinstate-2027-green-card-lottery",
+      "text": {
+        "en": "a federal judge ordered the State Department to reopen 2027 diversity visa (green card lottery) registration for 30 days",
+        "es": "un juez federal ordenó al Departamento de Estado reabrir por 30 días la inscripción de la lotería de visas de diversidad 2027"
+      },
+      "link": {
+        "en": "Courthouse News, Oct 14",
+        "es": "Courthouse News, 14 oct."
+      }
+    },
     {
       "url": "https://www.wlrn.org/immigration/2026-10-01/supreme-court-grants-review-of-trump-administrations-mandatory-detention-policy-for-immigrants",
       "text": {
@@ -208,28 +230,6 @@
       "link": {
         "en": "AP via WLRN, Oct 1",
         "es": "AP vía WLRN, 1 oct."
-      }
-    },
-    {
-      "url": "https://news.wttw.com/2026/10/01/new-ice-guidance-bans-high-speed-car-chases-and-sets-tighter-rules-traffic-stops-memo",
-      "text": {
-        "en": "a new ICE memo bars vehicle chases and requires lights, sirens and body cameras at traffic stops",
-        "es": "un nuevo memorando de ICE prohíbe persecuciones de vehículos y exige luces, sirenas y cámaras corporales en las paradas de tráfico"
-      },
-      "link": {
-        "en": "AP via WTTW, Oct 1",
-        "es": "AP vía WTTW, 1 oct."
-      }
-    },
-    {
-      "url": "https://pbs.org/newshour/nation/shock-gloves-purchased-by-ice-cause-pain-compliance-and-fear-army-study-found",
-      "text": {
-        "en": "an Army study of the shock gloves ICE bought under a $16.7 million contract",
-        "es": "un estudio del Ejército sobre los guantes eléctricos que ICE compró con un contrato de $16.7 millones"
-      },
-      "link": {
-        "en": "AP via PBS, Oct 7",
-        "es": "AP vía PBS, 7 oct."
       }
     }
   ]
