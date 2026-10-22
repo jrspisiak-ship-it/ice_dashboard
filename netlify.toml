@@ -9,6 +9,11 @@
     Referrer-Policy = "no-referrer"
     Permissions-Policy = "geolocation=(), camera=(), microphone=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Same policy the pages already enforce via <meta>, delivered as a header so it also covers
+    # correct.html (the form page) and adds frame-ancestors, which <meta> cannot set.
+    # form-action is 'self' here; index/es/help keep 'none' through their own <meta> policy
+    # (when several policies apply, the browser enforces all of them).
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
 
 [[headers]]
   for = "/data/*"
