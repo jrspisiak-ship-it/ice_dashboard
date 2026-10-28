@@ -1,12 +1,12 @@
 {
-  "reviewed": "2026-10-19",
+  "reviewed": "2026-10-26",
   "window": {
-    "en": "Sept 19 – Oct 19, 2026",
-    "es": "19 sept. – 19 oct. de 2026"
+    "en": "Sept 26 – Oct 26, 2026",
+    "es": "26 sept. – 26 oct. de 2026"
   },
   "supporters": [
     {
-      "url": "https://kvia.com/news/border/2026/10/16/cbp-records-lowest-migrant-border-crossings-in-us-history",
+      "url": "https://kvia.com/news/border/2026/10/16/cbp-records-lowest-migrant-border-crossings-in-us-history/",
       "outlet": {
         "en": "KVIA (ABC-7 El Paso)",
         "es": "KVIA (ABC-7 El Paso)"
@@ -25,22 +25,41 @@
       }
     },
     {
-      "url": "https://www.courthousenews.com/ninth-circuit-strikes-down-california-no-vigilantes-act-as-unconstitutional/",
+      "url": "https://www.texastribune.org/2026/10/23/immigration-bond-detention-texas-court-ice-ruling-5th-circuit/",
       "outlet": {
-        "en": "Courthouse News Service",
-        "es": "Courthouse News Service"
+        "en": "The Texas Tribune",
+        "es": "The Texas Tribune"
       },
       "date_label": {
-        "en": "Oct 14, 2026",
-        "es": "14 oct. 2026"
+        "en": "Oct 23, 2026",
+        "es": "23 oct. 2026"
       },
       "headline": {
-        "en": "Ninth Circuit strikes down California 'No Vigilantes Act' as unconstitutional",
-        "es": "El Noveno Circuito anula por inconstitucional la ley 'No Vigilantes Act' de California"
+        "en": "Trump administration can hold immigrants in ICE custody without bond, court rules",
+        "es": "El gobierno de Trump puede mantener a inmigrantes bajo custodia de ICE sin fianza, dictamina un tribunal"
       },
       "summary": {
-        "en": "A unanimous appeals panel ruled California cannot require federal agents, including ICE officers, to wear visible names or badge numbers, and ordered the law blocked. A separate state ban on agents wearing masks remains on hold in court.",
-        "es": "Un panel de apelaciones decidió por unanimidad que California no puede exigir que los agentes federales, incluidos los de ICE, muestren su nombre o número de placa, y ordenó bloquear la ley. Una prohibición estatal separada sobre el uso de máscaras por agentes sigue suspendida en los tribunales."
+        "en": "The full 5th Circuit ruled 10-7 that immigrants who entered illegally have no right to a bond hearing while their deportation cases proceed, even after many years in the U.S. The ruling covers Texas, Louisiana and Mississippi; the Supreme Court has agreed to hear a similar case.",
+        "es": "El pleno del Quinto Circuito decidió 10 a 7 que los inmigrantes que entraron sin autorización no tienen derecho a una audiencia de fianza mientras avanzan sus casos de deportación, aunque lleven muchos años en EE. UU. El fallo aplica en Texas, Luisiana y Misisipi; la Corte Suprema aceptó revisar un caso similar."
+      }
+    },
+    {
+      "url": "https://www.pbs.org/newshour/politics/justice-department-charges-more-than-2-dozen-foreign-nationals-in-california-sweep-targeting-noncitizen-voters",
+      "outlet": {
+        "en": "AP via PBS",
+        "es": "AP vía PBS"
+      },
+      "date_label": {
+        "en": "Oct 19, 2026",
+        "es": "19 oct. 2026"
+      },
+      "headline": {
+        "en": "Justice Department charges more than 2 dozen foreign nationals in California sweep targeting noncitizen voters",
+        "es": "El Departamento de Justicia acusa a más de dos docenas de extranjeros en una operación en California contra votantes no ciudadanos"
+      },
+      "summary": {
+        "en": "Federal agents arrested 28 lawful permanent residents in California accused of illegally registering or voting, adding to about 90 election-misconduct cases DOJ has brought this year. Research shows noncitizen voting is rare, and California disputes the federal list of suspected noncitizen voters.",
+        "es": "Agentes federales arrestaron en California a 28 residentes permanentes legales acusados de inscribirse o votar ilegalmente, que se suman a unos 90 casos de delitos electorales presentados por el Departamento de Justicia este año. Los estudios muestran que el voto de no ciudadanos es poco común, y California disputa la lista federal de presuntos votantes no ciudadanos."
       }
     },
     {
@@ -63,81 +82,62 @@
       }
     },
     {
-      "url": "https://wjla.com/news/nation-world/doj-justice-department-seeks-to-revoke-citizenship-of-40-in-largest-trump-era-denaturalization-filing-attorney-general-todd-blanche-voluntary-manslaughter-money-laundering-espionage-sexual-crimes",
+      "url": "https://courthousenews.com/ninth-circuit-strikes-down-california-no-vigilantes-act-as-unconstitutional/",
       "outlet": {
-        "en": "The National News Desk (via WJLA)",
-        "es": "The National News Desk (vía WJLA)"
+        "en": "Courthouse News Service",
+        "es": "Courthouse News Service"
       },
       "date_label": {
-        "en": "Oct 6, 2026",
-        "es": "6 oct. 2026"
+        "en": "Oct 14, 2026",
+        "es": "14 oct. 2026"
       },
       "headline": {
-        "en": "DOJ seeks to revoke citizenship of 40 in largest Trump-era denaturalization filing",
-        "es": "El Departamento de Justicia busca revocar la ciudadanía de 40 personas en la mayor ofensiva de desnaturalización de la era Trump"
+        "en": "Ninth Circuit strikes down California 'No Vigilantes Act' as unconstitutional",
+        "es": "El Noveno Circuito anula por inconstitucional la ley 'No Vigilantes Act' de California"
       },
       "summary": {
-        "en": "The Justice Department filed civil cases to revoke the citizenship of 40 naturalized citizens it says concealed crimes or committed fraud when they naturalized. None has lost citizenship yet; a court must decide each case.",
-        "es": "El Departamento de Justicia presentó demandas civiles para revocar la ciudadanía de 40 ciudadanos naturalizados que, según dice, ocultaron delitos o cometieron fraude al naturalizarse. Ninguno ha perdido la ciudadanía todavía; un tribunal debe decidir cada caso."
-      }
-    },
-    {
-      "url": "https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy",
-      "outlet": {
-        "en": "AP via PBS",
-        "es": "AP vía PBS"
-      },
-      "date_label": {
-        "en": "Sept 29, 2026",
-        "es": "29 sept. 2026"
-      },
-      "headline": {
-        "en": "Supreme Court lets Trump continue deporting people to 3rd countries while justices consider policy",
-        "es": "La Corte Suprema permite a Trump seguir deportando a personas a terceros países mientras los jueces analizan la política"
-      },
-      "summary": {
-        "en": "The justices paused a lower-court ruling and let deportations to countries other than migrants' own continue while they decide whether people must first get a real chance to object.",
-        "es": "Los jueces suspendieron un fallo de un tribunal inferior y permitieron que continúen las deportaciones a países distintos del de origen mientras deciden si las personas deben tener antes una oportunidad real de objetar."
+        "en": "A unanimous appeals panel ruled California cannot require federal agents, including ICE officers, to wear visible names or badge numbers, and ordered the law blocked. A separate state ban on agents wearing masks remains on hold in court.",
+        "es": "Un panel de apelaciones decidió por unanimidad que California no puede exigir que los agentes federales, incluidos los de ICE, muestren su nombre o número de placa, y ordenó bloquear la ley. Una prohibición estatal separada sobre el uso de máscaras por agentes sigue suspendida en los tribunales."
       }
     }
   ],
   "critics": [
     {
-      "url": "https://www.texastribune.org/2026/10/18/migrant-found-dead-ice-laredo/",
+      "url": "https://www.tpr.org/criminal-justice/2026-10-19/migrant-found-dead-at-laredo-ice-facility",
       "outlet": {
-        "en": "The Texas Tribune",
-        "es": "The Texas Tribune"
+        "en": "The Texas Tribune (via TPR)",
+        "es": "The Texas Tribune (vía TPR)"
       },
       "date_label": {
-        "en": "Oct 18, 2026",
-        "es": "18 oct. 2026"
+        "en": "Oct 19, 2026",
+        "es": "19 oct. 2026"
       },
       "headline": {
         "en": "Migrant found dead at Laredo ICE facility",
         "es": "Hallan muerto a un migrante en un centro de ICE en Laredo"
       },
       "summary": {
-        "en": "A 56-year-old Mexican man who had lived in Dallas for decades was found dead in his cell at the Rio Grande Processing Center, the seventh ICE detention death in Texas this year. His family says he was denied medication for heart disease and diabetes; ICE and the GEO Group had not commented.",
-        "es": "Un hombre mexicano de 56 años que vivió décadas en Dallas fue hallado muerto en su celda del Centro de Procesamiento Río Grande, la séptima muerte bajo detención de ICE en Texas este año. Su familia dice que le negaron medicamentos para el corazón y la diabetes; ICE y GEO Group no habían comentado."
+        "en": "A 56-year-old Mexican man who had lived in Dallas for decades was found dead in his cell at the Rio Grande Processing Center, the seventh ICE detention death in Texas this year. His family says he was denied medication for heart disease and diabetes; DHS had not responded to requests for comment.",
+        "es": "Un hombre mexicano de 56 años que vivió décadas en Dallas fue hallado muerto en su celda del Centro de Procesamiento Río Grande, la séptima muerte bajo detención de ICE en Texas este año. Su familia dice que le negaron medicamentos para el corazón y la diabetes; el DHS no había respondido a las solicitudes de comentario."
       }
     },
     {
-      "url": "https://www.cbsnews.com/news/daca-renewal-applications-face-record-delays-costing-some-their-jobs/",
+      "url": "https://www.cbsnews.com/news/judge-dhs-noncitizen-voters-ruling/",
       "outlet": {
         "en": "CBS News",
         "es": "CBS News"
       },
       "date_label": {
-        "en": "Oct 8, 2026",
-        "es": "8 oct. 2026"
+        "en": "Oct 22, 2026",
+        "es": "22 oct. 2026"
       },
       "headline": {
-        "en": "DACA renewal applications face record delays, costing some their jobs",
-        "es": "Las solicitudes de renovación de DACA enfrentan demoras récord y a algunos les cuestan el empleo"
+        "en": "Judge rules against DHS's policy of knocking on doors to track down possible noncitizen voters",
+        "es": "Una jueza falla contra la política del DHS de tocar puertas para buscar a posibles votantes no ciudadanos"
       },
       "summary": {
-        "en": "The pending DACA renewal backlog has passed 125,000 after processing slowed sharply last November, leaving some recipients without work permits. USCIS advises filing four to five months before expiration, but waits have often run longer.",
-        "es": "La acumulación de renovaciones de DACA pendientes supera las 125,000 tras una fuerte desaceleración desde noviembre pasado, y algunos beneficiarios han quedado sin permiso de trabajo. USCIS recomienda presentar la renovación de cuatro a cinco meses antes del vencimiento, pero las esperas a menudo han sido más largas."
+        "en": "A federal judge in California ordered DHS to stop election-related home visits and interviews likely to involve U.S. citizens in nine states, including Georgia, until polls close on Election Day, finding the effort likely violates the Voting Rights Act. She also cited a high likelihood of errors in DHS target lists; the order was briefly paused so the government could appeal.",
+        "es": "Una jueza federal en California ordenó al DHS suspender hasta el cierre de las urnas el día de las elecciones las visitas a domicilios y entrevistas relacionadas con las elecciones que probablemente involucren a ciudadanos estadounidenses en nueve estados, incluido Georgia, al considerar que probablemente violan la Ley de Derecho al Voto. También señaló una alta probabilidad de errores en las listas del DHS; la orden se suspendió brevemente para que el gobierno pudiera apelar."
       }
     },
     {
@@ -151,8 +151,8 @@
         "es": "6 oct. 2026"
       },
       "headline": {
-        "en": "More Than 500 U.S. Citizens Have Been Detained, Including Handcuffed or Held at Gunpoint, in Trump’s Immigration Crackdown",
-        "es": "Más de 500 ciudadanos estadounidenses han sido detenidos, incluso esposados o encañonados, en la ofensiva migratoria de Trump"
+        "en": "Federal Agents Have Detained More Than 500 American Citizens in Trump’s Immigration Crackdown",
+        "es": "Agentes federales han detenido a más de 500 ciudadanos estadounidenses en la ofensiva migratoria de Trump"
       },
       "summary": {
         "en": "ProPublica identified 506 U.S. citizens detained by immigration agents from January 2025 through September 2026, including at least 70 children and teens and more than 100 people held after agents questioned their citizenship. The government does not track these cases, and the count is likely low.",
@@ -200,25 +200,25 @@
   ],
   "also": [
     {
-      "url": "https://www.texastribune.org/2026/10/13/dhs-ice-warehouse-san-antonio-lawsuit-environmental-impact/",
+      "url": "https://www.wsbtv.com/news/world/homeland-security/GQDTVZN4QM52VOOXM6ZRRTXYFQ/",
       "text": {
-        "en": "San Antonio sued to stop DHS from converting a warehouse into a 1,500-bed ICE detention center",
-        "es": "San Antonio demandó para impedir que el DHS convierta un almacén en un centro de detención de ICE de 1,500 camas"
+        "en": "DHS let about 101,000 Ukrainians and 1,800 Sudanese with TPS stay past their Oct. 19 end date for now, without saying for how long",
+        "es": "el DHS permitió por ahora que unos 101,000 ucranianos y 1,800 sudaneses con TPS permanezcan después de la fecha de vencimiento del 19 de octubre, sin decir por cuánto tiempo"
       },
       "link": {
-        "en": "The Texas Tribune, Oct 13",
-        "es": "The Texas Tribune, 13 oct."
+        "en": "AP via WSB-TV, Oct 19",
+        "es": "AP vía WSB-TV, 19 oct."
       }
     },
     {
-      "url": "https://www.courthousenews.com/trump-admin-ordered-to-reinstate-2027-green-card-lottery",
+      "url": "https://www.cbsnews.com/news/daca-renewal-applications-face-record-delays-costing-some-their-jobs/",
       "text": {
-        "en": "a federal judge ordered the State Department to reopen 2027 diversity visa (green card lottery) registration for 30 days",
-        "es": "un juez federal ordenó al Departamento de Estado reabrir por 30 días la inscripción de la lotería de visas de diversidad 2027"
+        "en": "pending DACA renewals passed 125,000, and USCIS advises filing four to five months before expiration",
+        "es": "las renovaciones de DACA pendientes superaron las 125,000, y USCIS recomienda presentar la solicitud de cuatro a cinco meses antes del vencimiento"
       },
       "link": {
-        "en": "Courthouse News, Oct 14",
-        "es": "Courthouse News, 14 oct."
+        "en": "CBS News, Oct 8",
+        "es": "CBS News, 8 oct."
       }
     },
     {
