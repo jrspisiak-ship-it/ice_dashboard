@@ -48,6 +48,7 @@ const ES = {
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
   "nav.story": "Cifras e historia",
+  "nav.cyber": "Ciberseguridad",
   "nav.back": "Cifras",
   "site.title": "Civic Shield",
   "site.sub": "Un proyecto de política, asistencia y monitoreo migratorio en EE. UU.",
