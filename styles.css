@@ -447,6 +447,8 @@ p.brand-sub { display: block; margin: 0; padding: 0 0 0.4rem; font-size: 0.9rem;
 .masthead { padding-bottom: 0.15rem; }
 .panel { scroll-margin-top: 8.5rem; }
 @media (max-width: 600px) { p.brand-sub { display: block; font-size: 0.8rem; } }
+/* "Civic Shield Project" is too long for one line beside the buttons on phones: let it wrap */
+@media (max-width: 600px) { .brand-name { white-space: normal; font-size: clamp(1.05rem, 5vw, 1.25rem); line-height: 1.05; } }
 
 /* ---------- state picker & form ---------- */
 .state-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin: 0.25rem 0 1rem; }
