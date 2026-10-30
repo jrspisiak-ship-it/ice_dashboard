@@ -1,4 +1,4 @@
-# Civic Shield
+# Civic Shield Project
 
 A U.S. Immigration Policy, Assistance and Monitoring Project
 
