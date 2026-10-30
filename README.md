@@ -1,4 +1,4 @@
-# Civic Shield
+# Civic Shield Project
 
 A U.S. Immigration Policy, Assistance and Monitoring Project
 
@@ -11,6 +11,7 @@ Live at https://civicshieldproject.org/
 ## Files
 
 - `index.html` / `es.html` (numbers, policy, news, Georgia — English and Spanish twins; edit both) and `help.html` (rights, hotlines; EN/ES in one file) with `styles.css`, `app.js`, `charts.js`, `tabs.js`. No build step, no CDN scripts, no API keys in the browser.
+- `cyber.html` (Cyber Safety: accounts, devices, credit freezes, immigration scams, AI scams; EN/ES in one file). English is the HTML; Spanish is in `cyber.js`, which adds its keys to the shared dictionary in `app.js`. Short URLs: `/cyber` and `/ciberseguridad`.
 
 
 ## News

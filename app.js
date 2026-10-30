@@ -9,8 +9,8 @@
 
 const ES = {
   "skip": "Ir a la guía de emergencia",
-  "brand": "Civic Shield",
-  "site.mission": "Civic Shield existe para reunir en un solo lugar los hechos sobre la aplicación de las leyes migratorias en EE. UU., con cada cifra vinculada a su fuente y sin tomar partido político. Está hecho para inmigrantes que necesitan conocer sus derechos y a dónde acudir, y para ciudadanos que quieren entender lo que ocurre en sus comunidades. Donde el registro es incierto o está en disputa, este sitio lo dice.",
+  "brand": "Civic Shield Project",
+  "site.mission": "Civic Shield Project existe para reunir en un solo lugar los hechos sobre la aplicación de las leyes migratorias en EE. UU., con cada cifra vinculada a su fuente y sin tomar partido político. Está hecho para inmigrantes que necesitan conocer sus derechos y a dónde acudir, y para ciudadanos que quieren entender lo que ocurre en sus comunidades. Donde el registro es incierto o está en disputa, este sitio lo dice.",
   "data.h": "Las cifras y la historia",
   "data.lede": "Tendencias de detención y arrestos, cambios de política y su estado en los tribunales, noticias equilibradas, ambos lados del debate, y centros, cortes y líneas de ayuda estado por estado. Cada cifra enlaza a su fuente.",
   "data.full": "Ver las cifras y la historia",
@@ -48,8 +48,9 @@ const ES = {
   "nav.detained": "Alguien detenido",
   "nav.data": "Las cifras",
   "nav.story": "Cifras e historia",
+  "nav.cyber": "Ciberseguridad",
   "nav.back": "Cifras",
-  "site.title": "Civic Shield",
+  "site.title": "Civic Shield Project",
   "site.sub": "Un proyecto de política, asistencia y monitoreo migratorio en EE. UU.",
   "foot.back": "Volver a las cifras y la historia",
 

@@ -465,3 +465,28 @@ a.src { font-size: 0.85em; color: var(--ink-soft); }
 .lineage li { margin: 0.5rem 0; font-size: 1rem; }
 
 .sit-h { font-size: 1.02rem; margin: 0.6rem 0 0.2rem; color: var(--ink-soft); }
+
+/* ===================== cyber.html (Cyber Safety) ===================== */
+.band-cyber { background: #12304f; color: #fff; }
+.band-cyber a { color: #fff; }
+.band-cyber .band-h {
+  margin: 0 0 1rem;
+  font-size: clamp(var(--step-3), 7vw, var(--step-4));
+  line-height: 1.08; font-weight: 800; letter-spacing: -0.01em;
+}
+.band-cyber a.btn-light { background: #fff; color: #12304f; border-color: #fff; }
+.band-cyber a.btn-light:hover { background: #e6eef8; border-color: #e6eef8; color: #12304f; }
+.page-cyber .note .band-actions { margin-top: 0.75rem; }
+.page-cyber .note .btn { color: #fff; }
+.page-cyber .note .btn-secondary { color: var(--blue); background: #fff; }
+.page-cyber details.sit p { margin: 0 0 0.5rem; }
+.page-cyber details.sit .note { margin: 0 0 1rem; }
+
+/* Cyber Safety prints as a full handout, not a wallet card */
+@media print {
+  .page-cyber .section, .page-cyber .foot { display: block !important; }
+  .page-cyber .band-cyber { color: #000; background: #fff; border: 3px solid #000; border-radius: 0; margin: 0; padding: 1rem; }
+  .page-cyber .band-cyber .band-h { font-size: 20pt; }
+  .page-cyber details.sit::details-content { content-visibility: visible; }
+  .page-cyber a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #333; word-break: break-all; }
+}

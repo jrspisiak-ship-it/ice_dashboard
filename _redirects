@@ -5,6 +5,8 @@ https://civicshield-project.netlify.app/*  https://civicshieldproject.org/:splat
 /help          /help.html      200
 /es            /es.html        200
 /correct       /correct.html   200
+/cyber         /cyber.html     200
+/ciberseguridad  /cyber.html?lang=es  302
 /georgia       /index.html?state=GA#georgia   302
 /tx            /index.html?state=TX#georgia   302
 /ca            /index.html?state=CA#georgia   302

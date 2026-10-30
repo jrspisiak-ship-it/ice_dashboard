@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://civicshieldproject.org/cyber.html">
+  <meta name="description" content="Plain-language steps to protect your accounts, devices and identity from AI-powered scams, including scams that target immigrants. English and Spanish.">
+  <title>Civic Shield Project — Cyber Safety: protect your accounts, devices and identity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=21">
+</head>
+<body class="page-cyber">
+
+<a class="skip" href="#basics" data-i18n="cy.skip">Skip to the basics</a>
+
+<header class="topbar">
+  <div class="wrap masthead">
+    <a class="brand" href="index.html" data-i18n-href="home"><span class="brand-name">Civic Shield Project</span></a>
+    <div class="masthead-actions">
+      <div class="lang" role="group" aria-label="Language / Idioma">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="es" aria-pressed="false">Español</button>
+      </div>
+      <a class="btn btn-sm help-link" href="help.html" data-i18n="cy.help">Get help</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="brand-sub" data-i18n="site.sub">A U.S. Immigration Policy, Assistance and Monitoring Project</p>
+  </div>
+  <div class="wrap navrow">
+    <nav class="topnav" aria-label="Sections">
+      <a href="#accounts" data-i18n="cy.nav.acc">Accounts</a>
+      <a href="#devices" data-i18n="cy.nav.dev">Devices</a>
+      <a href="#freeze" data-i18n="cy.nav.fr">Freeze your credit</a>
+      <a href="#scams" data-i18n="cy.nav.sc">Immigration scams</a>
+      <a href="#ai" data-i18n="cy.nav.ai">AI scams</a>
+      <a href="#wrong" data-i18n="cy.nav.wrong">If something goes wrong</a>
+      <a href="index.html" data-i18n="nav.story">Numbers &amp; story</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <!-- ===== THE BASICS ===== -->
+  <section id="basics" class="band band-cyber" aria-labelledby="cy-h">
+    <p class="band-kicker" data-i18n="cy.kicker">Cyber Safety</p>
+    <h1 id="cy-h" class="band-h" data-i18n="cy.h">Scammers now use AI. An hour of setup stops most of it.</h1>
+    <ol class="big-rules">
+      <li><span data-i18n="cy.r1">Use a password manager, so every account gets its own password.</span></li>
+      <li><span data-i18n="cy.r2">Turn on passkeys wherever they're offered. Fake websites can't steal them.</span></li>
+      <li><span data-i18n="cy.r3">Never read a code back to anyone. Real companies never ask.</span></li>
+      <li><span data-i18n="cy.r4">Slow down when it feels urgent. Pressure is the top sign of a scam.</span></li>
+      <li><span data-i18n="cy.r5">Hang up and call back, using the number on your card or the official app.</span></li>
+    </ol>
+    <div class="band-actions">
+      <a class="btn btn-light" href="#scams" data-i18n="cy.jump">Scams that target immigrants</a>
+      <a class="btn btn-outline-light" href="#wrong" data-i18n="cy.jump2">If something already happened</a>
+    </div>
+    <p class="band-foot" data-i18n="cy.foot">Free, plain-language steps for families. No technical skills needed.</p>
+  </section>
+
+  <!-- ===== ACCOUNTS ===== -->
+  <section id="accounts" class="section" aria-labelledby="acc-h">
+    <h2 id="acc-h" data-i18n="cy.acc.h">Lock down your accounts</h2>
+    <p class="lede" data-i18n="cy.acc.lede">Start with your email and phone: they can reset everything else. Menu names change with updates; if a step doesn't match, search for the setting by name.</p>
+
+    <details class="sit">
+      <summary data-i18n="cy.apple">Apple account (iPhone, iPad, Mac)</summary>
+      <ul>
+        <li data-i18n="cy.apple1">Update your iPhone: Settings › General › Software Update, and turn on Automatic Updates.</li>
+        <li data-i18n="cy.apple2">Tap your name at the top of Settings and remove devices you no longer own.</li>
+        <li data-i18n="cy.apple3">Turn on Stolen Device Protection: Settings › Face ID &amp; Passcode.</li>
+        <li data-i18n="cy.apple4">Use a passcode of 6 or more digits, never a birthday. Your passcode can reset your Apple account.</li>
+        <li data-i18n="cy.apple5">In Sign-In &amp; Security, remove any trusted phone number that isn't yours.</li>
+        <li data-i18n="cy.apple6">Add a recovery contact: Sign-In &amp; Security › Account Recovery.</li>
+        <li data-i18n="cy.apple7">Advanced Data Protection (in iCloud settings) locks your photos and backups so only you can read them. Turn it on only after the recovery step above: Apple can't recover your data if you lose access.</li>
+        <li data-i18n="cy.apple8">Optional: add two physical security keys (such as a YubiKey). Apple requires two so you always have a backup.</li>
+      </ul>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="cy.google">Google account (Gmail, Android)</summary>
+      <ul>
+        <li><span data-i18n="cy.google1">Run the Security Checkup and fix everything it flags.</span> <a href="https://myaccount.google.com/security-checkup" target="_blank" rel="noopener noreferrer" data-i18n="cy.google1.link">Open Security Checkup</a></li>
+        <li data-i18n="cy.google2">Under Security, remove third-party apps you don't use.</li>
+        <li data-i18n="cy.google3">Create a passkey: Security › Passkeys and security keys.</li>
+        <li data-i18n="cy.google4">Print your backup codes (Security › 2-Step Verification › Backup codes) and keep them at home.</li>
+        <li data-i18n="cy.google5">Only after your backup codes are printed and your passkey works, remove text-message codes from 2-Step Verification.</li>
+        <li data-i18n="cy.google6">Check that your recovery email and phone are current and belong to you.</li>
+        <li data-i18n="cy.google7">In Gmail settings, check Forwarding and Filters. Delete any rule you didn't create.</li>
+        <li data-i18n="cy.google8">Optional: Google's Advanced Protection Program is its strongest setting, built for people at higher risk.</li>
+      </ul>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="cy.other">Every other account, highest risk first</summary>
+      <p data-i18n="cy.other0">For each account, pick the strongest option offered: a passkey first, then a unique password with an authenticator app, then text-message codes as a last resort.</p>
+      <ul>
+        <li data-i18n="cy.other1">Phone carrier: add a port-out PIN or number lock so no one can move your number to their phone.</li>
+        <li data-i18n="cy.other2">Banks and payment apps: turn on alerts for every transaction and login, and ask for a telephone banking passphrase for calls.</li>
+        <li data-i18n="cy.other3">Retirement and investing (401(k), IRA, brokerage): same as banks. Often less protected, but they hold the most money.</li>
+        <li data-i18n="cy.other4">Government (IRS, Social Security, Medicare, VA): create your online accounts yourself before a scammer does.</li>
+        <li data-i18n="cy.other5">Email and social media: passkey or 2-step verification. Make profiles private and hide your birthday and phone number.</li>
+        <li data-i18n="cy.other6">Shopping: turn on a passkey and remove saved cards you don't need.</li>
+        <li data-i18n="cy.other7">Everything else: let your password manager create a unique password, and delete accounts you don't use.</li>
+      </ul>
+    </details>
+
+    <div class="note note-warn">
+      <strong data-i18n="cy.acc.note.h">Before you turn off text-message codes</strong>
+      <span data-i18n="cy.acc.note">Print your backup codes and test your passkey first. Otherwise a lost or broken phone can lock you out.</span>
+    </div>
+  </section>
+
+  <!-- ===== DEVICES ===== -->
+  <section id="devices" class="section" aria-labelledby="dev-h">
+    <h2 id="dev-h" data-i18n="cy.dev.h">Keep your devices safe</h2>
+    <p class="lede" data-i18n="cy.dev.lede">Updates fix the security holes scammers break in through. Turning on automatic updates is the single most effective step for any device.</p>
+
+    <details class="sit">
+      <summary data-i18n="cy.upd">Turn on automatic updates</summary>
+      <ul>
+        <li data-i18n="cy.upd1">iPhone and iPad: Settings › General › Software Update › Automatic Updates. Turn everything on.</li>
+        <li data-i18n="cy.upd2">Android: open Settings and search for "update". Turn on automatic updates and install any security update.</li>
+        <li data-i18n="cy.upd3">Mac: System Settings › General › Software Update › Automatic Updates.</li>
+        <li data-i18n="cy.upd4">Windows: Settings › Windows Update. Turn on "Get the latest updates as soon as they're available."</li>
+        <li data-i18n="cy.upd5">Browsers and apps: restart your browser when it shows an update button, and turn on automatic app updates in the App Store or Google Play.</li>
+        <li data-i18n="cy.upd6">Restart your phone and computer once a week; many updates only finish after a restart.</li>
+        <li data-i18n="cy.upd7">Replace devices that no longer get security updates. Windows 10 PCs no longer get regular security fixes; upgrade to Windows 11 or replace them.</li>
+      </ul>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="cy.pc">Laptops and PCs</summary>
+      <ul>
+        <li data-i18n="cy.pc1">Lock the screen with a password or PIN after 5 minutes or less.</li>
+        <li data-i18n="cy.pc2">Encrypt the drive: FileVault on a Mac (Privacy &amp; Security); Device encryption or BitLocker on Windows.</li>
+        <li data-i18n="cy.pc3">The built-in antivirus (Microsoft Defender, or the protection built into a Mac) is enough. Skip "PC cleaner" and "speed-up" apps.</li>
+        <li data-i18n="cy.pc4">Download software only from official app stores or the maker's own website.</li>
+        <li data-i18n="cy.pc5">Remove browser extensions you don't recognize. They can see what you type.</li>
+        <li data-i18n="cy.pc6">Back up automatically (Time Machine, iCloud, OneDrive or an external drive), so ransomware can't hold your files hostage.</li>
+        <li data-i18n="cy.pc7">On public Wi-Fi at hotels, airports or cafés, use your phone's hotspot for banking and shopping.</li>
+      </ul>
+      <div class="note note-warn">
+        <strong data-i18n="cy.pc.note.h">Never let a stranger into your computer</strong>
+        <span data-i18n="cy.pc.note">A pop-up or call saying your computer is infected is a scam. Never install a remote-access app for someone who contacted you first.</span>
+      </div>
+    </details>
+
+    <details class="sit">
+      <summary data-i18n="cy.home">Home Wi-Fi and smart devices</summary>
+      <ul>
+        <li data-i18n="cy.home1">Change your router's admin password. The one on the sticker is often a default.</li>
+        <li data-i18n="cy.home2">Turn on the router's automatic updates, and replace routers that no longer get them.</li>
+        <li data-i18n="cy.home3">Use WPA3 or WPA2 security with a long Wi-Fi password, and turn off WPS.</li>
+        <li data-i18n="cy.home4">Make a guest network for visitors and smart gadgets (cameras, doorbells, TVs, speakers) so they can't reach your computers.</li>
+        <li data-i18n="cy.home5">Protect each gadget's app account with a passkey or 2-step verification and a unique password.</li>
+        <li data-i18n="cy.home6">Turn on automatic updates for smart devices, and retire any the maker stopped supporting.</li>
+        <li data-i18n="cy.home7">Buy known brands, review who has access to your cameras, and unplug devices you don't use.</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- ===== FREEZE ===== -->
+  <section id="freeze" class="section" aria-labelledby="fr-h">
+    <h2 id="fr-h" data-i18n="cy.fr.h">Freeze your credit and identity</h2>
+    <p class="lede" data-i18n="cy.fr.lede">A freeze stops anyone from opening new accounts in your name. It's free, doesn't hurt your credit score, and you can lift it for a day when you apply for credit.</p>
+    <ol class="steps">
+      <li>
+        <h3 data-i18n="cy.fr1.h">Freeze your credit at all four bureaus</h3>
+        <p data-i18n="cy.fr1">Save each login or PIN in your password manager so you can lift the freeze later.</p>
+        <p><a href="https://www.equifax.com/personal/credit-report-services/" target="_blank" rel="noopener noreferrer">Equifax</a> · <a href="https://www.experian.com/freeze/center.html" target="_blank" rel="noopener noreferrer">Experian</a> · <a href="https://www.transunion.com/credit-freeze" target="_blank" rel="noopener noreferrer">TransUnion</a> · <a href="https://www.innovis.com/personal/creditBureau" target="_blank" rel="noopener noreferrer">Innovis</a></p>
+      </li>
+      <li>
+        <h3 data-i18n="cy.fr2.h">Freeze ChexSystems and NCTUE</h3>
+        <p data-i18n="cy.fr2">These block fake bank, phone and utility accounts in your name.</p>
+        <p><a href="https://www.chexsystems.com" target="_blank" rel="noopener noreferrer">ChexSystems</a> · <a href="https://www.nctue.com" target="_blank" rel="noopener noreferrer">NCTUE</a></p>
+      </li>
+      <li>
+        <h3 data-i18n="cy.fr3.h">Get an IRS Identity Protection PIN</h3>
+        <p data-i18n="cy.fr3">It stops someone from filing a tax return in your name to steal your refund. Available with a Social Security number or an ITIN.</p>
+        <p><a href="https://www.irs.gov/ippin" target="_blank" rel="noopener noreferrer">irs.gov/ippin</a></p>
+      </li>
+      <li>
+        <h3 data-i18n="cy.fr4.h">Claim your Social Security account</h3>
+        <p data-i18n="cy.fr4">If you have a Social Security number, create your online account before a scammer does.</p>
+        <p><a href="https://www.ssa.gov/myaccount" target="_blank" rel="noopener noreferrer">ssa.gov/myaccount</a></p>
+      </li>
+    </ol>
+    <p class="small" data-i18n="cy.fr.kids">Parents can also freeze a child's credit at each bureau. Children's identities are often stolen for years before anyone notices.</p>
+  </section>
+
+  <!-- ===== IMMIGRATION SCAMS ===== -->
+  <section id="scams" class="section" aria-labelledby="sc-h">
+    <h2 id="sc-h" data-i18n="cy.sc.h">Scams that target immigrants</h2>
+    <p class="lede" data-i18n="cy.sc.lede">Scammers pose as ICE, USCIS, lawyers or "notarios" because fear makes people pay fast. Whatever your status, you can say no and hang up.</p>
+
+    <h3 data-i18n="cy.sc.never.h">Real immigration officials never:</h3>
+    <ul>
+      <li data-i18n="cy.sc.n1">Call, text or message you on WhatsApp demanding money to stop an arrest or release a relative.</li>
+      <li data-i18n="cy.sc.n2">Take payment by gift card, Zelle, Cash App, wire transfer or cryptocurrency.</li>
+      <li><span data-i18n="cy.sc.n3">Charge for immigration forms. USCIS forms are free to download.</span> <a href="https://www.uscis.gov/forms" target="_blank" rel="noopener noreferrer" data-i18n="cy.sc.n3.link">Official USCIS forms</a></li>
+      <li data-i18n="cy.sc.n4">Sell better odds in the visa lottery. Entering the Diversity Visa lottery is free.</li>
+    </ul>
+
+    <h3 data-i18n="cy.sc.bond.h">How immigration bonds are really paid</h3>
+    <p><span data-i18n="cy.sc.bond">ICE takes bond payments through its online CeBONDS system or at an ICE field office, by bank transfer (Fedwire or ACH). People without a bank account can use a licensed immigration bond company. A stranger asking for bond money by phone or text is a red flag.</span> <a href="https://www.ice.gov/detain/detention-management/bonds" target="_blank" rel="noopener noreferrer" data-i18n="cy.sc.bond.link">How to post a bond (ICE)</a></p>
+
+    <h3 data-i18n="cy.sc.who.h">Who can legally help with your case</h3>
+    <p><span data-i18n="cy.sc.who">Only a licensed attorney or a representative accredited by the U.S. Department of Justice. In the U.S., a "notario" is not a lawyer. Never let anyone keep your original documents or sign a blank form.</span> <a href="https://www.justice.gov/eoir/list-pro-bono-legal-service-providers" target="_blank" rel="noopener noreferrer" data-i18n="cy.sc.who.link">Free and low-cost legal help (DOJ)</a></p>
+
+    <div class="note note-warn">
+      <strong data-i18n="cy.sc.call.h">Got a call saying ICE has your relative?</strong>
+      <span data-i18n="cy.sc.call">Hang up. Caller ID and voices can be faked. Check the official ICE detainee locator yourself, then call a lawyer or a hotline from our Get help page.</span>
+      <span class="band-actions"><a class="btn btn-sm" href="https://locator.ice.gov/odls/" target="_blank" rel="noopener noreferrer" data-i18n="cy.sc.locator">ICE detainee locator</a> <a class="btn btn-sm btn-secondary" href="help.html" data-i18n="cy.sc.gethelp">Get help</a></span>
+    </div>
+
+    <p><span data-i18n="cy.sc.report">Report immigration scams to the Federal Trade Commission. You can report without giving your name.</span> <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer">ReportFraud.ftc.gov</a> · <a href="https://consumer.ftc.gov/articles/how-avoid-immigration-scams-and-get-real-help" target="_blank" rel="noopener noreferrer" data-i18n="cy.sc.ftc">How to avoid immigration scams (FTC)</a></p>
+  </section>
+
+  <!-- ===== AI SCAMS ===== -->
+  <section id="ai" class="section" aria-labelledby="ai-h">
+    <h2 id="ai-h" data-i18n="cy.ai.h">Spot AI voice and message scams</h2>
+    <p class="lede" data-i18n="cy.ai.lede">AI can copy a loved one's voice from a short video and write flawless fake messages. Judge a message by what it asks you to do, not by how real it sounds.</p>
+    <h3 data-i18n="cy.ai.flags">Red flags, no matter who it seems to be</h3>
+    <ul>
+      <li data-i18n="cy.ai1">Payment by gift card, wire, Zelle, Cash App or cryptocurrency</li>
+      <li data-i18n="cy.ai2">A request to read back a code that was texted to you</li>
+      <li data-i18n="cy.ai3">Pressure to act right now, or to keep it a secret</li>
+      <li data-i18n="cy.ai4">A QR code in a letter or email that leads to a sign-in page</li>
+      <li data-i18n="cy.ai5">"Move your money to a safe account to protect it"</li>
+      <li data-i18n="cy.ai6">A request to install an app so someone can "help"</li>
+    </ul>
+    <div class="note note-warn">
+      <strong data-i18n="cy.safe.h">Set a family safe word</strong>
+      <span data-i18n="cy.safe">Pick a word only your family knows, and never post it. On any emergency call asking for money, ask for the word. No word? Hang up and call the person back on the number you already have.</span>
+    </div>
+  </section>
+
+  <!-- ===== IF SOMETHING GOES WRONG ===== -->
+  <section id="wrong" class="section" aria-labelledby="wr-h">
+    <h2 id="wr-h" data-i18n="cy.wr.h">If something goes wrong</h2>
+    <p class="lede" data-i18n="cy.wr.lede">Speed matters more than anything. Don't be embarrassed; these scams fool careful people every day.</p>
+    <ol class="steps">
+      <li><h3 data-i18n="cy.wr1.h">Call your bank</h3><p data-i18n="cy.wr1">Use the number on your card. Ask them to freeze the account and reverse the charges.</p></li>
+      <li><h3 data-i18n="cy.wr2.h">Secure your email</h3><p data-i18n="cy.wr2">Change its password and sign out all other devices. Password reset links go there.</p></li>
+      <li><h3 data-i18n="cy.wr3.h">Fix the affected accounts</h3><p data-i18n="cy.wr3">Change their passwords and sign out other devices on each one.</p></li>
+      <li><h3 data-i18n="cy.wr4.h">Report it</h3><p><span data-i18n="cy.wr4">Identity theft gets a personal recovery plan at IdentityTheft.gov. Report scams at ReportFraud.ftc.gov.</span> <a href="https://www.identitytheft.gov" target="_blank" rel="noopener noreferrer">IdentityTheft.gov</a> · <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer">ReportFraud.ftc.gov</a></p></li>
+      <li><h3 data-i18n="cy.wr5.h">Warn your family</h3><p data-i18n="cy.wr5">Scammers often move on to the next person in your contacts.</p></li>
+    </ol>
+
+    <h3 data-i18n="cy.cl.h">Your checklist</h3>
+    <ul class="checklist">
+      <li data-i18n="cy.cl1">Password manager set up</li>
+      <li data-i18n="cy.cl2">Apple and Google account steps done</li>
+      <li data-i18n="cy.cl3">Phone carrier port-out PIN added</li>
+      <li data-i18n="cy.cl4">Banks and retirement accounts: passkey or 2-step, plus alerts</li>
+      <li data-i18n="cy.cl5">Automatic updates on every device</li>
+      <li data-i18n="cy.cl6">Computer locked, encrypted and backed up</li>
+      <li data-i18n="cy.cl7">Router password changed; smart devices on the guest network</li>
+      <li data-i18n="cy.cl8">Credit frozen at all four bureaus, plus ChexSystems and NCTUE</li>
+      <li data-i18n="cy.cl9">IRS IP PIN and Social Security account set up</li>
+      <li data-i18n="cy.cl10">Family safe word agreed</li>
+      <li data-i18n="cy.cl11">Backup codes printed and stored at home</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p><span data-i18n="cy.foot.checked">Links last checked by a person on</span> <time datetime="2026-10-30" data-i18n="cy.foot.date">October 30, 2026</time>.
+     <span data-i18n="cy.foot.note">This page is general information, not legal advice. Settings and menus change; if a step doesn't match, search for the setting by name.</span></p>
+  <p><a href="help.html" data-i18n="cy.foot.help">Get help: your rights and who to call</a> · <a href="index.html" data-i18n="foot.back">Back to the numbers and the story</a></p>
+</footer>
+
+<script src="app.js?v=21"></script>
+<script src="cyber.js?v=21"></script>
+</body>
+</html>
