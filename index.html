@@ -13,8 +13,8 @@
   <link rel="alternate" hreflang="es" href="es.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=22">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=23">
 </head>
 <body class="page-data">
 
@@ -22,13 +22,13 @@
 
 <header class="topbar">
   <div class="wrap masthead">
-    <a class="brand" href="index.html"><span class="brand-name">Civic Shield Project</span></a>
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10v-6z"/><path d="M8 12h8M12 8v8"/></svg><span class="brand-name">Civic Shield Project</span></a>
     <div class="masthead-actions">
       <div class="lang lang-links" role="group" aria-label="Language / Idioma">
         <a href="index.html" hreflang="en" aria-current="page">English</a>
         <a href="es.html" hreflang="es">Español</a>
       </div>
-      <a class="btn btn-sm help-link" href="help.html">Get help</a>
+      <a class="btn btn-sm help-link" href="help.html">Get help<span class="wide-only">&nbsp;now</span></a>
     </div>
   </div>
   <div class="wrap">
@@ -49,24 +49,47 @@
 
 <main class="wrap wrap-wide">
 
-  <section class="intro">
-    <h1 class="sr-only">Civic Shield Project — A U.S. Immigration Policy, Assistance and Monitoring Project</h1>
+  <section class="hero">
+    <p class="kicker">Nonpartisan · every number sourced · English and Spanish</p>
+    <h1 class="hero-h">The record on U.S. immigration enforcement, and help when you need it.</h1>
     <p class="mission">Civic Shield Project exists to put the facts about U.S. immigration enforcement in one place, with every number traced to its source and no political side taken. It is built for immigrants who need to know their rights and where to turn, and for citizens who want to understand what is happening in their communities. Where the record is unclear or contested, this site says so.</p>
-    <h2 class="page-title">The numbers and the story</h2>
-    <p class="lede">U.S. immigration enforcement, January 2025 to today. Every figure on this page links to the page it came from. Where the government's number can't be checked, it says so. Last checked by a person on <time id="series-checked" datetime="2026-11-02">2026-11-02</time>.</p>
-    <div class="help-strip">
-      <div>
-        <strong>Need help right now?</strong>
-        <span>What to do if ICE is at your door, who to call, how to find someone in detention. English and Spanish.</span>
-      </div>
-      <a class="btn" href="help.html">Get help</a>
-      <a class="btn btn-secondary" href="es.html" lang="es">Ver este sitio en español</a>
+    <p class="hero-ask">Where do you want to start?</p>
+    <div class="paths">
+      <a class="path path-help" href="help.html">
+        <svg viewBox="0 0 88 88" aria-hidden="true"><rect x="14" y="10" width="36" height="68" rx="3"/><path d="M8 78h72"/><circle cx="66" cy="34" r="7"/><path d="M56 78V58c0-6 4-10 10-10s10 4 10 10v20"/></svg>
+        <span class="path-text"><strong>Help right now</strong><span>ICE at the door, a stop by police or ICE, or someone was detained. Your rights by status, and who to call.</span></span>
+      </a>
+      <a class="path path-facts" href="#trajectory">
+        <svg viewBox="0 0 88 88" aria-hidden="true"><path d="M10 78h68"/><rect x="16" y="50" width="12" height="28" rx="2"/><rect x="38" y="34" width="12" height="44" rx="2"/><rect x="60" y="18" width="12" height="60" rx="2"/></svg>
+        <span class="path-text"><strong>See the facts</strong><span>Detention, arrests, removals and policy, each traced to its source. The strongest case on both sides.</span></span>
+      </a>
+      <a class="path path-cyber" href="cyber.html">
+        <svg viewBox="0 0 88 88" aria-hidden="true"><rect x="24" y="8" width="40" height="72" rx="6"/><rect x="34" y="34" width="20" height="16" rx="2"/><path d="M38 34v-5a6 6 0 0 1 12 0v5"/></svg>
+        <span class="path-text"><strong>Protect your family online</strong><span>Cyber Safety: stop AI scams, secure your accounts and freeze your credit.</span></span>
+      </a>
     </div>
+  </section>
+
+  <!-- ===== FEATURE: detention trend ===== -->
+  <section class="feature" aria-labelledby="ft-h">
+    <div class="feature-text">
+      <p class="kicker">Trajectory</p>
+      <h2 id="ft-h">Detention is up by about two-thirds since December 2024.</h2>
+      <p>From 39,152 people to 65,765, with a record 70,766 in late January 2026. ICE has not published newer detention figures since July 11, 2026, so the line stops there.</p>
+      <a href="#trajectory">Detention, book-ins and arrests</a>
+    </div>
+    <figure class="feature-card">
+      <p class="kicker">People in ICE detention</p>
+      <p class="feature-big"><span id="feature-last">65,765</span> <span class="feature-date">Jul 11, 2026</span></p>
+      <div id="feature-spark"></div>
+      <figcaption>Source: ICE data compiled by <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a></figcaption>
+    </figure>
   </section>
 
   <!-- ===== KEY FIGURES ===== -->
   <section class="section" aria-labelledby="kf-h">
     <h2 id="kf-h">In one glance</h2>
+    <p class="lede">Every figure links to the page it came from. Where the government's number can't be checked, it says so. Last checked by a person on <time id="series-checked" datetime="2026-11-02">2026-11-02</time>.</p>
     <dl class="tiles">
       <div><dt>65,765</dt><dd>in ICE detention, Jul 11, 2026 — the record was 70,766 in late Jan 2026 <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a></dd></div>
       <div><dt>50,925</dt><dd>ICE arrests in Aug 2026, the third monthly record in a row, per DHS <a href="https://www.executivegov.com/articles/ice-arrests-august-2026-record" target="_blank" rel="noopener noreferrer">ExecutiveGov</a></dd></div>
@@ -83,13 +106,14 @@
   </section>
 
   <!-- ===== HUB ===== -->
+  <h2 class="hub-h" id="hub-h">Explore the record</h2>
   <nav class="hub" aria-label="Choose a section">
-    <a href="#trajectory" data-panel="trajectory"><strong>Trajectory</strong><span>Detention, book-ins, arrests since Jan 2025</span></a>
-    <a href="#news" data-panel="news"><strong>News</strong><span>5 supporters cite · 5 critics cite · weekly</span></a>
-    <a href="#georgia" data-panel="georgia"><strong>Your state</strong><span>Hotlines · facilities · courts · legal aid · 287(g) — 10 states</span></a>
-    <a href="#who" data-panel="who"><strong>Who is detained</strong><span>70.6% no conviction · nationalities · deaths</span></a>
-    <a href="#policy" data-panel="policy"><strong>Policy</strong><span>12 changes · 2 blocked by courts</span></a>
-    <a href="#sides" data-panel="sides"><strong>Both sides</strong><span>The strongest case each way</span></a>
+    <a href="#trajectory" data-panel="trajectory"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg><strong>Trajectory</strong><span>Detention, book-ins, arrests since Jan 2025</span></a>
+    <a href="#news" data-panel="news"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M7 8h10M7 12h10M7 16h6"/></svg><strong>News</strong><span>5 supporters cite · 5 critics cite · weekly</span></a>
+    <a href="#georgia" data-panel="georgia"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><strong>Your state</strong><span>Hotlines · facilities · courts · legal aid · 287(g) — 10 states</span></a>
+    <a href="#who" data-panel="who"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg><strong>Who is detained</strong><span>70.6% no conviction · nationalities · deaths</span></a>
+    <a href="#policy" data-panel="policy"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M5 7l-2.5 6a3 3 0 0 0 5 0zM19 7l-2.5 6a3 3 0 0 0 5 0zM8 21h8"/></svg><strong>Policy</strong><span>12 changes · 2 blocked by courts</span></a>
+    <a href="#sides" data-panel="sides"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4v16M16 4v16M4 8h4M16 16h4"/></svg><strong>Both sides</strong><span>The strongest case each way</span></a>
   </nav>
 
   <!-- ===== TRAJECTORY ===== -->
@@ -316,9 +340,9 @@
   <p>Figures last checked by a person on <time datetime="2026-11-02">November 2, 2026</time>. This page is general information, not legal advice. <a href="help.html">Get help</a> · <a href="cyber.html">Cyber Safety</a>.</p>
 </footer>
 
-<script src="charts.js?v=19"></script>
+<script src="charts.js?v=20"></script>
 <script src="tabs.js?v=19"></script>
-<script src="states.js?v=19"></script>
+<script src="states.js?v=20"></script>
 <script src="news.js?v=19"></script>
 <script src="langpick.js?v=19"></script>
 </body>

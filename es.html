@@ -13,8 +13,8 @@
   <link rel="alternate" hreflang="es" href="es.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=22">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=23">
 </head>
 <body class="page-data">
 
@@ -22,13 +22,13 @@
 
 <header class="topbar">
   <div class="wrap masthead">
-    <a class="brand" href="es.html"><span class="brand-name">Civic Shield Project</span></a>
+    <a class="brand" href="es.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10v-6z"/><path d="M8 12h8M12 8v8"/></svg><span class="brand-name">Civic Shield Project</span></a>
     <div class="masthead-actions">
       <div class="lang lang-links" role="group" aria-label="Language / Idioma">
         <a href="index.html" hreflang="en">English</a>
         <a href="es.html" hreflang="es" aria-current="page">Español</a>
       </div>
-      <a class="btn btn-sm help-link" href="help.html?lang=es">Ayuda</a>
+      <a class="btn btn-sm help-link" href="help.html?lang=es">Ayuda<span class="wide-only">&nbsp;ahora</span></a>
     </div>
   </div>
   <div class="wrap">
@@ -49,24 +49,47 @@
 
 <main class="wrap wrap-wide">
 
-  <section class="intro">
-    <h1 class="sr-only">Civic Shield Project — Un proyecto de política, asistencia y monitoreo migratorio en EE. UU.</h1>
+  <section class="hero">
+    <p class="kicker">Sin partido · cada cifra con su fuente · en español e inglés</p>
+    <h1 class="hero-h">Los hechos sobre la aplicación de las leyes migratorias en EE. UU., y ayuda cuando la necesite.</h1>
     <p class="mission">Civic Shield Project existe para reunir en un solo lugar los hechos sobre la aplicación de las leyes migratorias en EE. UU., con cada cifra vinculada a su fuente y sin tomar partido político. Está hecho para inmigrantes que necesitan conocer sus derechos y a dónde acudir, y para ciudadanos que quieren entender lo que ocurre en sus comunidades. Donde el registro es incierto o está en disputa, este sitio lo dice.</p>
-    <h2 class="page-title">Las cifras y la historia</h2>
-    <p class="lede">Aplicación de las leyes migratorias en EE. UU., de enero de 2025 a hoy. Cada cifra de esta página enlaza a la página de donde salió. Donde la cifra del gobierno no se puede verificar, se indica. Última revisión por una persona: <time id="series-checked" datetime="2026-11-02">2026-11-02</time>. Las fuentes enlazadas están en inglés.</p>
-    <div class="help-strip">
-      <div>
-        <strong>¿Necesita ayuda ahora mismo?</strong>
-        <span>Qué hacer si ICE está en su puerta, a quién llamar, cómo encontrar a alguien detenido. En español e inglés.</span>
-      </div>
-      <a class="btn" href="help.html?lang=es">Obtener ayuda</a>
-      <a class="btn btn-secondary" href="help.html?lang=en" lang="en">Help in English</a>
+    <p class="hero-ask">¿Por dónde quiere empezar?</p>
+    <div class="paths">
+      <a class="path path-help" href="help.html?lang=es">
+        <svg viewBox="0 0 88 88" aria-hidden="true"><rect x="14" y="10" width="36" height="68" rx="3"/><path d="M8 78h72"/><circle cx="66" cy="34" r="7"/><path d="M56 78V58c0-6 4-10 10-10s10 4 10 10v20"/></svg>
+        <span class="path-text"><strong>Ayuda ahora mismo</strong><span>ICE en la puerta, una parada de la policía o de ICE, o alguien fue detenido. Sus derechos según su estatus y a quién llamar.</span></span>
+      </a>
+      <a class="path path-facts" href="#trajectory">
+        <svg viewBox="0 0 88 88" aria-hidden="true"><path d="M10 78h68"/><rect x="16" y="50" width="12" height="28" rx="2"/><rect x="38" y="34" width="12" height="44" rx="2"/><rect x="60" y="18" width="12" height="60" rx="2"/></svg>
+        <span class="path-text"><strong>Vea los hechos</strong><span>Detención, arrestos, deportaciones y políticas, cada uno con su fuente. El argumento más fuerte de cada lado.</span></span>
+      </a>
+      <a class="path path-cyber" href="cyber.html?lang=es">
+        <svg viewBox="0 0 88 88" aria-hidden="true"><rect x="24" y="8" width="40" height="72" rx="6"/><rect x="34" y="34" width="20" height="16" rx="2"/><path d="M38 34v-5a6 6 0 0 1 12 0v5"/></svg>
+        <span class="path-text"><strong>Proteja a su familia en línea</strong><span>Ciberseguridad: detenga estafas con IA, proteja sus cuentas y congele su crédito.</span></span>
+      </a>
     </div>
+  </section>
+
+  <!-- ===== FEATURE: detention trend ===== -->
+  <section class="feature" aria-labelledby="ft-h">
+    <div class="feature-text">
+      <p class="kicker">Tendencia</p>
+      <h2 id="ft-h">La detención subió cerca de dos tercios desde diciembre de 2024.</h2>
+      <p>De 39,152 personas a 65,765, con un récord de 70,766 a fines de enero de 2026. ICE no ha publicado cifras de detención más recientes desde el 11 de julio de 2026, por eso la línea termina ahí.</p>
+      <a href="#trajectory">Detención, ingresos y arrestos</a>
+    </div>
+    <figure class="feature-card">
+      <p class="kicker">Personas en detención de ICE</p>
+      <p class="feature-big"><span id="feature-last">65,765</span> <span class="feature-date">11 jul. 2026</span></p>
+      <div id="feature-spark"></div>
+      <figcaption>Fuente: datos de ICE compilados por <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a> (en inglés)</figcaption>
+    </figure>
   </section>
 
   <!-- ===== CIFRAS CLAVE ===== -->
   <section class="section" aria-labelledby="kf-h">
     <h2 id="kf-h">De un vistazo</h2>
+    <p class="lede">Cada cifra enlaza a la página de donde salió. Donde la cifra del gobierno no se puede verificar, se indica. Última revisión por una persona: <time id="series-checked" datetime="2026-11-02">2026-11-02</time>. Las fuentes enlazadas están en inglés.</p>
     <dl class="tiles">
       <div><dt>65,765</dt><dd>personas en detención de ICE, 11 de julio de 2026; el récord fue 70,766 a fines de enero de 2026 <a href="https://tracreports.org/immigration/quickfacts/" target="_blank" rel="noopener noreferrer">TRAC</a></dd></div>
       <div><dt>50,925</dt><dd>arrestos de ICE en agosto de 2026, el tercer récord mensual consecutivo, según DHS <a href="https://www.executivegov.com/articles/ice-arrests-august-2026-record" target="_blank" rel="noopener noreferrer">ExecutiveGov</a></dd></div>
@@ -83,13 +106,14 @@
   </section>
 
   <!-- ===== HUB ===== -->
+  <h2 class="hub-h" id="hub-h">Explore los datos</h2>
   <nav class="hub" aria-label="Elija una sección">
-    <a href="#trajectory" data-panel="trajectory"><strong>Tendencia</strong><span>Detención, ingresos y arrestos desde ene. 2025</span></a>
-    <a href="#news" data-panel="news"><strong>Noticias</strong><span>5 que citan los partidarios · 5 que citan los críticos · semanal</span></a>
-    <a href="#georgia" data-panel="georgia"><strong>Su estado</strong><span>Líneas · centros · cortes · ayuda legal · 287(g) — 10 estados</span></a>
-    <a href="#who" data-panel="who"><strong>Quién está detenido</strong><span>70.6% sin condena · nacionalidades · muertes</span></a>
-    <a href="#policy" data-panel="policy"><strong>Políticas</strong><span>12 cambios · 2 bloqueados por tribunales</span></a>
-    <a href="#sides" data-panel="sides"><strong>Ambos lados</strong><span>El argumento más fuerte de cada lado</span></a>
+    <a href="#trajectory" data-panel="trajectory"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg><strong>Tendencia</strong><span>Detención, ingresos y arrestos desde ene. 2025</span></a>
+    <a href="#news" data-panel="news"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M7 8h10M7 12h10M7 16h6"/></svg><strong>Noticias</strong><span>5 que citan los partidarios · 5 que citan los críticos · semanal</span></a>
+    <a href="#georgia" data-panel="georgia"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><strong>Su estado</strong><span>Líneas · centros · cortes · ayuda legal · 287(g) — 10 estados</span></a>
+    <a href="#who" data-panel="who"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg><strong>Quién está detenido</strong><span>70.6% sin condena · nacionalidades · muertes</span></a>
+    <a href="#policy" data-panel="policy"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M5 7l-2.5 6a3 3 0 0 0 5 0zM19 7l-2.5 6a3 3 0 0 0 5 0zM8 21h8"/></svg><strong>Políticas</strong><span>12 cambios · 2 bloqueados por tribunales</span></a>
+    <a href="#sides" data-panel="sides"><svg class="hub-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4v16M16 4v16M4 8h4M16 16h4"/></svg><strong>Ambos lados</strong><span>El argumento más fuerte de cada lado</span></a>
   </nav>
 
   <!-- ===== TENDENCIA ===== -->
@@ -317,9 +341,9 @@
   <p>Cifras revisadas por una persona por última vez el <time datetime="2026-11-02">2 de noviembre de 2026</time>. Esta página es información general, no asesoría legal. <a href="help.html?lang=es">Obtener ayuda</a> · <a href="cyber.html?lang=es">Ciberseguridad</a>.</p>
 </footer>
 
-<script src="charts.js?v=19"></script>
+<script src="charts.js?v=20"></script>
 <script src="tabs.js?v=19"></script>
-<script src="states.js?v=19"></script>
+<script src="states.js?v=20"></script>
 <script src="news.js?v=19"></script>
 <script src="langpick.js?v=19"></script>
 </body>

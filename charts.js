@@ -232,6 +232,34 @@ function hbarChart(container, series) {
   container.appendChild(sourcesBlock([{ url: series.url }]));
 }
 
+/* Compact trend line for the home-page feature card. Same data as the full
+   detention chart, so the weekly data review only has to update series.json. */
+function spark(container, series) {
+  const pts = series.points;
+  if (!pts || pts.length < 2) return;
+  const SW = 600, SH = 200, P = 12;
+  const vals = pts.map(p => p.value);
+  const lo = Math.floor(Math.min(...vals) * 0.8 / 5000) * 5000;
+  const hi = Math.ceil(Math.max(...vals) * 1.05 / 5000) * 5000;
+  const t0 = toTime(pts[0].date), t1 = toTime(pts[pts.length - 1].date);
+  const x = t => P + (SW - 2 * P) * ((t - t0) / (t1 - t0 || 1));
+  const y = v => SH - P - (SH - 2 * P) * ((v - lo) / (hi - lo || 1));
+  const first = pts[0], last = pts[pts.length - 1];
+  const peak = pts.reduce((a, b) => (b.value > a.value ? b : a));
+  const label = `${loc(series.title)}: ${fmt.format(first.value)} (${first.date}) → ${fmt.format(last.value)} (${last.date}); ` +
+    `${LANG === "es" ? "máximo" : "peak"} ${fmt.format(peak.value)} (${peak.date})`;
+  const svg = el("svg", { viewBox: `0 0 ${SW} ${SH}`, role: "img", "aria-label": label, class: "spark" });
+  el("line", { x1: P, y1: SH - P, x2: SW - P, y2: SH - P, class: "spark-base" }, svg);
+  const line = pts.map((p, i) => `${i ? "L" : "M"}${x(toTime(p.date)).toFixed(1)},${y(p.value).toFixed(1)}`).join(" ");
+  el("path", { d: `${line} L${x(t1).toFixed(1)},${SH - P} L${x(t0).toFixed(1)},${SH - P} Z`, class: "spark-area" }, svg);
+  el("path", { d: line, class: "spark-line" }, svg);
+  el("circle", { cx: x(toTime(peak.date)), cy: y(peak.value), r: 5, class: "spark-peak" }, svg);
+  el("circle", { cx: x(t1), cy: y(last.value), r: 6, class: "spark-last" }, svg);
+  container.replaceChildren(svg);
+  const big = document.getElementById("feature-last");
+  if (big) big.textContent = fmt.format(last.value);
+}
+
 async function main() {
   let data;
   try {
@@ -246,6 +274,8 @@ async function main() {
   }
   const get = id => document.querySelector(`[data-chart="${id}"]`);
   if (get("detention")) lineChart(get("detention"), data.detention);
+  const sp = document.getElementById("feature-spark");
+  if (sp && data.detention) spark(sp, data.detention);
   if (get("bookins")) barChart(get("bookins"), data.bookins, { split: true });
   if (get("arrests")) barChart(get("arrests"), data.arrests);
   if (get("noconviction")) lineChart(get("noconviction"), data.noconviction, { secondary: data.noconviction.secondary });
