@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=25">
 </head>
 <body class="page-cyber">
 
@@ -47,10 +47,25 @@
 
 <main id="top" class="wrap">
 
+  <!-- ===== HERO ===== -->
+  <section class="cy-hero" aria-labelledby="cy-h">
+    <p class="kicker" data-i18n="cy.kicker">Cyber Safety</p>
+    <h1 id="cy-h" class="hero-h" data-i18n="cy.h">Scammers now use AI. An hour of setup stops most of it.</h1>
+    <p class="cy-lede" data-i18n="cy.foot">Free, plain-language steps for families. No technical skills needed.</p>
+    <p class="hero-ask" data-i18n="cy.ask">What do you want to do?</p>
+    <div class="topics">
+      <a class="topic" href="#accounts"><svg class="topic-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1.3"/></svg><span class="topic-text"><strong data-i18n="cy.acc.h">Lock down your accounts</strong><span data-i18n="cy.t.acc">Email, Apple and Google: passkeys, a password manager and backup codes.</span></span></a>
+      <a class="topic" href="#devices"><svg class="topic-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg><span class="topic-text"><strong data-i18n="cy.dev.h">Keep your devices safe</strong><span data-i18n="cy.t.dev">Updates, screen locks, and pop-ups that say your computer is infected.</span></span></a>
+      <a class="topic" href="#freeze"><svg class="topic-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg><span class="topic-text"><strong data-i18n="cy.fr.h">Freeze your credit and identity</strong><span data-i18n="cy.t.fr">Free freezes at the credit bureaus, plus an IRS IP PIN and a Social Security account.</span></span></a>
+      <a class="topic" href="#scams"><svg class="topic-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v3M12 18h.01"/></svg><span class="topic-text"><strong data-i18n="cy.sc.h">Scams that target immigrants</strong><span data-i18n="cy.t.sc">Fake lawyers and "notarios," and calls that demand ICE bond payments.</span></span></a>
+      <a class="topic" href="#ai"><svg class="topic-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h2M7 8v8M11 5v14M15 9v6M19 11v2"/></svg><span class="topic-text"><strong data-i18n="cy.ai.h">Spot AI voice and message scams</strong><span data-i18n="cy.t.ai">Cloned voices and urgent messages. Agree on a family code word.</span></span></a>
+      <a class="topic topic-urgent" href="#wrong"><svg class="topic-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg><span class="topic-text"><strong data-i18n="cy.wr.h">If something goes wrong</strong><span data-i18n="cy.t.wr">Call your bank first, then secure your email. Step by step.</span></span></a>
+    </div>
+  </section>
+
   <!-- ===== THE BASICS ===== -->
-  <section id="basics" class="band band-cyber" aria-labelledby="cy-h">
-    <p class="band-kicker" data-i18n="cy.kicker">Cyber Safety</p>
-    <h1 id="cy-h" class="band-h" data-i18n="cy.h">Scammers now use AI. An hour of setup stops most of it.</h1>
+  <section id="basics" class="band band-cyber" aria-labelledby="basics-h">
+    <h2 id="basics-h" class="band-h" data-i18n="cy.basics.h">The five basics</h2>
     <ol class="big-rules">
       <li><span data-i18n="cy.r1">Use a password manager, so every account gets its own password.</span></li>
       <li><span data-i18n="cy.r2">Turn on passkeys wherever they're offered. Fake websites can't steal them.</span></li>
@@ -58,15 +73,11 @@
       <li><span data-i18n="cy.r4">Slow down when it feels urgent. Pressure is the top sign of a scam.</span></li>
       <li><span data-i18n="cy.r5">Hang up and call back, using the number on your card or the official app.</span></li>
     </ol>
-    <div class="band-actions">
-      <a class="btn btn-light" href="#scams" data-i18n="cy.jump">Scams that target immigrants</a>
-      <a class="btn btn-outline-light" href="#wrong" data-i18n="cy.jump2">If something already happened</a>
-    </div>
-    <p class="band-foot" data-i18n="cy.foot">Free, plain-language steps for families. No technical skills needed.</p>
   </section>
 
   <!-- ===== ACCOUNTS ===== -->
   <section id="accounts" class="section" aria-labelledby="acc-h">
+    <svg class="sec-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1.3"/></svg>
     <h2 id="acc-h" data-i18n="cy.acc.h">Lock down your accounts</h2>
     <p class="lede" data-i18n="cy.acc.lede">Start with your email and phone: they can reset everything else. Menu names change with updates; if a step doesn't match, search for the setting by name.</p>
 
@@ -120,6 +131,7 @@
 
   <!-- ===== DEVICES ===== -->
   <section id="devices" class="section" aria-labelledby="dev-h">
+    <svg class="sec-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg>
     <h2 id="dev-h" data-i18n="cy.dev.h">Keep your devices safe</h2>
     <p class="lede" data-i18n="cy.dev.lede">Updates fix the security holes scammers break in through. Turning on automatic updates is the single most effective step for any device.</p>
 
@@ -169,6 +181,7 @@
 
   <!-- ===== FREEZE ===== -->
   <section id="freeze" class="section" aria-labelledby="fr-h">
+    <svg class="sec-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg>
     <h2 id="fr-h" data-i18n="cy.fr.h">Freeze your credit and identity</h2>
     <p class="lede" data-i18n="cy.fr.lede">A freeze stops anyone from opening new accounts in your name. It's free, doesn't hurt your credit score, and you can lift it for a day when you apply for credit.</p>
     <ol class="steps">
@@ -198,6 +211,7 @@
 
   <!-- ===== IMMIGRATION SCAMS ===== -->
   <section id="scams" class="section" aria-labelledby="sc-h">
+    <svg class="sec-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v3M12 18h.01"/></svg>
     <h2 id="sc-h" data-i18n="cy.sc.h">Scams that target immigrants</h2>
     <p class="lede" data-i18n="cy.sc.lede">Scammers pose as ICE, USCIS, lawyers or "notarios" because fear makes people pay fast. Whatever your status, you can say no and hang up.</p>
 
@@ -226,6 +240,7 @@
 
   <!-- ===== AI SCAMS ===== -->
   <section id="ai" class="section" aria-labelledby="ai-h">
+    <svg class="sec-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h2M7 8v8M11 5v14M15 9v6M19 11v2"/></svg>
     <h2 id="ai-h" data-i18n="cy.ai.h">Spot AI voice and message scams</h2>
     <p class="lede" data-i18n="cy.ai.lede">AI can copy a loved one's voice from a short video and write flawless fake messages. Judge a message by what it asks you to do, not by how real it sounds.</p>
     <h3 data-i18n="cy.ai.flags">Red flags, no matter who it seems to be</h3>
@@ -245,6 +260,7 @@
 
   <!-- ===== IF SOMETHING GOES WRONG ===== -->
   <section id="wrong" class="section" aria-labelledby="wr-h">
+    <svg class="sec-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg>
     <h2 id="wr-h" data-i18n="cy.wr.h">If something goes wrong</h2>
     <p class="lede" data-i18n="cy.wr.lede">Speed matters more than anything. Don't be embarrassed; these scams fool careful people every day.</p>
     <ol class="steps">
@@ -280,6 +296,6 @@
 </footer>
 
 <script src="app.js?v=21"></script>
-<script src="cyber.js?v=21"></script>
+<script src="cyber.js?v=22"></script>
 </body>
 </html>

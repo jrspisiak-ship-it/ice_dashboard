@@ -637,4 +637,32 @@ button.tile[aria-pressed="true"] { background: var(--red); }
 /* correction form: header + headings already follow .page-data */
 .page-form .form select, .page-form .form input, .page-form .form textarea { min-height: 48px; border-radius: 6px; }
 .page-form .form .btn { background: var(--navy); border-color: var(--navy); min-height: 48px; padding: 0 1.5rem; }
-@media (max-width: 419px) { .page-help .brand-mark { display: none; } }
+
+/* ===================== Cyber Safety page layout (v25) ===================== */
+.page-cyber .kicker { margin: 0 0 0.4rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+.cy-hero { padding: 2.25rem 0 0.5rem; }
+.cy-lede { margin: 0.9rem 0 0; font-size: 1.15rem; color: var(--ink); }
+.topics { display: grid; gap: 0.75rem; grid-template-columns: 1fr; }
+@media (min-width: 600px) { .topics { grid-template-columns: 1fr 1fr; } }
+.topic { display: flex; gap: 0.85rem; align-items: flex-start; padding: 1rem; border: 1px solid var(--rule); border-radius: 8px; text-decoration: none; color: var(--navy); background: #fff; min-height: 44px; }
+.topic:hover { border-color: var(--navy); background: var(--mist); color: var(--navy); }
+.topic-ico { flex: 0 0 auto; width: 2.75rem; height: 2.75rem; padding: 0.6rem; border-radius: 50%; background: var(--mist); fill: none; stroke: var(--navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.topic-text { display: grid; gap: 0.25rem; }
+.topic strong { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; line-height: 1.15; }
+.topic-text > span { font-size: 0.98rem; line-height: 1.4; color: var(--ink); }
+.topic-urgent { border: 2px solid var(--red); }
+.topic-urgent .topic-ico { background: #fdecea; stroke: var(--red); }
+.topic-urgent strong { color: var(--red-deep); }
+.page-cyber .band-cyber { margin-top: 2rem; }
+.page-cyber .band-cyber .band-h { color: #fff; font-size: clamp(1.9rem, 6vw, 2.5rem); }
+.sec-ico { display: block; width: 2.5rem; height: 2.5rem; padding: 0.55rem; margin: 0 0 0.6rem; border-radius: 50%; background: var(--mist); fill: none; stroke: var(--navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+#wrong .sec-ico { background: #fdecea; stroke: var(--red); }
+
+/* Get help header: keep the shield on small phones by tightening the buttons */
+@media (max-width: 419px) {
+  .page-help .masthead { gap: 0.35rem; }
+  .page-help .brand-mark { width: 1.35rem; height: 1.35rem; }
+  .page-help .masthead .brand { gap: 0.35rem; }
+  .page-help .masthead-actions .lang button { padding: 0.25rem 0.45rem; font-size: 0.8rem; }
+  .page-help .masthead-actions .btn-sm { padding: 0 0.5rem; font-size: 0.8rem; }
+}
