@@ -114,7 +114,7 @@
     },
     {
       "name": "Legal Aid Society of San Diego",
-      "phone": "1-877-534-2524",
+      "phone": "619-738-9832",
       "serves_detained": true,
       "city": "San Diego",
       "url": "https://www.lassd.org/immigration/"
@@ -128,8 +128,8 @@
       "size": "1,940 beds; avg daily 1,686 (Jul 2026)",
       "phone": "760-561-6100",
       "note_2026": {
-        "en": "Class action filed Jan 2026 over medical neglect and overcrowding; two deaths in late 2025; state AG inspection found inadequate staffing, medical access and water",
-        "es": "Demanda colectiva presentada en enero de 2026 por negligencia médica y hacinamiento; dos muertes a fines de 2025; inspección del Fiscal General halló personal, atención médica y agua inadecuados"
+        "en": "Class action filed Jan 2026 over medical neglect and overcrowding; three deaths between September 2025 and February 2026; state AG inspection found inadequate staffing, medical access and water",
+        "es": "Demanda colectiva presentada en enero de 2026 por negligencia médica y hacinamiento; tres muertes entre septiembre de 2025 y febrero de 2026; inspección del Fiscal General halló personal, atención médica y agua inadecuados"
       },
       "note_url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sounds-alarm-inhumane-conditions-adelanto-detention",
       "url": "https://www.geogroup.com/facilities/adelanto-ice-processing-center/"
@@ -232,5 +232,5 @@
     "Phones for Imperial, West LA and Van Nuys courts",
     "California City facility phone"
   ],
-  "checked": "2026-10-05"
+  "checked": "2026-11-04"
 }

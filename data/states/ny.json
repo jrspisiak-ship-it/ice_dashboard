@@ -94,10 +94,10 @@
     },
     {
       "name": "Catholic Charities Community Services – Immigration Legal Services",
-      "phone": "212-419-3737",
+      "phone": "212-419-3700",
       "serves_detained": null,
       "city": "New York",
-      "url": "https://catholiccharitiesny.org/what-we-do/immigrants-and-refugees/"
+      "url": "https://www.nyc.gov/assets/immigrants/downloads/pdf/ENG_Updated_MAN_Legal-Services-Flyer_Jan26_D2.pdf"
     },
     {
       "name": "Make the Road New York",
@@ -115,10 +115,10 @@
     },
     {
       "name": "Immigrant Defense Project – Criminal-Immigration Hotline",
-      "phone": "646-760-0599",
+      "phone": "212-725-6422",
       "serves_detained": null,
       "city": "New York",
-      "url": "https://www.immigrantdefenseproject.org/hotline/"
+      "url": "https://www.immigrantdefenseproject.org/?p=5628"
     }
   ],
   "facilities": [
@@ -188,24 +188,24 @@
       "url": "https://www.justice.gov/eoir/buffalo-immigration-court"
     },
     {
-      "name": "Batavia",
+      "name": "Batavia (closed July 24, 2026; cases moved to Buffalo)",
       "address": "4250 Federal Dr, Room F108, Batavia 14020",
-      "phone": "585-345-4300",
-      "url": "https://www.justice.gov/eoir/batavia-immigration-court"
+      "phone": null,
+      "url": "https://www.justice.gov/eoir/media/1453351/dl"
     }
   ],
   "two87g": {
-    "as_of": "2026-08-25",
+    "as_of": "2026-08-27",
     "count": "0 permitted",
     "summary": {
-      "en": "The Local Cops, Local Crimes Act bans state and local agencies from 287(g) agreements; 12 agencies that had them were ordered to end them by Aug 25, 2026. The AG's Office of Immigrant Trust enforces it.",
-      "es": "La ley Local Cops, Local Crimes prohíbe a las agencias estatales y locales los acuerdos 287(g); a las 12 agencias que los tenían se les ordenó terminarlos antes del 25 de agosto de 2026. La Oficina de Confianza del Inmigrante del Fiscal General la hace cumplir."
+      "en": "The Local Cops, Local Crimes Act bans state and local agencies from 287(g) agreements; 12 agencies that had them were ordered to end them by Aug 25, 2026. On Aug 27 the state sued the Rensselaer County Sheriff's Office, the only one that had not said it would end its agreement. The AG's Office of Immigrant Trust enforces the law.",
+      "es": "La ley Local Cops, Local Crimes prohíbe a las agencias estatales y locales los acuerdos 287(g); a las 12 agencias que los tenían se les ordenó terminarlos antes del 25 de agosto de 2026. El 27 de agosto el estado demandó a la Oficina del Sheriff del condado de Rensselaer, la única que no había dicho que terminaría su acuerdo. La Oficina de Confianza del Inmigrante del Fiscal General hace cumplir la ley."
     },
-    "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-first-enforcement-action-new"
+    "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-lawsuit-against-rensselaer"
   },
   "unverified": [
     "Statewide total detained for ICE",
     "Batavia facility phone"
   ],
-  "checked": "2026-10-05"
+  "checked": "2026-11-04"
 }

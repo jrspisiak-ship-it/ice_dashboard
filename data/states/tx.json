@@ -195,10 +195,10 @@
       "url": "https://www.justice.gov/eoir/harlingen-immigration-court"
     },
     {
-      "name": "Houston",
-      "address": "1801 Smith St, 9th Floor, Houston 77002",
-      "phone": "713-718-3870",
-      "url": "https://www.justice.gov/eoir/houston-immigration-court"
+      "name": "Houston (Jefferson Street)",
+      "address": "500 Jefferson St, Suite 300, Houston 77002",
+      "phone": "713-286-4300",
+      "url": "https://www.justice.gov/eoir/houston-jefferson-street-immigration-court"
     },
     {
       "name": "Conroe",
@@ -244,5 +244,5 @@
     "Texas-only ICE arrest count for July 2026",
     "Camp East Montana phone and operator (ice.gov blocked)"
   ],
-  "checked": "2026-10-05"
+  "checked": "2026-11-04"
 }
