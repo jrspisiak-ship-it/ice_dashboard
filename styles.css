@@ -503,7 +503,7 @@ a.src { font-size: 0.85em; color: var(--ink-soft); }
 /* header */
 .page-data .masthead .brand { display: flex; align-items: center; gap: 0.55rem; }
 .brand-mark { width: 2rem; height: 2rem; flex: 0 0 auto; fill: none; stroke: var(--navy, #14213d); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
-.page-data .brand-name { font-family: var(--serif); font-weight: 600; color: var(--navy); letter-spacing: 0; }
+.page-data .brand-name, .page-form .brand-name { font-family: var(--serif); font-weight: 600; color: var(--navy); letter-spacing: 0; }
 .page-data .help-link { min-height: 44px; display: inline-flex; align-items: center; }
 @media (max-width: 599px) { .wide-only { display: none; } .brand-mark { width: 1.6rem; height: 1.6rem; } }
 
@@ -589,3 +589,52 @@ button.tile.on { background: var(--navy, #14213d); color: #fff; cursor: pointer;
 button.tile.on:hover { background: #2b3d63; }
 button.tile[aria-pressed="true"] { background: var(--red); }
 .page-data .chart-switch { flex-wrap: wrap; }
+
+/* ===================== Get help + Cyber Safety in the same look (v24) ===================== */
+.page-help, .page-cyber { --navy: #14213d; --mist: #f4f6f8; --serif: "Newsreader", Georgia, "Times New Roman", serif; }
+:is(.page-help, .page-cyber) .masthead .brand { display: flex; align-items: center; gap: 0.55rem; }
+:is(.page-help, .page-cyber) .brand-name { font-family: var(--serif); font-weight: 600; color: var(--navy); letter-spacing: 0; }
+:is(.page-help, .page-cyber) .masthead-actions .btn-sm { min-height: 44px; display: inline-flex; align-items: center; }
+:is(.page-help, .page-cyber) h2 { font-family: var(--serif); font-weight: 600; color: var(--navy); font-size: clamp(1.75rem, 4vw, 2.3rem); letter-spacing: 0; line-height: 1.12; }
+:is(.page-help, .page-cyber) h3 { color: var(--navy); }
+.page-cyber main h1:not(.band-h) { font-family: var(--serif); }
+
+/* top bands: serif headline, numbered rules in circles */
+:is(.page-help, .page-cyber) .band { border-radius: 0; }
+@media (min-width: 720px) { :is(.page-help, .page-cyber) .band { border-radius: 8px; } }
+:is(.page-help, .page-cyber) .band .band-h { font-family: var(--serif); font-weight: 600; letter-spacing: 0; line-height: 1.05; }
+:is(.page-help, .page-cyber) .band-kicker { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+:is(.page-help, .page-cyber) .big-rules li { grid-template-columns: 2.4rem 1fr; gap: 0.75rem; align-items: start; }
+:is(.page-help, .page-cyber) .big-rules li::before {
+  width: 2.1rem; height: 2.1rem; border-radius: 50%; display: grid; place-items: center;
+  background: #fff; font-size: 1.05rem; font-weight: 800;
+}
+.page-help .big-rules li::before { color: var(--red); }
+.page-cyber .band-cyber { background: var(--navy); }
+.page-cyber .big-rules li::before { color: var(--navy); }
+.page-cyber .band-cyber a.btn-light { color: var(--navy); }
+
+/* accordions: roomier rows, tinted when open */
+:is(.page-help, .page-cyber) details.sit summary { min-height: 3.25rem; padding: 0.8rem 0.25rem; color: var(--navy); }
+:is(.page-help, .page-cyber) details.sit summary::after { color: var(--navy); }
+:is(.page-help, .page-cyber) details.sit[open] { background: var(--mist); border-radius: 8px; padding: 0 0.9rem 0.5rem; border-top-color: transparent; }
+:is(.page-help, .page-cyber) details.sit[open] + details.sit { border-top-color: transparent; }
+
+/* who to call: cards instead of a left rule */
+.page-help .phones { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.page-help .phones li { border-left: 0; margin: 0; padding: 1.1rem 1.2rem; background: var(--mist); border-radius: 8px; align-content: start; gap: 0.35rem; }
+.page-help .phones li#state-hotline { background: #fff; border: 2px solid var(--red); }
+.page-help .tel { font-family: var(--serif); font-weight: 600; font-size: clamp(1.5rem, 5vw, 1.9rem); }
+.page-help a.tel { color: var(--navy); text-decoration-thickness: 2px; }
+.page-help .phones strong { color: var(--navy); }
+
+/* warnings and steps */
+:is(.page-help, .page-cyber) .note-warn { border-left: 0; border-radius: 8px; }
+:is(.page-help, .page-cyber) .note-warn strong { color: #7a3505; }
+:is(.page-help, .page-cyber) .steps li::before { background: var(--navy); color: #fff; }
+:is(.page-help, .page-cyber) .checklist li::before { border-color: var(--navy); border-radius: 6px; }
+
+/* correction form: header + headings already follow .page-data */
+.page-form .form select, .page-form .form input, .page-form .form textarea { min-height: 48px; border-radius: 6px; }
+.page-form .form .btn { background: var(--navy); border-color: var(--navy); min-height: 48px; padding: 0 1.5rem; }
+@media (max-width: 419px) { .page-help .brand-mark { display: none; } }
