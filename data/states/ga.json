@@ -2,7 +2,7 @@
   "code": "GA",
   "name": "Georgia",
   "name_es": "Georgia",
-  "checked": "2026-10-05",
+  "checked": "2026-11-04",
   "summary": {
     "en": "Georgia held 4,556 people for ICE in July 2026, fourth among states, up from 4,383 in April. ICE arrests in the state hit about 2,250 in July 2026, more than eleven times July 2024. Forty-five local jurisdictions have 287(g) agreements, and two people died in Georgia facilities in 2026.",
     "es": "Georgia retuvo a 4,556 personas para ICE en julio de 2026, cuarto lugar entre los estados, frente a 4,383 en abril. Los arrestos de ICE en el estado llegaron a unos 2,250 en julio de 2026, más de once veces los de julio de 2024. Cuarenta y cinco jurisdicciones locales tienen acuerdos 287(g), y dos personas murieron en centros de Georgia en 2026."
@@ -92,7 +92,7 @@
     },
     {
       "name": "Latin American Association",
-      "phone": null,
+      "phone": "404-471-1889",
       "serves_detained": null,
       "city": "Atlanta",
       "url": "https://www.immigrationadvocates.org/nonprofit/legaldirectory/organization.392823-Latin_American_Association_Atlanta_Office"

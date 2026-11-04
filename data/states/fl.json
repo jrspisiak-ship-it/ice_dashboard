@@ -122,12 +122,12 @@
     },
     {
       "name": "Broward Transitional Center",
-      "city": "Deerfield Beach",
+      "city": "Pompano Beach",
       "operator": "GEO Group",
       "size": "700 beds",
       "phone": "954-973-4485",
       "note_2026": null,
-      "url": "https://www.geogroup.com/facilities/broward-transitional-center/"
+      "url": "https://www.ice.gov/detention-facility/broward-transitional-center"
     },
     {
       "name": "Baker Correctional Institution ('Deportation Depot')",
@@ -186,5 +186,5 @@
     "Krome phone",
     "Baker 'Deportation Depot' 2026 population"
   ],
-  "checked": "2026-10-05"
+  "checked": "2026-11-04"
 }

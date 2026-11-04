@@ -55,8 +55,8 @@
       },
       "languages": null,
       "what": {
-        "en": "For families of detained people",
-        "es": "Para familias de personas detenidas"
+        "en": "For families of people detained by ICE or CBP (Indiana residents only)",
+        "es": "Para familias de personas detenidas por ICE o CBP (solo residentes de Indiana)"
       },
       "url": "https://immigrantjustice.org/contact-us/"
     }
@@ -120,5 +120,5 @@
     "Any 2026 Illinois monthly arrest total",
     "Where Illinois arrestees are held long-term (out of state)"
   ],
-  "checked": "2026-10-05"
+  "checked": "2026-11-04"
 }
