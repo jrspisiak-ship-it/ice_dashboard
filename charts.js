@@ -260,6 +260,70 @@ function spark(container, series) {
   if (big) big.textContent = fmt.format(last.value);
 }
 
+/* "Who lives here": two plain tables from data.population, built with the DOM API. */
+function srcLink(label, url) {
+  if (!isSafeHttps(url)) return document.createTextNode(label);
+  const a = h("a", { href: url, target: "_blank", rel: "noopener noreferrer" }, label);
+  return a;
+}
+
+function popTable(head) {
+  const wrap = h("div", { class: "table-wrap" });
+  const t = h("table", { class: "plain pop-table" });
+  const tr = h("tr");
+  for (const c of loc(head)) tr.appendChild(h("th", { scope: "col" }, c));
+  const thead = h("thead"); thead.appendChild(tr); t.appendChild(thead);
+  const tbody = h("tbody"); t.appendChild(tbody);
+  wrap.appendChild(t);
+  return { wrap, tbody };
+}
+
+function popStatus(container, s) {
+  container.appendChild(h("h4", {}, loc(s.title)));
+  const { wrap, tbody } = popTable(s.head);
+  for (const r of s.rows) {
+    const tr = h("tr", r.detail ? { class: "has-detail" } : {});
+    const th = h("th", { scope: "row" }, loc(r.label));
+    if (r.detail) th.appendChild(h("span", { class: "pop-detail" }, loc(r.detail)));
+    tr.appendChild(th);
+    tr.appendChild(h("td", { class: "num" }, loc(r.value)));
+    tr.appendChild(h("td", {}, r.asof));
+    const src = h("td");
+    if (r.extra) {
+      src.appendChild(document.createTextNode(loc(r.src) + " "));
+      r.extra.forEach((x, i) => { if (i) src.appendChild(document.createTextNode(" · ")); src.appendChild(srcLink(x.label, x.url)); });
+    } else {
+      src.appendChild(srcLink(loc(r.src), r.url));
+    }
+    tr.appendChild(src);
+    tbody.appendChild(tr);
+  }
+  container.appendChild(wrap);
+  container.appendChild(h("p", { class: "chart-note" }, loc(s.note)));
+}
+
+function popCompare(container, c) {
+  container.appendChild(h("h4", {}, loc(c.title)));
+  if (c.read) container.appendChild(h("p", { class: "pop-read" }, loc(c.read)));
+  const { wrap, tbody } = popTable(c.head);
+  const dash = "—";
+  for (const r of c.rows) {
+    const tr = h("tr");
+    tr.appendChild(h("th", { scope: "row" }, loc(r.label)));
+    tr.appendChild(h("td", { class: "num" }, r.arrests == null ? dash : `${r.arrests.toFixed(1)}%`));
+    let share = dash;
+    if (r.pop != null) share = r.shareStated ? `${r.share}%` : `≈ ${(r.pop / c.total * 100).toFixed(1)}%`;
+    tr.appendChild(h("td", { class: "num" }, share));
+    tr.appendChild(h("td", { class: "num" }, r.pop == null ? dash : fmt.format(r.pop)));
+    tbody.appendChild(tr);
+  }
+  container.appendChild(wrap);
+  container.appendChild(h("p", { class: "chart-note" }, loc(c.note)));
+  const s = h("p", { class: "chart-sources" }, `${T.sources}: `);
+  c.sources.forEach((x, i) => { if (i) s.appendChild(document.createTextNode(" · ")); s.appendChild(srcLink(x.label, x.url)); });
+  container.appendChild(s);
+}
+
 async function main() {
   let data;
   try {
@@ -274,6 +338,12 @@ async function main() {
   }
   const get = id => document.querySelector(`[data-chart="${id}"]`);
   if (get("detention")) lineChart(get("detention"), data.detention);
+  const pr = document.getElementById("pop-root");
+  if (pr && data.population) {
+    pr.replaceChildren();
+    popStatus(pr, data.population.status);
+    popCompare(pr, data.population.compare);
+  }
   const sp = document.getElementById("feature-spark");
   if (sp && data.detention) spark(sp, data.detention);
   if (get("bookins")) barChart(get("bookins"), data.bookins, { split: true });

@@ -666,3 +666,13 @@ button.tile[aria-pressed="true"] { background: var(--red); }
   .page-help .masthead-actions .lang button { padding: 0.25rem 0.45rem; font-size: 0.8rem; }
   .page-help .masthead-actions .btn-sm { padding: 0 0.5rem; font-size: 0.8rem; }
 }
+
+/* "Who lives here" tables (v26) */
+.pop h4 { font-family: var(--serif, Georgia, serif); font-weight: 600; color: var(--navy, #14213d); font-size: 1.3rem; margin: 1.5rem 0 0.25rem; }
+.pop-table { min-width: 34rem; }
+.pop-table th[scope="row"] { font-weight: 700; color: var(--ink); }
+.pop-table td.num { white-space: nowrap; font-weight: 700; color: var(--navy, #14213d); }
+.pop-detail { display: block; margin-top: 0.3rem; font-weight: 400; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.4; max-width: 30rem; }
+.pop-table tr.has-detail th, .pop-table tr.has-detail td { background: var(--mist, #f4f6f8); }
+.facts > div { grid-template-columns: 7.5rem minmax(0, 1fr); } .facts dd a { white-space: normal; } @media (max-width: 399px) { .facts > div { grid-template-columns: 5.5rem minmax(0, 1fr); } }
+.pop-read { margin: 0.25rem 0 0.5rem; padding: 0.7rem 0.9rem; background: var(--mist, #f4f6f8); border-radius: 8px; font-size: 1rem; max-width: 46rem; } .pop-table th[scope="col"] { vertical-align: bottom; font-size: 0.9rem; }

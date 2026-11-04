@@ -426,5 +426,283 @@
         "value": 1.3
       }
     ]
+  },
+  "population": {
+    "checked": "2026-11-04",
+    "status": {
+      "title": {
+        "en": "Who lives here, by status",
+        "es": "Quién vive aquí, según su estatus"
+      },
+      "head": {
+        "en": [
+          "Group",
+          "Number",
+          "As of",
+          "Source"
+        ],
+        "es": [
+          "Grupo",
+          "Cifra",
+          "Fecha",
+          "Fuente"
+        ]
+      },
+      "rows": [
+        {
+          "label": {
+            "en": "Everyone born in another country",
+            "es": "Todas las personas nacidas en otro país"
+          },
+          "value": {
+            "en": "50.2 million",
+            "es": "50.2 millones"
+          },
+          "asof": "2024",
+          "src": {
+            "en": "Census Bureau ACS, via Congressional Research Service",
+            "es": "ACS de la Oficina del Censo, vía el Servicio de Investigación del Congreso"
+          },
+          "url": "https://www.everycrsreport.com/reports/R48940.html"
+        },
+        {
+          "label": {
+            "en": "Naturalized U.S. citizens",
+            "es": "Ciudadanos estadounidenses naturalizados"
+          },
+          "value": {
+            "en": "25.8 million",
+            "es": "25.8 millones"
+          },
+          "asof": "2024",
+          "src": {
+            "en": "Census Bureau ACS, via Congressional Research Service",
+            "es": "ACS de la Oficina del Censo, vía el Servicio de Investigación del Congreso"
+          },
+          "url": "https://www.everycrsreport.com/files/2026-09-22_IF11806_2b429d2e6a40f9f4a4127028843cbe681dc04dc1.html"
+        },
+        {
+          "label": {
+            "en": "Green card holders (lawful permanent residents)",
+            "es": "Residentes permanentes legales (tarjeta verde)"
+          },
+          "value": {
+            "en": "12.8 million",
+            "es": "12.8 millones"
+          },
+          "asof": "Jan 2024",
+          "src": {
+            "en": "DHS Office of Homeland Security Statistics, via Congressional Research Service",
+            "es": "Oficina de Estadísticas de Seguridad Nacional del DHS, vía el Servicio de Investigación del Congreso"
+          },
+          "url": "https://www.everycrsreport.com/files/2026-09-22_IF11806_2b429d2e6a40f9f4a4127028843cbe681dc04dc1.html"
+        },
+        {
+          "label": {
+            "en": "Temporary visa holders (workers, students, others)",
+            "es": "Personas con visa temporal (trabajadores, estudiantes y otros)"
+          },
+          "value": {
+            "en": "3.6 million",
+            "es": "3.6 millones"
+          },
+          "asof": "FY2024",
+          "src": {
+            "en": "DHS Office of Homeland Security Statistics, via Congressional Research Service",
+            "es": "Oficina de Estadísticas de Seguridad Nacional del DHS, vía el Servicio de Investigación del Congreso"
+          },
+          "url": "https://www.everycrsreport.com/files/2026-09-22_IF11806_2b429d2e6a40f9f4a4127028843cbe681dc04dc1.html"
+        },
+        {
+          "label": {
+            "en": "Temporary permission or protection: TPS, DACA, parole, pending asylum and others",
+            "es": "Permiso o protección temporal: TPS, DACA, permiso de permanencia temporal, asilo pendiente y otros"
+          },
+          "value": {
+            "en": "about 6 million",
+            "es": "cerca de 6 millones"
+          },
+          "asof": "2023",
+          "src": {
+            "en": "Pew Research Center",
+            "es": "Pew Research Center"
+          },
+          "url": "https://www.pewresearch.org/race-and-ethnicity/2025/08/21/u-s-unauthorized-immigrant-population-reached-a-record-14-million-in-2023/",
+          "detail": {
+            "en": "Allowed to stay for now, but not a green card, and it can end. Pew's breakdown: pending asylum 2.6 million, parole 700,000, crime-victim protection 700,000, TPS 650,000, DACA 600,000. Pew counts this group inside its unauthorized total below.",
+            "es": "Se les permite quedarse por ahora, pero no es una tarjeta verde y puede terminar. Desglose de Pew: asilo pendiente 2.6 millones, permiso de permanencia temporal 700,000, protección para víctimas de delitos 700,000, TPS 650,000, DACA 600,000. Pew incluye este grupo dentro de su total de personas sin autorización, abajo."
+          }
+        },
+        {
+          "label": {
+            "en": "Unauthorized, including the group above (estimates)",
+            "es": "Sin autorización, incluido el grupo anterior (estimaciones)"
+          },
+          "value": {
+            "en": "11.0 to 15.8 million",
+            "es": "11.0 a 15.8 millones"
+          },
+          "asof": "2022–2024",
+          "src": {
+            "en": "DHS (11.0M, Jan 2022); Pew (14.0M, 2023); MPI and CMS (14.6–15.8M, 2024), via Congressional Research Service",
+            "es": "DHS (11.0 M, ene. 2022); Pew (14.0 M, 2023); MPI y CMS (14.6–15.8 M, 2024), vía el Servicio de Investigación del Congreso"
+          },
+          "url": "https://www.everycrsreport.com/files/2026-09-22_IF11806_2b429d2e6a40f9f4a4127028843cbe681dc04dc1.html",
+          "extra": [
+            {
+              "label": "DHS",
+              "url": "https://dhs.gov/sites/default/files/2024-05/2024_0418_ohss_estimates-of-the-unauthorized-immigrant-population-residing-in-the-united-states-january-2018%E2%80%93january-2022.pdf"
+            },
+            {
+              "label": "Pew",
+              "url": "https://www.pewresearch.org/race-and-ethnicity/2025/08/21/u-s-unauthorized-immigrant-population-reached-a-record-14-million-in-2023/"
+            },
+            {
+              "label": "CRS",
+              "url": "https://www.everycrsreport.com/reports/R48940.html"
+            }
+          ],
+          "detail": {
+            "en": "No survey asks about legal status. Researchers estimate this by subtracting people known to be here legally from the Census total, so estimates differ by millions. DHS's own estimate has not been updated since January 2022.",
+            "es": "Ninguna encuesta pregunta por el estatus legal. Los investigadores lo estiman restando del total del Censo a las personas que se sabe que están aquí legalmente, por eso las estimaciones difieren por millones. La estimación del propio DHS no se ha actualizado desde enero de 2022."
+          }
+        }
+      ],
+      "note": {
+        "en": "Rows come from different years and sources, so they do not add up to the total.",
+        "es": "Las filas provienen de años y fuentes distintos, por eso no suman el total."
+      }
+    },
+    "compare": {
+      "title": {
+        "en": "ICE arrests compared with the unauthorized population, by country of birth",
+        "es": "Arrestos de ICE comparados con la población sin autorización, por país de nacimiento"
+      },
+      "head": {
+        "en": [
+          "Country of birth",
+          "Of every 100 ICE arrests, how many were born here (Jan 2025–Mar 2026)",
+          "Of every 100 unauthorized immigrants, how many were born here (2023)",
+          "Unauthorized immigrants born here (2023)"
+        ],
+        "es": [
+          "País de nacimiento",
+          "De cada 100 arrestos de ICE, cuántos nacieron aquí (ene. 2025–mar. 2026)",
+          "De cada 100 inmigrantes sin autorización, cuántos nacieron aquí (2023)",
+          "Inmigrantes sin autorización nacidos aquí (2023)"
+        ]
+      },
+      "total": 14000000,
+      "rows": [
+        {
+          "label": {
+            "en": "Mexico",
+            "es": "México"
+          },
+          "arrests": 39.5,
+          "pop": 4300000,
+          "share": 30,
+          "shareStated": true
+        },
+        {
+          "label": {
+            "en": "Guatemala",
+            "es": "Guatemala"
+          },
+          "arrests": 13.9,
+          "pop": 850000
+        },
+        {
+          "label": {
+            "en": "Honduras",
+            "es": "Honduras"
+          },
+          "arrests": 10.6,
+          "pop": 775000
+        },
+        {
+          "label": {
+            "en": "Venezuela",
+            "es": "Venezuela"
+          },
+          "arrests": 6.4,
+          "pop": 650000
+        },
+        {
+          "label": {
+            "en": "Nicaragua",
+            "es": "Nicaragua"
+          },
+          "arrests": 3.1,
+          "pop": null
+        },
+        {
+          "label": {
+            "en": "Colombia",
+            "es": "Colombia"
+          },
+          "arrests": 3.0,
+          "pop": null
+        },
+        {
+          "label": {
+            "en": "Ecuador",
+            "es": "Ecuador"
+          },
+          "arrests": 2.9,
+          "pop": null
+        },
+        {
+          "label": {
+            "en": "Brazil",
+            "es": "Brasil"
+          },
+          "arrests": 1.3,
+          "pop": null
+        },
+        {
+          "label": {
+            "en": "El Salvador",
+            "es": "El Salvador"
+          },
+          "arrests": null,
+          "pop": 850000
+        },
+        {
+          "label": {
+            "en": "India",
+            "es": "India"
+          },
+          "arrests": null,
+          "pop": 680000
+        },
+        {
+          "label": {
+            "en": "Cuba",
+            "es": "Cuba"
+          },
+          "arrests": null,
+          "pop": 475000
+        }
+      ],
+      "note": {
+        "en": "Arrest shares: Deportation Data Project records as reported by Conexión Migrante (top 8 only). Population: Pew Research Center, 2023 (Pew publishes figures for its largest groups only). Shares other than Mexico's are our arithmetic from Pew's numbers (country ÷ 14.0 million) and are approximate. The two columns cover different years; “—” means not published.",
+        "es": "Proporción de arrestos: registros del Deportation Data Project según Conexión Migrante (solo los 8 principales). Población: Pew Research Center, 2023 (Pew publica cifras solo para sus grupos más grandes). Las proporciones, salvo la de México, son nuestro cálculo con las cifras de Pew (país ÷ 14.0 millones) y son aproximadas. Las columnas cubren años distintos; “—” significa que no se publicó."
+      },
+      "sources": [
+        {
+          "label": "Conexión Migrante / Deportation Data Project",
+          "url": "https://conexionmigrante.com/2026-/08-/11/nacionalidades-con-mas-detenidos-por-ice-mexico-ocupa-el-primer-lugar/"
+        },
+        {
+          "label": "Pew Research Center",
+          "url": "https://www.pewresearch.org/race-and-ethnicity/2025/08/21/u-s-unauthorized-immigrant-population-reached-a-record-14-million-in-2023/"
+        }
+      ],
+      "read": {
+        "en": "How to read this: each percentage column splits a different group by country. It does not show what share of each country's immigrants were arrested. Example: about 40 of every 100 people ICE arrested were born in Mexico, while 30 of every 100 unauthorized immigrants were born in Mexico.",
+        "es": "Cómo leer esta tabla: cada columna de porcentajes divide a un grupo distinto por país. No muestra qué proporción de los inmigrantes de cada país fue arrestada. Ejemplo: cerca de 40 de cada 100 personas arrestadas por ICE nacieron en México, mientras que 30 de cada 100 inmigrantes sin autorización nacieron en México."
+      }
+    }
   }
 }
