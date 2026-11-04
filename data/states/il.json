@@ -47,16 +47,13 @@
       "primary": true
     },
     {
-      "name": "NIJC Detention Project hotline",
-      "phone": "773-672-6599",
-      "hours": {
-        "en": "Every other Tuesday, 12–3pm ET",
-        "es": "Martes alternos, 12–3pm hora del Este"
-      },
+      "name": "NIJC collect line for people in ICE detention",
+      "phone": "312-583-9721",
+      "hours": null,
       "languages": null,
       "what": {
-        "en": "For families of people detained by ICE or CBP (Indiana residents only)",
-        "es": "Para familias de personas detenidas por ICE o CBP (solo residentes de Indiana)"
+        "en": "For people held in an ICE detention center; call collect",
+        "es": "Para personas retenidas en un centro de detención de ICE; llamada por cobrar"
       },
       "url": "https://immigrantjustice.org/contact-us/"
     }
