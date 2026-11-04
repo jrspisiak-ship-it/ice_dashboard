@@ -77,6 +77,45 @@ function currentCode() {
 function readSaved() { try { return localStorage.getItem("state"); } catch (_) { return null; } }
 function save(code) { try { localStorage.setItem("state", code); } catch (_) { /* ignore */ } }
 
+/* Tile map: one square per state at a fixed [column, row]. Covered states
+   (from the allowlist) are real buttons; the rest are decoration only. */
+const TILES = {
+  AK:[1,1],ME:[11,1],VT:[10,2],NH:[11,2],
+  WA:[1,3],ID:[2,3],MT:[3,3],ND:[4,3],MN:[5,3],IL:[6,3],WI:[7,3],MI:[8,3],NY:[9,3],RI:[10,3],MA:[11,3],
+  OR:[1,4],NV:[2,4],WY:[3,4],SD:[4,4],IA:[5,4],IN:[6,4],OH:[7,4],PA:[8,4],NJ:[9,4],CT:[10,4],
+  CA:[1,5],UT:[2,5],CO:[3,5],NE:[4,5],MO:[5,5],KY:[6,5],WV:[7,5],VA:[8,5],MD:[9,5],DE:[10,5],
+  AZ:[2,6],NM:[3,6],KS:[4,6],AR:[5,6],TN:[6,6],NC:[7,6],SC:[8,6],DC:[9,6],
+  OK:[4,7],LA:[5,7],MS:[6,7],AL:[7,7],GA:[8,7],
+  HI:[1,8],TX:[4,8],FL:[9,8]
+};
+
+function choose(root, c) {
+  if (!ALLOW.some(s => s.code === c)) return;
+  save(c);
+  const u = new URL(location.href); u.searchParams.set("state", c); u.hash = "georgia";
+  history.replaceState(null, "", u);
+  loadState(root, c);
+}
+
+function renderMap(root, code) {
+  const map = el("div", { class: "tilemap", role: "group", "aria-label": TS.pick });
+  for (const [abbr, [col, row]] of Object.entries(TILES)) {
+    const s = ALLOW.find(x => x.code === abbr);
+    let n;
+    if (s) {
+      n = el("button", { type: "button", class: "tile on", "aria-pressed": String(abbr === code),
+        "aria-label": LANG_S === "es" ? (s.name_es || s.name) : s.name }, abbr);
+      n.addEventListener("click", () => choose(root, abbr));
+    } else {
+      n = el("span", { class: "tile", "aria-hidden": "true" }, abbr);
+    }
+    n.style.gridColumn = String(col);
+    n.style.gridRow = String(row);
+    map.appendChild(n);
+  }
+  return map;
+}
+
 function renderPicker(root, code) {
   const wrap = el("div", { class: "state-pick" });
   const lab = el("label", { for: "statePicker" }, TS.pick);
@@ -86,14 +125,8 @@ function renderPicker(root, code) {
     if (s.code === code) o.selected = true;
     sel.appendChild(o);
   }
-  sel.addEventListener("change", () => {
-    const c = sel.value;
-    if (!ALLOW.some(s => s.code === c)) return;
-    save(c);
-    const u = new URL(location.href); u.searchParams.set("state", c); u.hash = "georgia";
-    history.replaceState(null, "", u);
-    loadState(root, c);
-  });
+  sel.addEventListener("change", () => choose(root, sel.value));
+  wrap.appendChild(renderMap(root, code));
   wrap.appendChild(lab); wrap.appendChild(sel);
   const more = el("p", { class: "small" }, TS.more + " ");
   more.appendChild(link("correct.html", TS.suggest));
