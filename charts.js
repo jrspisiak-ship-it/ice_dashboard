@@ -304,16 +304,17 @@ function popStatus(container, s) {
 
 function popCompare(container, c) {
   container.appendChild(h("h4", {}, loc(c.title)));
+  if (c.read) container.appendChild(h("p", { class: "pop-read" }, loc(c.read)));
   const { wrap, tbody } = popTable(c.head);
   const dash = "—";
   for (const r of c.rows) {
     const tr = h("tr");
     tr.appendChild(h("th", { scope: "row" }, loc(r.label)));
     tr.appendChild(h("td", { class: "num" }, r.arrests == null ? dash : `${r.arrests.toFixed(1)}%`));
-    tr.appendChild(h("td", { class: "num" }, r.pop == null ? dash : fmt.format(r.pop)));
     let share = dash;
     if (r.pop != null) share = r.shareStated ? `${r.share}%` : `≈ ${(r.pop / c.total * 100).toFixed(1)}%`;
     tr.appendChild(h("td", { class: "num" }, share));
+    tr.appendChild(h("td", { class: "num" }, r.pop == null ? dash : fmt.format(r.pop)));
     tbody.appendChild(tr);
   }
   container.appendChild(wrap);

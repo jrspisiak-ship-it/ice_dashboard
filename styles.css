@@ -675,3 +675,4 @@ button.tile[aria-pressed="true"] { background: var(--red); }
 .pop-detail { display: block; margin-top: 0.3rem; font-weight: 400; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.4; max-width: 30rem; }
 .pop-table tr.has-detail th, .pop-table tr.has-detail td { background: var(--mist, #f4f6f8); }
 .facts > div { grid-template-columns: 7.5rem minmax(0, 1fr); } .facts dd a { white-space: normal; } @media (max-width: 399px) { .facts > div { grid-template-columns: 5.5rem minmax(0, 1fr); } }
+.pop-read { margin: 0.25rem 0 0.5rem; padding: 0.7rem 0.9rem; background: var(--mist, #f4f6f8); border-radius: 8px; font-size: 1rem; max-width: 46rem; } .pop-table th[scope="col"] { vertical-align: bottom; font-size: 0.9rem; }

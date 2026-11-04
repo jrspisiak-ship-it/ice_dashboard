@@ -575,21 +575,21 @@
     },
     "compare": {
       "title": {
-        "en": "Share of ICE arrests vs. share of the unauthorized population",
-        "es": "Proporción de arrestos de ICE frente a proporción de la población sin autorización"
+        "en": "ICE arrests compared with the unauthorized population, by country of birth",
+        "es": "Arrestos de ICE comparados con la población sin autorización, por país de nacimiento"
       },
       "head": {
         "en": [
           "Country of birth",
-          "Share of ICE arrests, Jan 2025–Mar 2026",
-          "Unauthorized population, 2023",
-          "Share of unauthorized, 2023"
+          "Of every 100 ICE arrests, how many were born here (Jan 2025–Mar 2026)",
+          "Of every 100 unauthorized immigrants, how many were born here (2023)",
+          "Unauthorized immigrants born here (2023)"
         ],
         "es": [
           "País de nacimiento",
-          "Proporción de arrestos de ICE, ene. 2025–mar. 2026",
-          "Población sin autorización, 2023",
-          "Proporción del total sin autorización, 2023"
+          "De cada 100 arrestos de ICE, cuántos nacieron aquí (ene. 2025–mar. 2026)",
+          "De cada 100 inmigrantes sin autorización, cuántos nacieron aquí (2023)",
+          "Inmigrantes sin autorización nacidos aquí (2023)"
         ]
       },
       "total": 14000000,
@@ -698,7 +698,11 @@
           "label": "Pew Research Center",
           "url": "https://www.pewresearch.org/race-and-ethnicity/2025/08/21/u-s-unauthorized-immigrant-population-reached-a-record-14-million-in-2023/"
         }
-      ]
+      ],
+      "read": {
+        "en": "How to read this: each percentage column splits a different group by country. It does not show what share of each country's immigrants were arrested. Example: about 40 of every 100 people ICE arrested were born in Mexico, while 30 of every 100 unauthorized immigrants were born in Mexico.",
+        "es": "Cómo leer esta tabla: cada columna de porcentajes divide a un grupo distinto por país. No muestra qué proporción de los inmigrantes de cada país fue arrestada. Ejemplo: cerca de 40 de cada 100 personas arrestadas por ICE nacieron en México, mientras que 30 de cada 100 inmigrantes sin autorización nacieron en México."
+      }
     }
   }
 }
