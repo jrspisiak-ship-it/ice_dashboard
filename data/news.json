@@ -1,10 +1,67 @@
 {
-  "reviewed": "2026-11-02",
+  "reviewed": "2026-11-09",
   "window": {
-    "en": "Oct 3 – Nov 2, 2026",
-    "es": "3 oct. – 2 nov. de 2026"
+    "en": "Oct 10 – Nov 9, 2026",
+    "es": "10 oct. – 9 nov. de 2026"
   },
   "supporters": [
+    {
+      "url": "https://www.cbsnews.com/news/ice-crackdown-stephen-miller-illegal-immigration/",
+      "outlet": {
+        "en": "CBS News",
+        "es": "CBS News"
+      },
+      "date_label": {
+        "en": "Nov 8, 2026",
+        "es": "8 nov. 2026"
+      },
+      "headline": {
+        "en": "ICE unlikely to scale back crackdown, sources say, citing Stephen Miller's promotion",
+        "es": "Es poco probable que ICE reduzca su ofensiva, según fuentes, que citan el ascenso de Stephen Miller"
+      },
+      "summary": {
+        "en": "Officials told CBS News the administration does not plan to ease enforcement after the midterms, and ICE was recently told to aim for about 19,000 arrests a week. ICE has $75 billion in funding through 2029, while Democrats will gain oversight power when they take control of Congress in January.",
+        "es": "Funcionarios dijeron a CBS News que el gobierno no planea reducir la aplicación de la ley tras las elecciones de medio mandato, y que a ICE se le indicó recientemente apuntar a unos 19,000 arrestos por semana. ICE tiene $75,000 millones en fondos hasta 2029, mientras que los demócratas tendrán poder de supervisión cuando asuman el control del Congreso en enero."
+      }
+    },
+    {
+      "url": "https://www.freightwaves.com/news/230-plus-immigrants-arrested-in-crackdown-targeting-unauthorized-cdl-holders",
+      "outlet": {
+        "en": "FreightWaves",
+        "es": "FreightWaves"
+      },
+      "date_label": {
+        "en": "Nov 2, 2026",
+        "es": "2 nov. 2026"
+      },
+      "headline": {
+        "en": "230-plus immigrants arrested in crackdown targeting unauthorized CDL holders",
+        "es": "Más de 230 inmigrantes arrestados en una operación contra titulares de licencias comerciales de conducir no autorizadas"
+      },
+      "summary": {
+        "en": "DHS says a 72-hour operation with 15 states, including Georgia, led to more than 230 arrests of undocumented immigrants, over 40 of them commercial driver's license holders. DHS did not give a state-by-state breakdown or say how many licenses were obtained by fraud.",
+        "es": "El DHS dice que una operación de 72 horas con 15 estados, incluido Georgia, resultó en más de 230 arrestos de inmigrantes indocumentados, más de 40 de ellos titulares de licencias comerciales de conducir. El DHS no dio un desglose por estado ni dijo cuántas licencias se obtuvieron de forma fraudulenta."
+      }
+    },
+    {
+      "url": "https://news.bloomberglaw.com/litigation/diversity-immigrant-visa-lottery-can-remain-paused-as-us-appeals",
+      "outlet": {
+        "en": "Bloomberg Law",
+        "es": "Bloomberg Law"
+      },
+      "date_label": {
+        "en": "Oct 30, 2026",
+        "es": "30 oct. 2026"
+      },
+      "headline": {
+        "en": "Diversity Immigrant Visa Lottery Can Remain Paused as US Appeals",
+        "es": "La lotería de visas de diversidad puede seguir suspendida mientras EE. UU. apela"
+      },
+      "summary": {
+        "en": "The 9th Circuit put on hold a lower-court order that would have forced the State Department to open registration for the 2027 diversity visa lottery by Nov. 1. The panel said the law firm that sued likely lacks standing; the program has been suspended since December 2025.",
+        "es": "El Noveno Circuito suspendió una orden de un tribunal inferior que habría obligado al Departamento de Estado a abrir la inscripción para la lotería de visas de diversidad 2027 antes del 1 de noviembre. El panel dijo que el bufete de abogados que demandó probablemente no tiene legitimación; el programa está suspendido desde diciembre de 2025."
+      }
+    },
     {
       "url": "https://gvwire.com/2026/10/27/supreme-court-denies-immigration-judges-the-power-to-shelve-deportation-cases/",
       "outlet": {
@@ -25,100 +82,81 @@
       }
     },
     {
-      "url": "https://www.staradvertiser.com/2026/10/23/breaking-news/court-rules-constitution-does-not-guarantee-bond-hearings-for-migrants/",
+      "url": "https://kvia.com/news/border/2026/10/16/cbp-records-lowest-migrant-border-crossings-in-us-history/",
       "outlet": {
-        "en": "Reuters (via Honolulu Star-Advertiser)",
-        "es": "Reuters (vía Honolulu Star-Advertiser)"
+        "en": "KVIA ABC-7 El Paso",
+        "es": "KVIA ABC-7 El Paso"
       },
       "date_label": {
-        "en": "Oct 23, 2026",
-        "es": "23 oct. 2026"
+        "en": "Oct 16, 2026",
+        "es": "16 oct. 2026"
       },
       "headline": {
-        "en": "Appeals court rules Constitution does not guarantee bond hearings for migrants",
-        "es": "Tribunal de apelaciones dictamina que la Constitución no garantiza audiencias de fianza para migrantes"
+        "en": "CBP records lowest migrant border crossings in US history",
+        "es": "CBP registra el menor número de cruces fronterizos de migrantes en la historia de EE. UU."
       },
       "summary": {
-        "en": "The full 5th Circuit ruled 10-7 that due process does not require bond hearings for people held in immigration detention, reversing a July panel decision. The ruling covers Texas, Louisiana and Mississippi; the Supreme Court will separately decide whether federal law requires such hearings.",
-        "es": "El pleno del Quinto Circuito decidió 10 a 7 que el debido proceso no exige audiencias de fianza para las personas en detención migratoria, y revocó un fallo de julio. La decisión aplica en Texas, Luisiana y Misisipi; la Corte Suprema decidirá por separado si la ley federal exige esas audiencias."
-      }
-    },
-    {
-      "url": "https://www.dailywire.com/news/exclusive-trump-admin-hits-historic-milestone-in-immigration-crackdown",
-      "outlet": {
-        "en": "The Daily Wire",
-        "es": "The Daily Wire"
-      },
-      "date_label": {
-        "en": "Oct 29, 2026",
-        "es": "29 oct. 2026"
-      },
-      "headline": {
-        "en": "EXCLUSIVE: Trump Admin Hits Historic Milestone In Immigration Crackdown",
-        "es": "EXCLUSIVA: El gobierno de Trump alcanza un hito histórico en su ofensiva migratoria"
-      },
-      "summary": {
-        "en": "DHS says USCIS has moved to revoke or end the immigration status of about 2.2 million people since January 2025, including TPS terminations for 13 countries and the end of automatic work-permit extensions. The article notes it is unclear how many of them have actually lost status, and some terminations are on hold in court.",
-        "es": "El DHS dice que USCIS ha actuado para revocar o terminar el estatus migratorio de unos 2.2 millones de personas desde enero de 2025, incluida la terminación del TPS para 13 países y el fin de las extensiones automáticas de permisos de trabajo. El artículo señala que no está claro cuántas de ellas han perdido el estatus en realidad, y algunas terminaciones están suspendidas por los tribunales."
-      }
-    },
-    {
-      "url": "https://www.pbs.org/newshour/politics/justice-department-charges-more-than-2-dozen-foreign-nationals-in-california-sweep-targeting-noncitizen-voters",
-      "outlet": {
-        "en": "AP via PBS",
-        "es": "AP vía PBS"
-      },
-      "date_label": {
-        "en": "Oct 19, 2026",
-        "es": "19 oct. 2026"
-      },
-      "headline": {
-        "en": "Justice Department charges more than 2 dozen foreign nationals in California sweep targeting noncitizen voters",
-        "es": "El Departamento de Justicia acusa a más de dos docenas de extranjeros en una operación en California contra votantes no ciudadanos"
-      },
-      "summary": {
-        "en": "Federal agents arrested 28 lawful permanent residents in California accused of illegally registering or voting, adding to about 90 election-misconduct cases DOJ has brought this year. Research shows noncitizen voting is rare, and California disputes the federal list of suspected noncitizen voters.",
-        "es": "Agentes federales arrestaron en California a 28 residentes permanentes legales acusados de inscribirse o votar ilegalmente, que se suman a unos 90 casos de delitos electorales presentados por el Departamento de Justicia este año. Los estudios muestran que el voto de no ciudadanos es poco común, y California disputa la lista federal de presuntos votantes no ciudadanos."
-      }
-    },
-    {
-      "url": "https://www.thehansindia.com/news/international/us-reports-record-low-border-apprehensions-1133185",
-      "outlet": {
-        "en": "IANS (via The Hans India)",
-        "es": "IANS (vía The Hans India)"
-      },
-      "date_label": {
-        "en": "Oct 17, 2026",
-        "es": "17 oct. 2026"
-      },
-      "headline": {
-        "en": "US reports record-low border apprehensions",
-        "es": "EE. UU. reporta un mínimo récord de aprehensiones en la frontera"
-      },
-      "summary": {
-        "en": "Preliminary DHS figures show 98,708 Border Patrol apprehensions at the southwest border in fiscal 2026, down about 95% from Biden-era averages, and 379,243 encounters nationwide, which DHS calls the lowest on record. The figures have not yet been checked against final CBP data.",
-        "es": "Cifras preliminares del DHS muestran 98,708 aprehensiones de la Patrulla Fronteriza en la frontera suroeste en el año fiscal 2026, alrededor de 95% menos que el promedio de la era Biden, y 379,243 encuentros en todo el país, que el DHS describe como la cifra más baja registrada. Las cifras aún no se han comparado con los datos finales de CBP."
+        "en": "CBP reported 98,708 Border Patrol apprehensions at the southwest border in fiscal 2026, down 95%, and 379,243 encounters nationwide, which it calls the lowest in agency history. Several figures are preliminary, and CBP says Border Patrol released no one it apprehended all year.",
+        "es": "CBP reportó 98,708 aprehensiones de la Patrulla Fronteriza en la frontera suroeste en el año fiscal 2026, una baja de 95%, y 379,243 encuentros en todo el país, que describe como la cifra más baja en la historia de la agencia. Varias cifras son preliminares, y CBP dice que la Patrulla Fronteriza no liberó a ninguna de las personas que aprehendió en todo el año."
       }
     }
   ],
   "critics": [
     {
-      "url": "https://www.nbcmiami.com/news/local/ice-deportation-mentally-ill-man-florida-phillip-james-ap-investigation/3878042/",
+      "url": "https://www.thebanner.com/community/local-news/ice-death-van-hollen-laurel-investigation-KELZT3KUZNEFTDP3ZKDGPDO4BY/",
       "outlet": {
-        "en": "AP via NBC Miami",
-        "es": "AP vía NBC Miami"
+        "en": "The Baltimore Banner",
+        "es": "The Baltimore Banner"
       },
       "date_label": {
-        "en": "Oct 27, 2026",
-        "es": "27 oct. 2026"
+        "en": "Nov 6, 2026",
+        "es": "6 nov. 2026"
       },
       "headline": {
-        "en": "ICE pushes to deport mentally ill man who lawyers say was born in Florida",
-        "es": "ICE busca deportar a un hombre con enfermedad mental que, según sus abogados, nació en Florida"
+        "en": "Van Hollen warns of retaliation against wife of Laurel man who died in ICE custody",
+        "es": "Van Hollen advierte sobre represalias contra la esposa de un hombre de Laurel que murió bajo custodia de ICE"
       },
       "summary": {
-        "en": "An AP review found records supporting that Phillip James, held by ICE since January and diagnosed with paranoid schizophrenia, was born in Florida; DHS says his birth certificate is fraudulent but has not shown evidence. His lawyers are awaiting a federal judge's ruling on his release petition.",
-        "es": "Una revisión de AP encontró registros que respaldan que Phillip James, detenido por ICE desde enero y diagnosticado con esquizofrenia paranoide, nació en Florida; el DHS dice que su acta de nacimiento es fraudulenta, pero no ha presentado pruebas. Sus abogados esperan el fallo de un juez federal sobre su petición de liberación."
+        "en": "Sen. Chris Van Hollen asked for an independent investigation into the Sept. 29 death of Julián Curo-Churata, a Maryland resident held in Louisiana, and questioned why DHS moved to deport his wife days after she spoke to the press. ICE says he received proper medical care.",
+        "es": "El senador Chris Van Hollen pidió una investigación independiente sobre la muerte, el 29 de septiembre, de Julián Curo-Churata, residente de Maryland detenido en Luisiana, y cuestionó por qué el DHS inició trámites para deportar a su esposa días después de que ella habló con la prensa. ICE dice que él recibió atención médica adecuada."
+      }
+    },
+    {
+      "url": "https://www.wbur.org/npr/nx-s1-5971283/public-school-enrollment-ice-deportation-birthrate",
+      "outlet": {
+        "en": "NPR (via WBUR)",
+        "es": "NPR (vía WBUR)"
+      },
+      "date_label": {
+        "en": "Nov 6, 2026",
+        "es": "6 nov. 2026"
+      },
+      "headline": {
+        "en": "Why public schools nationwide are facing a massive drop in student enrollment",
+        "es": "Por qué las escuelas públicas de todo el país enfrentan una fuerte caída en la matrícula"
+      },
+      "summary": {
+        "en": "Public school enrollment was already projected to fall by about 2 million students by 2030 because of low birth rates, and education experts say deportations of immigrant families are speeding the decline. Los Angeles officials say campuses will likely have to close.",
+        "es": "Ya se proyectaba que la matrícula en las escuelas públicas bajaría en unos 2 millones de estudiantes para 2030 por la baja natalidad, y expertos en educación dicen que las deportaciones de familias inmigrantes están acelerando la caída. Funcionarios de Los Ángeles dicen que probablemente tendrán que cerrar planteles."
+      }
+    },
+    {
+      "url": "https://www.newsweek.com/judge-scolds-ice-cruelty-arresting-man-just-ordered-released-12663566",
+      "outlet": {
+        "en": "Newsweek",
+        "es": "Newsweek"
+      },
+      "date_label": {
+        "en": "Nov 4, 2026",
+        "es": "4 nov. 2026"
+      },
+      "headline": {
+        "en": "Judge scolds ICE \"cruelty\" for arresting man he just ordered be released",
+        "es": "Juez reprende la \"crueldad\" de ICE por arrestar a un hombre cuya liberación acababa de ordenar"
+      },
+      "summary": {
+        "en": "A federal judge in Colorado found that ICE re-arresting a man moments after his court-ordered release was an ongoing due process violation. He ordered the man freed and barred re-detention without a bond hearing, warning of possible contempt.",
+        "es": "Un juez federal en Colorado concluyó que el nuevo arresto de un hombre por parte de ICE, momentos después de su liberación ordenada por el tribunal, era una violación continua del debido proceso. Ordenó liberarlo y prohibió volver a detenerlo sin una audiencia de fianza, con advertencia de posible desacato."
       }
     },
     {
@@ -141,84 +179,57 @@
       }
     },
     {
-      "url": "https://inewsource.org/2026/10/27/ice-custody-otay-mesa-detention-center-immigrant-death/",
+      "url": "https://www.nbcmiami.com/news/local/ice-deportation-mentally-ill-man-florida-phillip-james-ap-investigation/3878042/",
       "outlet": {
-        "en": "inewsource",
-        "es": "inewsource"
+        "en": "AP via NBC Miami",
+        "es": "AP vía NBC Miami"
       },
       "date_label": {
         "en": "Oct 27, 2026",
         "es": "27 oct. 2026"
       },
       "headline": {
-        "en": "Death of Guatemalan immigrant at Otay Mesa Detention Center 30th in ICE custody this year",
-        "es": "La muerte de un inmigrante guatemalteco en el Centro de Detención de Otay Mesa es la número 30 bajo custodia de ICE este año"
+        "en": "ICE pushes to deport mentally ill man who lawyers say was born in Florida",
+        "es": "ICE busca deportar a un hombre con enfermedad mental que, según sus abogados, nació en Florida"
       },
       "summary": {
-        "en": "A 43-year-old Guatemalan man arrested in Escondido died at the privately run San Diego facility about two weeks after arriving, the 30th death in ICE custody in 2026. The cause is under investigation, and county supervisors have asked ICE and CoreCivic to preserve records.",
-        "es": "Un guatemalteco de 43 años arrestado en Escondido murió en el centro privado de San Diego unas dos semanas después de llegar; es la muerte número 30 bajo custodia de ICE en 2026. La causa está bajo investigación, y supervisores del condado pidieron a ICE y a CoreCivic conservar los registros."
-      }
-    },
-    {
-      "url": "https://cbsnews.com/news/judge-dhs-noncitizen-voters-ruling",
-      "outlet": {
-        "en": "CBS News",
-        "es": "CBS News"
-      },
-      "date_label": {
-        "en": "Oct 22, 2026",
-        "es": "22 oct. 2026"
-      },
-      "headline": {
-        "en": "Judge rules against DHS's policy of knocking on doors to track down possible noncitizen voters",
-        "es": "Jueza falla contra la política del DHS de tocar puertas para buscar a posibles votantes no ciudadanos"
-      },
-      "summary": {
-        "en": "A federal judge ordered immigration agents to stop election-related home visits likely to reach U.S. citizens in nine states, including California and New York, through Election Day. She found the practice likely violates the Voting Rights Act and cited a high risk of errors in DHS target lists.",
-        "es": "Una jueza federal ordenó a los agentes de inmigración suspender hasta el día de las elecciones las visitas a domicilios relacionadas con el voto que probablemente alcancen a ciudadanos estadounidenses en nueve estados, incluidos California y Nueva York. Concluyó que la práctica probablemente viola la Ley de Derecho al Voto y citó un alto riesgo de errores en las listas del DHS."
-      }
-    },
-    {
-      "url": "https://www.newschannel5.com/news/hundreds-of-tennessee-daca-recipients-say-theyre-being-denied-drivers-license-renewals-since-oct-1",
-      "outlet": {
-        "en": "NewsChannel 5 Nashville (WTVF)",
-        "es": "NewsChannel 5 Nashville (WTVF)"
-      },
-      "date_label": {
-        "en": "Oct 8, 2026",
-        "es": "8 oct. 2026"
-      },
-      "headline": {
-        "en": "Hundreds of Tennessee DACA recipients say they're being denied driver's license renewals since Oct. 1",
-        "es": "Cientos de beneficiarios de DACA en Tennessee dicen que les niegan la renovación de la licencia de conducir desde el 1 de octubre"
-      },
-      "summary": {
-        "en": "Tennessee now says a DACA work permit alone does not prove authorized stay for a temporary driver's license, and hundreds of recipients report being turned away. Advocates say TPS holders, refugees and others with work permits face similar denials.",
-        "es": "Tennessee ahora dice que un permiso de trabajo de DACA por sí solo no demuestra una estadía autorizada para obtener una licencia de conducir temporal, y cientos de beneficiarios dicen que los han rechazado. Defensores de inmigrantes dicen que titulares de TPS, refugiados y otras personas con permiso de trabajo enfrentan rechazos similares."
+        "en": "An AP review found records supporting that Phillip James, held by ICE since January and diagnosed with paranoid schizophrenia, was born in Florida; DHS says his birth certificate is fraudulent but has not shown evidence. His lawyers are awaiting a federal judge's ruling on his release petition.",
+        "es": "Una revisión de AP encontró registros que respaldan que Phillip James, detenido por ICE desde enero y diagnosticado con esquizofrenia paranoide, nació en Florida; el DHS dice que su acta de nacimiento es fraudulenta, pero no ha presentado pruebas. Sus abogados esperan el fallo de un juez federal sobre su petición de liberación."
       }
     }
   ],
   "also": [
     {
-      "url": "https://www.click2houston.com/news/politics/2026/10/22/deportations-climb-under-trump-but-fall-short-of-white-house-target-a-new-report-finds/",
+      "url": "https://wjla.com/news/nation-world/attorney-general-james-says-ruling-upholds-new-yorks-ban-on-local-ice-partnership-deals",
       "text": {
-        "en": "a Migration Policy Institute analysis estimates about 980,000 deportations in the first 18 months of Trump's second term, up 26% a year over the 2021–2024 average but short of the White House goal",
-        "es": "un análisis del Migration Policy Institute calcula unas 980,000 deportaciones en los primeros 18 meses del segundo mandato de Trump, 26% más por año que el promedio de 2021–2024, pero por debajo de la meta de la Casa Blanca"
+        "en": "a federal judge declined to block New York's ban on local ICE partnership agreements, finding 15 sheriffs who sued had not shown they could bring the case",
+        "es": "un juez federal se negó a bloquear la prohibición de Nueva York a los acuerdos locales de colaboración con ICE, al concluir que los 15 alguaciles que demandaron no demostraron que pudieran presentar el caso"
       },
       "link": {
-        "en": "AP via KPRC, Oct 22",
-        "es": "AP vía KPRC, 22 oct."
+        "en": "WJLA, Nov 5",
+        "es": "WJLA, 5 nov."
       }
     },
     {
-      "url": "https://www.ajc.com/news/2026/10/homeland-security-grants-temporary-deportation-reprieve-for-more-than-100k-ukrainians-and-sudanese/",
+      "url": "https://www.staradvertiser.com/2026/10/23/breaking-news/court-rules-constitution-does-not-guarantee-bond-hearings-for-migrants/",
       "text": {
-        "en": "DHS let about 101,000 Ukrainians and 1,800 Sudanese with TPS stay past their Oct. 19 end date for now, without saying for how long",
-        "es": "el DHS permitió por ahora que unos 101,000 ucranianos y 1,800 sudaneses con TPS permanezcan después de la fecha de vencimiento del 19 de octubre, sin decir por cuánto tiempo"
+        "en": "the full 5th Circuit ruled 10-7 that the Constitution does not guarantee bond hearings for people in immigration detention in Texas, Louisiana and Mississippi",
+        "es": "el pleno del Quinto Circuito decidió 10 a 7 que la Constitución no garantiza audiencias de fianza para las personas en detención migratoria en Texas, Luisiana y Misisipi"
       },
       "link": {
-        "en": "AP via AJC, Oct 19",
-        "es": "AP vía AJC, 19 oct."
+        "en": "Reuters via Honolulu Star-Advertiser, Oct 23",
+        "es": "Reuters vía Honolulu Star-Advertiser, 23 oct."
+      }
+    },
+    {
+      "url": "https://www.kpbs.org/news/border-immigration/2026/10/29/medical-examiner-corrects-id-of-man-who-died-in-ice-custody-at-otay-mesa-detention-center",
+      "text": {
+        "en": "San Diego's medical examiner identified the man who died Oct. 24 in ICE custody at Otay Mesa as Guillermo Pascual Verganza, 43, of Guatemala, correcting the name ICE released",
+        "es": "el médico forense de San Diego identificó al hombre que murió el 24 de octubre bajo custodia de ICE en Otay Mesa como Guillermo Pascual Verganza, guatemalteco de 43 años, y corrigió el nombre que había divulgado ICE"
+      },
+      "link": {
+        "en": "KPBS, Oct 29",
+        "es": "KPBS, 29 oct."
       }
     }
   ]
