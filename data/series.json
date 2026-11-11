@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-04",
+  "checked": "2026-11-11",
   "detention": {
     "title": {
       "en": "People held in ICE detention",
@@ -210,8 +210,8 @@
     },
     "unit": "people",
     "note": {
-      "en": "Arrests by ICE (not Border Patrol). Figures from the Deportation Data Project (UC Berkeley) as reported by AP/NPR/Stateline; August 2026 is DHS's own announced figure, not yet independently published. Rounded values are marked approximate.",
-      "es": "Arrestos de ICE (no de la Patrulla Fronteriza). Cifras del Deportation Data Project (UC Berkeley) según AP/NPR/Stateline; agosto de 2026 es la cifra anunciada por el propio DHS, aún no publicada de forma independiente. Los valores redondeados se marcan como aproximados."
+      "en": "Arrests by ICE (not Border Patrol). Figures from the Deportation Data Project (UC Berkeley) as reported by AP/NPR/Stateline; August 2026 is DHS's own announced figure and September 2026 ('more than 48,000') is from an administration official as reported by NBC News/Telemundo; neither is independently published yet. Rounded values are marked approximate.",
+      "es": "Arrestos de ICE (no de la Patrulla Fronteriza). Cifras del Deportation Data Project (UC Berkeley) según AP/NPR/Stateline; agosto de 2026 es la cifra anunciada por el propio DHS y septiembre de 2026 ('más de 48,000') proviene de un funcionario del gobierno según NBC News/Telemundo; ninguna se ha publicado aún de forma independiente. Los valores redondeados se marcan como aproximados."
     },
     "points": [
       {
@@ -268,6 +268,12 @@
         "value": 50925,
         "approx": true,
         "url": "https://www.executivegov.com/articles/ice-arrests-august-2026-record"
+      },
+      {
+        "date": "2026-09",
+        "value": 48000,
+        "approx": true,
+        "url": "https://www.telemundo.com/noticias/noticias-telemundo/inmigracion/ice-arresto-a-mas-de-48000-inmigrantes-en-septiembre-mientras-mantiene-rcna601159"
       }
     ]
   },
