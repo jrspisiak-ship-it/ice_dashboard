@@ -1,10 +1,29 @@
 {
-  "reviewed": "2026-11-09",
+  "reviewed": "2026-11-16",
   "window": {
-    "en": "Oct 10 – Nov 9, 2026",
-    "es": "10 oct. – 9 nov. de 2026"
+    "en": "Oct 17 – Nov 16, 2026",
+    "es": "17 oct. – 16 nov. de 2026"
   },
   "supporters": [
+    {
+      "url": "https://www.clickorlando.com/news/politics/2026/11/12/ice-reports-record-high-immigration-arrests-and-deportations-since-trumps-return-to-white-house/",
+      "outlet": {
+        "en": "AP via WKMG ClickOrlando",
+        "es": "AP vía WKMG ClickOrlando"
+      },
+      "date_label": {
+        "en": "Nov 12, 2026",
+        "es": "12 nov. 2026"
+      },
+      "headline": {
+        "en": "ICE reports record-high immigration arrests and deportations since Trump's return to White House",
+        "es": "ICE reporta cifras récord de arrestos y deportaciones desde el regreso de Trump a la Casa Blanca"
+      },
+      "summary": {
+        "en": "DHS says ICE carried out 483,200 deportations in fiscal 2026, up 9% from the prior year's record and the most in the agency's history, along with record arrests. DHS gave no breakdown of criminal histories, and the total remains below the White House goal of 1 million a year.",
+        "es": "El DHS dice que ICE realizó 483,200 deportaciones en el año fiscal 2026, 9% más que el récord del año anterior y la cifra más alta en la historia de la agencia, además de un número récord de arrestos. El DHS no dio un desglose de antecedentes penales, y el total sigue por debajo de la meta de la Casa Blanca de 1 millón al año."
+      }
+    },
     {
       "url": "https://www.cbsnews.com/news/ice-crackdown-stephen-miller-illegal-immigration/",
       "outlet": {
@@ -44,25 +63,6 @@
       }
     },
     {
-      "url": "https://news.bloomberglaw.com/litigation/diversity-immigrant-visa-lottery-can-remain-paused-as-us-appeals",
-      "outlet": {
-        "en": "Bloomberg Law",
-        "es": "Bloomberg Law"
-      },
-      "date_label": {
-        "en": "Oct 30, 2026",
-        "es": "30 oct. 2026"
-      },
-      "headline": {
-        "en": "Diversity Immigrant Visa Lottery Can Remain Paused as US Appeals",
-        "es": "La lotería de visas de diversidad puede seguir suspendida mientras EE. UU. apela"
-      },
-      "summary": {
-        "en": "The 9th Circuit put on hold a lower-court order that would have forced the State Department to open registration for the 2027 diversity visa lottery by Nov. 1. The panel said the law firm that sued likely lacks standing; the program has been suspended since December 2025.",
-        "es": "El Noveno Circuito suspendió una orden de un tribunal inferior que habría obligado al Departamento de Estado a abrir la inscripción para la lotería de visas de diversidad 2027 antes del 1 de noviembre. El panel dijo que el bufete de abogados que demandó probablemente no tiene legitimación; el programa está suspendido desde diciembre de 2025."
-      }
-    },
-    {
       "url": "https://gvwire.com/2026/10/27/supreme-court-denies-immigration-judges-the-power-to-shelve-deportation-cases/",
       "outlet": {
         "en": "Reuters (via GV Wire)",
@@ -82,26 +82,45 @@
       }
     },
     {
-      "url": "https://kvia.com/news/border/2026/10/16/cbp-records-lowest-migrant-border-crossings-in-us-history/",
+      "url": "https://news.bloomberglaw.com/esg/full-fifth-circuit-upholds-trumps-migrant-detention-policy",
       "outlet": {
-        "en": "KVIA ABC-7 El Paso",
-        "es": "KVIA ABC-7 El Paso"
+        "en": "Bloomberg Law",
+        "es": "Bloomberg Law"
       },
       "date_label": {
-        "en": "Oct 16, 2026",
-        "es": "16 oct. 2026"
+        "en": "Oct 23, 2026",
+        "es": "23 oct. 2026"
       },
       "headline": {
-        "en": "CBP records lowest migrant border crossings in US history",
-        "es": "CBP registra el menor número de cruces fronterizos de migrantes en la historia de EE. UU."
+        "en": "Trump Migrant Detention Policy Upheld by Full Fifth Circuit",
+        "es": "El pleno del Quinto Circuito ratifica la política de detención de migrantes de Trump"
       },
       "summary": {
-        "en": "CBP reported 98,708 Border Patrol apprehensions at the southwest border in fiscal 2026, down 95%, and 379,243 encounters nationwide, which it calls the lowest in agency history. Several figures are preliminary, and CBP says Border Patrol released no one it apprehended all year.",
-        "es": "CBP reportó 98,708 aprehensiones de la Patrulla Fronteriza en la frontera suroeste en el año fiscal 2026, una baja de 95%, y 379,243 encuentros en todo el país, que describe como la cifra más baja en la historia de la agencia. Varias cifras son preliminares, y CBP dice que la Patrulla Fronteriza no liberó a ninguna de las personas que aprehendió en todo el año."
+        "en": "A divided full 5th Circuit ruled that due process does not entitle detained immigrants who were never admitted to the U.S. to bond hearings, upholding the administration's mandatory detention policy in Texas, Louisiana and Mississippi. Nine other circuits have ruled against the policy, and the Supreme Court is reviewing a related statutory question.",
+        "es": "Un pleno dividido del Quinto Circuito decidió que el debido proceso no da derecho a una audiencia de fianza a los inmigrantes detenidos que nunca fueron admitidos en EE. UU., y ratificó la política de detención obligatoria del gobierno en Texas, Luisiana y Misisipi. Otros nueve circuitos han fallado en contra de la política, y la Corte Suprema revisa una cuestión legal relacionada."
       }
     }
   ],
   "critics": [
+    {
+      "url": "https://www.cbsnews.com/colorado/news/ice-official-testifies-re-arrests-detainees-stopped-judge-considers-contempt/",
+      "outlet": {
+        "en": "CBS Colorado",
+        "es": "CBS Colorado"
+      },
+      "date_label": {
+        "en": "Nov 9, 2026",
+        "es": "9 nov. 2026"
+      },
+      "headline": {
+        "en": "ICE official testifies re-arrests of freed detainees have stopped, judge considers contempt",
+        "es": "Funcionario de ICE testifica que cesaron los nuevos arrestos de detenidos liberados; jueza evalúa desacato"
+      },
+      "summary": {
+        "en": "ICE's acting Denver field office director testified that at least 18 people freed by court order were quickly re-arrested at the Aurora detention center before he halted the practice on Nov. 4. Judge Charlotte Sweeney called the re-arrests a due process concern and is weighing contempt proceedings.",
+        "es": "El director interino de la oficina de ICE en Denver testificó que al menos 18 personas liberadas por orden judicial fueron arrestadas de nuevo poco después en el centro de detención de Aurora, antes de que él detuviera esa práctica el 4 de noviembre. La jueza Charlotte Sweeney dijo que los nuevos arrestos plantean dudas sobre el debido proceso y evalúa iniciar un proceso por desacato."
+      }
+    },
     {
       "url": "https://www.thebanner.com/community/local-news/ice-death-van-hollen-laurel-investigation-KELZT3KUZNEFTDP3ZKDGPDO4BY/",
       "outlet": {
@@ -138,25 +157,6 @@
       "summary": {
         "en": "Public school enrollment was already projected to fall by about 2 million students by 2030 because of low birth rates, and education experts say deportations of immigrant families are speeding the decline. Los Angeles officials say campuses will likely have to close.",
         "es": "Ya se proyectaba que la matrícula en las escuelas públicas bajaría en unos 2 millones de estudiantes para 2030 por la baja natalidad, y expertos en educación dicen que las deportaciones de familias inmigrantes están acelerando la caída. Funcionarios de Los Ángeles dicen que probablemente tendrán que cerrar planteles."
-      }
-    },
-    {
-      "url": "https://www.newsweek.com/judge-scolds-ice-cruelty-arresting-man-just-ordered-released-12663566",
-      "outlet": {
-        "en": "Newsweek",
-        "es": "Newsweek"
-      },
-      "date_label": {
-        "en": "Nov 4, 2026",
-        "es": "4 nov. 2026"
-      },
-      "headline": {
-        "en": "Judge scolds ICE \"cruelty\" for arresting man he just ordered be released",
-        "es": "Juez reprende la \"crueldad\" de ICE por arrestar a un hombre cuya liberación acababa de ordenar"
-      },
-      "summary": {
-        "en": "A federal judge in Colorado found that ICE re-arresting a man moments after his court-ordered release was an ongoing due process violation. He ordered the man freed and barred re-detention without a bond hearing, warning of possible contempt.",
-        "es": "Un juez federal en Colorado concluyó que el nuevo arresto de un hombre por parte de ICE, momentos después de su liberación ordenada por el tribunal, era una violación continua del debido proceso. Ordenó liberarlo y prohibió volver a detenerlo sin una audiencia de fianza, con advertencia de posible desacato."
       }
     },
     {
@@ -200,36 +200,36 @@
   ],
   "also": [
     {
-      "url": "https://wjla.com/news/nation-world/attorney-general-james-says-ruling-upholds-new-yorks-ban-on-local-ice-partnership-deals",
+      "url": "https://www.scotusblog.com/2026/11/supreme-court-agrees-to-hear-case-on-trump-administrations-suspension-of-asylum/",
       "text": {
-        "en": "a federal judge declined to block New York's ban on local ICE partnership agreements, finding 15 sheriffs who sued had not shown they could bring the case",
-        "es": "un juez federal se negó a bloquear la prohibición de Nueva York a los acuerdos locales de colaboración con ICE, al concluir que los 15 alguaciles que demandaron no demostraron que pudieran presentar el caso"
+        "en": "the Supreme Court agreed to decide whether the administration's suspension of asylum at the southern border is lawful; the restrictions stay in effect while the case proceeds, with arguments likely next spring",
+        "es": "la Corte Suprema aceptó decidir si es legal la suspensión del asilo en la frontera sur ordenada por el gobierno; las restricciones siguen vigentes mientras avanza el caso, con argumentos orales probablemente la próxima primavera"
       },
       "link": {
-        "en": "WJLA, Nov 5",
-        "es": "WJLA, 5 nov."
+        "en": "SCOTUSblog, Nov 13",
+        "es": "SCOTUSblog, 13 nov."
       }
     },
     {
-      "url": "https://www.staradvertiser.com/2026/10/23/breaking-news/court-rules-constitution-does-not-guarantee-bond-hearings-for-migrants/",
+      "url": "https://www.kuow.org/immigration/2026-11-13/judge-rules-adams-county-violated-wa-state-law-by-working-with-ice",
       "text": {
-        "en": "the full 5th Circuit ruled 10-7 that the Constitution does not guarantee bond hearings for people in immigration detention in Texas, Louisiana and Mississippi",
-        "es": "el pleno del Quinto Circuito decidió 10 a 7 que la Constitución no garantiza audiencias de fianza para las personas en detención migratoria en Texas, Luisiana y Misisipi"
+        "en": "a Washington state judge ruled that Adams County violated the Keep Washington Working Act by handing a man to ICE after his charges were dropped; the sheriff plans to appeal",
+        "es": "una jueza del estado de Washington determinó que el condado de Adams violó la ley Keep Washington Working al entregar a ICE a un hombre después de que se retiraron sus cargos; el alguacil planea apelar"
       },
       "link": {
-        "en": "Reuters via Honolulu Star-Advertiser, Oct 23",
-        "es": "Reuters vía Honolulu Star-Advertiser, 23 oct."
+        "en": "KUOW, Nov 13",
+        "es": "KUOW, 13 nov."
       }
     },
     {
-      "url": "https://www.kpbs.org/news/border-immigration/2026/10/29/medical-examiner-corrects-id-of-man-who-died-in-ice-custody-at-otay-mesa-detention-center",
+      "url": "https://www.yahoo.com/news/us/articles/trump-admin-dealt-legal-blow-161815350.html",
       "text": {
-        "en": "San Diego's medical examiner identified the man who died Oct. 24 in ICE custody at Otay Mesa as Guillermo Pascual Verganza, 43, of Guatemala, correcting the name ICE released",
-        "es": "el médico forense de San Diego identificó al hombre que murió el 24 de octubre bajo custodia de ICE en Otay Mesa como Guillermo Pascual Verganza, guatemalteco de 43 años, y corrigió el nombre que había divulgado ICE"
+        "en": "the 2nd Circuit ruled the Federal Motor Carrier Safety Administration could not withhold $73 million in highway funds from New York over commercial driver's licenses issued to immigrants under the old rules",
+        "es": "el Segundo Circuito decidió que la Administración Federal de Seguridad de Autotransportes no podía retener $73 millones en fondos para carreteras a Nueva York por licencias comerciales de conducir emitidas a inmigrantes bajo las reglas anteriores"
       },
       "link": {
-        "en": "KPBS, Oct 29",
-        "es": "KPBS, 29 oct."
+        "en": "Newsweek via Yahoo News, Nov 14",
+        "es": "Newsweek vía Yahoo News, 14 nov."
       }
     }
   ]
