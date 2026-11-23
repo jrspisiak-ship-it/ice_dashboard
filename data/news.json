@@ -1,235 +1,224 @@
 {
-  "reviewed": "2026-11-16",
+  "reviewed": "2026-11-23",
   "window": {
-    "en": "Oct 17 – Nov 16, 2026",
-    "es": "17 oct. – 16 nov. de 2026"
+    "en": "Oct 24 – Nov 23, 2026",
+    "es": "24 oct. – 23 nov. de 2026"
   },
   "supporters": [
     {
-      "url": "https://www.clickorlando.com/news/politics/2026/11/12/ice-reports-record-high-immigration-arrests-and-deportations-since-trumps-return-to-white-house/",
+      "url": "https://ctmirror.org/2026/11/20/federal-judge-blocks-ct-law-that-sought-to-regulate-ice-agents/",
       "outlet": {
-        "en": "AP via WKMG ClickOrlando",
-        "es": "AP vía WKMG ClickOrlando"
+        "en": "CT Mirror",
+        "es": "CT Mirror"
+      },
+      "date_label": {
+        "en": "Nov 20, 2026",
+        "es": "20 nov. 2026"
+      },
+      "headline": {
+        "en": "Federal judge blocks CT law that sought to regulate ICE agents",
+        "es": "Juez federal bloquea ley de Connecticut que buscaba regular a los agentes de ICE"
+      },
+      "summary": {
+        "en": "U.S. District Judge Vernon Oliver blocked parts of a 2026 Connecticut law that would have let the state's Inspector General investigate and prosecute federal agents and made it a misdemeanor for officers to wear masks, finding they likely violate the Supremacy Clause. The ruling is preliminary, and the attorney general's office is weighing next steps.",
+        "es": "El juez federal Vernon Oliver bloqueó partes de una ley de Connecticut de 2026 que habría permitido al Inspector General del estado investigar y procesar a agentes federales y que convertía en delito menor que los agentes usaran máscaras, al concluir que probablemente violan la Cláusula de Supremacía. El fallo es preliminar y la oficina del fiscal general evalúa los próximos pasos."
+      }
+    },
+    {
+      "url": "https://www.wsls.com/news/politics/2026/11/19/appeals-court-grants-trump-request-to-halt-order-restoring-venezuelan-tps/",
+      "outlet": {
+        "en": "AP via WSLS",
+        "es": "AP vía WSLS"
+      },
+      "date_label": {
+        "en": "Nov 19, 2026",
+        "es": "19 nov. 2026"
+      },
+      "headline": {
+        "en": "Appeals court grants Trump request to halt order restoring Venezuelan TPS",
+        "es": "Tribunal de apelaciones concede la solicitud de Trump de frenar la orden que restablecía el TPS para venezolanos"
+      },
+      "summary": {
+        "en": "The 9th Circuit kept frozen a lower-court order that would have restored Temporary Protected Status for Venezuelans, so the administration can keep detaining and deporting former TPS holders while the appeal continues. Federal attorneys said about 1,800 are detained and about 330 are in deportation proceedings.",
+        "es": "El Noveno Circuito mantuvo congelada una orden de un tribunal inferior que habría restablecido el Estatus de Protección Temporal (TPS) para venezolanos, por lo que el gobierno puede seguir deteniendo y deportando a antiguos beneficiarios del TPS mientras continúa la apelación. Abogados federales dijeron que unos 1,800 están detenidos y unos 330 están en proceso de deportación."
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/politics/articles/trump-border-crackdown-drives-encounters-150049150.html",
+      "outlet": {
+        "en": "Fox News (via Yahoo News)",
+        "es": "Fox News (vía Yahoo News)"
+      },
+      "date_label": {
+        "en": "Nov 16, 2026",
+        "es": "16 nov. 2026"
+      },
+      "headline": {
+        "en": "Trump border crackdown drives encounters to record October low as zero-release streak hits 18 months, DHS says",
+        "es": "La ofensiva fronteriza de Trump lleva los encuentros a un mínimo récord para octubre y suma 18 meses sin liberaciones, según el DHS"
+      },
+      "summary": {
+        "en": "DHS and CBP figures show 8,288 Border Patrol apprehensions at the southwest border in October and 27,890 CBP encounters nationwide, the lowest October on record. The figures come from the administration and were not independently verified in the article.",
+        "es": "Cifras del DHS y la CBP muestran 8,288 detenciones de la Patrulla Fronteriza en la frontera suroeste en octubre y 27,890 encuentros de la CBP a nivel nacional, el octubre más bajo registrado. Las cifras provienen del gobierno y el artículo no las verificó de forma independiente."
+      }
+    },
+    {
+      "url": "https://gazette.com/2026/11/16/us-supreme-court-to-weigh-asylum-restrictions-at-southern-border/",
+      "outlet": {
+        "en": "Reuters (via The Gazette)",
+        "es": "Reuters (vía The Gazette)"
+      },
+      "date_label": {
+        "en": "Nov 16, 2026",
+        "es": "16 nov. 2026"
+      },
+      "headline": {
+        "en": "US Supreme Court to weigh asylum restrictions at southern border",
+        "es": "La Corte Suprema de EE. UU. evaluará las restricciones al asilo en la frontera sur"
+      },
+      "summary": {
+        "en": "The Supreme Court agreed to hear the administration's appeal of rulings that found it exceeded its authority by barring people who cross illegally from seeking asylum. The restrictions, which the administration credits with lowering crossings, remain in effect, and a decision is expected by the end of June.",
+        "es": "La Corte Suprema aceptó escuchar la apelación del gobierno contra fallos que concluyeron que se excedió en su autoridad al impedir que quienes cruzan sin autorización soliciten asilo. Las restricciones, a las que el gobierno atribuye la baja en los cruces, siguen vigentes, y se espera una decisión antes de fines de junio."
+      }
+    },
+    {
+      "url": "https://abcnews.com/Politics/wireStory/ice-reports-record-high-immigration-arrests-deportations-trumps-138083036",
+      "outlet": {
+        "en": "AP via ABC News",
+        "es": "AP vía ABC News"
       },
       "date_label": {
         "en": "Nov 12, 2026",
         "es": "12 nov. 2026"
       },
       "headline": {
-        "en": "ICE reports record-high immigration arrests and deportations since Trump's return to White House",
+        "en": "ICE reports record immigration arrests, deportations since Trump White House return",
         "es": "ICE reporta cifras récord de arrestos y deportaciones desde el regreso de Trump a la Casa Blanca"
       },
       "summary": {
-        "en": "DHS says ICE carried out 483,200 deportations in fiscal 2026, up 9% from the prior year's record and the most in the agency's history, along with record arrests. DHS gave no breakdown of criminal histories, and the total remains below the White House goal of 1 million a year.",
-        "es": "El DHS dice que ICE realizó 483,200 deportaciones en el año fiscal 2026, 9% más que el récord del año anterior y la cifra más alta en la historia de la agencia, además de un número récord de arrestos. El DHS no dio un desglose de antecedentes penales, y el total sigue por debajo de la meta de la Casa Blanca de 1 millón al año."
-      }
-    },
-    {
-      "url": "https://www.cbsnews.com/news/ice-crackdown-stephen-miller-illegal-immigration/",
-      "outlet": {
-        "en": "CBS News",
-        "es": "CBS News"
-      },
-      "date_label": {
-        "en": "Nov 8, 2026",
-        "es": "8 nov. 2026"
-      },
-      "headline": {
-        "en": "ICE unlikely to scale back crackdown, sources say, citing Stephen Miller's promotion",
-        "es": "Es poco probable que ICE reduzca su ofensiva, según fuentes, que citan el ascenso de Stephen Miller"
-      },
-      "summary": {
-        "en": "Officials told CBS News the administration does not plan to ease enforcement after the midterms, and ICE was recently told to aim for about 19,000 arrests a week. ICE has $75 billion in funding through 2029, while Democrats will gain oversight power when they take control of Congress in January.",
-        "es": "Funcionarios dijeron a CBS News que el gobierno no planea reducir la aplicación de la ley tras las elecciones de medio mandato, y que a ICE se le indicó recientemente apuntar a unos 19,000 arrestos por semana. ICE tiene $75,000 millones en fondos hasta 2029, mientras que los demócratas tendrán poder de supervisión cuando asuman el control del Congreso en enero."
-      }
-    },
-    {
-      "url": "https://www.freightwaves.com/news/230-plus-immigrants-arrested-in-crackdown-targeting-unauthorized-cdl-holders",
-      "outlet": {
-        "en": "FreightWaves",
-        "es": "FreightWaves"
-      },
-      "date_label": {
-        "en": "Nov 2, 2026",
-        "es": "2 nov. 2026"
-      },
-      "headline": {
-        "en": "230-plus immigrants arrested in crackdown targeting unauthorized CDL holders",
-        "es": "Más de 230 inmigrantes arrestados en una operación contra titulares de licencias comerciales de conducir no autorizadas"
-      },
-      "summary": {
-        "en": "DHS says a 72-hour operation with 15 states, including Georgia, led to more than 230 arrests of undocumented immigrants, over 40 of them commercial driver's license holders. DHS did not give a state-by-state breakdown or say how many licenses were obtained by fraud.",
-        "es": "El DHS dice que una operación de 72 horas con 15 estados, incluido Georgia, resultó en más de 230 arrestos de inmigrantes indocumentados, más de 40 de ellos titulares de licencias comerciales de conducir. El DHS no dio un desglose por estado ni dijo cuántas licencias se obtuvieron de forma fraudulenta."
-      }
-    },
-    {
-      "url": "https://gvwire.com/2026/10/27/supreme-court-denies-immigration-judges-the-power-to-shelve-deportation-cases/",
-      "outlet": {
-        "en": "Reuters (via GV Wire)",
-        "es": "Reuters (vía GV Wire)"
-      },
-      "date_label": {
-        "en": "Oct 27, 2026",
-        "es": "27 oct. 2026"
-      },
-      "headline": {
-        "en": "Supreme Court Denies Immigration Judges the Power to Shelve Deportation Cases",
-        "es": "La Corte Suprema niega a los jueces de inmigración la facultad de suspender casos de deportación"
-      },
-      "summary": {
-        "en": "The Supreme Court, with no noted dissents, declined to restore immigration judges' ability to pause deportation cases through \"administrative closure,\" leaving in place a Texas–administration agreement that ended the practice nationwide. Cities and a legal aid group that challenged the deal say the litigation was arranged.",
-        "es": "La Corte Suprema, sin disidencias registradas, se negó a restablecer la facultad de los jueces de inmigración de pausar casos de deportación mediante el \"cierre administrativo\", y dejó vigente un acuerdo entre Texas y el gobierno que eliminó esa práctica en todo el país. Las ciudades y un grupo de asistencia legal que impugnaron el acuerdo dicen que el litigio fue arreglado."
-      }
-    },
-    {
-      "url": "https://news.bloomberglaw.com/esg/full-fifth-circuit-upholds-trumps-migrant-detention-policy",
-      "outlet": {
-        "en": "Bloomberg Law",
-        "es": "Bloomberg Law"
-      },
-      "date_label": {
-        "en": "Oct 23, 2026",
-        "es": "23 oct. 2026"
-      },
-      "headline": {
-        "en": "Trump Migrant Detention Policy Upheld by Full Fifth Circuit",
-        "es": "El pleno del Quinto Circuito ratifica la política de detención de migrantes de Trump"
-      },
-      "summary": {
-        "en": "A divided full 5th Circuit ruled that due process does not entitle detained immigrants who were never admitted to the U.S. to bond hearings, upholding the administration's mandatory detention policy in Texas, Louisiana and Mississippi. Nine other circuits have ruled against the policy, and the Supreme Court is reviewing a related statutory question.",
-        "es": "Un pleno dividido del Quinto Circuito decidió que el debido proceso no da derecho a una audiencia de fianza a los inmigrantes detenidos que nunca fueron admitidos en EE. UU., y ratificó la política de detención obligatoria del gobierno en Texas, Luisiana y Misisipi. Otros nueve circuitos han fallado en contra de la política, y la Corte Suprema revisa una cuestión legal relacionada."
+        "en": "ICE says it deported 483,200 people in fiscal 2026, up 9% from the year before, and made 474,850 arrests, both agency records. The release did not say how many had criminal histories.",
+        "es": "ICE dice que deportó a 483,200 personas en el año fiscal 2026, 9% más que el año anterior, y realizó 474,850 arrestos, ambos récords de la agencia. El comunicado no indicó cuántos tenían antecedentes penales."
       }
     }
   ],
   "critics": [
     {
-      "url": "https://www.cbsnews.com/colorado/news/ice-official-testifies-re-arrests-detainees-stopped-judge-considers-contempt/",
+      "url": "https://www.kuow.org/immigration/2026-11-21/outraged-port-officials-react-after-ice-arrests-family-at-sea-tac-airport",
       "outlet": {
-        "en": "CBS Colorado",
-        "es": "CBS Colorado"
+        "en": "KUOW (NPR Seattle)",
+        "es": "KUOW (NPR Seattle)"
       },
       "date_label": {
-        "en": "Nov 9, 2026",
-        "es": "9 nov. 2026"
+        "en": "Nov 21, 2026",
+        "es": "21 nov. 2026"
       },
       "headline": {
-        "en": "ICE official testifies re-arrests of freed detainees have stopped, judge considers contempt",
-        "es": "Funcionario de ICE testifica que cesaron los nuevos arrestos de detenidos liberados; jueza evalúa desacato"
+        "en": "‘Outraged.’ Officials react after ICE reportedly arrests family at Sea-Tac Airport",
+        "es": "‘Indignado’. Funcionarios reaccionan tras el arresto de una familia por parte de ICE en el aeropuerto Sea-Tac"
       },
       "summary": {
-        "en": "ICE's acting Denver field office director testified that at least 18 people freed by court order were quickly re-arrested at the Aurora detention center before he halted the practice on Nov. 4. Judge Charlotte Sweeney called the re-arrests a due process concern and is weighing contempt proceedings.",
-        "es": "El director interino de la oficina de ICE en Denver testificó que al menos 18 personas liberadas por orden judicial fueron arrestadas de nuevo poco después en el centro de detención de Aurora, antes de que él detuviera esa práctica el 4 de noviembre. La jueza Charlotte Sweeney dijo que los nuevos arrestos plantean dudas sobre el debido proceso y evalúa iniciar un proceso por desacato."
+        "en": "Immigration agents arrested travelers in an Alaska Airlines jetway at Seattle-Tacoma airport; Gov. Bob Ferguson and the Port of Seattle condemned the operation, and the airline said it did not take part. DHS says it arrested a visa overstayer and that a passenger who threw coffee at officers will be charged.",
+        "es": "Agentes de inmigración arrestaron a viajeros en la pasarela de un vuelo de Alaska Airlines en el aeropuerto de Seattle-Tacoma; el gobernador Bob Ferguson y el Puerto de Seattle condenaron el operativo, y la aerolínea dijo que no participó. El DHS dice que arrestó a una persona que se quedó más tiempo del permitido por su visa y que se presentarán cargos contra una pasajera que lanzó café a los agentes."
       }
     },
     {
-      "url": "https://www.thebanner.com/community/local-news/ice-death-van-hollen-laurel-investigation-KELZT3KUZNEFTDP3ZKDGPDO4BY/",
+      "url": "https://www.texastribune.org/2026/11/20/texas-man-deportation-federal-lawsuit-dismissal-sought/",
       "outlet": {
-        "en": "The Baltimore Banner",
-        "es": "The Baltimore Banner"
+        "en": "The Texas Tribune",
+        "es": "The Texas Tribune"
       },
       "date_label": {
-        "en": "Nov 6, 2026",
-        "es": "6 nov. 2026"
+        "en": "Nov 20, 2026",
+        "es": "20 nov. 2026"
       },
       "headline": {
-        "en": "Van Hollen warns of retaliation against wife of Laurel man who died in ICE custody",
-        "es": "Van Hollen advierte sobre represalias contra la esposa de un hombre de Laurel que murió bajo custodia de ICE"
+        "en": "Feds admit in court filing that Austin man who was deported held dual citizenship",
+        "es": "El gobierno federal admite en un documento judicial que un hombre de Austin deportado tenía doble ciudadanía"
       },
       "summary": {
-        "en": "Sen. Chris Van Hollen asked for an independent investigation into the Sept. 29 death of Julián Curo-Churata, a Maryland resident held in Louisiana, and questioned why DHS moved to deport his wife days after she spoke to the press. ICE says he received proper medical care.",
-        "es": "El senador Chris Van Hollen pidió una investigación independiente sobre la muerte, el 29 de septiembre, de Julián Curo-Churata, residente de Maryland detenido en Luisiana, y cuestionó por qué el DHS inició trámites para deportar a su esposa días después de que ella habló con la prensa. ICE dice que él recibió atención médica adecuada."
+        "en": "In a lawsuit over a Texas traffic stop, federal prosecutors acknowledged that Brian José Morales García, a Denver-born man who was deported, is a U.S. and Mexican citizen, while asking the judge to dismiss the case on immunity grounds. The judge has not ruled.",
+        "es": "En una demanda por una parada de tráfico en Texas, los fiscales federales reconocieron que Brian José Morales García, un hombre nacido en Denver que fue deportado, es ciudadano de EE. UU. y de México, a la vez que pidieron al juez desestimar el caso alegando inmunidad. El juez no ha decidido."
       }
     },
     {
-      "url": "https://www.wbur.org/npr/nx-s1-5971283/public-school-enrollment-ice-deportation-birthrate",
+      "url": "https://www.ajc.com/news/2026/11/georgia-police-unofficially-help-ice-arrests/",
       "outlet": {
-        "en": "NPR (via WBUR)",
-        "es": "NPR (vía WBUR)"
+        "en": "The Atlanta Journal-Constitution",
+        "es": "The Atlanta Journal-Constitution"
       },
       "date_label": {
-        "en": "Nov 6, 2026",
-        "es": "6 nov. 2026"
+        "en": "Nov 19, 2026",
+        "es": "19 nov. 2026"
       },
       "headline": {
-        "en": "Why public schools nationwide are facing a massive drop in student enrollment",
-        "es": "Por qué las escuelas públicas de todo el país enfrentan una fuerte caída en la matrícula"
+        "en": "Georgia deputies quietly helped ICE. Now an officer faces a criminal probe.",
+        "es": "Agentes del sheriff en Georgia ayudaron discretamente a ICE. Ahora un oficial enfrenta una investigación penal."
       },
       "summary": {
-        "en": "Public school enrollment was already projected to fall by about 2 million students by 2030 because of low birth rates, and education experts say deportations of immigrant families are speeding the decline. Los Angeles officials say campuses will likely have to close.",
-        "es": "Ya se proyectaba que la matrícula en las escuelas públicas bajaría en unos 2 millones de estudiantes para 2030 por la baja natalidad, y expertos en educación dicen que las deportaciones de familias inmigrantes están acelerando la caída. Funcionarios de Los Ángeles dicen que probablemente tendrán que cerrar planteles."
+        "en": "An AJC review found traffic stops in Habersham and Camden counties led to about 17 immigration arrests this year outside the formal 287(g) program, and the GBI opened a criminal investigation into a Camden stop where a passenger was tased. The sheriffs' offices say deputies requested federal help under existing working relationships.",
+        "es": "Una revisión del AJC encontró que paradas de tráfico en los condados de Habersham y Camden resultaron en unos 17 arrestos migratorios este año fuera del programa formal 287(g), y la GBI abrió una investigación penal sobre una parada en Camden en la que un pasajero recibió una descarga de táser. Las oficinas del sheriff dicen que los agentes pidieron ayuda federal dentro de relaciones de trabajo existentes."
       }
     },
     {
-      "url": "https://newsweek.com/judge-halts-ice-race-profiling-stops-in-california-mountain-of-evidence-12640526",
+      "url": "https://coloradonewsline.com/2026/11/19/judge-colorado-ice-in-contempt/",
       "outlet": {
-        "en": "Newsweek",
-        "es": "Newsweek"
+        "en": "Colorado Newsline",
+        "es": "Colorado Newsline"
       },
       "date_label": {
-        "en": "Oct 30, 2026",
-        "es": "30 oct. 2026"
+        "en": "Nov 19, 2026",
+        "es": "19 nov. 2026"
       },
       "headline": {
-        "en": "Judge blocks ICE racial profiling stops in California: 'Mountain of evidence'",
-        "es": "Jueza bloquea las detenciones de ICE por perfil racial en California: 'Montaña de pruebas'"
+        "en": "Federal judge in Colorado holds ICE officials in contempt over 're-detention' policy",
+        "es": "Jueza federal en Colorado declara en desacato a funcionarios de ICE por su política de 'nueva detención'"
       },
       "summary": {
-        "en": "A federal judge barred immigration agents in Los Angeles and six nearby counties from detaining people based only on apparent Latino ethnicity or perceived working-class status, requiring reasonable suspicion first. The administration has appealed and DHS denies racial profiling.",
-        "es": "Una jueza federal prohibió a los agentes de inmigración en Los Ángeles y seis condados cercanos detener a personas solo por su aparente origen latino o porque parezcan de clase trabajadora, y exigió primero una sospecha razonable. El gobierno apeló y el DHS niega que haya perfiles raciales."
+        "en": "Judge Charlotte Sweeney held senior ICE officials in contempt for a policy of re-arresting people moments after courts ordered them released, a practice known in at least 18 cases. She imposed no sanctions because ICE testified the practice has stopped.",
+        "es": "La jueza Charlotte Sweeney declaró en desacato a altos funcionarios de ICE por una política de volver a arrestar a personas momentos después de que los tribunales ordenaran su liberación, práctica conocida en al menos 18 casos. No impuso sanciones porque ICE testificó que la práctica ya cesó."
       }
     },
     {
-      "url": "https://www.nbcmiami.com/news/local/ice-deportation-mentally-ill-man-florida-phillip-james-ap-investigation/3878042/",
+      "url": "https://time.com/article/2026/11/19/democratic-senator-ICE-deaths-bill/",
       "outlet": {
-        "en": "AP via NBC Miami",
-        "es": "AP vía NBC Miami"
+        "en": "TIME",
+        "es": "TIME"
       },
       "date_label": {
-        "en": "Oct 27, 2026",
-        "es": "27 oct. 2026"
+        "en": "Nov 19, 2026",
+        "es": "19 nov. 2026"
       },
       "headline": {
-        "en": "ICE pushes to deport mentally ill man who lawyers say was born in Florida",
-        "es": "ICE busca deportar a un hombre con enfermedad mental que, según sus abogados, nació en Florida"
+        "en": "Senator Unveils Bill to Force More Disclosure of Deaths in ICE Custody",
+        "es": "Senador presenta proyecto de ley para obligar a divulgar más información sobre muertes bajo custodia de ICE"
       },
       "summary": {
-        "en": "An AP review found records supporting that Phillip James, held by ICE since January and diagnosed with paranoid schizophrenia, was born in Florida; DHS says his birth certificate is fraudulent but has not shown evidence. His lawyers are awaiting a federal judge's ruling on his release petition.",
-        "es": "Una revisión de AP encontró registros que respaldan que Phillip James, detenido por ICE desde enero y diagnosticado con esquizofrenia paranoide, nació en Florida; el DHS dice que su acta de nacimiento es fraudulenta, pero no ha presentado pruebas. Sus abogados esperan el fallo de un juez federal sobre su petición de liberación."
+        "en": "Sen. Andy Kim proposed requiring ICE to report detainee deaths within 30 days instead of 90 and to disclose deaths during arrests and traffic stops. ICE has reported 29 detention deaths in 2026; the administration says deaths track the larger detained population.",
+        "es": "El senador Andy Kim propuso exigir que ICE informe las muertes de detenidos en 30 días en lugar de 90 y que divulgue las muertes ocurridas durante arrestos y paradas de tráfico. ICE ha informado 29 muertes en detención en 2026; el gobierno dice que las muertes corresponden al aumento de la población detenida."
       }
     }
   ],
   "also": [
     {
+      "url": "https://www.kuow.org/npr-news/2026-10-28/partnerships-between-ice-and-local-police-surge-report-finds",
+      "text": {
+        "en": "a FWD.us analysis found ICE deputized more than 29,000 state and local officers under 287(g) between January 2025 and October 2026, with Florida and Texas accounting for about half of 287(g) immigration arrests",
+        "es": "un análisis de FWD.us encontró que ICE delegó funciones a más de 29,000 agentes estatales y locales bajo el programa 287(g) entre enero de 2025 y octubre de 2026, y que Florida y Texas sumaron cerca de la mitad de los arrestos migratorios del 287(g)"
+      },
+      "link": {
+        "en": "NPR via KUOW, Oct 28",
+        "es": "NPR vía KUOW, 28 oct."
+      }
+    },
+    {
       "url": "https://www.scotusblog.com/2026/11/supreme-court-agrees-to-hear-case-on-trump-administrations-suspension-of-asylum/",
       "text": {
-        "en": "the Supreme Court agreed to decide whether the administration's suspension of asylum at the southern border is lawful; the restrictions stay in effect while the case proceeds, with arguments likely next spring",
-        "es": "la Corte Suprema aceptó decidir si es legal la suspensión del asilo en la frontera sur ordenada por el gobierno; las restricciones siguen vigentes mientras avanza el caso, con argumentos orales probablemente la próxima primavera"
+        "en": "the asylum case is Mullin v. Refugee and Immigrant Center for Education and Legal Services (No. 26-239); the justices declined to take up the government's class-action question",
+        "es": "el caso de asilo es Mullin v. Refugee and Immigrant Center for Education and Legal Services (n.º 26-239); los jueces no aceptaron revisar la cuestión de la demanda colectiva planteada por el gobierno"
       },
       "link": {
         "en": "SCOTUSblog, Nov 13",
         "es": "SCOTUSblog, 13 nov."
-      }
-    },
-    {
-      "url": "https://www.kuow.org/immigration/2026-11-13/judge-rules-adams-county-violated-wa-state-law-by-working-with-ice",
-      "text": {
-        "en": "a Washington state judge ruled that Adams County violated the Keep Washington Working Act by handing a man to ICE after his charges were dropped; the sheriff plans to appeal",
-        "es": "una jueza del estado de Washington determinó que el condado de Adams violó la ley Keep Washington Working al entregar a ICE a un hombre después de que se retiraron sus cargos; el alguacil planea apelar"
-      },
-      "link": {
-        "en": "KUOW, Nov 13",
-        "es": "KUOW, 13 nov."
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/us/articles/trump-admin-dealt-legal-blow-161815350.html",
-      "text": {
-        "en": "the 2nd Circuit ruled the Federal Motor Carrier Safety Administration could not withhold $73 million in highway funds from New York over commercial driver's licenses issued to immigrants under the old rules",
-        "es": "el Segundo Circuito decidió que la Administración Federal de Seguridad de Autotransportes no podía retener $73 millones en fondos para carreteras a Nueva York por licencias comerciales de conducir emitidas a inmigrantes bajo las reglas anteriores"
-      },
-      "link": {
-        "en": "Newsweek via Yahoo News, Nov 14",
-        "es": "Newsweek vía Yahoo News, 14 nov."
       }
     }
   ]
